@@ -1,5 +1,6 @@
 # Mitigation's Repository
-Software Engineering Project at Rowan University with Professor Jack Myers
+#### Team River Otters - Project O.P.R.A.H.
+Software Engineering Project at Rowan University with Professor [Jack Myers](http://jackmyers.info).
 
 ## Description
 Once identified, a cybersecurity risk requires an appropriate response. The implementation of a countermeasure or security control to reduce the risk to an acceptable level is known as risk mitigation, one of the four responses to risk. Security controls fall into five types: directive, preventative, detective, corrective, and recovery. Additionally, controls organize into three categories: administrative, physical, or technical. Implementation of specific controls may result in the reduction of multiple risks. Mitigation may also require the repeated application or slight modification to particular machines in a system.
