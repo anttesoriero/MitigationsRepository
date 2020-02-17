@@ -27,7 +27,7 @@ Sprint 3:
 -	Talk about implementation of the product
 
 ## Team Members
-**Anthony Tesoriero** - Product Owner
+**Anthony Tesoriero** - Product Owner - [Personal Site/Resume](http://anttes.com)
 
 **Alyssa Indriso** - Scrum Master
 
