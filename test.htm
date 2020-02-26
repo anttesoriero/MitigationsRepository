@@ -19,11 +19,12 @@
       <button type="submit"><i class="fa fa-search"></i></button></form>
     </div></div>
 			<div class="left">
-			<h2 style = "float: center;">
+			<h2 style = "float: center">
 				Find a Mitigation
+				</h2>
 			<p> 
 			<div class="dropdown">
-			<button onclick="myFunction()" class="dropbtn">Select Category</button>
+			<button onclick="dropDown()" class="dropbtn">Select Category</button>
 			<div id="myDropdown" class="dropdown-content">
 			<a href="#">Administrative</a>
 			<a href="#">Physical</a>
@@ -33,9 +34,18 @@
 			</p>
 			
 			<p>
-			<div class="dropdown" style="float:center;">
-			<button class="dropbtn">Select Type  <i class="arrow down"></i></button>
-			<div class="dropdown-content" style="center:0;">
+						<!--<form>
+			<select>
+				<option value="directive">Directive</option>
+				<option value="preventative">Preventative</option>
+				<option value="detective">Detective</option>
+				<option value="corrective">Corrective</option>
+				<option value="recovery">Recovery</option>
+				</select>
+				</form>-->
+			<div class="dropdown">
+			<button onclick="dropDown2()" class="dropbtn">Select Type</button>
+			<div id="myDropdown2" class="dropdown-content">
 			<a href="#">Directive</a>
 			<a href="#">Preventative</a>
 			<a href="#">Detevtive</a>
@@ -49,17 +59,17 @@
 			<input type="text" placeholder="Search Mitigation">
 			</div>
 			
-			</h2>
 			</div>
 			<div class="v1"></div>
 			
 			<div class="right">
-		  <h2 style = "float: center;">
+		  <h2 style = "float: center">
 				Create new Mitigation
+				</h2>
 			<p>
 			<div class="dropdown">
-			<button onclick="myFunction()" class="dropbtn">Select Category</button>
-			<div id="myDropdown" class="dropdown-content">
+			<button onclick="dropDown3()" class="dropbtn">Select Category</button>
+			<div id="myDropdown3" class="dropdown-content">
 			<a href="#">Administrative</a>
 			<a href="#">Physical</a>
 			<a href="#">Technical</a>
@@ -67,9 +77,18 @@
 			</div>
 			</p>
 			<p>
-			<div class="dropdown" style="float:center;">
-			<button class="dropbtn">Select Type <i class="arrow down"></i></button>
-			<div class="dropdown-content" style="center:0;">
+			<div class="dropdown" style="float:center">
+		<!--				<form>
+			<select>
+				<option value="directive">Directive</option>
+				<option value="preventative">Preventative</option>
+				<option value="detective">Detective</option>
+				<option value="corrective">Corrective</option>
+				<option value="recovery">Recovery</option>
+				</select>
+				</form>-->
+			<button onclick="dropDown4()" class="dropbtn">Select Type</button>
+			<div id="myDropdown4" class="dropdown-content">
 			<a href="#">Directive</a>
 			<a href="#">Preventative</a>
 			<a href="#">Detevtive</a>
