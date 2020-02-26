@@ -1,0 +1,129 @@
+* 
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	margin: 0;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, sans-serif;
+}
+
+/* Add a grey bg to top nav */
+.topnav 
+{
+	overflow: hidden;
+	background-color: #eeeeee;
+	
+}
+
+/*Style the links inside the navigation bar*/
+.topnav a
+{
+	float:left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration:none;
+	font-size: 20px;
+}
+
+/* Change the color of links on hover*/
+.topnav a:hover
+{
+	background-color: #ccc;
+	color: black;
+}	
+
+/*style the "active" element to highlight the ucrrent page */
+.topnav a:active
+{
+	background-color: #2196F3;
+	color: white;
+}
+
+/*style the search box*/
+.topnav .search-container
+{
+	float: right;
+}
+.topnav input[type=text] 
+{
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 20px;
+	border: 1px;
+	border-style: solid;
+	border-color: #333333;
+	border-radius: 20px 0px 0px 20px;
+}
+
+.topnav .search-container button
+{
+	float: right;
+	padding: 6px;
+	margin-top: 8px;
+	margin-right: 16px;
+	background: #ddd;
+	font-size: 20px;
+	border: 1px;
+	border-style: solid;
+	border-color: #333333;
+	cursor: pointer;
+	border-radius: 0px 20px 20px 0px;
+}
+
+.topnav .search-container button:hover
+{
+	background: #ccc;
+}
+
+.v1
+{
+	border-left: 2px solid black;
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	margin-left: -1px;
+	top: );
+}
+
+.left
+{
+	position: absolute;
+	right: 55%;
+	background-color: #FF0000;
+	text-align: center;
+}
+
+.right
+{
+	position: absolute;
+	left: 55%;
+	background-color: #00FF00;
+	text-align: center;
+}
+
+
+/*When less than 600 px, stack links and search field */
+@media screen and (max-width: 600px)
+{
+	.topnav .search-container
+	{
+		float:none;
+	}
+	.topnav a, .topnav input[type=text], .topnav .search-container button
+	{
+		float:none;
+		display: block;
+		text-align: left;
+		width: 100%;
+		margin: 0;
+		padding: 14px;
+	}
+	.topnav input[type=text]
+	{
+		border: 1px solid #ccc;
+	}
+}
