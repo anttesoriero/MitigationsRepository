@@ -47,6 +47,7 @@ body
 .topnav .search-container
 {
 	float: right;
+	
 }
 .topnav input[type=text] 
 {
@@ -57,6 +58,7 @@ body
 	border-style: solid;
 	border-color: #333333;
 	border-radius: 20px 20px 20px 20px;
+	background-color: white;
 }
 
 .topnav .search-container button
@@ -65,7 +67,6 @@ body
 	padding: 6px;
 	margin-top: 8px;
 	margin-right: 16px;
-	background: #fff;
 	font-size: 20px;
 	border: 1px;
 	border-style: solid;
@@ -159,6 +160,18 @@ body
 	left: 55%;
 	background-color: #fff;
 	text-align: center;
+}
+
+.bodySearch input[type=text] 
+{
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 20px;
+	border: 1px;
+	border-style: solid;
+	border-color: #333333;
+	border-radius: 20px 20px 20px 20px;
+	background-color: white;
 }
 
 
