@@ -1,58 +1,40 @@
-<html>  
-  
-<head>  
+<!DOCTYPE html>
+<html>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" type="text/css" href="mitigationStyle.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="testjava.js"></script>
-    <title>  
-        Mitigation Repository
-    </title>  
-</head> 
-  
-<body>  
-<div class="topnav">
-    <a class="active" href="#home">Mitigation Repository  <i class="fa fa-database"></i></a> 
-    <div class="search-container">
-      <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search" results="0" /> 
-      <button type="submit"><i class="fa fa-search"></i></button></form>
-    </div></div>
-			<h2 style = "float: left">
-				Search Results
-				</h2> 
-			</br>
-			</br>
-			<div class="left">
-			<div class="bodySearch">
-			<input type="text" placeholder="Search Mitigation">
-			</div>
-			<div class="dropdown">
-			<button onclick="dropDown()" class="dropbtn">Select Category</button>
-			<div id="myDropdown" class="dropdown-content">
-			<a href="#">Administrative</a>
-			<a href="#">Physical</a>
-			<a href="#">Technical</a>
-			</div>
-			</div>
-			<div class="dropdown">
-			<button onclick="dropDown2()" class="dropbtn">Select Type</button>
-			<div id="myDropdown2" class="dropdown-content">
-			<a href="#">Directive</a>
-			<a href="#">Preventative</a>
-			<a href="#">Detevtive</a>
-			<a href="#">Corrective</a>
-			<a href="#">Recovery</a>
-			</div>
-			</div>
-			</div>
-			<div class="v1"></div>
-			
-			<div class="right">
-		  </div>		
-			
-	
-  
-</body>  
-  
-</html>                                       
+<title> Mitigation Repository </title>
+</head>
+
+<body>
+<div class="topnav"> <a class="active" href="#home">Mitigation Repository <i class="fa fa-database"></i></a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search" results="0" />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<h2 style = "float: left"> Search Results </h2>
+<br>
+<br>
+<br>
+<div class="left">
+  <div class="bodySearch">
+    <input type="text" placeholder="Search Mitigation">
+    <button onclick="dropDown2()" class="dropbtn">Select Type</button>
+    <button onclick="dropDown()" class="dropbtn">Select Category</button>
+  </div>
+  <div class="dropdown">
+    <div id="myDropdown" class="dropdown-content"> <a href="#">Administrative</a> <a href="#">Physical</a> <a href="#">Technical</a> </div>
+  </div>
+  <div class="dropdown">
+    <div id="myDropdown2" class="dropdown-content"> <a href="#">Directive</a> <a href="#">Preventative</a> <a href="#">Detevtive</a> <a href="#">Corrective</a> <a href="#">Recovery</a> </div>
+  </div>
+</div>
+<div class="v1"></div>
+<div class="right"> </div>
+</body>
+</html>
