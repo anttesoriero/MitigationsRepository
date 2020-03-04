@@ -9,20 +9,26 @@ A software tool could offer a means to organize mitigation options and procedure
 
 ## Sprint Plans
 ### Sprint 0:
--	We meet with Mr. Resch and Mr. Munilla to discuss future sprints and prepare the Spring 1 product backlog
+###### 3 February 2020
+-	We meet with sponsors to discuss future sprints and prepare the Spring 1 product backlog
 ### Sprint 1:
+###### 17 February 2020
 -	Creating the basic framework for the website that will host the database.
 -	Implement GUIs for the users to search and adding to the database
 ### Sprint 2:
+###### 2 March 2020
 -	Finishing up the website by having separate pages for adding to a new or existing database
 -	Staring working on the basic infrastructure for the database
-Sprint 3:
+### Sprint 3:
+###### 23 March 2020
 -	Testing the database to make sure commands work and that it can handle multiple task at once
 -	Going over the website to change anything that our sponsor want and that needs to be refined
 ### Sprint 4:
+###### 6 April 2020
 -	Set up the connection between the web site and the database
 -	Test simple command
 ### Sprint 5:
+###### 20 April 2020
 -	Testing all feature to make sure that everything is functional
 -	Talk about implementation of the product
 
