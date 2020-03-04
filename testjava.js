@@ -42,11 +42,12 @@ function results()
 
 function fillDiv(trigger)
 {
-	textVal = "";
+	var textVal = "";
 	var sub=document.getElementById('rightResultDisplay');
 	if (trigger != null)
 	{
-	var txtVal = document.getElementById(trigger);
+		txtVal = "YOU CLICKED A THIIIIIIIING";
+	txtVal = document.getElementById(trigger).innerHTML;
 	}
 	sub.innerHTML = txtVal;
 }
