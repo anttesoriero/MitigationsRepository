@@ -40,6 +40,17 @@ function results()
         }
 }
 
+function fillDiv(trigger)
+{
+	textVal = "";
+	var sub=document.getElementById('rightResultDisplay');
+	if (trigger != null)
+	{
+	var txtVal = document.getElementById(trigger);
+	}
+	sub.innerHTML = txtVal;
+}
+
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
