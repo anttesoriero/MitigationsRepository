@@ -23,7 +23,7 @@
 <br>
 <div class="left">
   <div class="bodySearch">
-    <input type="text" placeholder="Search Mitigation">
+    <input type="text" id="myInput" onkeyup="results()" placeholder="Search Mitigation">
     <button onclick="dropDown2()" class="dropbtn">Select Type</button>
     <button onclick="dropDown()" class="dropbtn">Select Category</button>
   </div>
@@ -33,8 +33,27 @@
   <div class="dropdown">
     <div id="myDropdown2" class="dropdown-content"> <a href="#">Directive</a> <a href="#">Preventative</a> <a href="#">Detevtive</a> <a href="#">Corrective</a> <a href="#">Recovery</a> </div>
   </div>
+  <div class="results">
+    <ul id="myUL">        
+      <li>
+          <div class="wholeResult">
+          <a href="#"><strong class="title">Mitigation Match 1 Title</strong><br>
+        <div class="resultLeft"> <span class="desc">A short description of the mitigation</span><br>
+          <span class="further">Further Information about the mitigation</span><br>
+        </div>
+        <div class="resultRight"> <span class="cat">Category Name</span><br>
+          <span class="type">Type Name</span> </div></a>
+          </div></li>
+      <li><a href="#">A Thing</a></li>
+      <li><a href="#">Ferris Wheel</a></li>
+      <li><a href="#">Whine and Dine</a></li>
+      <li><a href="#">Hatred of Existance</a></li>
+      <li><a href="#">Does this even work?</a></li>
+      <li><a href="#">Stuff</a></li>
+    </ul>
+  </div>
 </div>
-<div class="v1"></div>
+<div class="v2"></div>
 <div class="right"> </div>
 </body>
 </html>

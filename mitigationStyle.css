@@ -5,7 +5,7 @@
 
 body
 {
-	margin: 10px;
+	margin: 1px;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, sans-serif;
 }
 
@@ -146,7 +146,15 @@ body
 	margin-left: -1px;
 	top: 20%;
 }
-
+.v2
+{
+	border-left: 2px solid black;
+	height: 400px;
+	position: absolute;
+	left: 55%;
+	margin-left: -1px;
+	top: 20%;
+}
 .left
 {
 	float: left;
@@ -180,7 +188,93 @@ body
 	border-radius: 20px 20px 20px 20px;
 	background-color: white;
 }
+/*Results List Stuff*/
+#myUL
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
+#myUL li a
+{
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: #FFF;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+        
+}
+
+#myUL li a:hover:not(.header)
+{
+    background-color: #eee;
+}
+
+.title
+{
+    background-color: #ddd;
+    float: left;
+    border-bottom-color: #000;
+    border-bottom: 1px;
+}
+
+.desc
+{
+    float: left;
+    font-size: 16px;
+    width: 60%;
+    
+}
+
+.further
+{
+    float:left;
+    font-size:14px;
+    width: 60%;
+}
+.cat
+{
+    float: right;
+    font-size: 16px;
+    border: 1px;
+    border-color: black;
+    background-color: #ddd;
+    border-style: solid;
+    min-width: 160px;
+    vertical-align: -50px;
+}
+
+.type
+{
+    float: right;
+    font-size: 16px;
+    border: 1px;
+    border-color: black;
+    background-color: #ddd;
+    border-style: solid;
+    min-width: 160px;
+}
+.resultLeft
+{
+    float: left;
+    width: 75%;
+}
+
+.resultRight
+{
+    float: right;
+}
+
+.wholeResult
+{
+    border-style: solid;
+    border-color: black;
+    border: 2px;
+}
 
 /*When less than 600 px, stack links and search field */
 @media screen and (max-width: 600px)
