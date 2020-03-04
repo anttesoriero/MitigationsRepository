@@ -157,7 +157,6 @@ body
 }
 .left
 {
-	float: left;
 	position: absolute;
 	right: 55%;
 	left: 5%;
@@ -165,15 +164,32 @@ body
 	text-align: center;
 	overflow: auto;
 }
-
+.leftSearch
+{
+	position: absolute;
+	right: 55%;
+	left: 5%;
+	background-color: #fff;
+	text-align: left;
+	overflow: auto;
+}
 .right
 {
-	float: left;
 	position: absolute;
 	left: 55%;
 	right: 5%;
 	background-color: #fff;
 	text-align: center;
+	overflow: auto;
+}
+
+.rightSearch
+{
+	position: absolute;
+	left: 55%;
+	right: 5%;
+	background-color: #fff;
+	text-align: left;
 	overflow: auto;
 }
 
@@ -216,25 +232,25 @@ body
 
 .title
 {
-    background-color: #ddd;
-    float: left;
-    border-bottom-color: #000;
-    border-bottom: 1px;
+    align-self: self-start;
+    text-align: left;
 }
 
 .desc
 {
-    float: left;
     font-size: 16px;
     width: 60%;
+    text-align: left;
+    margin-left: 5px;
     
 }
 
 .further
 {
-    float:left;
     font-size:14px;
     width: 60%;
+    text-align: left;
+    margin-left: 5px;
 }
 .cat
 {
@@ -260,24 +276,23 @@ body
 }
 .resultLeft
 {
-    float: left;
-    width: 75%;
+    max-width: 70%;
 }
 
 .resultRight
 {
-    float: right;
+    max-width: 20%;
 }
 
 .wholeResult
 {
-    border-style: solid;
-    border-color: black;
-    border: 2px;
+    border: 2px solid black;  
+    overflow: hidden;
+    /*max-height: 140px;*/
 }
 
 /*When less than 600 px, stack links and search field */
-@media screen and (max-width: 600px)
+@media only screen and (max-width: 600px)
 {
 	.topnav .search-container
 	{
