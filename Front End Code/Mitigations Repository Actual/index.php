@@ -21,8 +21,8 @@ else {
 ?>
 </h2>
 <div class="bodySearch">
-    <form action="./searchprototype.htm">
-        <input type="text" placeholder="Search Mitigation">
+    <form>
+        <input type="text" id="searchField" placeholder="Search Mitigation">
     </form>
 </div>
 </div>
