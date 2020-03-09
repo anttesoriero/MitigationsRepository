@@ -10,5 +10,13 @@ addListeners();
 function addListeners()
 {
     //Listener for going to the search page
-    $('#searchField').on('enter')
+    $('#searchField').on('submit', function(evt) {
+        evt.stopPropagation();
+
+        ajaxURL = 'controller/php/search.php';
+
+        $.post(ajaxURL, $('#searchField').serialize()),processSearch);
+
+
+}
 }
