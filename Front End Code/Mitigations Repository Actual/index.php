@@ -30,7 +30,7 @@ else {
 <div class="right">
     <h2> Create new Mitigation </h2>
     <div class="bodySearch">
-        <input type="text" placeholder="Enter Mitigation">
+        <input type="button" value="Enter New Mitigation" id="newMitigation">
     </div>
 </div>
 
