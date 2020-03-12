@@ -1,0 +1,335 @@
+* 
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	margin: 1px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, sans-serif;
+}
+
+/* Add a grey bg to top nav */
+.topnav 
+{
+	overflow: hidden;
+	background-color: #eeeeee;
+	margin: 0;
+	
+}
+
+/*Style the links inside the navigation bar*/
+.topnav a
+{
+	float:left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration:none;
+	font-size: 20px;
+}
+
+/* Change the color of links on hover*/
+.topnav a:hover
+{
+	background-color: #ccc;
+	color: black;
+}	
+
+/*style the "active" element to highlight the ucrrent page */
+.topnav a:active
+{
+	background-color: #2196F3;
+	color: white;
+}
+
+/*style the search box*/
+.topnav .search-container
+{
+	float: right;
+	
+}
+.topnav input[type=text] 
+{
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 20px;
+	border: 1px;
+	border-style: solid;
+	border-color: #333333;
+	border-radius: 20px 20px 20px 20px;
+	background-color: white;
+}
+
+.topnav .search-container button
+{
+	float: right;
+	padding: 6px;
+	margin-top: 8px;
+	margin-right: 16px;
+	font-size: 20px;
+	border: 1px;
+	border-style: solid;
+	border-color: #333333;
+	cursor: pointer;
+	border-radius: 0px 20px 20px 0px;
+}
+
+.topnav .search-container button:hover
+{
+	background: #ccc;
+}
+
+.h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+.i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #FFFFFF;
+  color: black;
+  padding: 16px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #FFFFFF;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+.v1
+{
+	border-left: 2px solid black;
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	margin-left: -1px;
+	top: 20%;
+}
+.v2
+{
+	border-left: 2px solid black;
+	height: 400px;
+	position: absolute;
+	left: 55%;
+	margin-left: -1px;
+	top: 20%;
+}
+.left
+{
+	position: absolute;
+	right: 55%;
+	left: 5%;
+	background-color: #fff;
+	text-align: center;
+}
+.leftSearch
+{
+	position: absolute;
+	right: 55%;
+	left: 5%;
+	background-color: #fff;
+	text-align: left;
+	overflow: auto;
+    max-height: 70vh;
+}
+.right
+{
+	position: absolute;
+	left: 55%;
+	right: 5%;
+	background-color: #fff;
+	text-align: center;
+}
+
+.rightSearch
+{
+	position: absolute;
+	left: 55%;
+	right: 5%;
+	background-color: #fff;
+	text-align: left;
+	overflow: auto;
+	    max-height: 70vh;
+}
+
+.bodySearch input[type=text] 
+{
+	padding: 6px;
+	margin-top: 4px;
+	font-size: 20px;
+	border: 1px;
+	border-style: solid;
+	border-color: #333333;
+	border-radius: 20px 20px 20px 20px;
+	background-color: white;
+}
+/*Results List Stuff*/
+#myUL
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a
+{
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: #FFF;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+        
+}
+
+#myUL li a:hover:not(.header)
+{
+    background-color: #eee;
+}
+
+.title
+{
+    align-self: self-start;
+    text-align: left;
+}
+
+.desc
+{
+    font-size: 16px;
+    width: 60%;
+    text-align: left;
+    margin-left: 5px;
+    
+}
+
+.further
+{
+    font-size:14px;
+    width: 60%;
+    text-align: left;
+    margin-left: 5px;
+}
+.cat
+{
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px;
+    border-color: black;
+    background-color: #ddd;
+    border-style: solid;
+    min-width: 160px;
+    margin-bottom: 5px;
+}
+
+.type
+{
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px;
+    border-color: black;
+    background-color: #ddd;
+    border-style: solid;
+    min-width: 160px;
+    margin-top: 5px;
+}
+.resultLeft
+{
+    /*float: left; */
+    max-width: 70%;
+}
+
+.resultRight
+{
+    float: right;
+    position: relative;
+    width: 25%;
+    top: 25px;
+    right: 10px;
+}
+
+.wholeResult
+{
+    border: 2px solid black;  
+    overflow: hidden;
+    max-height: 140px;
+	text-decoration: none;
+}
+
+/*When less than 600 px, stack links and search field */
+@media only screen and (max-width: 600px)
+{
+	.topnav .search-container
+	{
+		float:none;
+	}
+	.topnav a, .topnav input[type=text], .topnav .search-container button
+	{
+		float:none;
+		display: block;
+		text-align: left;
+		width: 100%;
+		margin: 0;
+		padding: 14px;
+	}
+	.topnav input[type=text]
+	{
+		border: 1px solid #ccc;
+	}
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: green;
+}
+
