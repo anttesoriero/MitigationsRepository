@@ -12,7 +12,7 @@ if (!isset($_POST['password'])) {
 $hostname = '127.0.0.1';   // local host.  web server is db server
 $username = trim($_POST['username']);
 $password = trim($_POST['password']);
-$dbname   = 'NAMEGOESHERE';
+$dbname   = 'Mitigation_Repository';
 
 $_SESSION["username"] = $username;
 $_SESSION["password"] = $password;
