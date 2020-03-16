@@ -99,6 +99,7 @@ body
   color: black;
   padding: 16px;
   font-size: 14px;
+  margin-left: 585px;
   border: grooved;
   cursor: pointer;
 }
@@ -196,6 +197,7 @@ body
 .bodySearch input[type=text] 
 {
 	padding: 6px;
+	margin-left: 550px;
 	margin-top: 1px;
 	font-size: 20px;
 	border: 1px;
@@ -208,6 +210,7 @@ body
 .descriptionSearch input[type=text] 
 {
 	padding: 6px;
+	margin-left: 550px;
 	margin-top:1px;
 	height:100px;
 	width: 300px;
@@ -266,38 +269,6 @@ body
     text-align: left;
     margin-left: 5px;
 }
-.cat
-{
-    box-sizing: border-box;
-    font-size: 16px;
-    border: 1px;
-    border-color: black;
-    background-color: #ddd;
-    border-style: solid;
-    min-width: 160px;
-    margin-bottom: 5px;
-}
-
-.type
-{
-    box-sizing: border-box;
-    font-size: 16px;
-    border: 1px;
-    border-color: black;
-    background-color: #ddd;
-    border-style: solid;
-    min-width: 160px;
-    margin-top: 5px;
-}
-
-.wholeResult
-{
-    border: 2px solid black;  
-    overflow: hidden;
-    max-height: 140px;
-	text-decoration: none;
-}
-
 /*When less than 600 px, stack links and search field */
 @media only screen and (max-width: 600px)
 {
@@ -325,6 +296,7 @@ body
   border: grooved;
   color: black;
   padding: 20px;
+  margin-left: 100px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
