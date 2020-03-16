@@ -289,20 +289,6 @@ body
     min-width: 160px;
     margin-top: 5px;
 }
-.resultLeft
-{
-    /*float: left; */
-    max-width: 70%;
-}
-
-.resultRight
-{
-    float: right;
-    position: relative;
-    width: 25%;
-    top: 25px;
-    right: 10px;
-}
 
 .wholeResult
 {
