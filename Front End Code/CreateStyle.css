@@ -100,7 +100,7 @@ body
   padding: 16px;
   font-size: 14px;
   margin-left: 585px;
-  border: grooved;
+  border: none;
   cursor: pointer;
 }
 
