@@ -99,7 +99,7 @@ body
   color: black;
   padding: 16px;
   font-size: 14px;
-  border: none;
+  border: grooved;
   cursor: pointer;
 }
 
@@ -209,7 +209,7 @@ body
 {
 	padding: 6px;
 	margin-top:1px;
-	height:150px;
+	height:100px;
 	width: 300px;
     font-size:14pt;
 	border: 1px;
