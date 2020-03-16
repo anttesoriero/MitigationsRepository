@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="CreateStyle.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="create.js"></script>
-<title> Mitigation Repository </title>
+<title> Create Mitigation </title>
 </head>
 
 <body>
@@ -19,26 +19,31 @@
 </div>
 <div class="center">
 <h2 style = "float: center"> Create a Mitigation </h2>
+
 <h3 style = "float: center"> Enter Mitigation Title </h3>
   <div class="bodySearch">
-  <form action="./searchprototype.htm">
+  <form action="./createprototype.htm">
     <input type="text" placeholder="Title">
 	</form>
   </div>
+  
   <h3 style = "float: center"> Enter Mitigation Description </h3>
-    <div class="bodySearch">
-  <form action="./searchprototype.htm">
-    <input type="text" placeholder="Description">
+  <div class="descriptionSearch">
+  <form action="./createprototype.htm">
+    <input type="text" placeholder="Mitigation Description">
 	</form>
   </div>
-  <h2 style = "float: center"> Category: </h2>
+  
+ 
+  <div>
+  <h3 style = "float: center"> Category: </h3>
   <p>
   </p><div class="dropdown">
     <button onclick="dropDown()" class="dropbtn">Select Category</button>
     <div id="myDropdown" class="dropdown-content"> <a href="#">Administrative</a> <a href="#">Physical</a> <a href="#">Technical</a> </div>
   </div>
   <p></p>
-  <h2 style = "float: center"> Type: </h2>
+  <h3 style = "float: center"> Type: </h3>
   <p> 
     <!--<form>
 			<select>
@@ -55,10 +60,11 @@
   </div>
   <p></p>
   <div class="bodySearch">
-  <form action="./searchprototype.htm">
-    <button type="button">Create Mitigation</button>
+  <form action="./createprototype.htm">
+    <button class="button button4">Create Mitigation</button>
 	</form>
   </div>
+</div>
 </div>
 
 </body>
