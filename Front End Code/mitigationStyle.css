@@ -92,7 +92,6 @@ body
   display: inline-block;
   padding: 3px;
 }
-
 /* Dropdown Button */
 .dropbtn {
   background-color: #FFFFFF;
@@ -319,3 +318,4 @@ body
 		border: 1px solid #ccc;
 	}
 }
+
