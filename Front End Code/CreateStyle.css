@@ -138,24 +138,7 @@ body
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
-.v1
-{
-	border-left: 2px solid black;
-	height: 500px;
-	position: absolute;
-	left: 50%;
-	margin-left: -1px;
-	top: 20%;
-}
-.v2
-{
-	border-left: 2px solid black;
-	height: 400px;
-	position: absolute;
-	left: 55%;
-	margin-left: -1px;
-	top: 20%;
-}
+
 .left
 {
 	position: absolute;
