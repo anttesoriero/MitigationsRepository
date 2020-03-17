@@ -1,0 +1,82 @@
+* 
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	margin: 1px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, sans-serif;
+}
+
+/* Add a grey bg to top nav */
+.topnav 
+{
+	overflow: hidden;
+	background-color: #eeeeee;
+	margin: 0;
+	
+}
+
+/*Style the links inside the navigation bar*/
+.topnav a
+{
+	float:left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration:none;
+	font-size: 20px;
+}
+
+/* Change the color of links on hover*/
+.topnav a:hover
+{
+	background-color: #ccc;
+	color: black;
+}	
+
+/*style the "active" element to highlight the ucrrent page */
+.topnav a:active
+{
+	background-color: #2196F3;
+	color: white;
+}
+
+/*style the search box*/
+.topnav .search-container
+{
+	float: right;
+	
+}
+.topnav input[type=text] 
+{
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 20px;
+	border: 1px;
+	border-style: solid;
+	border-color: #333333;
+	border-radius: 20px 20px 20px 20px;
+	background-color: white;
+}
+
+.topnav .search-container button
+{
+	float: right;
+	padding: 6px;
+	margin-top: 8px;
+	margin-right: 16px;
+	font-size: 20px;
+	border: 1px;
+	border-style: solid;
+	border-color: #333333;
+	cursor: pointer;
+	border-radius: 0px 20px 20px 0px;
+}
+
+.topnav .search-container button:hover
+{
+	background: #ccc;
+}

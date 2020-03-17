@@ -1,7 +1,4 @@
-* 
-{
-	box-sizing: border-box;
-}
+
 
 body
 {
@@ -139,43 +136,6 @@ body
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
-.left
-{
-	position: absolute;
-	right: 55%;
-	left: 5%;
-	background-color: #fff;
-	text-align: center;
-}
-.leftSearch
-{
-	position: absolute;
-	right: 55%;
-	left: 5%;
-	background-color: #fff;
-	text-align: left;
-	overflow: auto;
-    max-height: 70vh;
-}
-.right
-{
-	position: absolute;
-	left: 55%;
-	right: 5%;
-	background-color: #fff;
-	text-align: center;
-}
-
-.rightSearch
-{
-	position: absolute;
-	left: 55%;
-	right: 5%;
-	background-color: #fff;
-	text-align: left;
-	overflow: auto;
-	    max-height: 70vh;
-}
 
 .bodySearch input[type=text] 
 {
@@ -203,54 +163,6 @@ body
 	border-color: #333333;
 	border-radius: 20px 20px 20px 20px;
 	background-color: white;
-}
-/*Results List Stuff*/
-#myUL
-{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-#myUL li a
-{
-    border: 1px solid #ddd;
-    margin-top: -1px;
-    background-color: #FFF;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
-    display: block;
-        
-}
-
-#myUL li a:hover:not(.header)
-{
-    background-color: #eee;
-}
-
-.title
-{
-    align-self: self-start;
-    text-align: left;
-}
-
-.desc
-{
-    font-size: 16px;
-    width: 60%;
-    text-align: left;
-    margin-left: 5px;
-    
-}
-
-.further
-{
-    font-size:14px;
-    width: 60%;
-    text-align: left;
-    margin-left: 5px;
 }
 /*When less than 600 px, stack links and search field */
 @media only screen and (max-width: 600px)
