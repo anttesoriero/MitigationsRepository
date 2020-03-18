@@ -1,4 +1,4 @@
-/*search page listeners  */
+/*create mitigation page listeners  */
 
 console.log('additionListeners.js loaded.');
 
@@ -24,10 +24,5 @@ addListeners();
  *****************************************************/
 function addListeners() {
 
-    try{
 
-    }
-    catch (e) {
-        console.log("Error in addMitigation.php " + e);
-    }
 }
