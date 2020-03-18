@@ -92,3 +92,19 @@ body
   display: inline-block;
   padding: 3px;
 }
+.left
+{
+	position: absolute;
+	right: 55%;
+	left: 5%;
+	background-color: #fff;
+	text-align: center;
+}
+.right
+{
+	position: absolute;
+	left: 55%;
+	right: 5%;
+	background-color: #fff;
+	text-align: center;
+}
