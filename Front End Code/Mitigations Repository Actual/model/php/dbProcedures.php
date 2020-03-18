@@ -12,9 +12,19 @@
  *  RETURN              Set of database records
  */
 
-function getMitigations($dbh)
+function getMitigations($dbh, $num)
 {
     try {
-    $sql = "CALL Mitigation_Repository"
+    $sql = "CALL Mitigation_Repository.Mitigation_Search(?);";
+    $stmt = $dbh->prepare($sql);
+    $stmt->$bindValue(1, $num, PDO::PARAM_INIT);
+    $stmt->execute();
+    $results = $stmt->fetchAll(PDO::FETCH_OBJ);
+    echo json_encode($results);
+
     } catch (PDOException &e)
+    {
+        die ('unable to search mitigations : ' . $e->getMessage() );
+    }
 }
+

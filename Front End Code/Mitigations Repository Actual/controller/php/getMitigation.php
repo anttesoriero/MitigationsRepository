@@ -5,7 +5,7 @@ if(!include('../../model/php/dbProcedures.php')) {
 }
 
 if(!ifset($_GET['num'])) {
-    $num = 10; //default to 10 files
+    $num = 25; //default to 25 files
 }
 
 $hostname = '127.0.0.1';  //local host - our web server will be our db server.
