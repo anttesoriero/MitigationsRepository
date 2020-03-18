@@ -102,3 +102,19 @@ body
 	border-radius: 20px 20px 20px 20px;
 	background-color: white;
 }
+
+.button {
+  background-color: #FFFFFF;
+  border: solid;
+  color: black;
+  padding: 13px;
+  margin-left: 550px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 3px 2px;
+}
+.button:hover {
+  background-color: white;
+}
