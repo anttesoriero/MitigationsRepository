@@ -6,9 +6,15 @@
 <head>
     <title>Mitigation Repository</title>
     <meta charset = 'utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link id='mainCSS' rel="stylesheet" type="text/css" href="view/css/main.css" />
+    <link rel="stylesheet" type="stylesheet" href="view/css/mitigationStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+
 <body>
+<div class="topnav"> <a class="active" href="#home">Mitigation Repository <i class="fa fa-database"></i></a>
 <h2 id="loginInstructions">
     <?php
 echo session_id();
