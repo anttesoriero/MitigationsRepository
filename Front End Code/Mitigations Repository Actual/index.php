@@ -35,9 +35,7 @@ else {
 <div class="v1"></div>
 <div class="right">
     <h2> Create new Mitigation </h2>
-    <div class="bodySearch">
-        <input type="button" value="Enter New Mitigation" id="newMitigation">
-    </div>
+    <input type="button" value="Enter New Mitigation" id="newMitigation">
 </div>
 
 <!-- loading javascript -->
