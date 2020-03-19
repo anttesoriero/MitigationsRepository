@@ -31,3 +31,68 @@ function addListeners() {
         console.log("Error in getMitigation.php " + e);
     }
 }
+
+/****************************************************
+ *                  Callbacks                       *
+ ****************************************************/
+
+function processResults(jsonResults) {
+
+    //this parses the json results so JS can use them.
+    //plus this gives each result its own listener
+    //this actually echos what I did in the search prototype! - Theresa
+
+    var jsonData = JSON.parse(jsonResults);
+    var numRecords = jsonData.length;
+    console.log(jsonData);
+
+    var htmlString = "<h3> Results </h3>";
+    var id;
+    for (var i = 0; i < numRecords; i++)
+    {
+        //This will make each row a unique span with a unique ID!
+        id = "result" + i;
+        htmlString += "<li><span id='" + id + "'>" + jsonData[i].title + id + "</span></li>";
+    }
+
+    htmlString += "</ul>";
+
+    $('#left').html(htmlString);
+
+    //Now we can add the elements to the page.
+
+    for (var i = 0; i < numRecords; i++)
+    {
+        elementID = "#result" + i;
+        ajaxURL = '../../controller/php/getMitigation.php?mitigation_id=' + jsonData[i].mitigation_id;
+        console.log(ajaxURL);
+        var mitigationData = new Array();
+
+        $(elementID).on('click', function(evt)
+        {
+            try
+            {
+                console.log("ID-" + $(elementID).attr('id'));
+                $('#right').html($(elementID).attr('onclick'));
+                mitigationData[i] = ajaxFetch(ajaxURL, processMitigationData);
+            }
+            catch (e)
+            {
+                console.log("Error in getMitigation.php" + e);
+            }
+        });
+    }
+}
+
+function processMitigationData(jsonResults)
+{
+    $('#center').html(jsonResults);
+
+    var jsonData = JSON.parse(jsonResults);
+    console.log(jsonData);
+}
+
+function destroy(message)
+{
+    $('#right').html(message);
+}
