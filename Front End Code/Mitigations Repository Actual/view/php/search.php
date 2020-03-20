@@ -44,5 +44,7 @@
 <script type="text/javascript" src="../js/AjaxFunctions.js"></script>
 <!-- load listeners for this page -->
 <script type="text/javascript" src="../js/searchListeners.js"></script>
+<!-- load other functionality -->
+<script type="text/javascript" src="../js/searchFunctions.js"></script>
 </body>
 </html>
