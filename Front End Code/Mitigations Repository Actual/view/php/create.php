@@ -28,15 +28,15 @@
 </div>
 <div class = "user">
     <?php
-        echo session_id();
-        if (isset($_SESSION['username']))
-        {
-            echo ' Logged in as ' . $_SESSION['username'];
-        }
-        else
-        {
-            echo 'Guest Access';
-        }
+    echo session_id();
+    if (isset($_SESSION['username']))
+    {
+        echo ' Logged in as ' . $_SESSION['username'];
+    }
+    else
+    {
+        echo 'Guest Access';
+    }
     ?>
 </div>
 <div class="leftSearch">
