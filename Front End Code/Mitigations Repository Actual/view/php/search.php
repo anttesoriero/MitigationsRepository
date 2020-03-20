@@ -22,7 +22,17 @@
         }
     ?>
 </div>
+<div class="leftSearch">
+    <div class="results">
+    </div>
+</div>
 
+<div class="v2">
+
+</div>
+<div class="rightSearch" id="rightResultDisplay">
+
+</div>
 
 
 
