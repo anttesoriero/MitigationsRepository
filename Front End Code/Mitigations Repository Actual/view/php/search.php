@@ -23,7 +23,7 @@
     ?>
 </div>
 <div class="leftSearch">
-    <div class="results">
+    <div class="results" id="allResults">
     </div>
 </div>
 

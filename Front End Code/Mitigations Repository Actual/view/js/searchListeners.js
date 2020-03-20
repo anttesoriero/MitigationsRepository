@@ -10,7 +10,7 @@ $('#left').load('../shtml/searchResults.shtml');
 
 try {
     ajaxURL = '../../controller/php/searchMitigation.php';
-    mitigations = ajaxFetch(ajaxURL, processMitigations);
+    mitigations = ajaxFetch(ajaxURL, processResults);
 }
 catch (e) {
     console.log("Error in getMitigation.php " + e );
@@ -50,14 +50,14 @@ function processResults(jsonResults) {
     var id;
     for (var i = 0; i < numRecords; i++)
     {
-        //This will make each row a unique span with a unique ID!
+        //This will make each row a unique div with a unique ID!
         id = "result" + i;
-        htmlString += "<li><span id='" + id + "'>" + jsonData[i].title + id + "</span></li>";
+        htmlString += "<li><div class='wholeResult' id='" + id + "'>" + jsonData[i].title + id + "</div></li>";
     }
 
     htmlString += "</ul>";
 
-    $('#left').html(htmlString);
+    $('#allResults').html(htmlString);
 
     //Now we can add the elements to the page.
 
@@ -73,7 +73,7 @@ function processResults(jsonResults) {
             try
             {
                 console.log("ID-" + $(elementID).attr('id'));
-                $('#right').html($(elementID).attr('onclick'));
+                $('#rightResultDisplay').html($(elementID).attr('onclick'));
                 mitigationData[i] = ajaxFetch(ajaxURL, processMitigationData);
             }
             catch (e)
@@ -86,7 +86,7 @@ function processResults(jsonResults) {
 
 function processMitigationData(jsonResults)
 {
-    $('#center').html(jsonResults);
+    $('#rightResultDisplay').html(jsonResults);
 
     var jsonData = JSON.parse(jsonResults);
     console.log(jsonData);
@@ -94,5 +94,5 @@ function processMitigationData(jsonResults)
 
 function destroy(message)
 {
-    $('#right').html(message);
+    $('#rightResultDisplay').html(message);
 }
