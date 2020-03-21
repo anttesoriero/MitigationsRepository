@@ -13,9 +13,9 @@ function addListeners()
     $('#searchField').on('submit', function(evt) {
         evt.stopPropagation();
 
-       /* ajaxURL = 'controller/php/search.php';*/
+       ajaxURL = 'controller/php/search.php';
 
-        /*$.post(ajaxURL, $('#searchField').serialize(),processSearch);*/
+       $.post(ajaxURL, $('#searchField').serialize(),processSearch);
 
 
 });

@@ -9,7 +9,7 @@ $('#left').load('../shtml/searchResults.shtml');
 /* Initial population of results  */
 
 try {
-    ajaxURL = '../../controller/php/searchMitigation.php';
+    ajaxURL = '../../controller/php/getMitigation.php';
     mitigations = ajaxFetch(ajaxURL, processResults);
 }
 catch (e) {
@@ -23,13 +23,18 @@ addListeners();
  *                        Listeners                  *
  *****************************************************/
 function addListeners() {
-
+    //Looking, I don't think this page actually needs listeners
+    //but I want this to exist JUST IN CASE.  ATM it's a wasted
+    //function.
+/*
     try{
 
     }
     catch (e) {
         console.log("Error in getMitigation.php " + e);
     }
+
+ */
 }
 
 /****************************************************
