@@ -15,7 +15,7 @@ function addListeners()
         console.log('search');
 
         // Make URL for Ajax call
-       ajaxURL = 'controller/php/getMitigation.php';
+      // ajaxURL = 'controller/php/getMitigation.php';
 
         // Serialize the form so Ajax can post it asynchronously, then post it.
       // $.post(ajaxURL, $('#searchForm').serialize(),processSearch);
@@ -27,12 +27,12 @@ function addListeners()
         evt.stopPropagation();
         console.log('CLICK');
         // Make URL for Ajax call
-        ajaxURL = 'controller/php/login.php';
+        //ajaxURL = 'controller/php/login.php';
 
         // Serialize the form so Ajax can post it asynchronously, then post it.
-        $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
-        console.log('AJAX call submitted.');
-        //processLogin();
+       // $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
+       // console.log('AJAX call submitted.');
+        processLogin();
     });
 }
 
@@ -40,7 +40,7 @@ function addListeners()
  * Call-back Functions
  ******************************************************/
 
-function processLogin(loginData)
+function processLogin()
 {
     window.location.href='view/php/create.php';
 }
