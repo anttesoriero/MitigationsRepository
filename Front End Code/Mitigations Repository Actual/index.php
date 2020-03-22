@@ -26,6 +26,7 @@ else {
 }
 ?>
 </h2>
+
 <div class="bodySearch">
     <form id='searchForm'>
         <input type="text" id="searchField" name ='searchField' placeholder="Search Mitigation">
