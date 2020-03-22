@@ -27,15 +27,15 @@ else {
 ?>
 </h2>
 <div class="bodySearch">
-    <form>
-        <input type="text" id="searchField" placeholder="Search Mitigation">
+    <form id='searchForm'>
+        <input type="text" id="searchField" name ='searchField' placeholder="Search Mitigation">
     </form>
 </div>
 </div>
 <div class="v1"></div>
 <div class="right">
     <h2> Create new Mitigation </h2>
-    <input type="button" value="Enter New Mitigation" id="newMitigation">
+    <button type="button" id="newMitigation">Create new Mitigation</button>
 </div>
 
 <!-- loading javascript -->

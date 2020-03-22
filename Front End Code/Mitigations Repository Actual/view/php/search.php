@@ -5,6 +5,7 @@
 <head>
     <title>Mitigation Repository</title>
     <link id="mainCSS" rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link id="searchStyle" rel="stylesheet" type="text/css" href="../css/mitigationStyle.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
 
@@ -41,15 +42,17 @@
         }
     ?>
 </div>
+<h2 style = "float: left"> Search Results </h2>
+<br>
+<br>
+<br>
 <div class="leftSearch">
     <div class="results" id="allResults">
         I AM A DUMMY TEXT
     </div>
 </div>
 
-<div class="v2">
-
-</div>
+<div class="v2"></div>
 <div class="rightSearch" id="rightResultDisplay">
 
 </div>

@@ -10,25 +10,42 @@ addListeners();
 function addListeners()
 {
     //Listener for going to the search page
-    $('#searchField').on('submit', function(evt) {
+    $('#searchForm').on('submit', function(evt) {
         evt.stopPropagation();
+        console.log('search');
 
-       ajaxURL = 'controller/php/search.php';
+        // Make URL for Ajax call
+       ajaxURL = 'controller/php/getMitigation.php';
 
-       $.post(ajaxURL, $('#searchField').serialize(),processSearch);
+        // Serialize the form so Ajax can post it asynchronously, then post it.
+       $.post(ajaxURL, $('#searchForm').serialize(),processSearch);
 
 
 });
 
-    $('newMitigation').on('click', function(evt) {
+    $('#newMitigation').on('click', function(evt) {
         evt.stopPropagation();
-
+        console.log('CLICK');
         // Make URL for Ajax call
         ajaxURL = 'controller/php/login.php';
 
         // Serialize the form so Ajax can post it asynchronously, then post it.
         $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
         console.log('AJAX call submitted.');
+        //processLogin();
     });
 }
 
+/*******************************************************
+ * Call-back Functions
+ ******************************************************/
+
+function processLogin(loginData)
+{
+    window.location.href='view/php/create.php';
+}
+
+function processSearch(searchData)
+{
+    window.location.href='view/php/search.php';
+}
