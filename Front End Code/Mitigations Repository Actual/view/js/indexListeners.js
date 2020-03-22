@@ -18,9 +18,9 @@ function addListeners()
        ajaxURL = 'controller/php/getMitigation.php';
 
         // Serialize the form so Ajax can post it asynchronously, then post it.
-       $.post(ajaxURL, $('#searchForm').serialize(),processSearch);
-
-
+      // $.post(ajaxURL, $('#searchForm').serialize(),processSearch);
+      //  console.log('AJAX call submitted.');
+        processSearch();
 });
 
     $('#newMitigation').on('click', function(evt) {
@@ -45,7 +45,7 @@ function processLogin(loginData)
     window.location.href='view/php/create.php';
 }
 
-function processSearch(searchData)
+function processSearch()
 {
     window.location.href='view/php/search.php';
 }
