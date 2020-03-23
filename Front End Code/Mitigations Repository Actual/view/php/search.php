@@ -15,7 +15,6 @@
 <body>
 
 <?php
-
 $conn = new mysqli('localhost', 'username', 'password', 'database') 
 or die ('Cannot connect to db');
 
@@ -78,7 +77,6 @@ or die ('Cannot connect to db');
 <div class="rightSearch" id="rightResultDisplay">
 
 </div>
-
 
 
 <!-- Load all the javascript in -->
