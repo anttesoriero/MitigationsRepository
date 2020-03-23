@@ -26,6 +26,7 @@ else {
 }
 ?>
 </h2>
+<<<<<<< HEAD
 
 <?php
 $conn = new mysqli('localhost', 'username', 'password', 'database') 
@@ -51,16 +52,19 @@ or die ('Cannot connect to db');
     echo "</html>";
 ?>
 
+=======
+<div class = "left">
+>>>>>>> 34126f30c9af4e3fe07afda5bafb873c2915137f
 <div class="bodySearch">
-    <form>
-        <input type="text" id="searchField" placeholder="Search Mitigation">
+    <form id='searchForm'>
+        <input type="text" id="searchField" name ='searchField' placeholder="Search Mitigation">
     </form>
 </div>
 </div>
 <div class="v1"></div>
 <div class="right">
     <h2> Create new Mitigation </h2>
-    <input type="button" value="Enter New Mitigation" id="newMitigation">
+    <button type="button" id="newMitigation">Create new Mitigation</button>
 </div>
 
 <!-- loading javascript -->

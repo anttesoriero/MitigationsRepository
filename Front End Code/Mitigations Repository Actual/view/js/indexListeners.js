@@ -10,25 +10,46 @@ addListeners();
 function addListeners()
 {
     //Listener for going to the search page
-    $('#searchField').on('submit', function(evt) {
+    $('#searchForm').on('submit', function(evt)
+    {
+        evt.preventDefault();
         evt.stopPropagation();
-
-       ajaxURL = 'controller/php/search.php';
-
-       $.post(ajaxURL, $('#searchField').serialize(),processSearch);
-
-
-});
-
-    $('newMitigation').on('click', function(evt) {
-        evt.stopPropagation();
+        console.log('search');
 
         // Make URL for Ajax call
-        ajaxURL = 'controller/php/login.php';
+      // ajaxURL = 'controller/php/getMitigation.php';
 
         // Serialize the form so Ajax can post it asynchronously, then post it.
-        $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
-        console.log('AJAX call submitted.');
+      // $.post(ajaxURL, $('#searchForm').serialize(),processSearch);
+      //  console.log('AJAX call submitted.');
+        processSearch();
+    });
+
+    $('#newMitigation').on('click', function(evt)
+    {
+        evt.stopPropagation();
+        console.log('CLICK');
+        // Make URL for Ajax call
+       //ajaxURL = 'controller/php/login.php';
+
+        // Serialize the form so Ajax can post it asynchronously, then post it.
+      // $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
+       // console.log('AJAX call submitted.');
+        processLogin();
     });
 }
 
+/*******************************************************
+ * Call-back Functions
+ ******************************************************/
+
+function processLogin()
+{
+    window.location.href='view/php/create.php';
+}
+
+function processSearch()
+{
+
+   setTimeout("window.location.href='view/php/search.php';", 5000);
+}

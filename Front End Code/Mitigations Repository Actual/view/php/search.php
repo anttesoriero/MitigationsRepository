@@ -5,6 +5,7 @@
 <head>
     <title>Mitigation Repository</title>
     <link id="mainCSS" rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link id="searchStyle" rel="stylesheet" type="text/css" href="../css/mitigationStyle.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
 
@@ -15,7 +16,12 @@
 <body>
 
 <?php
+<<<<<<< HEAD
 $conn = new mysqli('localhost', 'username', 'password', 'database') 
+=======
+
+$conn = new mysqli('localhost', 'username', 'password', 'Mitigations_Repository')
+>>>>>>> 34126f30c9af4e3fe07afda5bafb873c2915137f
 or die ('Cannot connect to db');
 
     $result = $conn->query("select category, type from table");
@@ -37,7 +43,7 @@ or die ('Cannot connect to db');
     echo "</body>";
     echo "</html>";
 ?>
-<div class="topnav"> <a class="active" href="./test.htm"> Mitigation Repository <i class="fa fa-database"></i></a>
+<div class="topnav"> <a class="active" href="../../index.php"> Mitigation Repository <i class="fa fa-database"></i></a>
     <div class = "user">
         <?php
         echo session_id();
@@ -65,15 +71,17 @@ or die ('Cannot connect to db');
         }
     ?>
 </div>
+<h2 style = "float: left"> Search Results </h2>
+<br>
+<br>
+<br>
 <div class="leftSearch">
     <div class="results" id="allResults">
         I AM A DUMMY TEXT
     </div>
 </div>
 
-<div class="v2">
-
-</div>
+<div class="v2"></div>
 <div class="rightSearch" id="rightResultDisplay">
 
 </div>
