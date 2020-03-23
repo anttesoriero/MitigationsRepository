@@ -18,8 +18,8 @@
 $conn = new mysqli('localhost', 'username', 'password', 'database') 
 or die ('Cannot connect to db');
 
-    $result = $conn->query("select id, name from table");
-    
+    $result = $conn->query("select category, type from table");
+	
     echo "<html>";
     echo "<body>";
     echo "<select name='id'>";
@@ -27,9 +27,9 @@ or die ('Cannot connect to db');
     while ($row = $result->fetch_assoc()) {
 
                   unset($id, $name);
-                  $id = $row['id'];
-                  $name = $row['name']; 
-                  echo '<option value="'.$id.'">'.$name.'</option>';
+                  $category = $row['category'];
+                  $type = $row['type']; 
+                  echo '<option value="'.$category.'">'.$type.'</option>';
                  
 }
 
