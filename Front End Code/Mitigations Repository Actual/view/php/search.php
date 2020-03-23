@@ -16,12 +16,8 @@
 <body>
 
 <?php
-<<<<<<< HEAD
-$conn = new mysqli('localhost', 'username', 'password', 'database') 
-=======
 
 $conn = new mysqli('localhost', 'username', 'password', 'Mitigations_Repository')
->>>>>>> 34126f30c9af4e3fe07afda5bafb873c2915137f
 or die ('Cannot connect to db');
 
     $result = $conn->query("select category, type from table");

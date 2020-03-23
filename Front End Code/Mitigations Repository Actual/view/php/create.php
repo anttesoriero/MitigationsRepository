@@ -93,7 +93,7 @@
 </div>
 
 <?php
-$conn = new mysqli('localhost', 'username', 'password', 'database') 
+$conn = new mysqli('localhost', 'username', 'password', 'Mitigations_Repository')
 or die ('Cannot connect to db');
 
     $result = $conn->query("select category, type from table");
