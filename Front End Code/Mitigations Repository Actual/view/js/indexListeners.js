@@ -10,7 +10,9 @@ addListeners();
 function addListeners()
 {
     //Listener for going to the search page
-    $('#searchForm').on('submit', function(evt) {
+    $('#searchForm').on('submit', function(evt)
+    {
+        evt.preventDefault();
         evt.stopPropagation();
         console.log('search');
 
@@ -21,16 +23,17 @@ function addListeners()
       // $.post(ajaxURL, $('#searchForm').serialize(),processSearch);
       //  console.log('AJAX call submitted.');
         processSearch();
-});
+    });
 
-    $('#newMitigation').on('click', function(evt) {
+    $('#newMitigation').on('click', function(evt)
+    {
         evt.stopPropagation();
         console.log('CLICK');
         // Make URL for Ajax call
-        //ajaxURL = 'controller/php/login.php';
+       //ajaxURL = 'controller/php/login.php';
 
         // Serialize the form so Ajax can post it asynchronously, then post it.
-       // $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
+      // $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
        // console.log('AJAX call submitted.');
         processLogin();
     });
@@ -47,5 +50,6 @@ function processLogin()
 
 function processSearch()
 {
-    window.location.href='view/php/search.php';
+
+   setTimeout("window.location.href='view/php/search.php';", 5000);
 }
