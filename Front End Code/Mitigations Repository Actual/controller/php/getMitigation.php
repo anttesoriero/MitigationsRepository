@@ -17,7 +17,7 @@ $dbname = 'Mitigation_Repository';
 
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
-    getResults($dbh,$num);
+    getMitigations($dbh,$num);
 }
 catch(PDOException $e) {
     echo ('PDO error for user ' . $username . ' in "ConnectDB()" : ' . $e->getMessage() );
