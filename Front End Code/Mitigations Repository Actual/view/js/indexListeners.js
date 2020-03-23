@@ -51,5 +51,5 @@ function processLogin()
 function processSearch()
 {
 
-   setTimeout("window.location.href='view/php/search.php';", 5000);
+   window.location.href='view/php/search.php';
 }
