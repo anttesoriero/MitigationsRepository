@@ -51,7 +51,6 @@ or die ('Cannot connect to db');
     echo "</html>";
 ?>
 
-=======
 <div class = "left">
 <div class="bodySearch">
     <form id='searchForm'>
