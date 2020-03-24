@@ -69,23 +69,9 @@
         </form>
     </div>
 
-
-    <div>
-        <h3 style="margin-left: 600px;"> Category: </h3>
-        <p>
-        </p><div class="dropdown">
-            <button onclick="dropDown()" class="dropbtn">Select Category</button>
-            <div id="myDropdown" class="dropdown-content"> <a href="#">Administrative</a> <a href="#">Physical</a> <a href="#">Technical</a> </div>
-        </div>
-        <p></p>
-        <h3 style="margin-left: 600px;"> Type: </h3>
-
-        <div class="dropdown">
-            <button onclick="dropDown2()" class="dropbtn">Select Type</button>
-            <div id="myDropdown2" class="dropdown-content"> <a href="#">Directive</a> <a href="#">Preventative</a> <a href="#">Detevtive</a> <a href="#">Corrective</a> <a href="#">Recovery</a> </div>
-        </div>
-        <p></p>
         <div class="bodySearch">
+            <h3 style="margin-left: 600px;"> Category: </h3>
+            <p>
 		<?php
 $mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
 
@@ -100,7 +86,7 @@ while($rows = $result->fetch_assoc())
 }
 ?>
 </select>
-
+            <h3 style="margin-left: 600px;"> Type: </h3>
 <?php
 $mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
 
