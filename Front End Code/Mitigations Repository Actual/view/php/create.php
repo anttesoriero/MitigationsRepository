@@ -86,35 +86,40 @@
         </div>
         <p></p>
         <div class="bodySearch">
+		<?php
+$mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
+
+$result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
+?>
+<select name="category">
+<?php
+while($rows = $result->fetch_assoc())
+{
+	$category = $rows['Control Type'];
+	echo "<option value = '$category'>$category</option>";
+}
+?>
+</select>
+
+<?php
+$mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
+
+$result = $mysqli->query("CALL Mitigation_Repository.GetType()");
+?>
+<select name="sec_type">
+<?php
+while($rows = $result->fetch_assoc())
+{
+	$sec_type = $rows['Control Function'];
+	echo "<option value = '$sec_type'>$sec_type</option>";
+}
+?>
+</select>
             <form action="./createprototype.htm">
                 <button class="button">Create Mitigation</button>
             </form>
         </div>
 </div>
-
-<?php
-$conn = new mysqli('localhost', 'username', 'password', 'Mitigations_Repository')
-or die ('Cannot connect to db');
-
-    $result = $conn->query("select category, type from table");
-	
-    echo "<html>";
-    echo "<body>";
-    echo "<select name='id'>";
-
-    while ($row = $result->fetch_assoc()) {
-
-                  unset($id, $name);
-                  $category = $row['category'];
-                  $type = $row['type']; 
-                  echo '<option value="'.$category.'">'.$type.'</option>';
-                 
-}
-
-    echo "</select>";
-    echo "</body>";
-    echo "</html>";
-?>
 
 <div class="v2">
 
