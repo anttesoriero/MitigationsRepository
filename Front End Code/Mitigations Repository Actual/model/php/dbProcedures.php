@@ -3,7 +3,10 @@
 /********************************************************
  * Database functions
  * $dbh is the database handle
- ********************************************************/
+ *******************************************************
+ * @param $dbh
+ * @param $num
+ */
 
 /*
  * getMitigations: Returns a list of mitigations
@@ -12,20 +15,18 @@
  *  RETURN              Set of database records
  */
 
-function getMitigations($dbh, $num)
+function getMitigation($dbh, $num)
 {
     try {
-    $sql = "CALL Mitigation_Repository.Mitigation_Search('Physical', 'Preventative');";
+    $sql = "CALL Mitigation_Repository.Mit_Search_RAND(?);";
     $stmt = $dbh->prepare($sql);
-    $stmt->bindValue(1, $num, PDO::PARAM_INIT);
+    $stmt->bindValue(1, $num, PDO::PARAM_INT);
     $stmt->execute();
     $results = $stmt->fetchAll(PDO::FETCH_OBJ);
     echo json_encode($results);
-    return Json("OK");
-
-    } catch (PDOException $e)
-    {
-        die ('unable to search mitigations : ' . $e->getMessage() );
+    }
+    catch(PDOException $e) {
+        die ('unable to fetch films: ' . $e->getMessage() );
     }
 }
 
