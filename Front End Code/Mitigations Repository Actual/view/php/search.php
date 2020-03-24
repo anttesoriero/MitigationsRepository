@@ -31,7 +31,7 @@ while($rows = $resultSet->fetch_assoc())
 </select>
 
 <?php
-$mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigations_Repository');
+$mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
 
 $result = $mysqli->query("SELECT sec_type FROM Security_Control");
 ?>
