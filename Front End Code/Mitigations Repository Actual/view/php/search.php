@@ -14,7 +14,7 @@
 
 </head>
 <body>
-
+<?php
 //$conn = new mysqli('localhost', 'username', 'password', 'Mitigations_Repository')
 //or die ('Cannot connect to db');
 
