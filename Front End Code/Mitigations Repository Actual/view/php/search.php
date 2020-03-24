@@ -70,7 +70,7 @@ $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
 <?php
 while($rows = $result->fetch_assoc())
 {
-	$Control Type = $rows['Control Type'];
+	$category = $rows['Control Type'];
 	echo "<option value = '$category'>$category</option>";
 }
 ?>
@@ -85,7 +85,7 @@ $result = $mysqli->query("CALL Mitigation_Repository.GetType()");
 <?php
 while($rows = $result->fetch_assoc())
 {
-	$Control Function = $rows['Control Function'];
+	$sec_type = $rows['Control Function'];
 	echo "<option value = '$sec_type'>$sec_type</option>";
 }
 ?>
