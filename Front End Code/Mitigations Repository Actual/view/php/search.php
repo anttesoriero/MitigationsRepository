@@ -33,14 +33,14 @@ while($rows = $resultSet->fetch_assoc())
 <?php
 $mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigations_Repository');
 
-$result = $mysqli->query("SELECT type FROM Security_Control");
+$result = $mysqli->query("SELECT sec_type FROM Security_Control");
 ?>
-<select name="type">
+<select name="sec_type">
 <?php
 while($rows = $resultSet->fetch_assoc())
 {
-	$type = $rows['type'];
-	echo "<option value = '$type'>$type</option>";
+	$sec_type = $rows['sec_type'];
+	echo "<option value = '$sec_type'>$sec_type</option>";
 }
 ?>
 </select>
