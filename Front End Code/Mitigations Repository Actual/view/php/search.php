@@ -16,6 +16,35 @@
 <body>
 
 <?php
+$mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
+
+$result = $mysqli->query("SELECT category FROM table");
+?>
+<select name="category">
+<?php
+while($rows = $resultSet->fetch_assoc())
+{
+	$category = $rows['category'];
+	echo "<option value = '$category'>$category</option>";
+}
+?>
+</select>
+
+<?php
+$mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigations_Repository');
+
+$result = $mysqli->query("SELECT type FROM table");
+?>
+<select name="type">
+<?php
+while($rows = $resultSet->fetch_assoc())
+{
+	$type = $rows['type'];
+	echo "<option value = '$type'>$type</option>";
+}
+?>
+</select>
+
 
 //$conn = new mysqli('localhost', 'username', 'password', 'Mitigations_Repository')
 //or die ('Cannot connect to db');
