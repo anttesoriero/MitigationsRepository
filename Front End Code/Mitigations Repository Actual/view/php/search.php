@@ -68,7 +68,7 @@ $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
 ?>
 <select name="category">
 <?php
-while($rows = $resultSet->fetch_assoc())
+while($rows = $result->fetch_assoc())
 {
 	$category = $rows['category'];
 	echo "<option value = '$category'>$category</option>";
@@ -83,7 +83,7 @@ $result = $mysqli->query("CALL Mitigation_Repository.GetType()");
 ?>
 <select name="sec_type">
 <?php
-while($rows = $resultSet->fetch_assoc())
+while($rows = $result->fetch_assoc())
 {
 	$sec_type = $rows['sec_type'];
 	echo "<option value = '$sec_type'>$sec_type</option>";
