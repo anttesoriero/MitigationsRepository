@@ -11,6 +11,7 @@ $('#left').load('../shtml/searchResults.shtml');
 try {
     ajaxURL = '../../controller/php/getMitigation.php';
     mitigations = ajaxFetch(ajaxURL, processResults);
+    console.log("Hopefully connected?");
 }
 catch (e) {
     console.log("Error in getMitigation.php " + e );
@@ -40,6 +41,11 @@ function addListeners() {
 /****************************************************
  *                  Callbacks                       *
  ****************************************************/
+function processData(echoedData) {
+    // Very simple callback that can be used for movies and actors
+    // Note that the HTML tagging is done by the PHP
+    $('#left').html(echoedData);
+}
 
 function processResults(jsonResults) {
 
@@ -47,6 +53,7 @@ function processResults(jsonResults) {
     //plus this gives each result its own listener
     //this actually echos what I did in the search prototype! - Theresa
 
+    console.log(jsonResults);
     var jsonData = JSON.parse(jsonResults);
     var numRecords = jsonData.length;
     console.log(jsonData);

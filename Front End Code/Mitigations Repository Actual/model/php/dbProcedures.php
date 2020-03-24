@@ -1,13 +1,5 @@
 <?php
 
-/********************************************************
- * Database functions
- * $dbh is the database handle
- *******************************************************
- * @param $dbh
- * @param $num
- */
-
 /*
  * getMitigations: Returns a list of mitigations
  *  PARAM $dbh          the database handle
@@ -18,7 +10,7 @@
 function getMitigation($dbh, $num)
 {
     try {
-    $sql = "CALL Mitigation_Repository.Mit_Search_RAND(?);";
+    $sql = "CALL Mitigation_Repository.Mit_Search_RAND;";
     $stmt = $dbh->prepare($sql);
     $stmt->bindValue(1, $num, PDO::PARAM_INT);
     $stmt->execute();

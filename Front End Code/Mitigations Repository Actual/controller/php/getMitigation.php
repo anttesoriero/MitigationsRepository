@@ -5,21 +5,23 @@ if (!include('../../model/php/dbProcedures.php')) {
 }
 
 if (!isset($_GET['num'])) {
-    $num = 25; //default to 25 files
+    $num = 10;  // defalut 10 films
 }
 
-$hostname = '127.0.0.1';  //local host - our web server will be our db server.
-$username = $_SESSION["username"];
-$password = $_SESSION["password"];
+$hostname = 'localhost';  //local host - our web server will be our db server.
+$username = 'admin';
+$password = 'Sweng#2020';
 $dbname = 'Mitigation_Repository';
 
 //try to connect to database
 
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname",$username, $password);
-    getMitigation($dbh,$num);
+    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    getMitigation($dbh, $num);
 }
 catch(PDOException $e) {
     echo ('PDO error for user ' . $username . ' in "ConnectDB()": ' . $e->getMessage() );
 }
+
 ?>
