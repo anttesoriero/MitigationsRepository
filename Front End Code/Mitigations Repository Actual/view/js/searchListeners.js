@@ -53,6 +53,7 @@ function processResults(jsonResults) {
 
     var htmlString = "<h3> Results </h3>";
     var id;
+    console.log("now parsing list...");
     for (var i = 0; i < numRecords; i++)
     {
         //This will make each row a unique div with a unique ID!
@@ -67,7 +68,7 @@ function processResults(jsonResults) {
     $('#allResults').html(htmlString);
 
     //Now we can add the elements to the page.
-
+    console.log("now adding elements to page...");
     for (var i = 0; i < numRecords; i++)
     {
         elementID = "#result" + i;

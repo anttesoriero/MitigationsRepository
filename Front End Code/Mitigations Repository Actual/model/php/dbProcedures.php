@@ -15,14 +15,15 @@
 function getMitigations($dbh, $num)
 {
     try {
-    $sql = "CALL Mitigation_Repository.Mitigation_Search(?);";
+    $sql = "CALL Mitigation_Repository.Mitigation_Search('Physical', 'Preventative');";
     $stmt = $dbh->prepare($sql);
-    $stmt->$bindValue(1, $num, PDO::PARAM_INIT);
+    $stmt->bindValue(1, $num, PDO::PARAM_INIT);
     $stmt->execute();
     $results = $stmt->fetchAll(PDO::FETCH_OBJ);
     echo json_encode($results);
+    return Json("OK");
 
-    } catch (PDOException &e)
+    } catch (PDOException $e)
     {
         die ('unable to search mitigations : ' . $e->getMessage() );
     }
