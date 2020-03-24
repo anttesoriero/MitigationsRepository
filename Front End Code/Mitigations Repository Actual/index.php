@@ -26,7 +26,6 @@ else {
 }
 ?>
 </h2>
-<<<<<<< HEAD
 
 <?php
 $conn = new mysqli('localhost', 'username', 'password', 'Mitigations_Repository')
@@ -54,7 +53,6 @@ or die ('Cannot connect to db');
 
 =======
 <div class = "left">
->>>>>>> 34126f30c9af4e3fe07afda5bafb873c2915137f
 <div class="bodySearch">
     <form id='searchForm'>
         <input type="text" id="searchField" name ='searchField' placeholder="Search Mitigation">
