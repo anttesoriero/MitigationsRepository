@@ -17,10 +17,10 @@
 
 <?php
 
-$conn = new mysqli('localhost', 'username', 'password', 'Mitigation_Repository')
+$conn = new mysqli('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository')
 or die ('Cannot connect to db');
 
-    $result = $conn->query("select category, type from table");
+    $result = $conn->query("select category, sec_type from table");
 	
     echo "<html>";
     echo "<body>";
@@ -31,7 +31,7 @@ or die ('Cannot connect to db');
                   unset($id, $name);
                   $category = $row['category'];
                   $type = $row['type']; 
-                  echo '<option value="'.$category.'">'.$type.'</option>';
+                  echo '<option value="'.$category.'">'.$sec_type.'</option>';
                  
 }
 
