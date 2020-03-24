@@ -28,27 +28,27 @@ else {
 </h2>
 
 <?php
-$conn = new mysqli('localhost', 'username', 'password', 'Mitigations_Repository')
-or die ('Cannot connect to db');
+//$conn = new mysqli('localhost', 'username', 'password', 'Mitigations_Repository')
+//or die ('Cannot connect to db');
 
-    $result = $conn->query("select category, type from table");
+    //$result = $conn->query("select category, type from table");
 	
-    echo "<html>";
-    echo "<body>";
-    echo "<select name='id'>";
+    //echo "<html>";
+    //echo "<body>";
+    //echo "<select name='id'>";
 
-    while ($row = $result->fetch_assoc()) {
+    //while ($row = $result->fetch_assoc()) {
 
-                  unset($id, $name);
-                  $category = $row['category'];
-                  $type = $row['type']; 
-                  echo '<option value="'.$category.'">'.$type.'</option>';
+                  //unset($id, $name);
+                  //$category = $row['category'];
+                  //$type = $row['type'];
+                  //echo '<option value="'.$category.'">'.$type.'</option>';
                  
-}
+//}
 
-    echo "</select>";
-    echo "</body>";
-    echo "</html>";
+    //echo "</select>";
+    //echo "</body>";
+    //echo "</html>";
 ?>
 
 <div class = "left">
