@@ -18,7 +18,7 @@
 <?php
 $mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
 
-$result = $mysqli->query("SELECT category FROM table");
+$result = $mysqli->query("SELECT category FROM Security_Control");
 ?>
 <select name="category">
 <?php
@@ -33,7 +33,7 @@ while($rows = $resultSet->fetch_assoc())
 <?php
 $mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigations_Repository');
 
-$result = $mysqli->query("SELECT type FROM table");
+$result = $mysqli->query("SELECT type FROM Security_Control");
 ?>
 <select name="type">
 <?php
