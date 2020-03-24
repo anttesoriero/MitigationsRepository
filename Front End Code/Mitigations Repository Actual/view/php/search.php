@@ -15,37 +15,6 @@
 </head>
 <body>
 
-<?php
-$mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
-
-$result = $mysqli->query("SELECT category FROM Security_Control");
-?>
-<select name="category">
-<?php
-while($rows = $resultSet->fetch_assoc())
-{
-	$category = $rows['category'];
-	echo "<option value = '$category'>$category</option>";
-}
-?>
-</select>
-
-<?php
-$mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
-
-$result = $mysqli->query("SELECT sec_type FROM Security_Control");
-?>
-<select name="sec_type">
-<?php
-while($rows = $resultSet->fetch_assoc())
-{
-	$sec_type = $rows['sec_type'];
-	echo "<option value = '$sec_type'>$sec_type</option>";
-}
-?>
-</select>
-
-
 //$conn = new mysqli('localhost', 'username', 'password', 'Mitigations_Repository')
 //or die ('Cannot connect to db');
 
@@ -91,6 +60,38 @@ while($rows = $resultSet->fetch_assoc())
         }
     ?>
 </div>
+
+<?php
+$mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
+
+$result = $mysqli->query("SELECT category FROM Security_Control");
+?>
+<select name="category">
+<?php
+while($rows = $resultSet->fetch_assoc())
+{
+	$category = $rows['category'];
+	echo "<option value = '$category'>$category</option>";
+}
+?>
+</select>
+
+<?php
+$mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
+
+$result = $mysqli->query("SELECT sec_type FROM Security_Control");
+?>
+<select name="sec_type">
+<?php
+while($rows = $resultSet->fetch_assoc())
+{
+	$sec_type = $rows['sec_type'];
+	echo "<option value = '$sec_type'>$sec_type</option>";
+}
+?>
+</select>
+
+
 <h2 style = "float: left"> Search Results </h2>
 <br>
 <br>
