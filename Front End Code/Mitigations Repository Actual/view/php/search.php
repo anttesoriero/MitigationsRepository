@@ -64,7 +64,7 @@
 <?php
 $mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
 
-$result = $mysqli->query("SELECT category FROM Security_Control");
+$result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
 ?>
 <select name="category">
 <?php
@@ -79,7 +79,7 @@ while($rows = $resultSet->fetch_assoc())
 <?php
 $mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
 
-$result = $mysqli->query("SELECT sec_type FROM Security_Control");
+$result = $mysqli->query("CALL Mitigation_Repository.GetType()");
 ?>
 <select name="sec_type">
 <?php
