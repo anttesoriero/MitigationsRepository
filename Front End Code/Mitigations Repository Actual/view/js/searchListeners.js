@@ -7,6 +7,7 @@ console.log('searchListeners.js loaded.');
 $('#left').load('../shtml/searchResults.shtml');
 
 /* Initial population of results  */
+var searchType = location.search.substring(location.search.indexOf('=') +1);
 
 try {
     ajaxURL = '../../controller/php/getMitigation.php';
