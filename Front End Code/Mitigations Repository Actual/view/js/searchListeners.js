@@ -75,7 +75,7 @@ function processResults(jsonResults) {
     $('#allResults').html(htmlString);
 
     //Now we can add the elements to the page.
-    console.log("now adding elements to page...");
+    /*console.log("now adding elements to page...");
     for (var i = 0; i < numRecords; i++)
     {
         elementID = "#result" + i;
@@ -96,7 +96,7 @@ function processResults(jsonResults) {
                 console.log("Error in getMitigation.php" + e);
             }
         });
-    }
+    }*/
 }
 
 function processMitigationData(jsonResults)

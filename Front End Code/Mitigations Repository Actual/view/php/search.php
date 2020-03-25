@@ -14,24 +14,6 @@
 
 </head>
 <body>
-<?php
-//$conn = new mysqli('localhost', 'username', 'password', 'Mitigations_Repository')
-//or die ('Cannot connect to db');
-
-    //$result = $conn->query("select category, sec_type from table");
-	
-    //echo "<select name='id'>";
-
-    //while ($row = $result->fetch_assoc()) {
-
-                  //unset($id, $name);
-                  //$category = $row['category'];
-                  //$type = $row['type'];
-                  //echo '<option value="'.$category.'">'.$sec_type.'</option>';
-                 
-//}
-?>
-
 <div class="topnav"> <a class="active" href="../../index.php"> Mitigation Repository <i class="fa fa-database"></i></a>
     <div class = "user">
         <?php
