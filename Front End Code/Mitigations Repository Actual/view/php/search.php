@@ -80,7 +80,7 @@ while($rows = $result->fetch_assoc())
 <br>
 <div class="leftSearch">
     <div class="results" id="allResults">
-        I AM A DUMMY TEXT
+        No Results
     </div>
 </div>
 

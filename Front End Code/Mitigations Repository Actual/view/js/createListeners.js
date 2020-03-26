@@ -9,12 +9,12 @@ $('#left').load('../shtml/searchResults.shtml');
 /* Initial population of results  */
 
 try {
-    ajaxURL = '../../controller/php/getMitigation.php';
+    ajaxURL = '../../controller/php/getRandMitigation.php';
     mitigations = ajaxFetch(ajaxURL, processResults);
     console.log("Hopefully connected?");
 }
 catch (e) {
-    console.log("Error in getMitigation.php " + e );
+    console.log("Error in getRandMitigation.php " + e );
 
 }
 
@@ -32,7 +32,7 @@ function addListeners() {
 
         }
         catch (e) {
-            console.log("Error in getMitigation.php " + e);
+            console.log("Error in getRandMitigation.php " + e);
         }
 
      */
@@ -79,7 +79,7 @@ function processResults(jsonResults) {
     for (var i = 0; i < numRecords; i++)
     {
         elementID = "#result" + i;
-        ajaxURL = '../../controller/php/getMitigation.php?mitigation_id=' + jsonData[i].mitigation_id;
+        ajaxURL = '../../controller/php/getRandMitigation.php?mitigation_id=' + jsonData[i].mitigation_id;
         console.log(ajaxURL);
         var mitigationData = new Array();
 
@@ -93,7 +93,7 @@ function processResults(jsonResults) {
             }
             catch (e)
             {
-                console.log("Error in getMitigation.php" + e);
+                console.log("Error in getRandMitigation.php" + e);
             }
         });
     }*/

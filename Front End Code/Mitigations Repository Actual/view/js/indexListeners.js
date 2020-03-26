@@ -18,7 +18,7 @@ function addListeners()
         console.log('search');
 
         // Make URL for Ajax call
-      // ajaxURL = 'controller/php/getMitigation.php';
+      // ajaxURL = 'controller/php/getRandMitigation.php';
 
         // Serialize the form so Ajax can post it asynchronously, then post it.
       // $.post(ajaxURL, $('#searchForm').serialize(),processSearch);
@@ -83,7 +83,7 @@ function processSearch(searchTerm)
 
 function gotoMostRecent()
 {
-    window.location.href='view/php/search.php?q=mostRecent'
+    window.location.href='view/php/search.php?q=mostrecent'
 }
 
 function gotoRandom()

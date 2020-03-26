@@ -10,12 +10,25 @@ $('#left').load('../shtml/searchResults.shtml');
 var searchType = location.search.substring(location.search.indexOf('=') +1);
 
 try {
-    ajaxURL = '../../controller/php/getMitigation.php';
+    if(searchType === 'random')
+    {
+        ajaxURL = '../../controller/php/getRandMitigation.php';
+    }
+    else if(searchType === 'mostrecent')
+    {
+        ajaxURL = '../../controller/php/getRecentMitigation.php';
+    }
+    else
+    {
+        ajaxURL = '../../controller/php/getTitleSearchMitigation.php?s='+searchType;
+    }
+
+    console.log(ajaxURL);
     mitigations = ajaxFetch(ajaxURL, processResults);
     console.log("Hopefully connected?");
 }
 catch (e) {
-    console.log("Error in getMitigation.php " + e );
+    console.log("Error in " + searchType + "get_____Mitigation.php " + e );
 
 }
 
@@ -33,7 +46,7 @@ function addListeners() {
 
     }
     catch (e) {
-        console.log("Error in getMitigation.php " + e);
+        console.log("Error in getRandMitigation.php " + e);
     }
 
  */
@@ -80,7 +93,7 @@ function processResults(jsonResults) {
     for (var i = 0; i < numRecords; i++)
     {
         elementID = "#result" + i;
-        ajaxURL = '../../controller/php/getMitigation.php?mitigation_id=' + jsonData[i].mitigation_id;
+        ajaxURL = '../../controller/php/getRandMitigation.php?mitigation_id=' + jsonData[i].mitigation_id;
         console.log(ajaxURL);
         var mitigationData = new Array();
 
@@ -94,7 +107,7 @@ function processResults(jsonResults) {
             }
             catch (e)
             {
-                console.log("Error in getMitigation.php" + e);
+                console.log("Error in getRandMitigation.php" + e);
             }
         });
     }*/

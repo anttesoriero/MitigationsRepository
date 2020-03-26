@@ -6,7 +6,6 @@
  *  PARAM $num
  *  RETURN              Set of database records
  */
-
 function getRandMitigation($dbh, $num)
 {
     try {
@@ -21,7 +20,6 @@ function getRandMitigation($dbh, $num)
         die ('unable to fetch films: ' . $e->getMessage() );
     }
 }
-
 function getRecentMitigation($dbh, $num)
 {
     try {
@@ -36,14 +34,14 @@ function getRecentMitigation($dbh, $num)
         die ('unable to fetch films: ' . $e->getMessage() );
     }
 }
-
 function getTitleSearchMitigation($dbh, $num, $term)
 {
     try {
-        $sql = "CALL Mitigation_Repository.Mitigation_Search_Title($term);";
+        $sql = "CALL Mitigation_Repository.Mitigation_Search_Title(?);";
         $stmt = $dbh->prepare($sql);
         $stmt->bindValue(1, $num, PDO::PARAM_INT);
-        $stmt->execute();
+        $stmt->bindValue("s", $term, PDO::PARAM_STR);
+        $stmt->execute($term);
         $results = $stmt->fetchAll(PDO::FETCH_OBJ);
         echo json_encode($results);
     }
