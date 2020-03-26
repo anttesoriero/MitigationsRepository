@@ -19,7 +19,7 @@ if (isset($_GET['s'])) {
     $rawType = $_GET['s'];
 }
 
-$searchType = str_replace("%20", " ", $rawType);
+$searchType = str_ireplace("%20", " ", $rawType);
 
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
