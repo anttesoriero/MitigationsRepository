@@ -40,7 +40,7 @@ function getRecentMitigation($dbh, $num)
 function getTitleSearchMitigation($dbh, $num, $term)
 {
     try {
-        $sql = "CALL Mitigation_Repository.Mitigation_Search_Title(".$term.");";
+        $sql = "CALL Mitigation_Repository.Mitigation_Search_Title($term);";
         $stmt = $dbh->prepare($sql);
         $stmt->bindValue(1, $num, PDO::PARAM_INT);
         $stmt->execute();

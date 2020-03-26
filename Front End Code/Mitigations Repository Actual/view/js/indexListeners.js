@@ -14,6 +14,7 @@ function addListeners()
     {
         evt.preventDefault();
         evt.stopPropagation();
+        var searchTerm = document.getElementById('searchField').value;
         console.log('search');
 
         // Make URL for Ajax call
@@ -50,6 +51,19 @@ function addListeners()
         // console.log('AJAX call submitted.');
         gotoMostRecent();
     });
+
+    $('#random').on('click', function(evt)
+    {
+        evt.stopPropagation();
+        console.log('CLICK');
+        // Make URL for Ajax call
+        //ajaxURL = 'controller/php/login.php';
+
+        // Serialize the form so Ajax can post it asynchronously, then post it.
+        // $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
+        // console.log('AJAX call submitted.');
+        gotoRandom();
+    });
 }
 
 /*******************************************************
@@ -70,4 +84,9 @@ function processSearch(searchTerm)
 function gotoMostRecent()
 {
     window.location.href='view/php/search.php?q=mostRecent'
+}
+
+function gotoRandom()
+{
+    window.location.href='view/php/search.php?q=random'
 }

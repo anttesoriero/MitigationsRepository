@@ -15,16 +15,38 @@ $dbname = 'Mitigation_Repository';
 
 //try to connect to database
 
+$searchType = $_GET['searchType'];
 
-
-
-try {
-    $dbh = new PDO("mysql:host=$hostname;dbname=$dbname",$username, $password);
-    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    getRandMitigation($dbh, $num);
+if(strCaseCmp($searchType, 'mostrecent'))
+{
+    try {
+        $dbh = new PDO("mysql:host=$hostname;dbname=$dbname",$username, $password);
+        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        getRecentMitigation($dbh, $num);
+    }
+    catch(PDOException $e) {
+        echo ('PDO error for user ' . $username . ' in "ConnectDB()": ' . $e->getMessage() );
+    }
 }
-catch(PDOException $e) {
-    echo ('PDO error for user ' . $username . ' in "ConnectDB()": ' . $e->getMessage() );
+else if(strCaseCmp($searchType, 'random')) {
+    try {
+        $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
+        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        getRandMitigation($dbh, $num);
+    } catch (PDOException $e) {
+        echo('PDO error for user ' . $username . ' in "ConnectDB()": ' . $e->getMessage());
+    }
 }
+else
+{
+    try {
+        $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
+        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        getTitleSearchMitigation($dbh, $num, $searchType);
+    } catch (PDOException $e) {
+        echo('PDO error for user ' . $username . ' in "ConnectDB()": ' . $e->getMessage());
+    }
+}
+
 
 ?>

@@ -63,6 +63,8 @@ while($rows = $result->fetch_assoc())
     </form>
     <br><br><br>
     <button type="button" id="mostRecent">25 Most Recent Mitigations</button>
+    <br><br><br>
+    <button type="button" id="random"> 25 Random Mitigations</button>
 </div>
 </div>
 <div class="v1"></div>
