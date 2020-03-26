@@ -29,38 +29,40 @@
 
 <div class = "left">
 <div class="bodySearch">
-<?php
-$mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
 
-$result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
-?>
-<select name="category">
-<?php
-while($rows = $result->fetch_assoc())
-{
-	$category = $rows['Control Type'];
-	echo "<option value = '$category'>$category</option>";
-}
-?>
-</select>
-
-<?php
-$mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
-
-$result = $mysqli->query("CALL Mitigation_Repository.GetType()");
-?>
-<select name="sec_type">
-<?php
-while($rows = $result->fetch_assoc())
-{
-	$sec_type = $rows['Control Function'];
-	echo "<option value = '$sec_type'>$sec_type</option>";
-}
-?>
-</select>
     <form id='searchForm'>
         <input type="text" id="searchField" name ='searchField' placeholder="Search Mitigation">
     </form>
+    <br><br>
+    <?php
+    $mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
+
+    $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
+    ?>
+    <select name="category">
+        <?php
+        while($rows = $result->fetch_assoc())
+        {
+            $category = $rows['Control Type'];
+            echo "<option value = '$category'>$category</option>";
+        }
+        ?>
+    </select>
+<br><br><br>
+    <?php
+    $mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
+
+    $result = $mysqli->query("CALL Mitigation_Repository.GetType()");
+    ?>
+    <select name="sec_type">
+        <?php
+        while($rows = $result->fetch_assoc())
+        {
+            $sec_type = $rows['Control Function'];
+            echo "<option value = '$sec_type'>$sec_type</option>";
+        }
+        ?>
+    </select>
     <br><br><br>
     <button class="button" id="mostRecent">25 Most Recent Mitigations</button>
     <br><br><br>
