@@ -1,6 +1,8 @@
 /* Index page listeners */
 
 console.log('indexListeners.js loaded.');
+var regex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g;
+
 addListeners();
 
 /**************************************
@@ -14,7 +16,8 @@ function addListeners()
     {
         evt.preventDefault();
         evt.stopPropagation();
-        var searchTerm = document.getElementById('searchField').value;
+        var rawTerm = document.getElementById('searchField').value;
+        var searchTerm = rawTerm.replace(regex, '');
         console.log('search');
 
         // Make URL for Ajax call

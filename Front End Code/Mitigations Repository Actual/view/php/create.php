@@ -14,57 +14,58 @@
 <div class="topnav"> <a class="active" href="./index.php"> Mitigation Repository <i class="fa fa-database"></i></a>
     <div class = "user">
         <?php
-        echo session_id();
-        if (isset($_SESSION['username']))
-        {
-            echo ' Logged in as ' . $_SESSION['username'];
-        }
-        else
-        {
-            echo 'Guest Access';
-        }
+       // echo session_id();
+        //if (isset($_SESSION['username']))
+       // {
+        //    echo ' Logged in as ' . $_SESSION['username'];
+       // }
+       // else
+       // {
+       //     echo 'Guest Access';
+       // }
         ?>
     </div>
 </div>
+
 <div class = "user">
     <?php
-    echo session_id();
-    if (isset($_SESSION['username']))
-    {
-        echo ' Logged in as ' . $_SESSION['username'];
-    }
-    else
-    {
-        echo 'Guest Access';
-    }
+//    echo session_id();
+  //  if (isset($_SESSION['username']))
+    //{
+      //  echo ' Logged in as ' . $_SESSION['username'];
+    //}
+    //else
+    //{
+     //   echo 'Guest Access';
+    //}
     ?>
 </div>
-<div class="leftSearch">
+<div class="leftSearch" id="leftSide">
     <h2 style = "float: center"> Create a Mitigation </h2>
     <h3 style="margin-left: 550px;"> Enter Mitigation Title </h3>
     <div class="bodySearch">
-        <form action="./createprototype.htm">
+        <form>
             <input type="text" placeholder="Title">
         </form>
     </div>
 
     <h3 style="margin-left: 550px;"> Enter Operating System </h3>
     <div class="bodySearch">
-        <form action="./createprototype.htm">
+        <form>
             <input type="text" placeholder="Operating System">
         </form>
     </div>
 
     <h3 style="margin-left: 550px;"> Enter Operating System Version </h3>
     <div class="bodySearch">
-        <form action="./createprototype.htm">
+        <form>
             <input type="text" placeholder="Version">
         </form>
     </div>
 
     <h3 style="margin-left: 550px;"> Enter Mitigation Description </h3>
     <div class="descriptionSearch">
-        <form action="./createprototype.htm">
+        <form>
             <input type="text" placeholder="Mitigation Description">
         </form>
     </div>
@@ -101,8 +102,8 @@ while($rows = $result->fetch_assoc())
 }
 ?>
 </select>
-            <form action="./createprototype.htm">
-                <button class="button">Create Mitigation</button>
+            <form>
+                <button class="button" id="create">Create Mitigation</button>
             </form>
         </div>
 </div>
@@ -123,8 +124,6 @@ while($rows = $result->fetch_assoc())
 <!-- load ajax helper -->
 <script type="text/javascript" src="../js/AjaxFunctions.js"></script>
 <!-- load listeners for this page -->
-<script type="text/javascript" src="../js/searchListeners.js"></script>
-<!-- load other functionality -->
-<script type="text/javascript" src="../js/searchFunctions.js"></script>
+<script type="text/javascript" src="../js/createListeners.js"></script>
 </body>
 </html>

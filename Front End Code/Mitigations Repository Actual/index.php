@@ -17,13 +17,13 @@
 <div class="topnav"> <a class="active" href="#home">Mitigation Repository <i class="fa fa-database"></i></a></div>
 <h2 id="loginInstructions">
     <?php
-echo session_id();
-if ($_GET['sessionExpired'] == 'yes') {
-    echo 'Session expired or not established';
-}
-else {
-    echo 'Please login';
-}
+//echo session_id();
+//if ($_GET['sessionExpired'] == 'yes') {
+//    echo 'Session expired or not established';
+//}
+//else {
+//    echo 'Please login';
+//}
 ?>
 </h2>
 
