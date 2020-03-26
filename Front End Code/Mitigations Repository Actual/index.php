@@ -62,15 +62,15 @@ while($rows = $result->fetch_assoc())
         <input type="text" id="searchField" name ='searchField' placeholder="Search Mitigation">
     </form>
     <br><br><br>
-    <button type="button" id="mostRecent">25 Most Recent Mitigations</button>
+    <button class="button" id="mostRecent">25 Most Recent Mitigations</button>
     <br><br><br>
-    <button type="button" id="random"> 25 Random Mitigations</button>
+    <button class="button" id="random"> 25 Random Mitigations</button>
 </div>
 </div>
 <div class="v1"></div>
 <div class="right">
     <h2> Create new Mitigation </h2>
-    <button type="button" id="newMitigation">Create new Mitigation</button>
+    <button class="button" id="newMitigation">Create new Mitigation</button>
 </div>
 
 <!-- loading javascript -->

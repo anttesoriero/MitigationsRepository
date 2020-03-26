@@ -72,7 +72,7 @@ function processResults(jsonResults) {
     var numRecords = jsonData.length;
     console.log(jsonData);
 
-    var htmlString = "<h3> Results </h3>";
+    var htmlString = "<ul id='myUL'>";
     var id;
     console.log("now parsing list...");
     for (var i = 0; i < numRecords; i++)

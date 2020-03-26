@@ -288,6 +288,7 @@ body
 {
     float: right;
     position: relative;
+	text-decoration: none;
     width: 25%;
     top: 25px;
     right: 10px;
