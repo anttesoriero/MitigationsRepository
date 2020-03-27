@@ -41,7 +41,7 @@
     ?>
 </div>
 <div class="leftSearch" id="leftSide">
-    <h2 style = "float: center"> Create a Mitigation </h2>
+    <h2> Create a Mitigation </h2>
     <h3 style="margin-left: 550px;"> Enter Mitigation Title </h3>
     <div class="bodySearch">
         <form>

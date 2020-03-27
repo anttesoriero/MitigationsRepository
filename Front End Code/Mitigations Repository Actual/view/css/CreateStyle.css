@@ -188,7 +188,7 @@ body
 
 .button {
   background-color: #FFFFFF;
-  border: grooved;
+  border-style: groove;
   color: black;
   padding: 20px;
   margin-left: 200px;
