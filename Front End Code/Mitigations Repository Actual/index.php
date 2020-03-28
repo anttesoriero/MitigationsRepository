@@ -14,17 +14,7 @@
 
 
 <body>
-<div class="topnav"> <a class="active" href="#home">Mitigation Repository <i class="fa fa-database"></i></a></div>
-<h2 id="loginInstructions">
-    <?php
-//echo session_id();
-//if ($_GET['sessionExpired'] == 'yes') {
-//    echo 'Session expired or not established';
-//}
-//else {
-//    echo 'Please login';
-//}
-?>
+<div class="topnav"> <a class="active" href="#home">Mitigation Repository <i class="fa fa-database"></i></a>
 
     <div class="form-popup" id="myForm">
         <form class="form-container" id="loginForm">
@@ -41,6 +31,19 @@
             <button type="button" class="btn cancel" id="Cancel">Close</button>
         </form>
     </div>
+</div>
+<h2 id="loginInstructions">
+    <?php
+//echo session_id();
+//if ($_GET['sessionExpired'] == 'yes') {
+//    echo 'Session expired or not established';
+//}
+//else {
+//    echo 'Please login';
+//}
+?>
+
+
 </h2>
 
 <div class = "left">
@@ -100,6 +103,7 @@
 
 <!-- Listeners to attach actions to controls -->
     <script type='text/javascript' src='view/js/indexListeners.js'></script>
+    <script type='text/javascript' src='view/js/loginListeners.js'></script>
 
 </body>
 </html>
