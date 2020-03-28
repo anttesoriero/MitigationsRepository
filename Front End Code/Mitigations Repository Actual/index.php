@@ -25,6 +25,22 @@
 //    echo 'Please login';
 //}
 ?>
+
+    <div class="form-popup" id="myForm">
+        <form class="form-container" id="loginForm">
+            <h1>Login</h1>
+
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="button" class="btn" id="login">Login</button>
+
+            <button type="button" class="btn cancel" id="Cancel">Close</button>
+        </form>
+    </div>
 </h2>
 
 <div class = "left">
