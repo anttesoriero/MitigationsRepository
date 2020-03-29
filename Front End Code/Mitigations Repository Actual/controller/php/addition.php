@@ -8,6 +8,9 @@
 //description
 //category
 //sec_type
+if (!include('../../model/php/dbProcedures.php')) {
+    die('error finding dbProcedures.php in model dir');
+}
 
 if(!isset($_POST['firstName']))
 {
