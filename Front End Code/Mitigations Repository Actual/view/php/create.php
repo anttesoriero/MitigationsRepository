@@ -42,22 +42,27 @@
 </div>
 <div class="leftSearch" id="leftSide">
     <h2> Create a Mitigation </h2>
-    <h3 style="margin-left: 550px;"> Enter Mitigation Title </h3>
+
     <div class="bodySearch">
         <form id="createMitigationForm">
-            <input type="text" placeholder="Title">
+            <h3 style="margin-left: 550px;"> Author First Name </h3>
+            <input type="text" placeholder="First Name" name = "firstName">
+            <h3 style="margin-left: 550px;"> Author Last Name </h3>
 
+            <input type="text" placeholder="Last Name" name = "lastName">
+            <h3 style="margin-left: 550px;"> Enter Mitigation Title </h3>
+            <input type="text" placeholder="Title" name = "title">
     <h3 style="margin-left: 550px;"> Enter Operating System </h3>
 
-            <input type="text" placeholder="Operating System">
+            <input type="text" placeholder="Operating System" name = "os">
 
     <h3 style="margin-left: 550px;"> Enter Operating System Version </h3>
-            <input type="text" placeholder="Version">
+            <input type="text" placeholder="Version" name = "version">
 
     <h3 style="margin-left: 550px;"> Enter Mitigation Description </h3>
     <div class="descriptionSearch">
 
-            <input type="text" placeholder="Mitigation Description">
+            <input type="text" placeholder="Mitigation Description" name = "description">
     </div>
 
             <h3 style="margin-left: 600px;"> Category: </h3>
