@@ -46,23 +46,23 @@
     <div class="bodySearch">
         <form id="createMitigationForm">
             <h3 style="margin-left: 550px;"> Author First Name </h3>
-            <input type="text" placeholder="First Name" name = "firstName">
+            <input type="text" placeholder="First Name" name = "firstName" required='required'>
             <h3 style="margin-left: 550px;"> Author Last Name </h3>
 
-            <input type="text" placeholder="Last Name" name = "lastName">
+            <input type="text" placeholder="Last Name" name = "lastName" required='required'>
             <h3 style="margin-left: 550px;"> Enter Mitigation Title </h3>
-            <input type="text" placeholder="Title" name = "title">
+            <input type="text" placeholder="Title" name = "title" required='required'>
     <h3 style="margin-left: 550px;"> Enter Operating System </h3>
 
-            <input type="text" placeholder="Operating System" name = "os">
+            <input type="text" placeholder="Operating System" name = "os" required='required'>
 
     <h3 style="margin-left: 550px;"> Enter Operating System Version </h3>
-            <input type="text" placeholder="Version" name = "version">
+            <input type="text" placeholder="Version" name = "version" required='required'>
 
     <h3 style="margin-left: 550px;"> Enter Mitigation Description </h3>
     <div class="descriptionSearch">
 
-            <input type="text" placeholder="Mitigation Description" name = "description">
+            <input type="text" placeholder="Mitigation Description" name = "description" required='required'>
     </div>
 
             <h3 style="margin-left: 600px;"> Category: </h3>
@@ -73,7 +73,7 @@ $mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
 
 $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
 ?>
-<select name="category">
+<select name="category" required='required'>
 <?php
 while($rows = $result->fetch_assoc())
 {
@@ -88,7 +88,7 @@ $mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
 
 $result = $mysqli->query("CALL Mitigation_Repository.GetType()");
 ?>
-<select name="sec_type">
+<select name="sec_type" required='required'>
 <?php
 while($rows = $result->fetch_assoc())
 {
