@@ -3,6 +3,14 @@
 console.log('indexListeners.js loaded.');
 var regex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g;
 
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+
 addListeners();
 
 /**************************************
@@ -39,7 +47,7 @@ function addListeners()
         // Serialize the form so Ajax can post it asynchronously, then post it.
       // $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
        // console.log('AJAX call submitted.');
-        processLogin();
+        goToCreate();
     });
 
     $('#mostRecent').on('click', function(evt)
@@ -67,13 +75,21 @@ function addListeners()
         // console.log('AJAX call submitted.');
         gotoRandom();
     });
+
+    $('#cancel').on('click', function(evt)
+    {
+        evt.stopPropagation();
+        console.log('Closed login');
+        closeForm();
+    })
+
 }
 
 /*******************************************************
  * Call-back Functions
  ******************************************************/
 
-function processLogin()
+function goToCreate()
 {
     window.location.href='view/php/create.php';
 }

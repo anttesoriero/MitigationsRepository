@@ -14,11 +14,11 @@ function addListeners() {
         evt.preventDefault();
         console.log('CLICK');
         // Make URL for Ajax call
-        //ajaxURL = 'controller/php/login.php';
+        ajaxURL = 'controller/php/addition.php';
 
         // Serialize the form so Ajax can post it asynchronously, then post it.
-        // $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
-        // console.log('AJAX call submitted.');
+        $.post(ajaxURL, $('#loginForm').serialize(), processAddition);
+        console.log('AJAX call submitted.');
         processAddition();
     });
 
