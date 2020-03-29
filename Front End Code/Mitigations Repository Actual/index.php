@@ -28,7 +28,7 @@
 
             <button type="button" class="btn" id="login">Login</button>
 
-            <button type="button" class="btn cancel" id="Cancel">Close</button>
+            <button type="button" class="btn cancel" id="cancel">Close</button>
         </form>
     </div>
 </div>

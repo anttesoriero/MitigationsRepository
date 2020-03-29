@@ -29,6 +29,7 @@ function addListeners() {
         ajaxURL = 'controller/php/destroySession.php';
         console.log("Session destroyed.");
     });
+
 }
 
 /************************************
