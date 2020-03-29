@@ -105,6 +105,8 @@ while($rows = $result->fetch_assoc())
 
 </div>
 <div class="rightSearch" id="rightResultDisplay">
+    <p><span id='successMessage' class='message'></span></p>
+    <p><span id='errorMessage' class='error'></span></p>
 
 </div>
 

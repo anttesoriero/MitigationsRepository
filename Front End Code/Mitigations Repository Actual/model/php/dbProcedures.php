@@ -58,8 +58,6 @@ function addAuthor($dbh, $firstName, $lastName)
         $stmt->bindValue(1, $firstName, PDO::PARAM_STR);
         $stmt->bindValue(2, $lastName, PDO::PARAM_STR);
         $stmt->execute();
-        $results = $stmt->fetchAll(PDO::FETCH_OBJ);
-        echo json_encode($results);
     }
     catch(PDOException $e) {
         die ('unable to fetch films: ' . $e->getMessage() );
@@ -74,8 +72,6 @@ function addSecurityControl($dbh, $category, $type)
         $stmt->bindValue(1, $category, PDO::PARAM_STR);
         $stmt->bindValue(2, $type, PDO::PARAM_STR);
         $stmt->execute();
-        $results = $stmt->fetchAll(PDO::FETCH_OBJ);
-        echo json_encode($results);
     }
     catch(PDOException $e) {
         die ('unable to fetch films: ' . $e->getMessage() );
@@ -90,8 +86,6 @@ function addSystem($dbh, $os, $version)
         $stmt->bindValue(1, $os, PDO::PARAM_STR);
         $stmt->bindValue(2, $version, PDO::PARAM_STR);
         $stmt->execute();
-        $results = $stmt->fetchAll(PDO::FETCH_OBJ);
-        echo json_encode($results);
     }
     catch(PDOException $e) {
         die ('unable to fetch films: ' . $e->getMessage() );
@@ -106,8 +100,6 @@ function addMitigation($dbh, $title, $description)
         $stmt->bindValue(1, $title, PDO::PARAM_STR);
         $stmt->bindValue(2, $description, PDO::PARAM_STR);
         $stmt->execute();
-        $results = $stmt->fetchAll(PDO::FETCH_OBJ);
-        echo json_encode($results);
     }
     catch(PDOException $e) {
         die ('unable to fetch films: ' . $e->getMessage() );

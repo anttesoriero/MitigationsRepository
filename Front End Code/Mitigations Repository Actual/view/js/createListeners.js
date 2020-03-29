@@ -14,10 +14,10 @@ function addListeners() {
         evt.preventDefault();
         console.log('CLICK');
         // Make URL for Ajax call
-        ajaxURL = 'controller/php/addition.php';
+        ajaxURL = '../../controller/php/addition.php';
 
         // Serialize the form so Ajax can post it asynchronously, then post it.
-        $.post(ajaxURL, $('#loginForm').serialize(), processAddition);
+        $.post(ajaxURL, $('#createMitigationForm').serialize(), processAddition);
         console.log('AJAX call submitted.');
         processAddition();
     });
@@ -33,10 +33,14 @@ function processData(echoedData) {
     $('#left').html(echoedData);
 }
 
-function processAddition()
+function processAddition(additionData)
 {
-    var htmlString = "<h2>This Page is not yet completed - Look forward to this, however.  We just felt the page itself should exist.</h2>";
-    $('#leftSide').html(htmlString);
+   // if (additionData.toLowerCase().indexOf("error") != -1) {
+   //     $('#errorMessage').html(additionData);
+    //}
+    //else if (additionData.toLowerCase().indexOf("success") != -1) {
+    //    $('#successMessage').html(additionData);  // visible for split second
+   // }
 }
 
 function destroy(message)
