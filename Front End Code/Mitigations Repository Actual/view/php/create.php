@@ -11,7 +11,7 @@
 
 </head>
 <body>
-<div class="topnav"> <a class="active" href="./index.php"> Mitigation Repository <i class="fa fa-database"></i></a>
+<div class="topnav"> <a class="active" href="../../index.php"> Mitigation Repository <i class="fa fa-database"></i></a>
     <div class = "user">
         <?php
        // echo session_id();
@@ -44,33 +44,22 @@
     <h2> Create a Mitigation </h2>
     <h3 style="margin-left: 550px;"> Enter Mitigation Title </h3>
     <div class="bodySearch">
-        <form>
+        <form id="createMitigationForm">
             <input type="text" placeholder="Title">
-        </form>
-    </div>
 
     <h3 style="margin-left: 550px;"> Enter Operating System </h3>
-    <div class="bodySearch">
-        <form>
+
             <input type="text" placeholder="Operating System">
-        </form>
-    </div>
 
     <h3 style="margin-left: 550px;"> Enter Operating System Version </h3>
-    <div class="bodySearch">
-        <form>
             <input type="text" placeholder="Version">
-        </form>
-    </div>
 
     <h3 style="margin-left: 550px;"> Enter Mitigation Description </h3>
     <div class="descriptionSearch">
-        <form>
+
             <input type="text" placeholder="Mitigation Description">
-        </form>
     </div>
 
-        <div class="bodySearch">
             <h3 style="margin-left: 600px;"> Category: </h3>
             <p>
 		<?php
@@ -102,7 +91,6 @@ while($rows = $result->fetch_assoc())
 }
 ?>
 </select>
-            <form>
                 <button class="button" id="create">Create Mitigation</button>
             </form>
         </div>

@@ -47,7 +47,7 @@ function addListeners()
         // Serialize the form so Ajax can post it asynchronously, then post it.
       // $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
        // console.log('AJAX call submitted.');
-        processLogin();
+        goToCreate();
     });
 
     $('#mostRecent').on('click', function(evt)
@@ -89,7 +89,7 @@ function addListeners()
  * Call-back Functions
  ******************************************************/
 
-function processLogin()
+function goToCreate()
 {
     window.location.href='view/php/create.php';
 }
