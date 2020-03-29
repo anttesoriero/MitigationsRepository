@@ -73,7 +73,8 @@
         <div class="bodySearch">
             <h3 style="margin-left: 600px;"> Category: </h3>
             <p>
-		<?php
+
+                <?php
 $mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
 
 $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
