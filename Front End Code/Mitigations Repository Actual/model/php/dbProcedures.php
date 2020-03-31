@@ -23,7 +23,7 @@ function getRandMitigation($dbh, $num)
 function getRecentMitigation($dbh, $num)
 {
     try {
-        $sql = "CALL Mitigation_Repository.Mit_Search_Resent;";
+        $sql = "CALL Mitigation_Repository.Mit_Search_Recent;";
         $stmt = $dbh->prepare($sql);
         $stmt->bindValue(1, $num, PDO::PARAM_INT);
         $stmt->execute();
@@ -105,3 +105,5 @@ function addMitigation($dbh, $title, $description)
         die ('unable to fetch films: ' . $e->getMessage() );
     }
 }
+
+
