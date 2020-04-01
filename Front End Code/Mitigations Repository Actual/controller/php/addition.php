@@ -22,7 +22,7 @@ if(!isset($_POST['lastName']))
 }
 if(!isset($_POST['title']))
 {
-    die("title Required");
+    die("Title Required");
 }
 if(!isset($_POST['os']))
 {
