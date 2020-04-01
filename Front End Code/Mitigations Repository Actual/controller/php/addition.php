@@ -1,13 +1,5 @@
 <?php session_start();
-//field names:
-//firstName
-//lastName
-//title
-//os
-//version
-//description
-//category
-//sec_type
+
 if (!include('../../model/php/dbProcedures.php')) {
     die('error finding dbProcedures.php in model dir');
 }
@@ -46,6 +38,8 @@ if(!isset($_POST['sec_type']))
 }
 
 $hostname = '127.0.0.1';   // local host.  web server is db server
+//Trims from what is posted by the create page to get the various variables and save them locally temporarily
+
 $firstName = trim($_POST['firstName']);
 $lastName = trim($_POST['lastName']);
 $title = trim($_POST['title']);
@@ -57,7 +51,8 @@ $secType = trim($_POST['sec_type']);
 $dbname   = 'Mitigation_Repository';
 
 
-// Try to connect to database using credentials from form
+//Currently just uses the regular admin credentials, but will use the
+//credentials from logging in
 
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname","admin", "Sweng#2020");
