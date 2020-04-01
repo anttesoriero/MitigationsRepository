@@ -39,7 +39,6 @@ function getTitleSearchMitigation($dbh, $num, $term)
     try {
         $sql = "CALL Mitigation_Repository.Mitigation_Search_Title(?);";
         $stmt = $dbh->prepare($sql);
-        //$stmt->bindValue(1, $num, PDO::PARAM_INT);
         $stmt->bindValue(1, $term, PDO::PARAM_STR);
         $stmt->execute();
         $results = $stmt->fetchAll(PDO::FETCH_OBJ);
