@@ -50,6 +50,20 @@ function getTitleSearchMitigation($dbh, $num, $term)
     }
 }
 
+function getFuzzySearchMitigation($dbh, $num, $term)
+{
+    try {
+        $sql = "CALL Mitigation_Repository.Fuzzy_Search(?);";
+        $stmt = $dbh->prepare($sql);
+        $stmt->bindValue(1, $term, PDO::PARAM_STR);
+        $stmt->execute();
+        $results = $stmt->fetchAll(PDO::FETCH_OBJ);
+        echo json_encode($results);
+    }
+    catch(PDOException $e) {
+        die ('unable to fetch films: ' . $e->getMessage() );
+    }
+}
 function addAuthor($dbh, $firstName, $lastName)
 {
     try {
