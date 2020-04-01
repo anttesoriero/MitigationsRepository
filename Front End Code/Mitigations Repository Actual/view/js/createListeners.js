@@ -35,12 +35,12 @@ function processData(echoedData) {
 
 function processAddition(additionData)
 {
-   // if (additionData.toLowerCase().indexOf("error") != -1) {
-   //     $('#errorMessage').html(additionData);
-    //}
-    //else if (additionData.toLowerCase().indexOf("success") != -1) {
-    //    $('#successMessage').html(additionData);  // visible for split second
-   // }
+    if (additionData.toLowerCase().indexOf("error") != -1) {
+        $('#errorMessage').html(additionData);
+    }
+    else if (additionData.toLowerCase().indexOf("success") != -1) {
+        $('#successMessage').html(additionData);  // visible for split second
+    }
 }
 
 function destroy(message)

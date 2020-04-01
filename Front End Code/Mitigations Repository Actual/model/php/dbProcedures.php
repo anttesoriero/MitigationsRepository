@@ -105,5 +105,27 @@ function addMitigation($dbh, $title, $description)
         die ('unable to fetch films: ' . $e->getMessage() );
     }
 }
-
-
+//Add_New_Mitigation_Fixed(IN newTitle varchar(255),
+//                                                                 IN newDescription varchar(255), IN newOS varchar(45),
+//                                                                 IN newVer varchar(45), IN newCat varchar(45),
+//                                                                 IN newType varchar(45), IN firstName varchar(255),
+//                                                                 IN lastName varchar(255))
+function addCompleteMitigation($dbh, $title, $description, $os, $version, $category, $type, $firstName, $lastName)
+{
+    try {
+        $sql = "CALL Mitigation_Repository.Add_New_Mitigation_Fixed(?,?,?,?,?,?,?,?);";
+        $stmt = $dbh->prepare($sql);
+        $stmt->bindValue(1, $title, PDO::PARAM_STR);
+        $stmt->bindValue(2, $description, PDO::PARAM_STR);
+        $stmt->bindValue(3, $os, PDO::PARAM_STR);
+        $stmt->bindValue(4, $version, PDO::PARAM_STR);
+        $stmt->bindValue(5, $category, PDO::PARAM_STR);
+        $stmt->bindValue(6, $type, PDO::PARAM_STR);
+        $stmt->bindValue(7, $firstName, PDO::PARAM_STR);
+        $stmt->bindValue(8, $lastName, PDO::PARAM_STR);
+        $stmt->execute();
+    }
+    catch(PDOException $e) {
+        die ('unable to fetch films: ' . $e->getMessage() );
+    }
+}
