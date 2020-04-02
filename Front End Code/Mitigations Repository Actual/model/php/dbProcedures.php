@@ -17,7 +17,7 @@ function getRandMitigation($dbh, $num)
     echo json_encode($results);
     }
     catch(PDOException $e) {
-        die ('unable to fetch films: ' . $e->getMessage() );
+        die ('unable to fetch mitigations: ' . $e->getMessage() );
     }
 }
 function getRecentMitigation($dbh, $num)
@@ -31,7 +31,7 @@ function getRecentMitigation($dbh, $num)
         echo json_encode($results);
     }
     catch(PDOException $e) {
-        die ('unable to fetch films: ' . $e->getMessage() );
+        die ('unable to fetch mitigations: ' . $e->getMessage() );
     }
 }
 function getTitleSearchMitigation($dbh, $num, $term)
@@ -45,7 +45,7 @@ function getTitleSearchMitigation($dbh, $num, $term)
         echo json_encode($results);
     }
     catch(PDOException $e) {
-        die ('unable to fetch films: ' . $e->getMessage() );
+        die ('unable to fetch mitigations: ' . $e->getMessage() );
     }
 }
 
@@ -60,7 +60,7 @@ function getFuzzySearchMitigation($dbh, $num, $term)
         echo json_encode($results);
     }
     catch(PDOException $e) {
-        die ('unable to fetch films: ' . $e->getMessage() );
+        die ('unable to fetch mitigations: ' . $e->getMessage() );
     }
 }
 function addAuthor($dbh, $firstName, $lastName)
@@ -73,7 +73,7 @@ function addAuthor($dbh, $firstName, $lastName)
         $stmt->execute();
     }
     catch(PDOException $e) {
-        die ('unable to fetch films: ' . $e->getMessage() );
+        die ('unable to add author: ' . $e->getMessage() );
     }
 }
 
@@ -87,7 +87,7 @@ function addSecurityControl($dbh, $category, $type)
         $stmt->execute();
     }
     catch(PDOException $e) {
-        die ('unable to fetch films: ' . $e->getMessage() );
+        die ('unable to add security control: ' . $e->getMessage() );
     }
 }
 
@@ -101,7 +101,7 @@ function addSystem($dbh, $os, $version)
         $stmt->execute();
     }
     catch(PDOException $e) {
-        die ('unable to fetch films: ' . $e->getMessage() );
+        die ('unable to add system: ' . $e->getMessage() );
     }
 }
 
@@ -115,7 +115,7 @@ function addMitigation($dbh, $title, $description)
         $stmt->execute();
     }
     catch(PDOException $e) {
-        die ('unable to fetch films: ' . $e->getMessage() );
+        die ('unable to add mitigation: ' . $e->getMessage() );
     }
 }
 //Add_New_Mitigation_Fixed(IN newTitle varchar(255),
@@ -139,6 +139,6 @@ function addCompleteMitigation($dbh, $title, $description, $os, $version, $categ
         $stmt->execute();
     }
     catch(PDOException $e) {
-        die ('unable to fetch films: ' . $e->getMessage() );
+        die ('unable to add mitigation: ' . $e->getMessage() );
     }
 }
