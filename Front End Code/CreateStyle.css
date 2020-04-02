@@ -185,6 +185,21 @@ body
 		border: 1px solid #ccc;
 	}
 }
+.scroll-box {
+    height: 400px; /* maximum height of the box, feel free to change this! */
+    overflow-y: scroll;
+	padding: 6px;
+	margin-left: 550px;
+	margin-top:1px;
+	height:100px;
+	width: 300px;
+    font-size:14pt;
+	border: 1px;
+	border-style: solid;
+	border-color: #333333;
+	border-radius: 20px 20px 20px 20px;
+	background-color: white;
+}
 
 .button {
   background-color: #FFFFFF;
