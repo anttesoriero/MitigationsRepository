@@ -4,10 +4,10 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link id = "createCSS" rel="stylesheet" type="text/css" href="../css/CreateStyle.css">
+    <link id = "forkingCSS" rel="stylesheet" type="text/css" href="../css/ForkingStyle.css">
     <link id="mainCSS" rel="stylesheet" type="text/css" href="../css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title> Create Mitigation </title>
+    <title> Fork Mitigation </title>
 
 </head>
 <body>
@@ -41,7 +41,7 @@
     ?>
 </div>
 <div class="leftSearch" id="leftSide">
-    <h2> Create a Mitigation </h2>
+    <h2> Fork Mitigation </h2>
 
     <div class="bodySearch">
         <form id="createMitigationForm">
