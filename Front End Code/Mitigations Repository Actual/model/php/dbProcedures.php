@@ -158,6 +158,19 @@ function forkNewAuthor($dbh, $Mitigation_To_Fork, $firstName, $lastName)
     }
 }
 
+function forkWithoutAuthor($dbh, $Mitigation_To_Fork)
+{
+	try {
+        $sql = "CALL Mitigation_Repository.Fork_without_author(?);";
+        $stmt = $dbh->prepare($sql);
+        $stmt->bindValue(1, $Mitigation_To_Fork, PDO::PARAM_INT);
+        $stmt->execute();
+    }
+    catch(PDOException $e) {
+        die ('unable to fork mitigation: ' . $e->getMessage() );
+    }
+}
+
 function editRisk($dbh, $newTitle, $newDescription, $newOS, $newVer, $newCat, $newType, $riskID)
 {
 	try{
