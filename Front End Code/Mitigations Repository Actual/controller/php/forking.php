@@ -50,10 +50,6 @@ $category = trim($_POST['category']);
 $secType = trim($_POST['sec_type']);
 $dbname   = 'Mitigation_Repository';
 
-
-//Currently just uses the regular admin credentials, but will use the
-//credentials from logging in
-
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname","admin", "Sweng#2020");
 	

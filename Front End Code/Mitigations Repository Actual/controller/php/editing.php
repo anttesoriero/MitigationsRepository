@@ -58,11 +58,8 @@ try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname","admin", "Sweng#2020");
 	
 
-//    Edit_Author($dbh, $firstName,$lastName);
-//    addSystem($dbh, $os, $version);
-//    addSecurityControl($dbh, $category, $secType);
-//    addMitigation($dbh, $title, $description);
-
+	editRisk($dbh, $newTitle, $newDescription, $newOS, $newVer, $newCat, $newType, $riskID);
+	    echo "Success";
 }
 catch(PDOException $e) {
     echo ('PDO error in "ConnectDB()": ' . $e->getMessage() );
