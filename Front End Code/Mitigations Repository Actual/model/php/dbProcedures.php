@@ -142,3 +142,4 @@ function addCompleteMitigation($dbh, $title, $description, $os, $version, $categ
         die ('unable to add mitigation: ' . $e->getMessage() );
     }
 }
+
