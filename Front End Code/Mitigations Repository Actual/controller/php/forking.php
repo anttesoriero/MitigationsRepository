@@ -57,12 +57,8 @@ $dbname   = 'Mitigation_Repository';
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname","admin", "Sweng#2020");
 	
-
-//    addAuthor($dbh, $firstName,$lastName);
-//    addSystem($dbh, $os, $version);
-//    addSecurityControl($dbh, $category, $secType);
-//    addMitigation($dbh, $title, $description);
-    addCompleteMitigation($dbh, $title, $description, $os, $version, $category, $secType, $firstName, $lastName);
+	forkNewAuthor($dbh, $Mitigation_To_Fork, $firstName, $lastName);
+	
     echo "Success";
 }
 catch(PDOException $e) {
