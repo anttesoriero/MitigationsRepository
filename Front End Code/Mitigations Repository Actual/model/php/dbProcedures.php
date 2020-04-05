@@ -158,3 +158,23 @@ function forkNewAuthor($dbh, $Mitigation_To_Fork, $firstName, $lastName)
     }
 }
 
+function editRisk($dbh, $newTitle, $newDescription, $newOS, $newVer, $newCat, $newType, $riskID)
+{
+	try{
+		$sql = "CALL Mitigation_Repository.Edit_Risk(?,?,?,?,?,?,?);";
+		$stmt = $dbh->prepare($sql);
+		$stmt->bindValue(1, $newTitle, PDO::PARAM_STR);
+        $stmt->bindValue(2, $newDescription, PDO::PARAM_STR);
+		$stmt->bindValue(3, $newOS, PDO::PARAM_STR);
+		$stmt->bindValue(4, $newVer, PDO::PARAM_STR);
+        $stmt->bindValue(5, $newCat, PDO::PARAM_STR);
+		$stmt->bindValue(6, $newType, PDO::PARAM_STR);
+		$stmt->bindValue(7, $riskID, PDO::PARAM_INT);
+		$stmt->execute();
+    }
+    catch(PDOException $e) {
+        die ('unable to edit mitigation: ' . $e->getMessage() );
+    }
+}
+		
+
