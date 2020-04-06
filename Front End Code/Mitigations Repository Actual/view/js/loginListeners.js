@@ -10,7 +10,7 @@ addListeners();
 function addListeners() {
 
     // Listener for authenticaed login button
-    $('#submitLogin').on('click', function(evt) {
+    $('#submitLogin').on('click', function (evt) {
         evt.stopPropagation(); // prevent event bubbling from any parent elements
 
         // Make URL for Ajax call
@@ -22,7 +22,7 @@ function addListeners() {
     });
 
     // Listener for authenticaed login button
-    $('#logout').on('click', function(evt) {
+    $('#logout').on('click', function (evt) {
         evt.stopPropagation(); // prevent event bubbling from any parent elements
 
         // Make URL for Ajax call
@@ -42,8 +42,7 @@ function processLogin(loginData) {
     // Parse the AJAX return and look for certain strings
     if (loginData.toLowerCase().indexOf("error") != -1) {
         $('#errorMessage').html(loginData);
-    }
-    else if (loginData.toLowerCase().indexOf("success") != -1) {
+    } else if (loginData.toLowerCase().indexOf("success") != -1) {
         $('#successMessage').html(loginData);  // visible for split second
     }
 }

@@ -7,28 +7,22 @@ console.log('searchListeners.js loaded.');
 $('#left').load('../shtml/searchResults.shtml');
 
 /* Initial population of results  */
-var searchType = location.search.substring(location.search.indexOf('=') +1);
+var searchType = location.search.substring(location.search.indexOf('=') + 1);
 
 try {
-    if(searchType === 'random')
-    {
+    if (searchType === 'random') {
         ajaxURL = '../../controller/php/getRandMitigation.php';
-    }
-    else if(searchType === 'mostrecent')
-    {
+    } else if (searchType === 'mostrecent') {
         ajaxURL = '../../controller/php/getRecentMitigation.php';
-    }
-    else
-    {
-        ajaxURL = '../../controller/php/getTitleSearchMitigation.php?s='+searchType;
+    } else {
+        ajaxURL = '../../controller/php/getTitleSearchMitigation.php?s=' + searchType;
     }
 
     console.log(ajaxURL);
     mitigations = ajaxFetch(ajaxURL, processResults);
     console.log("Hopefully connected?");
-}
-catch (e) {
-    console.log("Error in " + searchType + "get_____Mitigation.php " + e );
+} catch (e) {
+    console.log("Error in " + searchType + "get_____Mitigation.php " + e);
 
 }
 
@@ -41,15 +35,15 @@ function addListeners() {
     //Looking, I don't think this page actually needs listeners
     //but I want this to exist JUST IN CASE.  ATM it's a wasted
     //function.
-/*
-    try{
+    /*
+        try{
 
-    }
-    catch (e) {
-        console.log("Error in getRandMitigation.php " + e);
-    }
+        }
+        catch (e) {
+            console.log("Error in getRandMitigation.php " + e);
+        }
 
- */
+     */
 }
 
 /****************************************************
@@ -75,17 +69,15 @@ function processResults(jsonResults) {
     var htmlString = "<ul id='myUL'>";
     var id;
     console.log("now parsing list...");
-    for (var i = 0; i < numRecords; i++)
-    {
+    for (var i = 0; i < numRecords; i++) {
         //This will make each row a unique div with a unique ID!
         id = "result" + i;
         htmlString += "<li><div class='wholeResult' id='" + id + "'><div class='resultRight'><span class='cat'></span><br><span class='type'></span></div><a" +
-            " onclick=fillDiv('result" + i +"') href='#'><span class='title'>" + jsonData[i].title + "</span><br><div class='resultLeft'>" +
+            " onclick=fillDiv('result" + i + "') href='#'><span class='title'>" + jsonData[i].title + "</span><br><div class='resultLeft'>" +
             "<span class = 'mitid'> Mitigation ID:" + jsonData[i].mitigation_id + "</span>";
 
 
-
-            htmlString +="<br><span class='author'>Author: " + jsonData[i].Author +"</span><br><span class='desc'>Created on:" +
+        htmlString += "<br><span class='author'>Author: " + jsonData[i].Author + "</span><br><span class='desc'>Created on:" +
             jsonData[i].created_at + "</span><br><span class='desc2'>Modified on:" + jsonData[i].modified_at + "</span><br><span class='further'>"
             + jsonData[i].description + "</span></div></a></div></li>";
     }
@@ -119,15 +111,13 @@ function processResults(jsonResults) {
     }*/
 }
 
-function processMitigationData(jsonResults)
-{
+function processMitigationData(jsonResults) {
     $('#rightResultDisplay').html(jsonResults);
 
     var jsonData = JSON.parse(jsonResults);
     console.log(jsonData);
 }
 
-function destroy(message)
-{
+function destroy(message) {
     $('#rightResultDisplay').html(message);
 }

@@ -11,7 +11,7 @@
            $params["path"], $params["domain"],
            $params["secure"], $params["httponly"]
        );
-   }   
+   }
    session_destroy();
    unset($_SESSION);
    session_regenerate_id(true);

@@ -17,11 +17,9 @@ addListeners();
  *          Listeners                 *
  **************************************/
 
-function addListeners()
-{
+function addListeners() {
     //Listener for going to the search page
-    $('#searchForm').on('submit', function(evt)
-    {
+    $('#searchForm').on('submit', function (evt) {
         evt.preventDefault();
         evt.stopPropagation();
         var rawTerm = document.getElementById('searchField').value;
@@ -29,29 +27,27 @@ function addListeners()
         console.log('search');
 
         // Make URL for Ajax call
-      // ajaxURL = 'controller/php/getRandMitigation.php';
+        // ajaxURL = 'controller/php/getRandMitigation.php';
 
         // Serialize the form so Ajax can post it asynchronously, then post it.
-      // $.post(ajaxURL, $('#searchForm').serialize(),processSearch);
-      //  console.log('AJAX call submitted.');
+        // $.post(ajaxURL, $('#searchForm').serialize(),processSearch);
+        //  console.log('AJAX call submitted.');
         processSearch(searchTerm);
     });
 
-    $('#newMitigation').on('click', function(evt)
-    {
+    $('#newMitigation').on('click', function (evt) {
         evt.stopPropagation();
         console.log('CLICK');
         // Make URL for Ajax call
-       //ajaxURL = 'controller/php/login.php';
+        //ajaxURL = 'controller/php/login.php';
 
         // Serialize the form so Ajax can post it asynchronously, then post it.
-      // $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
-       // console.log('AJAX call submitted.');
+        // $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
+        // console.log('AJAX call submitted.');
         goToCreate();
     });
 
-    $('#mostRecent').on('click', function(evt)
-    {
+    $('#mostRecent').on('click', function (evt) {
         evt.stopPropagation();
         console.log('CLICK');
         // Make URL for Ajax call
@@ -63,8 +59,7 @@ function addListeners()
         gotoMostRecent();
     });
 
-    $('#random').on('click', function(evt)
-    {
+    $('#random').on('click', function (evt) {
         evt.stopPropagation();
         console.log('CLICK');
         // Make URL for Ajax call
@@ -76,8 +71,7 @@ function addListeners()
         gotoRandom();
     });
 
-    $('#cancel').on('click', function(evt)
-    {
+    $('#cancel').on('click', function (evt) {
         evt.stopPropagation();
         console.log('Closed login');
         closeForm();
@@ -89,23 +83,19 @@ function addListeners()
  * Call-back Functions
  ******************************************************/
 
-function goToCreate()
-{
-    window.location.href='view/php/create.php';
+function goToCreate() {
+    window.location.href = 'view/php/create.php';
 }
 
-function processSearch(searchTerm)
-{
+function processSearch(searchTerm) {
 
-   window.location.href='view/php/search.php?q=' + searchTerm;
+    window.location.href = 'view/php/search.php?q=' + searchTerm;
 }
 
-function gotoMostRecent()
-{
-    window.location.href='view/php/search.php?q=mostrecent'
+function gotoMostRecent() {
+    window.location.href = 'view/php/search.php?q=mostrecent'
 }
 
-function gotoRandom()
-{
-    window.location.href='view/php/search.php?q=random'
+function gotoRandom() {
+    window.location.href = 'view/php/search.php?q=random'
 }

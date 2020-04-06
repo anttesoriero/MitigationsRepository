@@ -5,12 +5,12 @@ body
 }
 
 /* Add a grey bg to top nav */
-.topnav 
+.topnav
 {
 	overflow: hidden;
 	background-color: #eeeeee;
 	margin: 0;
-	
+
 }
 
 /*Style the links inside the navigation bar*/
@@ -31,7 +31,7 @@ body
 {
 	background-color: #ccc;
 	color: black;
-}	
+}
 
 /*style the "active" element to highlight the ucrrent page */
 .topnav a:active
@@ -44,9 +44,9 @@ body
 .topnav .search-container
 {
 	float: right;
-	
+
 }
-.topnav input[type=text] 
+.topnav input[type=text]
 {
 	padding: 6px;
 	margin-top: 8px;
@@ -90,7 +90,7 @@ body
 }
 
 
-.bodySearch input[type=text] 
+.bodySearch input[type=text]
 {
 	padding: 6px;
 	margin-left: 550px;

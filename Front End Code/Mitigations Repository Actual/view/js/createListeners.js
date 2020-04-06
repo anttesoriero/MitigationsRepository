@@ -8,10 +8,9 @@ addListeners();
  *                        Listeners                  *
  *****************************************************/
 function addListeners() {
-    $('#create').on('click', function(evt)
-    {
+    $('#create').on('click', function (evt) {
         evt.stopPropagation();
-       // evt.preventDefault();
+        // evt.preventDefault();
         console.log('CLICK');
         // Make URL for Ajax call
         ajaxURL = '../../controller/php/addition.php';
@@ -33,17 +32,14 @@ function processData(echoedData) {
     $('#left').html(echoedData);
 }
 
-function processAddition(additionData)
-{
+function processAddition(additionData) {
     if (additionData.toLowerCase().indexOf("error") != -1) {
         $('#errorMessage').html(additionData);
-    }
-    else if (additionData.toLowerCase().indexOf("success") != -1) {
+    } else if (additionData.toLowerCase().indexOf("success") != -1) {
         $('#successMessage').html(additionData);  // visible for split second
     }
 }
 
-function destroy(message)
-{
+function destroy(message) {
     $('#rightResultDisplay').html(message);
 }
