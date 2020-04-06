@@ -87,7 +87,7 @@ $_SESSION["username"] = "guest"; ?>
 
         <!-- Temp -->
         <br><br><br>
-        <?php include '../../view/php/selectCT.php'; ?>
+        <?php include 'php/selectCT.php'; ?>
         <br><br><br>
         <!-- End Temp -->
 
