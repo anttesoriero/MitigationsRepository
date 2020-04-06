@@ -90,7 +90,7 @@ function goToEdit(mit_id)
 }
 function goToFork(mit_id)
 {
-    window.location.href = 'fork.php?q=' + mit_id;
+    window.location.href = 'forking.php?q=' + mit_id;
 }
 
 function processResults(jsonResults) {
