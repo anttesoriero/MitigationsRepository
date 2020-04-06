@@ -18,7 +18,7 @@ addListeners();
         ajaxURL = '../../controller/php/forking.php';
 
         // Serialize the form so Ajax can post it asynchronously, then post it.
-        $.post(ajaxURL, $('#forkMitigationForm').serialize(), processAddition);
+        $.post(ajaxURL, $('#forkMitigationForm').serialize(), processFork);
         console.log('AJAX call submitted.');
         processAddition();
     });
