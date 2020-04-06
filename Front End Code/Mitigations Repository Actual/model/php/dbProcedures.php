@@ -138,14 +138,15 @@ function addCompleteMitigation($dbh, $title, $description, $os, $version, $categ
     }
 }
 
-function forkNewAuthor($dbh, $Mitigation_To_Fork, $firstName, $lastName)
+function forkNewAuthor($dbh, $Mitigation_To_Fork, $description, $firstName, $lastName)
 {
     try {
-        $sql = "CALL Mitigation_Repository.Fork_New_Author(?,?,?);";
+        $sql = "CALL Mitigation_Repository.Fork_New_Author(?,?,?,?);";
         $stmt = $dbh->prepare($sql);
         $stmt->bindValue(1, $Mitigation_To_Fork, PDO::PARAM_INT);
-        $stmt->bindValue(2, $firstName, PDO::PARAM_STR);
-        $stmt->bindValue(3, $lastName, PDO::PARAM_STR);
+		$stmt->bindValue(2, $description, PDO::PARAM_STR);
+        $stmt->bindValue(3, $firstName, PDO::PARAM_STR);
+        $stmt->bindValue(4, $lastName, PDO::PARAM_STR);
         $stmt->execute();
     } catch (PDOException $e) {
         die ('unable to fork mitigation: ' . $e->getMessage());

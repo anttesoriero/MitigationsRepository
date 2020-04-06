@@ -86,11 +86,11 @@ function processData(echoedData) {
 }
 function goToEdit(mit_id)
 {
-    window.location.href = 'edit.php?q=' + mit_id;
+    window.location.href = 'edit.php?s=' + mit_id;
 }
 function goToFork(mit_id)
 {
-    window.location.href = 'forking.php?q=' + mit_id;
+    window.location.href = 'forkingView.php?s=' + mit_id;
 }
 
 function processResults(jsonResults) {
