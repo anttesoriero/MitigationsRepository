@@ -120,6 +120,6 @@ while($rows = $result->fetch_assoc())
 <!-- load ajax helper -->
 <script type="text/javascript" src="../js/AjaxFunctions.js"></script>
 <!-- load listeners for this page -->
-<script type="text/javascript" src="../js/createListeners.js"></script>
+<script type="text/javascript" src="../js/forkingListeners.js"></script>
 </body>
 </html>
