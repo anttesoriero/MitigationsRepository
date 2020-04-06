@@ -18,9 +18,9 @@ addListeners();
         ajaxURL = '../../controller/php/forking.php';
 
         // Serialize the form so Ajax can post it asynchronously, then post it.
-        $.post(ajaxURL, $('#forkMitigationForm').serialize(), processAddition);
+        $.post(ajaxURL, $('#forkMitigationForm').serialize(), processFork);
         console.log('AJAX call submitted.');
-        processAddition();
+        processFork();
     });
 
 }
@@ -33,4 +33,12 @@ function processData(echoedData) {
     // Very simple callback that can be used for movies and actors
     // Note that the HTML tagging is done by the PHP
     $('#left').html(echoedData);
+}
+
+function processFork(forkData) {
+    if (forkData.toLowerCase().indexOf("error") != -1) {
+        $('#errorMessage').html(forkData);
+    } else if (forkData.toLowerCase().indexOf("success") != -1) {
+        $('#successMessage').html(forkData);  // visible for split second
+    }
 }
