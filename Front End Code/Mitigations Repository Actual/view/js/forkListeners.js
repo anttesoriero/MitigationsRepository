@@ -37,7 +37,7 @@ function processData(echoedData) {
 
 function processFork(forkData) {
     if (forkData.toLowerCase().indexOf("error") != -1) {
-        $('#errorMessage').html(forknData);
+        $('#errorMessage').html(forkData);
     } else if (forkData.toLowerCase().indexOf("success") != -1) {
         $('#successMessage').html(forkData);  // visible for split second
     }
