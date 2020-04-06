@@ -84,6 +84,13 @@ $_SESSION["username"] = "guest"; ?>
             ?>
         </select>
         <br><br><br>
+
+        <!-- Temp -->
+        <br><br><br>
+        <?php include '../../view/php/selectCT.php'; ?>
+        <br><br><br>
+        <!-- End Temp -->
+
         <button class="button" id="mostRecent">25 Most Recent Mitigations</button>
         <br><br><br>
         <!-- <button class="button" id="random"> 25 Random Mitigations</button>-->
