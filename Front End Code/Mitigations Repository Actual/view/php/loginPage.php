@@ -17,22 +17,18 @@
 </div>
 <h3 style="margin-left: 550px;"> Username: </h3>
   <div class="bodySearch">
-  <form action="./login.htm">
-    <input type="text" placeholder="Username">
-	</form>
-  </div>
+      <form id="loginForm">
+<label for="username">Username: </label>
+      <input type="text" id="username" name="username" required="required" /><br/>
 
-  <h3 style="margin-left: 550px;"> Password: </h3>
-  <div class="bodySearch">
-  <form action="./login.htm">
-    <input type="text" placeholder="Password">
-	</form>
-  </div>
+      <label for="password">Password: </label>
+      <input type="password" id="password" name="password" required="reqired" /><br/>
 
-  <div class="bodySearch">
-  <form action="./createprototype.htm">
-    <button class="button">Login</button>
-	</form>
+      <input type="button" id="submitLogin" value="Submit" /><br/>
+
+      <p><span id="successMessage" class="message"></span></p>
+      <p><span id="errorMessage" class="error"></span></p>
+      </form>
   </div>
 
   </body>
