@@ -60,6 +60,7 @@ $_SESSION["username"] = "guest"; ?>
         $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
         ?>
         <select name="category">
+            <option selected disabled>Choose Category</option>
             <?php
             while ($rows = $result->fetch_assoc()) {
                 $category = $rows['Control Type'];
@@ -74,6 +75,7 @@ $_SESSION["username"] = "guest"; ?>
         $result = $mysqli->query("CALL Mitigation_Repository.GetType()");
         ?>
         <select name="sec_type">
+            <option selected disabled>Choose Type</option>
             <?php
             while ($rows = $result->fetch_assoc()) {
                 $sec_type = $rows['Control Function'];
