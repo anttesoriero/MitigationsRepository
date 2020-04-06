@@ -20,7 +20,7 @@ addListeners();
         // Serialize the form so Ajax can post it asynchronously, then post it.
         $.post(ajaxURL, $('#forkMitigationForm').serialize(), processFork);
         console.log('AJAX call submitted.');
-        processAddition();
+        processFork();
     });
 
 }
