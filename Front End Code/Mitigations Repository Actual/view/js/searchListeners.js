@@ -71,7 +71,7 @@ function processData(echoedData) {
 }
 function goToEdit(mit_id)
 {
-    window.location.href = 'view/php/edit.php?q=' + mit_id;
+    window.location.href = 'edit.php?q=' + mit_id;
 }
 
 function processResults(jsonResults) {
