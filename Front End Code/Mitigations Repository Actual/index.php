@@ -16,6 +16,7 @@
 <body>
 <div class="topnav"> <a class="active" href="#home">Mitigation Repository <i class="fa fa-database"></i></a>
 
+    <div class ="login"><a href="view/loginPage.php">Login</a></div>
     <div class="form-popup" id="myForm">
         <form class="form-container" id="loginForm">
             <h1>Login</h1>
