@@ -57,7 +57,7 @@ if (isset($_GET['s'])) {
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname","admin", "Sweng#2020");
 	
-	forkNewAuthor($dbh, $Mitigation_To_Fork, $firstName, $lastName);
+	forkNewAuthor($dbh, $Mitigation_To_Fork, $description, $firstName, $lastName);
 	
     echo "Success";
 }
