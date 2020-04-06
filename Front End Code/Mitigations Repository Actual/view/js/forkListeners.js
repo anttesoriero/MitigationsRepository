@@ -34,3 +34,11 @@ function processData(echoedData) {
     // Note that the HTML tagging is done by the PHP
     $('#left').html(echoedData);
 }
+
+function processFork(forkData) {
+    if (forkData.toLowerCase().indexOf("error") != -1) {
+        $('#errorMessage').html(forknData);
+    } else if (forkData.toLowerCase().indexOf("success") != -1) {
+        $('#successMessage').html(forkData);  // visible for split second
+    }
+}
