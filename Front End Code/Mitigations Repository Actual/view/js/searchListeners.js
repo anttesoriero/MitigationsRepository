@@ -44,6 +44,21 @@ function addListeners() {
         }
 
      */
+
+    $('#edit').on('click', function (evt) {
+        evt.stopPropagation();
+        console.log('CLICK');
+
+        var mit_id= $(this).attr('name');
+
+        // Make URL for Ajax call
+        //ajaxURL = 'controller/php/login.php';
+
+        // Serialize the form so Ajax can post it asynchronously, then post it.
+        // $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
+        // console.log('AJAX call submitted.');
+        goToEdit(mit_id);
+    });
 }
 
 /****************************************************
@@ -53,6 +68,10 @@ function processData(echoedData) {
     // Very simple callback that can be used for movies and actors
     // Note that the HTML tagging is done by the PHP
     $('#left').html(echoedData);
+}
+function goToEdit(mit_id)
+{
+    window.location.href = 'view/php/edit.php?q=' + mit_id;
 }
 
 function processResults(jsonResults) {
@@ -74,8 +93,11 @@ function processResults(jsonResults) {
         id = "result" + i;
         htmlString += "<li><div class='wholeResult' id='" + id + "'><div class='resultRight'><span class='cat'></span><br><span class='type'></span></div><a" +
             " onclick=fillDiv('result" + i + "') href='#'><span class='title'>" + jsonData[i].title + "</span><br><div class='resultLeft'>" +
-            "<span class = 'mitid'> Mitigation ID:" + jsonData[i].mitigation_id + "</span>";
+            "<span class = 'mitid'> Mitigation ID:" + jsonData[i].mitigation_id + "</span><br><br>";
 
+       htmlString += "<button type = 'button' class='btn' id='edit' name='edit" + jsonData[i].mitigation_id + "'>Edit Mitigation</button>";
+
+       htmlString += "<button type = 'button' class='btn' id='fork' name='fork" + jsonData[i].mitigation_id + "'>Fork Mitigation</button>";
 
         htmlString += "<br><span class='author'>Author: " + jsonData[i].Author + "</span><br><span class='desc'>Created on:" +
             jsonData[i].created_at + "</span><br><span class='desc2'>Modified on:" + jsonData[i].modified_at + "</span><br><span class='further'>"

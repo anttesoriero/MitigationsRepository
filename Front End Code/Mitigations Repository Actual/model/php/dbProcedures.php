@@ -181,5 +181,18 @@ function editRisk($dbh, $newTitle, $newDescription, $newOS, $newVer, $newCat, $n
         die ('unable to edit mitigation: ' . $e->getMessage());
     }
 }
+
+function getChildren($dbh, $mit_id)
+{
+    try {
+        $sql = "CALL Mitigation_Repository.Display_Children(?);";
+        $stmt = $dbh->prepare($sql);
+        $stmt->bindValue(1, $mit_id, PDO::PARAM_INT);
+        $stmt->execute();
+    } catch (PDOException $e)
+    {
+        die('unable to fetch children : ' . $e->getMessage());
+    }
+}
 		
 
