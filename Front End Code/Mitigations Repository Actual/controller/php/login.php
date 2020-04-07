@@ -23,8 +23,9 @@ try {
     $_SESSION["username"] = $username;
     $_SESSION["password"] = $password;
     $_SESSION["logged_in"] = TRUE;
+    //echo $_SESSION['refurl'];
     header('location:'.$_SESSION['refurl']);
-    echo "Success";
+    //echo "Success";
 } catch (PDOException $e) {
     echo('PDO error in "ConnectDB()": ' . $e->getMessage());
 }

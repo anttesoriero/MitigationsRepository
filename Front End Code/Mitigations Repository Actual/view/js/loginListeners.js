@@ -42,12 +42,12 @@ function processLogin(loginData) {
     console.log(loginData);
 
     // Parse the AJAX return and look for certain strings
-    if (loginData.toLowerCase().indexOf("error") != -1) {
-        $('#errorMessage').html(loginData);
-    } else if (loginData.toLowerCase().indexOf("success") != -1) {
-        $('#successMessage').html(loginData);  // visible for split second
+  //  if (loginData.toLowerCase().indexOf("error") != -1) {
+   //     $('#errorMessage').html(loginData);
+   // } else if (loginData.toLowerCase().indexOf("success") != -1) {
+   //     $('#successMessage').html(loginData);  // visible for split second
 
 
-    }
+    //}
 }
 
