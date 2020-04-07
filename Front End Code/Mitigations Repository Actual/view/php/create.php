@@ -1,10 +1,4 @@
-<?php session_start();
-
-if(!logged_in)
-{
-    header("Location: /loginPage.php");
-    die();
-}?>
+<?php session_start(); ?>
 
 <!DOCTYPE html>
 <html>
@@ -17,8 +11,15 @@ if(!logged_in)
 
 </head>
 <body>
+<?php
+if (!isset($_SESSION['logged_in'])) {
+    $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
+    //echo $_SERVER['REQUEST_URI'];
+    header("Location: /view/php/loginPage.php");
+}
+?>
 <div class="topnav"><a class="active" href="../../index.php"> Mitigation Repository <i class="fa fa-database"></i></a>
-    <div class="login"><a href="view/php/loginPage.php?q=create">Login</a></div>
+    <div class="login"><a href="loginPage.php">Login</a></div>
     <div class="user">
         <?php
         // echo session_id();
