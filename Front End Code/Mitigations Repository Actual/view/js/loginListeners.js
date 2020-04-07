@@ -14,7 +14,7 @@ function addListeners() {
         evt.stopPropagation(); // prevent event bubbling from any parent elements
 
         // Make URL for Ajax call
-        ajaxURL = 'controller/php/login.php';
+        ajaxURL = '../../controller/php/login.php';
 
         // Serialize the form so Ajax can post it asynchronously, then post it.
         $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
@@ -26,7 +26,7 @@ function addListeners() {
         evt.stopPropagation(); // prevent event bubbling from any parent elements
 
         // Make URL for Ajax call
-        ajaxURL = 'controller/php/destroySession.php';
+        ajaxURL = '../../controller/php/destroySession.php';
         console.log("Session destroyed.");
     });
 
@@ -38,6 +38,8 @@ function addListeners() {
 
 function processLogin(loginData) {
     // The returned loginData will be whatever the php echoes
+    console.log("SOMETHING returned");
+    console.log(loginData);
 
     // Parse the AJAX return and look for certain strings
     if (loginData.toLowerCase().indexOf("error") != -1) {
@@ -45,7 +47,7 @@ function processLogin(loginData) {
     } else if (loginData.toLowerCase().indexOf("success") != -1) {
         $('#successMessage').html(loginData);  // visible for split second
 
-        window.location.href = 'view/php/sakila.php';
+
     }
 }
 

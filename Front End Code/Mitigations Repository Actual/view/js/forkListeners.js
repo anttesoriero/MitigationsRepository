@@ -36,9 +36,14 @@ function processData(echoedData) {
 }
 
 function processFork(forkData) {
+	console.log('Test');
     if (forkData.toLowerCase().indexOf("error") != -1) {
         $('#errorMessage').html(forkData);
     } else if (forkData.toLowerCase().indexOf("success") != -1) {
         $('#successMessage').html(forkData);  // visible for split second
     }
+}
+
+function destroy(message) {
+    $('#rightResultDisplay').html(message);
 }

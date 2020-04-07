@@ -12,10 +12,10 @@
 
 
 <body>
-<div class="topnav"><a class="active" href="#home">Mitigation Repository <i class="fa fa-database"></i></a>
+<div class="topnav"><a class="active" href="../../index.php">Mitigation Repository <i class="fa fa-database"></i></a>
 </div>
 <div class="bodySearch">
-    <form id="loginForm">
+    <form id='loginForm'>
         <label for="username">Username: </label>
         <input type="text" id="username" name="username" required="required"/><br/>
 
@@ -32,12 +32,11 @@
 <!-- loading javascript -->
 
 <!-- First jquery -->
-<script type='text/javascript' src='view/js/jquery-3.4.1.min.js'><</script>
+<script type='text/javascript' src='../js/jquery-3.4.1.min.js'><</script>
 <!-- Then ajax helper file -->
-<script type='text/javascript' src='view/js/AjaxFunctions.js'></script>
+<script type='text/javascript' src='../js/AjaxFunctions.js'></script>
 
 <!-- Listeners to attach actions to controls -->
-<script type='text/javascript' src='view/js/indexListeners.js'></script>
-<script type='text/javascript' src='view/js/loginListeners.js'></script>
+<script type='text/javascript' src='../js/loginListeners.js'></script>
 </body>
 </html>
