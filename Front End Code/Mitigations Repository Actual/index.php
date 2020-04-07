@@ -14,104 +14,104 @@ $_SESSION["username"] = "guest"; ?>
 
 
 <body>
-<div class="topnav"><a class="active" href="#home">Mitigation Repository <i class="fa fa-database"></i></a>
+    <div class="topnav"><a class="active" href="#home">Mitigation Repository <i class="fa fa-database"></i></a>
 
-    <div class="login"><a href="view/php/loginPage.php?q=index">Login</a></div>
-    <!--<div class="form-popup" id="myForm">
-        <form class="form-container" id="loginForm">
-            <h1>Login</h1>
+        <div class="login"><a href="view/php/loginPage.php?q=index">Login</a></div>
+        <!--<div class="form-popup" id="myForm">
+            <form class="form-container" id="loginForm">
+                <h1>Login</h1>
 
-            <label for="username"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="username" required>
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" required>
 
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
 
-            <button type="button" class="btn" id="login">Login</button>
+                <button type="button" class="btn" id="login">Login</button>
 
-            <button type="button" class="btn cancel" id="cancel">Close</button>
-        </form>
-    </div>-->
-</div>
-<h2 id="loginInstructions">
-    <?php
-    //echo session_id();
-    //if ($_GET['sessionExpired'] == 'yes') {
-    //    echo 'Session expired or not established';
-    //}
-    //else {
-    //    echo 'Please login';
-    //}
-    ?>
-
-
-</h2>
-
-<div class="left">
-    <div class="bodySearch">
-
-        <form id='searchForm'>
-            <input type="text" id="searchField" name='searchField' placeholder="Search Mitigation">
-        </form>
-        <br><br>
-        <?php
-        $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
-
-        $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
-        ?>
-        <select name="category">
-            <option selected disabled>Choose Category</option>
-            <?php
-            while ($rows = $result->fetch_assoc()) {
-                $category = $rows['Control Type'];
-                echo "<option value = '$category'>$category</option>";
-            }
-            ?>
-        </select>
-        <br><br><br>
-        <?php
-        $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
-
-        $result = $mysqli->query("CALL Mitigation_Repository.GetType()");
-        ?>
-        <select name="sec_type">
-            <option selected disabled>Choose Type</option>
-            <?php
-            while ($rows = $result->fetch_assoc()) {
-                $sec_type = $rows['Control Function'];
-                echo "<option value = '$sec_type'>$sec_type</option>";
-            }
-            ?>
-        </select>
-        <br><br><br>
-
-        <!-- Temp 7 -->
-        <br><br><br>
-        <?php include 'view/php/selectCT.php'; ?>
-        <br><br><br>
-        <!-- End Temp -->
-
-        <button class="button" id="mostRecent">25 Most Recent Mitigations</button>
-        <br><br><br>
-        <!-- <button class="button" id="random"> 25 Random Mitigations</button>-->
+                <button type="button" class="btn cancel" id="cancel">Close</button>
+            </form>
+        </div>-->
     </div>
-</div>
-<div class="v1"></div>
-<div class="right">
-    <h2> Create new Mitigation </h2>
-    <button class="button" id="newMitigation">Create new Mitigation</button>
-</div>
+    <h2 id="loginInstructions">
+        <?php
+        //echo session_id();
+        //if ($_GET['sessionExpired'] == 'yes') {
+        //    echo 'Session expired or not established';
+        //}
+        //else {
+        //    echo 'Please login';
+        //}
+        ?>
 
-<!-- loading javascript -->
 
-<!-- First jquery -->
-<script type='text/javascript' src='view/js/jquery-3.4.1.min.js'><</script>
-<!-- Then ajax helper file -->
-<script type='text/javascript' src='view/js/AjaxFunctions.js'></script>
+    </h2>
 
-<!-- Listeners to attach actions to controls -->
-<script type='text/javascript' src='view/js/indexListeners.js'></script>
-<script type='text/javascript' src='view/js/loginListeners.js'></script>
+    <div class="left">
+        <div class="bodySearch">
+
+            <form id='searchForm'>
+                <input type="text" id="searchField" name='searchField' placeholder="Search Mitigation">
+            </form>
+            <br><br>
+            <?php
+            $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
+
+            $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
+            ?>
+            <select name="category">
+                <option selected disabled>Choose Category</option>
+                <?php
+                while ($rows = $result->fetch_assoc()) {
+                    $category = $rows['Control Type'];
+                    echo "<option value = '$category'>$category</option>";
+                }
+                ?>
+            </select>
+            <br><br><br>
+            <?php
+            $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
+
+            $result = $mysqli->query("CALL Mitigation_Repository.GetType()");
+            ?>
+            <select name="sec_type">
+                <option selected disabled>Choose Type</option>
+                <?php
+                while ($rows = $result->fetch_assoc()) {
+                    $sec_type = $rows['Control Function'];
+                    echo "<option value = '$sec_type'>$sec_type</option>";
+                }
+                ?>
+            </select>
+            <br><br><br>
+
+            <!-- Temp 7 -->
+            <br><br><br>
+            <?php include 'view/php/selectCT.php'; ?>
+            <br><br><br>
+            <!-- End Temp -->
+
+            <button class="button" id="mostRecent">25 Most Recent Mitigations</button>
+            <br><br><br>
+            <!-- <button class="button" id="random"> 25 Random Mitigations</button>-->
+        </div>
+    </div>
+    <div class="v1"></div>
+    <div class="right">
+        <h2> Create new Mitigation </h2>
+        <button class="button" id="newMitigation">Create new Mitigation</button>
+    </div>
+
+    <!-- loading javascript -->
+
+    <!-- First jquery -->
+    <script type='text/javascript' src='view/js/jquery-3.4.1.min.js'><</script>
+    <!-- Then ajax helper file -->
+    <script type='text/javascript' src='view/js/AjaxFunctions.js'></script>
+
+    <!-- Listeners to attach actions to controls -->
+    <script type='text/javascript' src='view/js/indexListeners.js'></script>
+    <script type='text/javascript' src='view/js/loginListeners.js'></script>
 
 </body>
 </html>
