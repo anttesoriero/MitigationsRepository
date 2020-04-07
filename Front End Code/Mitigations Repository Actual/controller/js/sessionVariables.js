@@ -1,12 +1,12 @@
 console.log('sessionVariables.js loaded');
 
 function setUserID(user_id, username) {
-    ajaxURL = '../../controller/setSessionUserUD.php' +
+    ajaxURL = '../../controller/setSessionUserID.php' +
             '?user_id=' + user_id + '&username=' + username;
     ajaxFetch(ajaxURL, acknowledgeSettingUserID);
 }
 
-function acknowledgeSettingUserUD() {
+function acknowledgeSettingUserID() {
     console.log('Okay, user id set');
 }
 
