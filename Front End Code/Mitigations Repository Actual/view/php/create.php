@@ -82,6 +82,7 @@
                 $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
                 ?>
                 <select name="category" required='required'>
+                    <option selected disabled>Choose Category</option>
                     <?php
                     while ($rows = $result->fetch_assoc()) {
                         $category = $rows['Control Type'];
@@ -96,6 +97,7 @@
             $result = $mysqli->query("CALL Mitigation_Repository.GetType()");
             ?>
             <select name="sec_type" required='required'>
+                <option selected disabled>Choose Type</option>
                 <?php
                 while ($rows = $result->fetch_assoc()) {
                     $sec_type = $rows['Control Function'];

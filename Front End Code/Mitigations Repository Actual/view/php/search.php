@@ -28,6 +28,7 @@
     $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
     ?>
     <select name="category">
+        <option selected disabled>Choose Category</option>
         <?php
         while($rows = $result->fetch_assoc())
         {
@@ -43,6 +44,7 @@
     $result = $mysqli->query("CALL Mitigation_Repository.GetType()");
     ?>
     <select name="sec_type">
+        <option selected disabled>Choose Type</option>
         <?php
         while($rows = $result->fetch_assoc())
         {
