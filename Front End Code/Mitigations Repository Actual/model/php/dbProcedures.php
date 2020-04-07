@@ -153,12 +153,13 @@ function forkNewAuthor($dbh, $Mitigation_To_Fork, $description, $firstName, $las
     }
 }
 
-function forkWithoutAuthor($dbh, $Mitigation_To_Fork)
+function forkWithoutAuthor($dbh, $Mitigation_To_Fork, $description)
 {
     try {
-        $sql = "CALL Mitigation_Repository.Fork_without_author(?);";
+        $sql = "CALL Mitigation_Repository.Fork_without_author(?,?);";
         $stmt = $dbh->prepare($sql);
         $stmt->bindValue(1, $Mitigation_To_Fork, PDO::PARAM_INT);
+		$stmt->bindValue(2, $description, PDO::PARAM_STR);
         $stmt->execute();
     } catch (PDOException $e) {
         die ('unable to fork mitigation: ' . $e->getMessage());
