@@ -50,6 +50,7 @@ $_SESSION["username"] = "guest"; ?>
     <div class="left">
         <div class="bodySearch">
 
+            <h2> Search Mitigation </h2
             <form id='searchForm'>
                 <input type="text" id="searchField" name='searchField' placeholder="Search Mitigation">
             </form>
