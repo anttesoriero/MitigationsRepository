@@ -100,7 +100,7 @@ while($rows = $result->fetch_assoc())
 }
 ?>
 </select>
-                <button class="button" id="create">Create Mitigation</button>
+                <button class="button" id="fork">Create Mitigation</button>
             </form>
         </div>
 </div>
