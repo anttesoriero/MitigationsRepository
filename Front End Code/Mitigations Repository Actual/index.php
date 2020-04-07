@@ -85,9 +85,9 @@ $_SESSION["username"] = "guest"; ?>
         </select>
         <br><br><br>
 
-        <!-- Temp 6 -->
+        <!-- Temp 7 -->
         <br><br><br>
-        <?php include 'Front End Code/Mitigations Repository Actual/view/php/selectCT.php'; ?>
+        <?php include 'view/php/selectCT.php'; ?>
         <br><br><br>
         <!-- End Temp -->
 
