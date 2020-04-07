@@ -12,11 +12,11 @@
 </head>
 <body>
 <?php
-if (!isset($_SESSION['logged_in'])) {
-    $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
-    //echo $_SERVER['REQUEST_URI'];
-    header("Location: /view/php/loginPage.php");
-}
+//if (!isset($_SESSION['logged_in'])) {
+//    $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
+//    //echo $_SERVER['REQUEST_URI'];
+//    header("Location: /view/php/loginPage.php");
+//}
 ?>
 <div class="topnav"><a class="active" href="../../index.php"> Mitigation Repository <i class="fa fa-database"></i></a>
     <div class="login"><a href="loginPage.php">Login</a></div>
