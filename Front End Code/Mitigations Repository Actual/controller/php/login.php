@@ -25,19 +25,8 @@ try {
 //   $_SESSION["dbh"] = $dbh;
     // $_SESSION["username"] = $username;
     //$_SESSION["password"] = $password;
-
-    if($_SERVER['REQUEST_METHOD'] == 'POST')
-    {
-        $refurl = isset($_POST['refurl']) ? base64_decode($_POST['refurl']) : '';
-        if(!empty($refurl))
-        {
-            header("Location: $refurl");
-        }
-        else
-        {
-            header("Location: ../index.php");
-        }
-    }
+    $_SESSION["logged_in"] = TRUE;
+    header('location:'.$_SESSION['refurl']);
     echo "Success";
 } catch (PDOException $e) {
     echo('PDO error in "ConnectDB()": ' . $e->getMessage());
