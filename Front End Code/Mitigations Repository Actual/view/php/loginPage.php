@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="../css/login.css">
     <link id='mainCSS' rel="stylesheet" type="text/css" href="../css/main.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="create.js"></script>
     <title> Login </title>
 </head>
 
@@ -15,14 +14,13 @@
 <body>
 <div class="topnav"><a class="active" href="#home">Mitigation Repository <i class="fa fa-database"></i></a>
 </div>
-<h3 style="margin-left: 550px;"> Username: </h3>
 <div class="bodySearch">
     <form id="loginForm">
         <label for="username">Username: </label>
         <input type="text" id="username" name="username" required="required"/><br/>
 
         <label for="password">Password: </label>
-        <input type="password" id="password" name="password" required="reqired"/><br/>
+        <input type="password" id="password" name="password" required="required"/><br/>
 
         <input type="button" id="submitLogin" value="Submit"/><br/>
 
@@ -31,5 +29,15 @@
     </form>
 </div>
 
+<!-- loading javascript -->
+
+<!-- First jquery -->
+<script type='text/javascript' src='view/js/jquery-3.4.1.min.js'><</script>
+<!-- Then ajax helper file -->
+<script type='text/javascript' src='view/js/AjaxFunctions.js'></script>
+
+<!-- Listeners to attach actions to controls -->
+<script type='text/javascript' src='view/js/indexListeners.js'></script>
+<script type='text/javascript' src='view/js/loginListeners.js'></script>
 </body>
 </html>

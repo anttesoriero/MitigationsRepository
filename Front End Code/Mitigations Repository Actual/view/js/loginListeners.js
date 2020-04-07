@@ -44,6 +44,8 @@ function processLogin(loginData) {
         $('#errorMessage').html(loginData);
     } else if (loginData.toLowerCase().indexOf("success") != -1) {
         $('#successMessage').html(loginData);  // visible for split second
+
+        window.location.href = 'view/php/sakila.php';
     }
 }
 
