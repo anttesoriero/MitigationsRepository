@@ -42,3 +42,8 @@ function processFork(forkData) {
         $('#successMessage').html(forkData);  // visible for split second
     }
 }
+
+
+function destroy(message) {
+    $('#rightResultDisplay').html(message);
+}
