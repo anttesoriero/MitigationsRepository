@@ -75,6 +75,7 @@ $mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
 $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
 ?>
 <select name="category" required='required'>
+    <option selected disabled>Choose Category</option>
 <?php
 while($rows = $result->fetch_assoc())
 {
@@ -90,6 +91,7 @@ $mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
 $result = $mysqli->query("CALL Mitigation_Repository.GetType()");
 ?>
 <select name="sec_type" required='required'>
+    <option selected disabled>Choose Type</option>
 <?php
 while($rows = $result->fetch_assoc())
 {
