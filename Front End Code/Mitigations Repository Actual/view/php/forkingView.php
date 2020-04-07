@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="topnav"> <a class="active" href="../../index.php"> Mitigation Repository <i class="fa fa-database"></i></a>
-    <div class="login"><a href="view/php/loginPage.php?q=forking">Login</a></div>
+    <div class="login"><a href="view/php/loginPage.php">Login</a></div>
     <div class = "user">
         <?php
        // echo session_id();

@@ -45,7 +45,13 @@ function processLogin(loginData) {
     } else if (loginData.toLowerCase().indexOf("success") != -1) {
         $('#successMessage').html(loginData);  // visible for split second
 
-        window.location.href = 'view/php/sakila.php';
+        var redirect = location.search.substring(location.search.indexOf('=') +1);
+
+        if (redirect === edit)
+        {
+            window.location.href = 'view/php/sakila.php';
+        }
+
     }
 }
 

@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="topnav"> <a class="active" href="../../index.php"> Mitigation Repository <i class="fa fa-database"></i></a>
-    <div class="login"><a href="view/php/loginPage.php?q=search">Login</a></div>
+    <div class="login"><a href="view/php/loginPage.php">Login</a></div>
 <h2 style = "float: left"> Search Results </h2>
 <br>
 <br>

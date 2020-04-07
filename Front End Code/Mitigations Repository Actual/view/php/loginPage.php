@@ -12,7 +12,7 @@
 
 
 <body>
-<div class="topnav"><a class="active" href="#home">Mitigation Repository <i class="fa fa-database"></i></a>
+<div class="topnav"><a class="active" href="../index.php">Mitigation Repository <i class="fa fa-database"></i></a>
 </div>
 <div class="bodySearch">
     <form id="loginForm">
@@ -21,6 +21,8 @@
 
         <label for="password">Password: </label>
         <input type="password" id="password" name="password" required="required"/><br/>
+
+        <input type="hidden" name="refurl" value="<?php echo base64_encode($_SERVER['HTTP_REFERER']); ?>" />
 
         <input type="button" id="submitLogin" value="Submit"/><br/>
 

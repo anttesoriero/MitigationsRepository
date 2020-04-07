@@ -1,4 +1,10 @@
-<?php session_start(); ?>
+<?php session_start();
+
+if(!logged_in)
+{
+    header("Location: /loginPage.php");
+    die();
+}?>
 
 <!DOCTYPE html>
 <html>
