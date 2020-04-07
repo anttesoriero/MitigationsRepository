@@ -33,6 +33,7 @@ function processData(echoedData) {
 }
 
 function processAddition(additionData) {
+
     if (additionData.toLowerCase().indexOf("error") != -1) {
         $('#errorMessage').html(additionData);
     } else if (additionData.toLowerCase().indexOf("success") != -1) {
