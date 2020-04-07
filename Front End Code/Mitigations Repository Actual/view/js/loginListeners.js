@@ -14,7 +14,7 @@ function addListeners() {
         evt.stopPropagation(); // prevent event bubbling from any parent elements
 
         // Make URL for Ajax call
-        ajaxURL = 'controller/php/login.php';
+        ajaxURL = '../../controller/php/login.php';
 
         // Serialize the form so Ajax can post it asynchronously, then post it.
         $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
@@ -26,7 +26,7 @@ function addListeners() {
         evt.stopPropagation(); // prevent event bubbling from any parent elements
 
         // Make URL for Ajax call
-        ajaxURL = 'controller/php/destroySession.php';
+        ajaxURL = '../../controller/php/destroySession.php';
         console.log("Session destroyed.");
     });
 
