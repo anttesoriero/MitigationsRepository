@@ -41,6 +41,7 @@ function processFork(forkData) {
     } else if (forkData.toLowerCase().indexOf("success") != -1) {
         $('#successMessage').html(forkData);  // visible for split second
     }
+		window.location.href = '../../index.php';
 }
 
 function destroy(message) {
