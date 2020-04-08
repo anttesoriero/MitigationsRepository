@@ -67,9 +67,6 @@
             <form id='searchForm'>
                 <input type="text" id="searchField" name='searchField' placeholder="Search Mitigation">
             </form>
-            <br><br>
-            <br><br><br>
-
             <!-- Temp 8 -->
             <br><br><br>
             <?php include 'view/php/selectCT.php'; ?>
