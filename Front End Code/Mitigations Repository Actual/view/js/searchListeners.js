@@ -49,7 +49,7 @@ function addListeners() {
         evt.stopPropagation();
         console.log('CLICK');
 
-        var mit_id= $(this).attr('name');
+        var mit_id = $(this).attr('name');
 
         // Make URL for Ajax call
         //ajaxURL = 'controller/php/login.php';
@@ -64,7 +64,7 @@ function addListeners() {
         evt.stopPropagation();
         console.log('CLICK');
 
-        var mit_id= $(this).attr('name');
+        var mit_id = $(this).attr('name');
 
         // Make URL for Ajax call
         //ajaxURL = 'controller/php/login.php';
@@ -74,6 +74,8 @@ function addListeners() {
         // console.log('AJAX call submitted.');
         goToFork(mit_id);
     });
+
+    $('#result')
 }
 
 /****************************************************
@@ -84,12 +86,12 @@ function processData(echoedData) {
     // Note that the HTML tagging is done by the PHP
     $('#left').html(echoedData);
 }
-function goToEdit(mit_id)
-{
+
+function goToEdit(mit_id) {
     window.location.href = 'edit.php?s=' + mit_id;
 }
-function goToFork(mit_id)
-{
+
+function goToFork(mit_id) {
     window.location.href = 'forkingView.php?s=' + mit_id;
 }
 
@@ -110,13 +112,14 @@ function processResults(jsonResults) {
     for (var i = 0; i < numRecords; i++) {
         //This will make each row a unique div with a unique ID!
         id = "result" + i;
-        htmlString += "<li><div class='wholeResult' id='" + id + "'><div class='resultRight'><span class='cat'></span><br><span class='type'></span></div><a" +
-            " onclick=fillDiv('result" + i + "')><span class='title'>" + jsonData[i].title + "</span><br><div class='resultLeft'>" +
-            "<span class = 'mitid'> Mitigation ID:" + jsonData[i].mitigation_id + "</span><br><br>";
+        htmlString += "<li><div class='wholeResult' id='" + id + "'><a id='result" + i + "')>" +
+            "<div class='resultRight'><span class='cat'></span><br><span class='type'></span></div>" +
+            "<span class='title'>" + jsonData[i].title + "</span><br><div class='resultLeft'><span class = 'mitid'>" +
+            " Mitigation ID:" + jsonData[i].mitigation_id + "</span><br><br>";
 
-       htmlString += "<input type = 'button' class='btn' id='edit' name='" + jsonData[i].mitigation_id + "' value='Edit Mitigation'/>";
+        htmlString += "<input type = 'button' class='btn' id='edit' name='" + jsonData[i].mitigation_id + "' value='Edit Mitigation'/>";
 
-       htmlString += "<input type = 'button' class='btn' id='fork' name='" + jsonData[i].mitigation_id + "' value='Fork Mitigation'/>";
+        htmlString += "<input type = 'button' class='btn' id='fork' name='" + jsonData[i].mitigation_id + "' value='Fork Mitigation'/>";
 
         htmlString += "<br><span class='author'>Author: " + jsonData[i].Author + "</span><br><span class='desc'>Created on:" +
             jsonData[i].created_at + "</span><br><span class='desc2'>Modified on:" + jsonData[i].modified_at + "</span><br><span class='further'>"

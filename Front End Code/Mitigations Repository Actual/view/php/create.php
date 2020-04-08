@@ -32,19 +32,6 @@ if (!isset($_SESSION['logged_in'])) {
     </div>
 </div>
 
-<div class="user">
-    <?php
-    //    echo session_id();
-    //  if (isset($_SESSION['username']))
-    //{
-    //  echo ' Logged in as ' . $_SESSION['username'];
-    //}
-    //else
-    //{
-    //   echo 'Guest Access';
-    //}
-    ?>
-</div>
 <div class="leftSearch" id="leftSide">
     <h2> Create a Mitigation </h2>
 
