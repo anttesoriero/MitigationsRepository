@@ -18,7 +18,7 @@ addListeners();
         ajaxURL = '../../controller/php/editing.php';
 
         // Serialize the form so Ajax can post it asynchronously, then post it.
-        $.post(ajaxURL, $('#forkMitigationForm').serialize(), processEdit);
+        $.post(ajaxURL, $('#editMitigationForm').serialize(), processEdit);
         console.log('AJAX call submitted.');
         processEdit();
     });

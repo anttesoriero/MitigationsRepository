@@ -44,7 +44,7 @@ if (isset($_GET['s'])) {
 
 
     <div class="bodySearch">
-        <form id="forkMitigationForm">
+        <form id="editMitigationForm">
             <input type="hidden" name = 'mitigationToEdit' value='<?php echo $Mitigation_To_Edit ?>' />
             <h3 style="margin-left: 550px;"> Author First Name </h3>
             <input type="text" placeholder="First Name" name="firstName" required='required'>
