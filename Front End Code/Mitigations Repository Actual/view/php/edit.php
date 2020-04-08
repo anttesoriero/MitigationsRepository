@@ -71,7 +71,8 @@ if (isset($_GET['s'])) {
                 </textarea>
             </div>
 
-            <h3 style="margin-left: 600px;"> Category: </h3>
+            <!-- <h3 style="margin-left: 600px;"> Category: </h3> -->
+            <label style="margin-left: 600px;"> Category: </label>
             <p>
 
                 <?php
@@ -88,7 +89,9 @@ if (isset($_GET['s'])) {
                     }
                     ?>
                 </select>
-            <h3 style="margin-left: 600px;"> Type: </h3>
+
+            <!-- <h3 style="margin-left: 600px;"> Type: </h3> -->
+            <label style="margin-left: 600px;"> Type: </label>
             <?php
             $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
 
