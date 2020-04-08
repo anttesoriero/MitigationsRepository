@@ -51,26 +51,6 @@ if (!isset($_SESSION['logged_in'])) {
 <div class="leftSearch" id="leftSide">
     <h2> Fork Mitigation </h2>
 
- <select style="width:100%;" class="quform-tooltip chosen-select" id="company_select" name="company_select" title="Company Select" onChange="showUser(this.value)">
-<option value="">Please select</option>
-<?php
-$userID = $user->getUserID();
-$query = $user->database->query("SELECT * FROM tbl_businesses as business LEFT JOIN tbl_user_businesses as biz_user ON business.businessID = biz_user.businessID WHERE biz_user.userID ='$userID'");
-
-while($row=$user->database->fetchArray($query))
-{
-	
-	$Mitigation_To_Fork = $row['Mitigation_To_Fork'];
-    $description = $row['forkDescription'];
-    $firstName = $row['firstName'];
-	$lastName = $row['lastName'];
-    echo "<option value='$Mitigation_To_Fork'>$forkDescription</option>";
-}?>
-</select>
-
-<input id="company_name" type="text" name="company_name" value="" />
-<input id="company_email" type="text" name="company_name" value="" />
-
 
     <div class="bodySearch">
         <form id="createMitigationForm">
