@@ -12,52 +12,11 @@
 </head>
 <body>
 <?php
-<<<<<<< HEAD
-<<<<<<< HEAD
-if (!isset($_SESSION['logged_in'])) {
-    $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
-    echo $_SESSION['refurl'];
-    header("Location: /view/php/loginPage.php");
-}
-=======
-=======
->>>>>>> b5a79ec61c33c7d1cfc127d000a19fc062c075d2
 //if (!isset($_SESSION['logged_in'])) {
 //    $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
 //    echo $_SESSION['refurl'];
 //    header("Location: /view/php/loginPage.php");
 //}
-
-
-if (isset($_GET['s'])) {
-    $Mitigation_To_Edit = $_GET['s'];
-}
-?>
-<div class="topnav"> <a class="active" href="../../index.php"> Mitigation Repository <i class="fa fa-database"></i></a>
-    <div class="login"><a href="/loginPage.php">Login</a></div></div>
-
-<h2 style = "float: left"> Search Results </h2>
-<br>
-<br>
-<br>
-<div class = "bodySearch">
-    <input type="text" id="myInput" onkeyup="results()" placeholder="Refine Search">
-    <?php
-    $mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
-
-    $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
-    ?>
-    <select name="category">
-        <option selected disabled>Choose Category</option>
-        <?php
-        while($rows = $result->fetch_assoc())
-        {
-            $category = $rows['Control Type'];
-            echo "<option value = '$category'>$category</option>";
-        }
-        ?>
-    </select>
->>>>>>> b5a79ec61c33c7d1cfc127d000a19fc062c075d2
 
 
 if (isset($_GET['s'])) {
