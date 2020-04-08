@@ -37,6 +37,7 @@
         <input type="password" id="password" name="password" required="required"/><br/>
 
         <input type="button" id="submitLogin" value="Submit"/><br/>
+        <input type='button' id='logout' value='Logout' />
 
         <p><span id="successMessage" class="message"></span></p>
         <p><span id="errorMessage" class="error"></span></p>
