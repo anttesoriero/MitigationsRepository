@@ -196,5 +196,16 @@ function getChildren($dbh, $mit_id)
         die('unable to fetch children : ' . $e->getMessage());
     }
 }
-		
+function searchByID($dbh, $mit_id)
+{
+    try {
+        $sql = "CALL Mitigation_Repository.Search_By_ID(?);";
+        $stmt = $dbh->prepare($sql);
+        $stmt->bindValue(1, $mit_id, PDO::PARAM_INT);
+        $stmt->execute();
+    } catch (PDOException $e)
+    {
+        die('unable to fetch mitigation by ID : ' . $e->getMessage());
+    }
+}
 
