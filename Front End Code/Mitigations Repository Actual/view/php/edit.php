@@ -62,34 +62,32 @@ if (isset($_GET['s'])) {
             <input type="text" placeholder="Version" name="version" required='required'>
 
             <h3 style="margin-left: 550px;"> Enter Mitigation Description </h3>
-            <div class="descriptionSearch">
+            <!-- <div class="descriptionSearch">
 
                 <input type="text" placeholder="Mitigation Description" name="description" required='required'>
-            </div>
+            </div> -->
 
             <div class="descriptionSearchTA">
-                <textarea id="description" rows="5" cols="25" placeholder="Mitigation Description" name="description" required='required'>
-                </textarea>
+                <textarea id="description" rows="5" cols="25" placeholder="Mitigation Description" name="description" required='required'></textarea>
             </div>
 
             <!-- <h3 style="margin-left: 600px;"> Category: </h3> -->
             <label for="category" style="margin-left: 600px;"> Category: </label>
-            <p>
 
+            <?php
+            $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
+
+            $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
+            ?>
+            <select name="category" required='required'>
+                <option selected disabled>Choose Category</option>
                 <?php
-                $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
-
-                $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
+                while ($rows = $result->fetch_assoc()) {
+                    $category = $rows['Control Type'];
+                    echo "<option value = '$category'>$category</option>";
+                }
                 ?>
-                <select name="category" required='required'>
-                    <option selected disabled>Choose Category</option>
-                    <?php
-                    while ($rows = $result->fetch_assoc()) {
-                        $category = $rows['Control Type'];
-                        echo "<option value = '$category'>$category</option>";
-                    }
-                    ?>
-                </select>
+            </select>
 
             <!-- <h3 style="margin-left: 600px;"> Type: </h3> -->
             <label for="sec_type" style="margin-left: 600px;"> Type: </label>
@@ -107,6 +105,8 @@ if (isset($_GET['s'])) {
                 }
                 ?>
             </select>
+
+            <br>
             <input type="button" class="button" id="edit" value="Edit Mitigation"/>
         </form>
     </div>
