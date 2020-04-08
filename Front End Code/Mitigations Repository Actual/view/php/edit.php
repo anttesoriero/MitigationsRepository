@@ -66,7 +66,7 @@ if (isset($_GET['s'])) {
                 <input type="text" placeholder="Mitigation Description" name="description" required='required'>
             </div>
 
-            <div class="descriptionSearch">
+            <div class="descriptionSearchTA">
                 <textarea id="description" rows="5" cols="25" placeholder="Mitigation Description" name="description" required='required'>
                 </textarea>
             </div>
