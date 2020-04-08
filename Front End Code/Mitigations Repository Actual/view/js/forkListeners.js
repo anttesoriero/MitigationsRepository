@@ -12,7 +12,7 @@ addListeners();
     $('#fork').on('click', function(evt)
     {
         evt.stopPropagation();
-        evt.preventDefault();
+        //evt.preventDefault();
         console.log('CLICK');
         // Make URL for Ajax call
         ajaxURL = '../../controller/php/forking.php';
