@@ -107,7 +107,7 @@ while($rows = $result->fetch_assoc())
 }
 ?>
 </select>
-                <button class="button" id="create">Create Mitigation</button>
+            <input type = "button" class="button" id="create" value="Edit Mitigation"/>
             </form>
         </div>
 </div>

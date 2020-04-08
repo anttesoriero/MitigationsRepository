@@ -102,7 +102,7 @@ if (!isset($_SESSION['logged_in'])) {
                 }
                 ?>
             </select>
-            <button class="button" id="create">Create Mitigation</button>
+            <input type = "button" class="button" id="create" value="Create Mitigation"/>
         </form>
     </div>
 </div>

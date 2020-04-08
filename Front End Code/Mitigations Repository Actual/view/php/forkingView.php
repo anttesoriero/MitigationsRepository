@@ -107,7 +107,7 @@ while($rows = $result->fetch_assoc())
 }
 ?>
 </select>
-                <button class="button" id="fork">Fork Mitigation</button>
+            <input type = "button" class="button" id="fork" value="Fork Mitigation"/>
             </form>
         </div>
 </div>
