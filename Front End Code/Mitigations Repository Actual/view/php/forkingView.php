@@ -52,16 +52,6 @@ if (!isset($_SESSION['logged_in'])) {
     <h2> Fork Mitigation </h2>
 
 
-<form id="form-ajax" action="form-ajax.php">
-    <label>ID:</label><input type="text" name="ID" /><br />
-    <label>Name:</label><input type="text" name="Name" /><br />
-    <label>Address:</label><input type="text" name="Address" /><br />
-    <label>Phone:</label><input type="text" name="Phone" /><br />
-    <label>Email:</label><input type="email" name="Email" /><br />
-    <input type="submit" value="fill from db" />
-</form>
-
-
     <div class="bodySearch">
         <form id="createMitigationForm">
             <h3 style="margin-left: 550px;"> Author First Name </h3>
