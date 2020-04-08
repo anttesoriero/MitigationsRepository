@@ -203,6 +203,8 @@ function searchByID($dbh, $mit_id)
         $stmt = $dbh->prepare($sql);
         $stmt->bindValue(1, $mit_id, PDO::PARAM_INT);
         $stmt->execute();
+        $results = $stmt->fetchAll(PDO::FETCH_OBJ);
+        echo json_encode($results);
     } catch (PDOException $e)
     {
         die('unable to fetch mitigation by ID : ' . $e->getMessage());

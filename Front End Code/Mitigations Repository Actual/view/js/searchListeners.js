@@ -112,13 +112,14 @@ function processResults(jsonResults) {
         //This will make each row a unique div with a unique ID!
         id = "result" + i;
         htmlString += "<li><div class='wholeResult' id='" + id + "'><a onclick=fillDiv('result" + i + "')>" +
-            "<div class='resultRight'><span class='cat'></span><br><span class='type'></span></div>" +
-            "<span class='title'>" + jsonData[i].title + "</span><br><div class='resultLeft'><span class = 'mitid'>" +
-            " Mitigation ID:" + jsonData[i].mitigation_id + "</span><br><br>";
+            "<div class='resultRight'><span class='cat'>" + jsonData[i].category + "</span><br><span class='type'>"
+            + jsonData[i].sec_type +"</span></div><span class='title'>" + jsonData[i].title +
+            "</span><br><div class='resultLeft'><span class = 'mitid'>Mitigation ID:" + jsonData[i].mitigation_id +
+            "</span><br><br>";
 
-        htmlString += "<input type = 'button' class='btn' id='edit' name='" + jsonData[i].mitigation_id + "' value='Edit Mitigation'/>";
+        //htmlString += "<input type = 'button' class='btn' id='edit' name='" + jsonData[i].mitigation_id + "' value='Edit Mitigation'/>";
 
-        htmlString += "<input type = 'button' class='btn' id='fork' name='" + jsonData[i].mitigation_id + "' value='Fork Mitigation'/>";
+        //htmlString += "<input type = 'button' class='btn' id='fork' name='" + jsonData[i].mitigation_id + "' value='Fork Mitigation'/>";
 
         htmlString += "<br><span class='author'>Author: " + jsonData[i].Author + "</span><br><span class='desc'>Created on:" +
             jsonData[i].created_at + "</span><br><span class='desc2'>Modified on:" + jsonData[i].modified_at + "</span><br><span class='further'>"
@@ -128,30 +129,6 @@ function processResults(jsonResults) {
     htmlString += "</ul>";
 
     $('#allResults').html(htmlString);
-
-    //Now we can add the elements to the page.
-    /*console.log("now adding elements to page...");
-    for (var i = 0; i < numRecords; i++)
-    {
-        elementID = "#result" + i;
-        ajaxURL = '../../controller/php/getRandMitigation.php?mitigation_id=' + jsonData[i].mitigation_id;
-        console.log(ajaxURL);
-        var mitigationData = new Array();
-
-        $(elementID).on('click', function(evt)
-        {
-            try
-            {
-                console.log("ID-" + $(elementID).attr('id'));
-                $('#rightResultDisplay').html($(elementID).attr('onclick'));
-                mitigationData[i] = ajaxFetch(ajaxURL, processMitigationData);
-            }
-            catch (e)
-            {
-                console.log("Error in getRandMitigation.php" + e);
-            }
-        });
-    }*/
 }
 
 function processMitigationData(jsonResults) {
