@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link id="forkingCSS" rel="stylesheet" type="text/css" href="../css/EditStyle.css">
+    <link id="editCSS" rel="stylesheet" type="text/css" href="../css/EditStyle.css">
     <link id="mainCSS" rel="stylesheet" type="text/css" href="../css/main.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title> Fork Mitigation </title>
@@ -98,7 +98,7 @@ if (isset($_GET['s'])) {
                 }
                 ?>
             </select>
-            <input type="button" class="button" id="fork" value="Edit Mitigation"/>
+            <input type="button" class="button" id="edit" value="Edit Mitigation"/>
         </form>
     </div>
 </div>
