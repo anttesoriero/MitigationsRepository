@@ -19,6 +19,7 @@ function addListeners() {
         $.post(ajaxURL, $('#createMitigationForm').serialize(), processAddition);
         console.log('AJAX call submitted.');
         processAddition();
+		window.location.href = 'view/index.php';
     });
 
 }
