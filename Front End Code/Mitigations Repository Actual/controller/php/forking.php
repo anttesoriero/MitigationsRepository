@@ -3,7 +3,7 @@
 if (!include('../../model/php/dbProcedures.php')) {
     die('error finding dbProcedures.php in model dir');
 }
-
+/*
 if(!isset($_POST['firstName']))
 {
     die("First name Required");
@@ -37,7 +37,7 @@ if(!isset($_POST['sec_type']))
     die("Security Type Required");
 }
 
-
+*/
 
 $hostname = '127.0.0.1';   // local host.  web server is db server
 //Trims from what is posted by the create page to get the various variables and save them locally temporarily
@@ -50,24 +50,22 @@ $version = trim($_POST['version']);
 $description = trim($_POST['description']);
 $category = trim($_POST['category']);
 $secType = trim($_POST['sec_type']);
+$Mitigation_To_Fork = trim($_POST['mitigationToFork']);
 $dbname   = 'Mitigation_Repository';
 
-if (isset($_GET['s'])) {
-    $Mitigation_To_Fork = $_GET['s'];
-}
 
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname","admin", "Sweng#2020");
 	forkNewAuthor($dbh, $Mitigation_To_Fork, $description, $firstName, $lastName);
 	//forkWithoutAuthor($dbh, $Mitigation_To_Fork, $description);
-    echo "Success";
+    //echo "Success";
 }
 catch(PDOException $e) {
-    echo ('PDO error in "ConnectDB()": ' . $e->getMessage() );
+    echo ('PDO error for user ' . $username . ' in "ConnectDB()": ' . $e->getMessage() );
 }
 
 
-
+/*
 $q = intval($_GET['q']);
 
 $sql="SELECT * FROM tbl_businesses WHERE businessID = '".$q."'";
@@ -84,5 +82,5 @@ while($row=$user->database->fetchArray($result))
     $info[] = array( 'Mitigation_To_Fork' => $Mitigation_To_Fork, 'forkDescription' => $forkDescription, 'firstName' => $firstName , 'lastName' => $lastNameName);
 }
 echo json_encode($info);?> 
-
+*/
 

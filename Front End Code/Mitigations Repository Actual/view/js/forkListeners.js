@@ -25,7 +25,7 @@ addListeners();
 
 }
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+/*<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
 
 <script>
 function showUser(str)
@@ -59,7 +59,7 @@ xmlhttp.open("GET","formdata.php?q="+str,true);
 xmlhttp.send();
 }
 </script>
-
+*/
 /****************************************************
  *                  Callbacks                       *
  ****************************************************/

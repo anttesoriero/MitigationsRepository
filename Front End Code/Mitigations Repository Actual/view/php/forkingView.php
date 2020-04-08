@@ -17,6 +17,11 @@ if (!isset($_SESSION['logged_in'])) {
     echo $_SESSION['refurl'];
     header("Location: /view/php/loginPage.php");
 }
+
+
+if (isset($_GET['s'])) {
+    $Mitigation_To_Fork = $_GET['s'];
+}
 ?>
 <div class="topnav"><a class="active" href="../../index.php"> Mitigation Repository <i class="fa fa-database"></i></a>
     <div class="login"><a href="/loginPage.php">Login</a></div>
@@ -39,7 +44,8 @@ if (!isset($_SESSION['logged_in'])) {
 
 
     <div class="bodySearch">
-        <form id="createMitigationForm">
+        <form id="forkMitigationForm">
+            <input type="hidden" name = 'mitigationToFork' value='<?php echo $Mitigation_To_Fork ?>' />
             <h3 style="margin-left: 550px;"> Author First Name </h3>
             <input type="text" placeholder="First Name" name="firstName" required='required'>
             <h3 style="margin-left: 550px;"> Author Last Name </h3>
