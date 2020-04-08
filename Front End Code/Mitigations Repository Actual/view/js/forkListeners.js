@@ -2,15 +2,6 @@
 
 console.log('forkListeners.js loaded.');
 
-try {
-    ajaxURL = '../../controller/php/addMitigation.php';
-    mitigations = ajaxFetch(ajaxURL, addMitigations);
-}
-catch (e) {
-    console.log("Error in addMitigation.php " + e );
-
-}
-
 addListeners();
 
 /*****************************************************
@@ -21,7 +12,7 @@ addListeners();
     $('#fork').on('click', function(evt)
     {
         evt.stopPropagation();
-       // evt.preventDefault();
+        evt.preventDefault();
         console.log('CLICK');
         // Make URL for Ajax call
         ajaxURL = '../../controller/php/forking.php';

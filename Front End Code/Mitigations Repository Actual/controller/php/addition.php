@@ -54,9 +54,8 @@ try {
 //    addSecurityControl($dbh, $category, $secType);
 //    addMitigation($dbh, $title, $description);
     addCompleteMitigation($dbh, $title, $description, $os, $version, $category, $secType, $firstName, $lastName);
-    echo "Success";
 } catch (PDOException $e) {
-    echo('PDO error in "ConnectDB()": ' . $e->getMessage());
+    echo ('PDO error for user ' . $username . ' in "ConnectDB()": ' . $e->getMessage() );
 }
 
 ?>
