@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title> Edit Mitigation - Mitigation Repository </title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link id="editCSS" rel="stylesheet" type="text/css" href="../css/EditStyle.css">
     <link id="mainCSS" rel="stylesheet" type="text/css" href="../css/main.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title> Fork Mitigation </title>
+
 
 </head>
 <body>

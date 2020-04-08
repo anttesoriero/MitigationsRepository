@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mitigation Repository</title>
+    <title> Mitigation Repository </title>
     <meta charset='utf-8'/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link id='mainCSS' rel="stylesheet" type="text/css" href="view/css/main.css"/>
