@@ -111,7 +111,7 @@ function processResults(jsonResults) {
         //This will make each row a unique div with a unique ID!
         id = "result" + i;
         htmlString += "<li><div class='wholeResult' id='" + id + "'><div class='resultRight'><span class='cat'></span><br><span class='type'></span></div><a" +
-            " onclick=fillDiv('result" + i + "') href='#'><span class='title'>" + jsonData[i].title + "</span><br><div class='resultLeft'>" +
+            " onclick=fillDiv('result" + i + "')><span class='title'>" + jsonData[i].title + "</span><br><div class='resultLeft'>" +
             "<span class = 'mitid'> Mitigation ID:" + jsonData[i].mitigation_id + "</span><br><br>";
 
        htmlString += "<input type = 'button' class='btn' id='edit' name='" + jsonData[i].mitigation_id + "' value='Edit Mitigation'/>";
