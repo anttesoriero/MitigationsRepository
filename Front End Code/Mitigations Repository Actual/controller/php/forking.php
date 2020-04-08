@@ -37,6 +37,25 @@ if(!isset($_POST['sec_type']))
     die("Security Type Required");
 }
 
+if (isset($_GET['action'])) {
+    if ($_GET['action'] == 'fetch') {
+        // tell the browser what's coming
+        header('Content-type: forking/json');
+ 
+        // open database connection
+        $dbh = new PDO("mysql:host=$hostname;dbname=$dbname","admin", "Sweng#2020");
+ 
+        // use prepared statements!
+        $query = $db->prepare('select * from form_ajax where ID = ?');
+        $query->execute(array($_GET['ID']));
+        $row = $query->fetch(PDO::FETCH_OBJ);
+ 
+        // send the data encoded as JSON
+        echo json_encode($row);
+        exit;
+    }
+}
+
 $hostname = '127.0.0.1';   // local host.  web server is db server
 //Trims from what is posted by the create page to get the various variables and save them locally temporarily
 
