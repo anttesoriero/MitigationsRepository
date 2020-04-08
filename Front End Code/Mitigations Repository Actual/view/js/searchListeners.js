@@ -75,7 +75,6 @@ function addListeners() {
         goToFork(mit_id);
     });
 
-    $('#result')
 }
 
 /****************************************************
@@ -112,7 +111,7 @@ function processResults(jsonResults) {
     for (var i = 0; i < numRecords; i++) {
         //This will make each row a unique div with a unique ID!
         id = "result" + i;
-        htmlString += "<li><div class='wholeResult' id='" + id + "'><a id='result" + i + "')>" +
+        htmlString += "<li><div class='wholeResult' id='" + id + "'><a onclick=fillDiv('result" + i + "')>" +
             "<div class='resultRight'><span class='cat'></span><br><span class='type'></span></div>" +
             "<span class='title'>" + jsonData[i].title + "</span><br><div class='resultLeft'><span class = 'mitid'>" +
             " Mitigation ID:" + jsonData[i].mitigation_id + "</span><br><br>";
