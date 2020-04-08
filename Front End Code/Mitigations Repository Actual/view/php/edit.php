@@ -51,7 +51,6 @@ if (!isset($_SESSION['logged_in'])) {
 </div>
 
 
-
 <div class="leftSearch" id="leftSide">
     <h2> Edit a Mitigation </h2>
 
