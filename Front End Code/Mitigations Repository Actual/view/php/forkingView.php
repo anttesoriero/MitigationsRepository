@@ -82,7 +82,7 @@ if (isset($_GET['s'])) {
                         echo "<option value = '$category'>$category</option>";
                     }
                     ?>
-                </select>
+                </select><br>
             <h3 style="margin-left: 600px;"> Type: </h3>
             <?php
             $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
