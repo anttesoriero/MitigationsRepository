@@ -37,6 +37,8 @@ if(!isset($_POST['sec_type']))
     die("Security Type Required");
 }
 
+
+
 $hostname = '127.0.0.1';   // local host.  web server is db server
 //Trims from what is posted by the create page to get the various variables and save them locally temporarily
 
@@ -63,5 +65,24 @@ try {
 catch(PDOException $e) {
     echo ('PDO error in "ConnectDB()": ' . $e->getMessage() );
 }
+
+
+
+$q = intval($_GET['q']);
+
+$sql="SELECT * FROM tbl_businesses WHERE businessID = '".$q."'";
+
+$result = $user->database->query($sql);
+$info = array();
+while($row=$user->database->fetchArray($result))
+{
+    $Mitigation_To_Fork = $row['Mitigation_To_Fork'];
+    $description = $row['forkDescription'];
+    $firstName = $row['firstName'];
+	$lastName = $row['lastName'];
+	
+    $info[] = array( 'Mitigation_To_Fork' => $Mitigation_To_Fork, 'forkDescription' => $forkDescription, 'firstName' => $firstName , 'lastName' => $lastNameName);
+}
+echo json_encode($info);?> 
 
 

@@ -37,6 +37,7 @@ if (!isset($_SESSION['logged_in'])) {
 <div class="leftSearch" id="leftSide">
     <h2> Fork Mitigation </h2>
 
+
     <div class="bodySearch">
         <form id="createMitigationForm">
             <h3 style="margin-left: 550px;"> Author First Name </h3>
