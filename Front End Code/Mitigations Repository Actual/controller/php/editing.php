@@ -48,6 +48,7 @@ $version = trim($_POST['version']);
 $description = trim($_POST['description']);
 $category = trim($_POST['category']);
 $secType = trim($_POST['sec_type']);
+$riskID = trim($_POST['mitigationToEdit']);
 $dbname   = 'Mitigation_Repository';
 
 
@@ -58,7 +59,7 @@ try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname","admin", "Sweng#2020");
 	
 
-	editRisk($dbh, $newTitle, $newDescription, $newOS, $newVer, $newCat, $newType, $riskID);
+	editRisk($dbh, $title, $description, $os, $version, $category, $secType, $riskID);
 	    echo "Success";
 }
 catch(PDOException $e) {
