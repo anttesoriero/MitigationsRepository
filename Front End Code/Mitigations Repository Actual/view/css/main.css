@@ -42,7 +42,7 @@ body
 /*style the "active" element to highlight the ucrrent page */
 .topnav a:active
 {
-	background-color: #2196F3;
+	background-color: #aaa;
 	color: white;
 }
 
