@@ -13,12 +13,15 @@
 <body>
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 if (!isset($_SESSION['logged_in'])) {
     $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
     echo $_SESSION['refurl'];
     header("Location: /view/php/loginPage.php");
 }
 =======
+=======
+>>>>>>> b5a79ec61c33c7d1cfc127d000a19fc062c075d2
 //if (!isset($_SESSION['logged_in'])) {
 //    $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
 //    echo $_SESSION['refurl'];
