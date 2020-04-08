@@ -66,6 +66,11 @@ if (isset($_GET['s'])) {
                 <input type="text" placeholder="Mitigation Description" name="description" required='required'>
             </div>
 
+            <div class="descriptionSearch">
+                <textarea id="description" rows="5" cols="25" placeholder="Mitigation Description" name="description" required='required'>
+                </textarea>
+            </div>
+
             <h3 style="margin-left: 600px;"> Category: </h3>
             <p>
 
