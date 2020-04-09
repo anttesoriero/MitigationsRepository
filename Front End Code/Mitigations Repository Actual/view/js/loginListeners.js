@@ -27,9 +27,10 @@ function addListeners() {
 
         // Make URL for Ajax call
         ajaxURL = '../../controller/php/destroySession.php';
-        $.ajax(ajaxURL);
+        ajaxFetch(ajaxURL, logoutRedirect());
 
         console.log("Session destroyed.");
+
     });
 
 }
@@ -50,12 +51,14 @@ function processLogin(loginData) {
         //if (loginData.toLowerCase().indexOf("success") != -1) {
         //     $('#successMessage').html(loginData);  // visible for split second
         // }
-        if (loginData === 'index.php') {
-            window.location.href = '../index.php';
-        } else {
-        }
         window.location.href = loginData;
 
     }
+
+}
+
+function logoutRedirect()
+{
+    window.location.href = '../../index.php';
 }
 

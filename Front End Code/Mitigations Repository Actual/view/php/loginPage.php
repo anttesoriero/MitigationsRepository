@@ -17,7 +17,7 @@
     <div class="login"><a href="loginPage.php">Login</a></div>
     <div class="user">
         <?php
-        echo session_id();
+       // echo session_id();
         if (isset($_SESSION['username']))
         {
             echo ' Logged in as ' . $_SESSION['username'];
