@@ -23,10 +23,12 @@ if (!isset($_SESSION['logged_in'])) {
     <div class="login"><a href="loginPage.php">Login</a></div>
     <div class="user">
         <?php
-        echo session_id();
-        if (isset($_SESSION['username'])) {
+        if (isset($_SESSION['username']))
+        {
             echo ' Logged in as ' . $_SESSION['username'];
-        } else {
+        }
+        else
+        {
             echo 'Guest Access';
         }
         ?>

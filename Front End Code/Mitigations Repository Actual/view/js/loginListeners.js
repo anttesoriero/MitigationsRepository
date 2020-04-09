@@ -48,9 +48,14 @@ function processLogin(loginData) {
         $('#errorMessage').html(loginData);
     } else {
         //if (loginData.toLowerCase().indexOf("success") != -1) {
-       //     $('#successMessage').html(loginData);  // visible for split second
-       // }
-         window.location.href = loginData;
+        //     $('#successMessage').html(loginData);  // visible for split second
+        // }
+        if (loginData === 'index.php') {
+            window.location.href = '../index.php';
+        } else {
+        }
+        window.location.href = loginData;
+
     }
 }
 
