@@ -1,6 +1,11 @@
 <?php
 //session_start();
 ?>
+
+<html>
+<head>
+</head>
+<body>
 <div class="completeMitigation" id="completeMitigation" name="completeMitigation"></div>
 
 <!-- Load all the javascript in -->
@@ -11,3 +16,7 @@
 <script type="text/javascript" src="../js/AjaxFunctions.js"></script>
 <!-- load listeners for this page -->
 <script type="text/javascript" src="../js/mitigationListener.js"></script>
+
+
+</body>
+</html>

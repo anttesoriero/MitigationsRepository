@@ -40,7 +40,7 @@ function addListeners() {
         var mit_id = $(this).attr('name');
 
         console.log('going to full');
-        $('#rightResultDisplay').html('<?php include ../php/fullMitigation.php?s=' + mit_id);
+        $('#rightResultDisplay').html("<?php include '../php/fullMitigation.php?s=" + mit_id + "'; ?>");
 
         //goToFull(mit_id);
 
