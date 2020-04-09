@@ -1,0 +1,16 @@
+[08-Apr-2020 18:47:02 UTC] PHP Notice:  Undefined index: firstName in /var/www/html/controller/php/forking.php on line 45
+[08-Apr-2020 18:47:02 UTC] PHP Notice:  Undefined index: lastName in /var/www/html/controller/php/forking.php on line 46
+[08-Apr-2020 18:47:02 UTC] PHP Notice:  Undefined index: title in /var/www/html/controller/php/forking.php on line 47
+[08-Apr-2020 18:47:02 UTC] PHP Notice:  Undefined index: os in /var/www/html/controller/php/forking.php on line 48
+[08-Apr-2020 18:47:02 UTC] PHP Notice:  Undefined index: version in /var/www/html/controller/php/forking.php on line 49
+[08-Apr-2020 18:47:02 UTC] PHP Notice:  Undefined index: description in /var/www/html/controller/php/forking.php on line 50
+[08-Apr-2020 18:47:02 UTC] PHP Notice:  Undefined index: category in /var/www/html/controller/php/forking.php on line 51
+[08-Apr-2020 18:47:02 UTC] PHP Notice:  Undefined index: sec_type in /var/www/html/controller/php/forking.php on line 52
+[08-Apr-2020 18:47:02 UTC] PHP Notice:  Undefined variable: Mitigation_To_Fork in /var/www/html/controller/php/forking.php on line 61
+[08-Apr-2020 18:49:11 UTC] PHP Notice:  Undefined variable: Mitigation_To_Fork in /var/www/html/controller/php/forking.php on line 61
+[08-Apr-2020 18:50:26 UTC] PHP Notice:  Undefined variable: Mitigation_To_Fork in /var/www/html/controller/php/forking.php on line 61
+[08-Apr-2020 18:50:45 UTC] PHP Notice:  Undefined variable: Mitigation_To_Fork in /var/www/html/controller/php/forking.php on line 61
+[08-Apr-2020 23:01:33 UTC] PHP Notice:  Undefined index: refurl in /var/www/html/controller/php/login.php on line 25
+[08-Apr-2020 23:03:46 UTC] PHP Notice:  Undefined index: refurl in /var/www/html/controller/php/login.php on line 25
+[08-Apr-2020 23:09:10 UTC] PHP Notice:  Undefined index: refurl in /var/www/html/controller/php/login.php on line 25
+[08-Apr-2020 23:09:14 UTC] PHP Notice:  Undefined index: refurl in /var/www/html/controller/php/login.php on line 25

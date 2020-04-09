@@ -75,16 +75,25 @@ function addListeners() {
         goToFork(mit_id);
     });
 
+
+    $('#result').on('click', function (evt){
+        evt.stopPropagation();
+        console.log('YOU CLICKED A THING');
+
+        var mit_id = $(this).attr('name');
+
+        ajaxURL = '../../controller/php/getMitigation.php
+
+        $.post(ajaxURL, serialize)
+
+
+
+    });
 }
 
 /****************************************************
  *                  Callbacks                       *
  ****************************************************/
-function processData(echoedData) {
-    // Very simple callback that can be used for movies and actors
-    // Note that the HTML tagging is done by the PHP
-    $('#left').html(echoedData);
-}
 
 function goToEdit(mit_id) {
     window.location.href = 'edit.php?s=' + mit_id;
@@ -131,13 +140,11 @@ function processResults(jsonResults) {
     $('#allResults').html(htmlString);
 }
 
-function processMitigationData(jsonResults) {
-    $('#rightResultDisplay').html(jsonResults);
+function processMitigationData(mitigationData) {
+
 
     var jsonData = JSON.parse(jsonResults);
     console.log(jsonData);
-}
 
-function destroy(message) {
-    $('#rightResultDisplay').html(message);
+    $('#rightResultDisplay').html('<?php include ../php/fullMitigation.php?s=' + jsonData);
 }

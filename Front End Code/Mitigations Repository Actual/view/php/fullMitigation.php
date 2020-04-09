@@ -1,6 +1,12 @@
 <?php
 session_start();
+
+if (isset($_GET['s'])) {
+    $mit = $_GET['s'];
+}
 ?>
+
+
 
 <div class='resultRight'><span class='cat'>
 

@@ -27,6 +27,8 @@ function addListeners() {
 
         // Make URL for Ajax call
         ajaxURL = '../../controller/php/destroySession.php';
+        $.ajax(ajaxURL);
+
         console.log("Session destroyed.");
     });
 
