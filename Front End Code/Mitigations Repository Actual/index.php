@@ -68,6 +68,8 @@
                 <input type="text" id="searchField" name='searchField' placeholder="Search Mitigation">
             </form>
             <!-- Temp 8 -->
+            <label for="category" style="margin-left: 600px;"> Category: </label>
+            <label for="sec_type" style="margin-left: 600px;"> Type: </label>
             <br><br><br>
             <?php include 'view/php/selectCT.php'; ?>
             <br><br><br>
