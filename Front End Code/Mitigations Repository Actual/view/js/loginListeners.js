@@ -42,7 +42,7 @@ function addListeners() {
 function processLogin(loginData) {
     // The returned loginData will be whatever the php echoes
     console.log("SOMETHING returned");
-    //console.log(loginData);
+    console.log(loginData);
 
     // Parse the AJAX return and look for certain strings
     if (loginData.toLowerCase().indexOf("error") != -1) {
@@ -51,7 +51,12 @@ function processLogin(loginData) {
         //if (loginData.toLowerCase().indexOf("success") != -1) {
         //     $('#successMessage').html(loginData);  // visible for split second
         // }
-        window.location.href = loginData;
+
+        if (loginData === '/index.php') {
+            window.location.href = '../../index.php';
+        } else {
+            window.location.href = loginData;
+        }
 
     }
 
