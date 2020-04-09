@@ -5,23 +5,13 @@ if (isset($_GET['s'])) {
     $mit = $_GET['s'];
 }
 ?>
+<div class="completeMitigation" id="completeMitigation" name="completeMitigation"></div>
 
+<!-- Load all the javascript in -->
 
-
-<div class='resultRight'><span class='cat'>
-
-        jsonData[i].category
-    </span><br><span class='type'>
-        jsonData[i].sec_type
-    </span></div><span class='title'>
-    jsonData[i].title
-</span><br>
-<div class='resultLeft'><span class='mitid'>Mitigation ID: jsonData[i].mitigation_id </span><br><br>
-
-    <input type='button' class='btn' id='edit' name='" + jsonData[i].mitigation_id + "' value='Edit Mitigation'/>
-
-    <input type='button' class='btn' id='fork' name='" + jsonData[i].mitigation_id + "' value='Fork Mitigation'/>
-
-    <br><span class='author'>Author: " + jsonData[i].Author + "</span><br><span class='desc'>Created on: jsonData[i].created_at + "</span><br><span
-            class='desc2'>Modified on:" + jsonData[i].modified_at + "</span><br><span class='further'>
-            + jsonData[i].description + "</span></div>
+<!-- load jquery -->
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<!-- load ajax helper -->
+<script type="text/javascript" src="../js/AjaxFunctions.js"></script>
+<!-- load listeners for this page -->
+<script type="text/javascript" src="../js/mitigationListener.js"></script>

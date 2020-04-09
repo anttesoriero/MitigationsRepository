@@ -44,49 +44,13 @@ function addListeners() {
         }
 
      */
-
-    $('#edit').on('click', function (evt) {
-        evt.stopPropagation();
-        console.log('CLICK');
-
-        var mit_id = $(this).attr('name');
-
-        // Make URL for Ajax call
-        //ajaxURL = 'controller/php/login.php';
-
-        // Serialize the form so Ajax can post it asynchronously, then post it.
-        // $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
-        // console.log('AJAX call submitted.');
-        goToEdit(mit_id);
-    });
-
-    $('#fork').on('click', function (evt) {
-        evt.stopPropagation();
-        console.log('CLICK');
-
-        var mit_id = $(this).attr('name');
-
-        // Make URL for Ajax call
-        //ajaxURL = 'controller/php/login.php';
-
-        // Serialize the form so Ajax can post it asynchronously, then post it.
-        // $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
-        // console.log('AJAX call submitted.');
-        goToFork(mit_id);
-    });
-
-
     $('#result').on('click', function (evt){
         evt.stopPropagation();
         console.log('YOU CLICKED A THING');
 
         var mit_id = $(this).attr('name');
 
-        ajaxURL = '../../controller/php/getMitigation.php
-
-        $.post(ajaxURL, serialize)
-
-
+        goToFull(mit_id);
 
     });
 }
@@ -124,12 +88,7 @@ function processResults(jsonResults) {
             "<div class='resultRight'><span class='cat'>" + jsonData[i].category + "</span><br><span class='type'>"
             + jsonData[i].sec_type +"</span></div><span class='title'>" + jsonData[i].title +
             "</span><br><div class='resultLeft'><span class = 'mitid'>Mitigation ID:" + jsonData[i].mitigation_id +
-            "</span><br><br>";
-
-        //htmlString += "<input type = 'button' class='btn' id='edit' name='" + jsonData[i].mitigation_id + "' value='Edit Mitigation'/>";
-
-        //htmlString += "<input type = 'button' class='btn' id='fork' name='" + jsonData[i].mitigation_id + "' value='Fork Mitigation'/>";
-
+            "</span>";
         htmlString += "<br><span class='author'>Author: " + jsonData[i].Author + "</span><br><span class='desc'>Created on:" +
             jsonData[i].created_at + "</span><br><span class='desc2'>Modified on:" + jsonData[i].modified_at + "</span><br><span class='further'>"
             + jsonData[i].description + "</span></div></a></div></li>";
@@ -140,11 +99,7 @@ function processResults(jsonResults) {
     $('#allResults').html(htmlString);
 }
 
-function processMitigationData(mitigationData) {
+function goToFull(mit_id) {
 
-
-    var jsonData = JSON.parse(jsonResults);
-    console.log(jsonData);
-
-    $('#rightResultDisplay').html('<?php include ../php/fullMitigation.php?s=' + jsonData);
+    $('#rightResultDisplay').html('<?php include ../php/fullMitigation.php?s=' + mit_id);
 }
