@@ -33,7 +33,7 @@ addListeners();
  *****************************************************/
 function addListeners() {
 
-    $('#result').on('click', function (evt){
+    $('.wholeResult').on('click', function (evt){
         evt.stopPropagation();
         console.log('YOU CLICKED A THING');
 
@@ -64,7 +64,8 @@ function processResults(jsonResults) {
     console.log("now parsing list...");
     for (var i = 0; i < numRecords; i++) {
         //This will make each row a unique div with a unique ID!
-        htmlString += "<li><div class='wholeResult' id='result'>"+
+        id = 'result' . i;
+        htmlString += "<li><div class='wholeResult' id='" + id + "' name='" + jsonData[i].mitigation_id +"'>"+
             "<div class='resultRight'><span class='cat'>" + jsonData[i].category + "</span><br><span class='type'>"
             + jsonData[i].sec_type +"</span></div><span class='title'>" + jsonData[i].title +
             "</span><br><div class='resultLeft'><span class = 'mitid'>Mitigation ID:" + jsonData[i].mitigation_id +
