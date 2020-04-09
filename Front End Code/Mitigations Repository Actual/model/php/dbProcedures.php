@@ -1,25 +1,7 @@
 <?php
 
-/*
- * getMitigations: Returns a list of mitigations
- *  PARAM $dbh          the database handle
- *  PARAM $num
- *  RETURN              Set of database records
- */
-function getRandMitigation($dbh, $num)
-{
-    try {
-        $sql = "CALL Mitigation_Repository.Mit_Search_RAND;";
-        $stmt = $dbh->prepare($sql);
-        $stmt->bindValue(1, $num, PDO::PARAM_INT);
-        $stmt->execute();
-        $results = $stmt->fetchAll(PDO::FETCH_OBJ);
-        echo json_encode($results);
-    } catch (PDOException $e) {
-        die ('unable to fetch mitigations: ' . $e->getMessage());
-    }
-}
 
+//Mit_Search_Recent()
 function getRecentMitigation($dbh, $num)
 {
     try {
@@ -34,6 +16,7 @@ function getRecentMitigation($dbh, $num)
     }
 }
 
+//Mitigation_Search_Title(IN Title varchar(255))
 function getTitleSearchMitigation($dbh, $num, $term)
 {
     try {
@@ -48,6 +31,7 @@ function getTitleSearchMitigation($dbh, $num, $term)
     }
 }
 
+//Fuzzy_Search(IN Title varchar(45))
 function getFuzzySearchMitigation($dbh, $num, $term)
 {
     try {
@@ -62,6 +46,7 @@ function getFuzzySearchMitigation($dbh, $num, $term)
     }
 }
 
+//Add_Author(IN firstName varchar(45), IN lastName varchar(45))
 function addAuthor($dbh, $firstName, $lastName)
 {
     try {
@@ -75,6 +60,7 @@ function addAuthor($dbh, $firstName, $lastName)
     }
 }
 
+//Add_Security_Control(IN Security_Type varchar(45), IN Security_Function varchar(45))
 function addSecurityControl($dbh, $category, $type)
 {
     try {
@@ -88,6 +74,7 @@ function addSecurityControl($dbh, $category, $type)
     }
 }
 
+//Add_System(IN osName varchar(45), IN ver varchar(45))
 function addSystem($dbh, $os, $version)
 {
     try {
@@ -101,6 +88,7 @@ function addSystem($dbh, $os, $version)
     }
 }
 
+//Add_Mitigation(IN RiskTitle varchar(255), IN RiskDescription varchar(255))
 function addMitigation($dbh, $title, $description)
 {
     try {
@@ -138,13 +126,15 @@ function addCompleteMitigation($dbh, $title, $description, $os, $version, $categ
     }
 }
 
+//Fork_New_Author(IN Mitigation_To_Fork int, IN forkDescription varchar(255),
+//                                                        IN firstName varchar(45), IN lastName varchar(45))
 function forkNewAuthor($dbh, $Mitigation_To_Fork, $description, $firstName, $lastName)
 {
     try {
         $sql = "CALL Mitigation_Repository.Fork_New_Author(?,?,?,?);";
         $stmt = $dbh->prepare($sql);
         $stmt->bindValue(1, $Mitigation_To_Fork, PDO::PARAM_INT);
-		$stmt->bindValue(2, $description, PDO::PARAM_STR);
+        $stmt->bindValue(2, $description, PDO::PARAM_STR);
         $stmt->bindValue(3, $firstName, PDO::PARAM_STR);
         $stmt->bindValue(4, $lastName, PDO::PARAM_STR);
         $stmt->execute();
@@ -153,19 +143,23 @@ function forkNewAuthor($dbh, $Mitigation_To_Fork, $description, $firstName, $las
     }
 }
 
+//Fork_without_author(IN Mitigation_To_Fork int, IN forkDescription varchar(45))
 function forkWithoutAuthor($dbh, $Mitigation_To_Fork, $description)
 {
     try {
         $sql = "CALL Mitigation_Repository.Fork_without_author(?,?);";
         $stmt = $dbh->prepare($sql);
         $stmt->bindValue(1, $Mitigation_To_Fork, PDO::PARAM_INT);
-		$stmt->bindValue(2, $description, PDO::PARAM_STR);
+        $stmt->bindValue(2, $description, PDO::PARAM_STR);
         $stmt->execute();
     } catch (PDOException $e) {
         die ('unable to fork mitigation: ' . $e->getMessage());
     }
 }
 
+//Edit_Risk(IN newTitle varchar(45), IN newDescription varchar(255),
+//                                                  IN newOS varchar(45), IN newVer varchar(45), IN newCat varchar(45),
+//                                                  IN newType varchar(45), IN mitID int)
 function editRisk($dbh, $newTitle, $newDescription, $newOS, $newVer, $newCat, $newType, $riskID)
 {
     try {
@@ -184,6 +178,7 @@ function editRisk($dbh, $newTitle, $newDescription, $newOS, $newVer, $newCat, $n
     }
 }
 
+//Display_Children(IN Mit_ID int)
 function getChildren($dbh, $mit_id)
 {
     try {
@@ -191,11 +186,12 @@ function getChildren($dbh, $mit_id)
         $stmt = $dbh->prepare($sql);
         $stmt->bindValue(1, $mit_id, PDO::PARAM_INT);
         $stmt->execute();
-    } catch (PDOException $e)
-    {
+    } catch (PDOException $e) {
         die('unable to fetch children : ' . $e->getMessage());
     }
 }
+
+//Search_By_ID(IN MitID varchar(45))
 function searchByID($dbh, $mit_id)
 {
     try {
