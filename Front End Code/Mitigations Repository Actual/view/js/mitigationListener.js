@@ -69,7 +69,7 @@ function goToFork(mit_id) {
 function processMitigationData(jsonResults) {
     var jsonData = JSON.parse(jsonResults);
     console.log(jsonData);
-    var htmlString = "<div class='wholeResult' id='" + mit_id + "'><div class='resultRight'><span class='cat'>" + jsonData.category +
+    var htmlString = "<div class='entireResult' id='" + mit_id + "'><div class='resultRight'><span class='cat'>" + jsonData.category +
         "</span><br><span class='type'>" + jsonData.sec_type +"</span></div><span class='title'>" + jsonData.title +"</span><br>" +
         "<div class='resultLeft'><span class='mitid'>Mitigation ID: " + mit_id + "</span><br><br>";
 
