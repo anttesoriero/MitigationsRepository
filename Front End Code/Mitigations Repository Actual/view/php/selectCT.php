@@ -4,6 +4,7 @@
     <body>
 
         <!-- Selecting Category Dropdown -->
+        <label for="category" style="margin-left: 600px;"> Category: </label>
         <?php
         $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
 
@@ -22,6 +23,7 @@
         <br><br><br>
 
         <!-- Selecting Type Dropdown -->
+        <label for="sec_type" style="margin-left: 600px;"> Type: </label>
         <?php
         $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
 

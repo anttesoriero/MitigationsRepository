@@ -57,9 +57,7 @@ if (!isset($_SESSION['logged_in'])) {
             <input type="text" id="searchField" name="searchField" placeholder="Search Mitigation"/>
         </form>
         <br><br><br>
-        <!-- Temp 8 -->
-        <!-- <label for="category" style="margin-left: 600px;"> Category: </label>
-        <label for="sec_type" style="margin-left: 600px;"> Type: </label> -->
+        <!-- Temp 9 -->
         <br><br><br>
         <?php include 'view/php/selectCT.php'; ?>
             <br><br><br>
