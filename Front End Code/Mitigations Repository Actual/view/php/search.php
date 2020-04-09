@@ -64,6 +64,9 @@
 <div class="v2"></div>
 <div class="rightSearch" id="rightResultDisplay">
 
+    <!-- Full Result Page -->
+    <?php include 'fullMitigation.php'?>
+
 </div>
 
 
