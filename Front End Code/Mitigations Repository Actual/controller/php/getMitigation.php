@@ -11,8 +11,8 @@ $password = 'Sweng#2020';
 $dbname = 'Mitigation_Repository';
 
 //try to connect to database
-if (isset($_GET['s'])) {
-    $mit = $_GET['s'];
+if (isset($_GET['m'])) {
+    $mit = $_GET['m'];
 }
 
 

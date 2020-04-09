@@ -33,18 +33,20 @@ addListeners();
  *****************************************************/
 function addListeners() {
 
-    $('.wholeResult').on('click', function (evt){
+    $('.wholeResult').on('click', function (evt) {
         evt.stopPropagation();
         console.log('YOU CLICKED A THING');
 
         var mit_id = $(this).attr('name');
-
         console.log(mit_id);
+        try {
+            ajaxURL = '../../controller/php/getMitigation.php?m=' + mit_id;
 
-        ajaxURL =
-
-        mitigation = ajaxFetch('../../controller/php/getMitigati?m=' + mit_id, processMitigationData)
-
+            mitigation = ajaxFetch(ajaxURL, processMitigationData)
+        }
+        catch (e) {
+            console.log("Error in getMitigation.php");
+        }
     });
 
     $('#edit').on('click', function (evt) {
@@ -98,10 +100,10 @@ function processResults(jsonResults) {
     console.log("now parsing list...");
     for (var i = 0; i < numRecords; i++) {
         //This will make each row a unique div with a unique ID!
-        id = 'result' . i;
-        htmlString += "<li><div class='wholeResult' id='" + id + "' name='" + jsonData[i].mitigation_id +"'>"+
+        id = 'result'.i;
+        htmlString += "<li><div class='wholeResult' id='" + id + "' name='" + jsonData[i].mitigation_id + "'>" +
             "<div class='resultRight'><span class='cat'>" + jsonData[i].category + "</span><br><span class='type'>"
-            + jsonData[i].sec_type +"</span></div><span class='title'>" + jsonData[i].title +
+            + jsonData[i].sec_type + "</span></div><span class='title'>" + jsonData[i].title +
             "</span><br><div class='resultLeft'><span class = 'mitid'>Mitigation ID:" + jsonData[i].mitigation_id +
             "</span>";
 
@@ -115,12 +117,6 @@ function processResults(jsonResults) {
     $('#allResults').html(htmlString);
 }
 
-function goToFull(mit_id) {
-
-
-    $('#rightResultDisplay').html();
-}
-
 function goToEdit(mit_id) {
     window.location.href = 'edit.php?s=' + mit_id;
 }
@@ -132,16 +128,16 @@ function goToFork(mit_id) {
 function processMitigationData(jsonResults) {
     var jsonData = JSON.parse(jsonResults);
     console.log(jsonData);
-    var htmlString = "<div class='entireResult' id='" + mit_id + "'><div class='resultRight'><span class='cat'>" + jsonData[0].category +
-        "</span><br><span class='type'>" + jsonData[0].sec_type +"</span></div><span class='title'>" + jsonData[0].title +"</span><br>" +
-        "<div class='resultLeft'><span class='mitid'>Mitigation ID: " + mit_id + "</span><br><br>";
+    var htmlString = "<div class='entireResult' id='" + jsonData[0].mitigation_id + "'><div class='resultRight'><span class='cat'>" + jsonData[0].category +
+        "</span><br><span class='type'>" + jsonData[0].sec_type + "</span></div><span class='title'>" + jsonData[0].title + "</span><br>" +
+        "<div class='resultLeft'><span class='mitid'>Mitigation ID: " + jsonData[0].mitigation_id+ "</span><br><br>";
 
-    htmlString += "<input type = 'button' class='btn' id='edit' name='" + mit_id + "' value='Edit Mitigation'/>";
-    htmlString += "<input type = 'button' class='btn' id='fork' name='" + mit_id + "' value='Fork Mitigation'/>";
+    htmlString += "<input type = 'button' class='btn' id='edit' name='" + jsonData[0].mitigation_id + "' value='Edit Mitigation'/>";
+    htmlString += "<input type = 'button' class='btn' id='fork' name='" + jsonData[0].mitigation_id + "' value='Fork Mitigation'/>";
 
     htmlString += "<br><span class='author'>Author: " + jsonData[0].Author + "</span><br><span class='desc'>Created on:"
-        + jsonData[0].created_at + "</span><br><span class='desc2'>Modified on: " + jsonData[0].modified_at +"</span><br>" +
-        "<span class='further'>" + jsonData.description + "</span></div>"
+        + jsonData[0].created_at + "</span><br><span class='desc2'>Modified on: " + jsonData[0].modified_at + "</span><br>" +
+        "<span class='further'>" + jsonData[0].description + "</span></div>"
 
-    $('#completeMitigation').html(htmlString);
+    $('#rightResultDisplay').html(htmlString);
 }
