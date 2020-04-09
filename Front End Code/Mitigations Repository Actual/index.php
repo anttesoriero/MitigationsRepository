@@ -22,21 +22,6 @@ if (!isset($_SESSION['logged_in'])) {
     <div class="topnav"><a class="active" href="#home">Mitigation Repository <i class="fa fa-database"></i></a>
 
         <div class="login"><a href="view/php/loginPage.php?q=index">Login</a></div>
-        <!--<div class="form-popup" id="myForm">
-            <form class="form-container" id="loginForm">
-                <h1>Login</h1>
-
-                <label for="username"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="username" required>
-
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <button type="button" class="btn" id="login">Login</button>
-
-                <button type="button" class="btn cancel" id="cancel">Close</button>
-            </form>
-        </div>-->
         <div class="user">
             <?php
             if (isset($_SESSION['username']))
@@ -64,18 +49,19 @@ if (!isset($_SESSION['logged_in'])) {
 
     </h2>-->
 
-    <div class="left">
-        <div class="bodySearch">
+<div class="left">
+    <div class="bodySearch">
 
-            <h2> Search Mitigation </h2
-            <form id='searchForm'>
-                <input type="text" id="searchField" name='searchField' placeholder="Search Mitigation">
-            </form>
-            <!-- Temp 8 -->
-            <label for="category" style="margin-left: 600px;"> Category: </label>
-            <label for="sec_type" style="margin-left: 600px;"> Type: </label>
-            <br><br><br>
-            <?php include 'view/php/selectCT.php'; ?>
+        <h2> Search Mitigation </h2>
+        <form id='searchForm'>
+            <input type="text" id="searchField" name="searchField" placeholder="Search Mitigation"/>
+        </form>
+        <br><br><br>
+        <!-- Temp 8 -->
+        <label for="category" style="margin-left: 600px;"> Category: </label>
+        <label for="sec_type" style="margin-left: 600px;"> Type: </label>
+        <br><br><br>
+        <?php include 'view/php/selectCT.php'; ?>
             <br><br><br>
             <!-- End Temp -->
 
