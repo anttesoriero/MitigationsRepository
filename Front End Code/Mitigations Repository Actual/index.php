@@ -58,8 +58,8 @@ if (!isset($_SESSION['logged_in'])) {
         </form>
         <br><br><br>
         <!-- Temp 8 -->
-        <label for="category" style="margin-left: 600px;"> Category: </label>
-        <label for="sec_type" style="margin-left: 600px;"> Type: </label>
+        <!-- <label for="category" style="margin-left: 600px;"> Category: </label>
+        <label for="sec_type" style="margin-left: 600px;"> Type: </label> -->
         <br><br><br>
         <?php include 'view/php/selectCT.php'; ?>
             <br><br><br>
