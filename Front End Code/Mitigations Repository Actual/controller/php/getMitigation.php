@@ -5,10 +5,6 @@ if (!include('../../model/php/dbProcedures.php')) {
     die('error finding dbProcedures.php in model dir');
 }
 
-if (!isset($_GET['num'])) {
-    $num = 25;  // defalut 10 films
-}
-
 $hostname = 'localhost';  //local host - our web server will be our db server.
 $username = 'admin';
 $password = 'Sweng#2020';

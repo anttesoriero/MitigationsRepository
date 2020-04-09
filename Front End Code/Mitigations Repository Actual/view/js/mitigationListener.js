@@ -28,12 +28,6 @@ function addListeners() {
 
         var mit_id = $(this).attr('name');
 
-        // Make URL for Ajax call
-        //ajaxURL = 'controller/php/login.php';
-
-        // Serialize the form so Ajax can post it asynchronously, then post it.
-        // $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
-        // console.log('AJAX call submitted.');
         goToEdit(mit_id);
     });
 
@@ -43,12 +37,6 @@ function addListeners() {
 
         var mit_id = $(this).attr('name');
 
-        // Make URL for Ajax call
-        //ajaxURL = 'controller/php/login.php';
-
-        // Serialize the form so Ajax can post it asynchronously, then post it.
-        // $.post(ajaxURL, $('#loginForm').serialize(), processLogin);
-        // console.log('AJAX call submitted.');
         goToFork(mit_id);
     });
 

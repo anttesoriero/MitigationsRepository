@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 ?>
 <div class="completeMitigation" id="completeMitigation" name="completeMitigation"></div>
 

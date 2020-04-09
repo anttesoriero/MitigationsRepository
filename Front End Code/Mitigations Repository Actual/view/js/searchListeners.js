@@ -39,7 +39,10 @@ function addListeners() {
 
         var mit_id = $(this).attr('name');
 
-        goToFull(mit_id);
+        console.log('going to full');
+        $('#rightResultDisplay').html('<?php include ../php/fullMitigation.php?s=' + mit_id);
+
+        //goToFull(mit_id);
 
     });
 }
@@ -82,6 +85,6 @@ function processResults(jsonResults) {
 }
 
 function goToFull(mit_id) {
-
-    $('#rightResultDisplay').html('<?php include ../php/fullMitigation.php?s=' + mit_id);
+   // console.log('going to full');
+    //$('#rightResultDisplay').html('<?php include ../php/fullMitigation.php?s=' + mit_id);
 }
