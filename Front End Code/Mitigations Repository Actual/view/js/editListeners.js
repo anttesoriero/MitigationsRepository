@@ -39,6 +39,8 @@ function processEdit(editData) {
         $('#errorMessage').html(editData);
     } else if (editData.toLowerCase().indexOf("success") != -1) {
         $('#successMessage').html(editData);  // visible for split second
+
+        window.location.href = '../../index.php';
     }
 }
 

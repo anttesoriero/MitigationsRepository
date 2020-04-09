@@ -13,11 +13,11 @@
 </head>
 <body>
 <?php
-//if (!isset($_SESSION['logged_in'])) {
-//    $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
-//    echo $_SESSION['refurl'];
-//    header("Location: /view/php/loginPage.php");
-//}
+if (!isset($_SESSION['logged_in'])) {
+    $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
+    echo $_SESSION['refurl'];
+    header("Location: /view/php/loginPage.php");
+}
 
 
 if (isset($_GET['s'])) {
