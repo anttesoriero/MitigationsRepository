@@ -32,18 +32,7 @@ addListeners();
  *                        Listeners                  *
  *****************************************************/
 function addListeners() {
-    //Looking, I don't think this page actually needs listeners
-    //but I want this to exist JUST IN CASE.  ATM it's a wasted
-    //function.
-    /*
-        try{
 
-        }
-        catch (e) {
-            console.log("Error in getRandMitigation.php " + e);
-        }
-
-     */
     $('#result').on('click', function (evt){
         evt.stopPropagation();
         console.log('YOU CLICKED A THING');
@@ -58,14 +47,6 @@ function addListeners() {
 /****************************************************
  *                  Callbacks                       *
  ****************************************************/
-
-function goToEdit(mit_id) {
-    window.location.href = 'edit.php?s=' + mit_id;
-}
-
-function goToFork(mit_id) {
-    window.location.href = 'forkingView.php?s=' + mit_id;
-}
 
 function processResults(jsonResults) {
 
@@ -83,15 +64,15 @@ function processResults(jsonResults) {
     console.log("now parsing list...");
     for (var i = 0; i < numRecords; i++) {
         //This will make each row a unique div with a unique ID!
-        id = "result" + i;
-        htmlString += "<li><div class='wholeResult' id='" + id + "'><a onclick=fillDiv('result" + i + "')>" +
+        htmlString += "<li><div class='wholeResult' id='result'>"+
             "<div class='resultRight'><span class='cat'>" + jsonData[i].category + "</span><br><span class='type'>"
             + jsonData[i].sec_type +"</span></div><span class='title'>" + jsonData[i].title +
             "</span><br><div class='resultLeft'><span class = 'mitid'>Mitigation ID:" + jsonData[i].mitigation_id +
             "</span>";
+
         htmlString += "<br><span class='author'>Author: " + jsonData[i].Author + "</span><br><span class='desc'>Created on:" +
             jsonData[i].created_at + "</span><br><span class='desc2'>Modified on:" + jsonData[i].modified_at + "</span><br><span class='further'>"
-            + jsonData[i].description + "</span></div></a></div></li>";
+            + jsonData[i].description + "</span></div></div></li>";
     }
 
     htmlString += "</ul>";

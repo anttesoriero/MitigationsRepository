@@ -52,18 +52,6 @@ function fillDiv(trigger)
     sub.innerHTML = txtVal;
 }
 
-function toRight(mitID)
-{
-    var textVal = "";
-    var sub=document.getElementById('rightResultDisplay');
-    if (trigger != null)
-    {
-        txtVal = "YOU CLICKED A THIIIIIIIING";
-        txtVal = document.getElementById(trigger).innerHTML;
-    }
-    sub.innerHTML = txtVal;
-}
-
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {

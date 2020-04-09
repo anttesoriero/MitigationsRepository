@@ -21,18 +21,6 @@ addListeners();
  *                        Listeners                  *
  *****************************************************/
 function addListeners() {
-    //Looking, I don't think this page actually needs listeners
-    //but I want this to exist JUST IN CASE.  ATM it's a wasted
-    //function.
-    /*
-        try{
-
-        }
-        catch (e) {
-            console.log("Error in getRandMitigation.php " + e);
-        }
-
-     */
 
     $('#edit').on('click', function (evt) {
         evt.stopPropagation();
