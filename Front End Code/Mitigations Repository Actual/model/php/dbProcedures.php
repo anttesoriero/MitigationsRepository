@@ -1,11 +1,5 @@
 <?php
 
-/*
- * getMitigations: Returns a list of mitigations
- *  PARAM $dbh          the database handle
- *  PARAM $num
- *  RETURN              Set of database records
- */
 
 //Mit_Search_Recent()
 function getRecentMitigation($dbh, $num)
