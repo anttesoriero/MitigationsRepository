@@ -71,6 +71,8 @@ if (isset($_GET['s'])) {
                 <textarea id="description" rows="5" cols="25" placeholder="Mitigation Description" name="description" required='required'></textarea>
             </div>
 
+            <center>
+
             <!-- <h3 style="margin-left: 600px;"> Category: </h3> -->
             <label for="category" style="margin-left: 600px;"> Category: </label>
 
@@ -88,6 +90,8 @@ if (isset($_GET['s'])) {
                 }
                 ?>
             </select>
+
+            <br>
 
             <!-- <h3 style="margin-left: 600px;"> Type: </h3> -->
             <label for="sec_type" style="margin-left: 600px;"> Type: </label>
@@ -108,6 +112,9 @@ if (isset($_GET['s'])) {
 
             <br>
             <input type="button" class="button" id="edit" value="Edit Mitigation"/>
+
+            </center>
+
         </form>
     </div>
 </div>
