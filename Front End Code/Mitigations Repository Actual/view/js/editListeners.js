@@ -2,15 +2,26 @@
 
 console.log('editListeners.js loaded.');
 
+var mit_id = location.search.substring(location.search.indexOf('=') + 1);
+console.log(mit_id);
+
+try {
+    ajaxURL = '../../controller/php/getMitigation.php?m=' + mit_id;
+
+    mitigation = ajaxFetch(ajaxURL, populateMitigation)
+
+} catch (e) {
+    console.log("Error in getMitigation.php")
+}
+
 addListeners();
 
 /*****************************************************
  *                        Listeners                  *
  *****************************************************/
- 
- function addListeners() {
-    $('#edit').on('click', function(evt)
-    {
+
+function addListeners() {
+    $('#edit').on('click', function (evt) {
         evt.stopPropagation();
        // evt.preventDefault();
         console.log('CLICK');
@@ -28,12 +39,6 @@ addListeners();
 /****************************************************
  *                  Callbacks                       *
  ****************************************************/
-function processData(echoedData) {
-    // Very simple callback that can be used for movies and actors
-    // Note that the HTML tagging is done by the PHP
-    $('#left').html(echoedData);
-}
-
 function processEdit(editData) {
     if (editData.toLowerCase().indexOf("error") != -1) {
         $('#errorMessage').html(editData);
@@ -44,6 +49,10 @@ function processEdit(editData) {
     }
 }
 
-function destroy(message) {
-    $('#rightResultDisplay').html(message);
+//firstName lastName title os version desciption category sec_type
+function populateMitigation(initialPop) {
+    console.log(initialPop);
+    $('#title').val(initialPop[0].title);
+    $('#os').val(initialPop[0].OS_name);
+    $('#description').val(initialPop[0].descripton);
 }

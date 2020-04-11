@@ -54,13 +54,13 @@ if (isset($_GET['s'])) {
             <input type="text" spellcheck="false" spellcheck="true" placeholder="Last Name" name="lastName"
                    required='required'>
             <h3 style="margin-left: 550px;"> Enter Mitigation Title </h3>
-            <input type="text" spellcheck="true" placeholder="Title" name="title" required='required'>
+            <input type="text" id="title" spellcheck="true" name="title" required='required'>
             <h3 style="margin-left: 550px;"> Enter Operating System </h3>
 
-            <input type="text" spellcheck="true" placeholder="Operating System" name="os" required='required'>
+            <input type="text" id="os" spellcheck="true" name="os" required='required'>
 
             <h3 style="margin-left: 550px;"> Enter Operating System Version </h3>
-            <input type="text" spellcheck="true" placeholder="Version" name="version" required='required'>
+            <input type="text" id="version" spellcheck="true" name="version" required='required'>
 
             <h3 style="margin-left: 550px;"> Enter Mitigation Description </h3>
             <!-- <div class="descriptionSearch">
@@ -69,7 +69,7 @@ if (isset($_GET['s'])) {
             </div> -->
 
             <div class="descriptionSearchTA">
-                <textarea id="description" rows="5" cols="25" spellcheck="true" placeholder="Mitigation Description"
+                <textarea id="description" rows="5" cols="25" spellcheck="true"
                           name="description" required='required'></textarea>
             </div>
 
@@ -83,9 +83,9 @@ if (isset($_GET['s'])) {
 
             $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
             ?>
-            <select name="category" required='required'>
-                <option selected disabled>Choose Category</option>
-                <?php
+                <select id="category" name="category" required='required'>
+                    <option selected disabled>Choose Category</option>
+                    <?php
                 while ($rows = $result->fetch_assoc()) {
                     $category = $rows['Control Type'];
                     echo "<option value = '$category'>$category</option>";
@@ -102,9 +102,9 @@ if (isset($_GET['s'])) {
 
             $result = $mysqli->query("CALL Mitigation_Repository.GetType()");
             ?>
-            <select name="sec_type" required='required'>
-                <option selected disabled>Choose Type</option>
-                <?php
+                <select id="sec_type" name="sec_type" required='required'>
+                    <option selected disabled>Choose Type</option>
+                    <?php
                 while ($rows = $result->fetch_assoc()) {
                     $sec_type = $rows['Control Function'];
                     echo "<option value = '$sec_type'>$sec_type</option>";
