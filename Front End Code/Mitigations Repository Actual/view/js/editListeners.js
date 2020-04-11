@@ -2,6 +2,7 @@
 
 console.log('editListeners.js loaded.');
 
+/*autopopulation call*/
 var mit_id = location.search.substring(location.search.indexOf('=') + 1);
 console.log(mit_id);
 
@@ -13,7 +14,7 @@ try {
 } catch (e) {
     console.log("Error in getMitigation.php")
 }
-
+/*******************************/
 addListeners();
 
 /*****************************************************
@@ -49,12 +50,16 @@ function processEdit(editData) {
     }
 }
 
-//firstName lastName title os version desciption category sec_type
-function populateMitigation(initialPop) {
+//Autopop Return
+//firstName lastName title os version description category sec_type
+function populateMitigation(jsonResults) {
+    var initialPop = JSON.parse(jsonResults)
     console.log(initialPop);
 
     $('#title').val(initialPop[0].title);
     $('#os').val(initialPop[0].OS_name);
-    $('#description').val(initialPop[0].descripton);
+    $('#version').val(initialPop[0].version)
+    $('#description').val(initialPop[0].description);
+
 
 }

@@ -47,12 +47,12 @@ if (isset($_GET['s'])) {
     <div class="bodySearch">
         <form id="editMitigationForm">
             <input type="hidden" name = 'mitigationToEdit' value='<?php echo $Mitigation_To_Edit ?>'/>
-            <h3 style="margin-left: 550px;"> Author First Name </h3>
-            <input type="text" spellcheck="false" placeholder="First Name" name="firstName" required='required'>
-            <h3 style="margin-left: 550px;"> Author Last Name </h3>
+            <!-- <h3 style="margin-left: 550px;"> Author First Name </h3>
+             <input type="text" spellcheck="false" placeholder="First Name" name="firstName" required='required'>
+             <h3 style="margin-left: 550px;"> Author Last Name </h3>
 
-            <input type="text" spellcheck="false" spellcheck="true" placeholder="Last Name" name="lastName"
-                   required='required'>
+             <input type="text" spellcheck="false" spellcheck="true" placeholder="Last Name" name="lastName"
+                    required='required'>-->
             <h3 style="margin-left: 550px;"> Enter Mitigation Title </h3>
             <input type="text" id="title" spellcheck="true" name="title" required='required'>
             <h3 style="margin-left: 550px;"> Enter Operating System </h3>
