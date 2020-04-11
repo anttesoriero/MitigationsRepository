@@ -46,20 +46,21 @@ if (isset($_GET['s'])) {
 
     <div class="bodySearch">
         <form id="editMitigationForm">
-            <input type="hidden" name = 'mitigationToEdit' value='<?php echo $Mitigation_To_Edit ?>' />
+            <input type="hidden" name = 'mitigationToEdit' value='<?php echo $Mitigation_To_Edit ?>'/>
             <h3 style="margin-left: 550px;"> Author First Name </h3>
-            <input type="text" placeholder="First Name" name="firstName" required='required'>
+            <input type="text" spellcheck="false" placeholder="First Name" name="firstName" required='required'>
             <h3 style="margin-left: 550px;"> Author Last Name </h3>
 
-            <input type="text" placeholder="Last Name" name="lastName" required='required'>
+            <input type="text" spellcheck="false" spellcheck="true" placeholder="Last Name" name="lastName"
+                   required='required'>
             <h3 style="margin-left: 550px;"> Enter Mitigation Title </h3>
-            <input type="text" placeholder="Title" name="title" required='required'>
+            <input type="text" spellcheck="true" placeholder="Title" name="title" required='required'>
             <h3 style="margin-left: 550px;"> Enter Operating System </h3>
 
-            <input type="text" placeholder="Operating System" name="os" required='required'>
+            <input type="text" spellcheck="true" placeholder="Operating System" name="os" required='required'>
 
             <h3 style="margin-left: 550px;"> Enter Operating System Version </h3>
-            <input type="text" placeholder="Version" name="version" required='required'>
+            <input type="text" spellcheck="true" placeholder="Version" name="version" required='required'>
 
             <h3 style="margin-left: 550px;"> Enter Mitigation Description </h3>
             <!-- <div class="descriptionSearch">
@@ -68,15 +69,16 @@ if (isset($_GET['s'])) {
             </div> -->
 
             <div class="descriptionSearchTA">
-                <textarea id="description" rows="5" cols="25" placeholder="Mitigation Description" name="description" required='required'></textarea>
+                <textarea id="description" rows="5" cols="25" spellcheck="true" placeholder="Mitigation Description"
+                          name="description" required='required'></textarea>
             </div>
 
             <center>
 
-            <!-- <h3 style="margin-left: 600px;"> Category: </h3> -->
-            <label for="category" style="margin-left: 600px;"> Category: </label>
+                <!-- <h3 style="margin-left: 600px;"> Category: </h3> -->
+                <label for="category" style="margin-left: 600px;"> Category: </label>
 
-            <?php
+                <?php
             $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
 
             $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");

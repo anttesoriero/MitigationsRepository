@@ -41,18 +41,18 @@ if (!isset($_SESSION['logged_in'])) {
     <div class="bodySearch">
         <form id="createMitigationForm">
             <h3 style="margin-left: 550px;"> Author First Name </h3>
-            <input type="text" placeholder="First Name" name="firstName" required='required'>
+            <input type="text" spellcheck="false" placeholder="First Name" name="firstName" required='required'>
             <h3 style="margin-left: 550px;"> Author Last Name </h3>
 
-            <input type="text" placeholder="Last Name" name="lastName" required='required'>
+            <input type="text" spellcheck="false" placeholder="Last Name" name="lastName" required='required'>
             <h3 style="margin-left: 550px;"> Enter Mitigation Title </h3>
-            <input type="text" placeholder="Title" name="title" required='required'>
+            <input type="text" spellcheck="true" placeholder="Title" name="title" required='required'>
             <h3 style="margin-left: 550px;"> Enter Operating System </h3>
 
-            <input type="text" placeholder="Operating System" name="os" required='required'>
+            <input type="text" spellcheck="true" placeholder="Operating System" name="os" required='required'>
 
             <h3 style="margin-left: 550px;"> Enter Operating System Version </h3>
-            <input type="text" placeholder="Version" name="version" required='required'>
+            <input type="text" spellcheck="true" placeholder="Version" name="version" required='required'>
 
             <h3 style="margin-left: 550px;"> Enter Mitigation Description </h3>
             <div class="descriptionSearch">
