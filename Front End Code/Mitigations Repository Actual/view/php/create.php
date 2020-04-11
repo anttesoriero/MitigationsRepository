@@ -57,7 +57,8 @@ if (!isset($_SESSION['logged_in'])) {
             <h3 style="margin-left: 550px;"> Enter Mitigation Description </h3>
             <div class="descriptionSearch">
 
-                <input type="text" placeholder="Mitigation Description" name="description" required='required'>
+                <input type="text" spellcheck="true" placeholder="Mitigation Description" name="description"
+                       required='required'>
             </div>
 
             <h3 style="margin-left: 600px;"> Category: </h3>

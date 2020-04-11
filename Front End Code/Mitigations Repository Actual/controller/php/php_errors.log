@@ -14,3 +14,8 @@
 [08-Apr-2020 23:03:46 UTC] PHP Notice:  Undefined index: refurl in /var/www/html/controller/php/login.php on line 25
 [08-Apr-2020 23:09:10 UTC] PHP Notice:  Undefined index: refurl in /var/www/html/controller/php/login.php on line 25
 [08-Apr-2020 23:09:14 UTC] PHP Notice:  Undefined index: refurl in /var/www/html/controller/php/login.php on line 25
+[09-Apr-2020 04:28:57 UTC] PHP Notice:  Undefined variable: mit in /var/www/html/controller/php/getMitigation.php on line 24
+[09-Apr-2020 04:32:57 UTC] PHP Notice:  Undefined variable: mit in /var/www/html/controller/php/getMitigation.php on line 24
+[09-Apr-2020 06:20:23 UTC] PHP Notice:  Undefined index: refurl in /var/www/html/controller/php/login.php on line 25
+[09-Apr-2020 06:30:53 UTC] PHP Notice:  Undefined index: refurl in /var/www/html/controller/php/login.php on line 25
+[09-Apr-2020 06:31:15 UTC] PHP Notice:  Undefined index: refurl in /var/www/html/controller/php/login.php on line 25

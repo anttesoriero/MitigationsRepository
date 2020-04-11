@@ -530,3 +530,10 @@
 [09-Apr-2020 03:37:41 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/html/view/php/fullMitigation.php on line 2
 [09-Apr-2020 03:39:39 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/html/view/php/fullMitigation.php on line 2
 [09-Apr-2020 03:39:42 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/html/view/php/fullMitigation.php on line 2
+[09-Apr-2020 06:38:31 UTC] PHP Notice:  Undefined variable: Mitigation_To_Edit in /var/www/html/view/php/edit.php on line 49
+[09-Apr-2020 13:11:59 UTC] PHP Notice:  Undefined variable: Mitigation_To_Edit in /var/www/html/view/php/edit.php on line 49
+[09-Apr-2020 13:11:59 UTC] PHP Notice:  Undefined variable: Mitigation_To_Edit in /var/www/html/view/php/edit.php on line 49
+[09-Apr-2020 13:12:12 UTC] PHP Notice:  Undefined variable: Mitigation_To_Edit in /var/www/html/view/php/edit.php on line 49
+[09-Apr-2020 15:37:07 UTC] PHP Notice:  Undefined variable: Mitigation_To_Edit in /var/www/html/view/php/edit.php on line 49
+[09-Apr-2020 15:37:08 UTC] PHP Notice:  Undefined variable: Mitigation_To_Edit in /var/www/html/view/php/edit.php on line 49
+[09-Apr-2020 15:37:15 UTC] PHP Notice:  Undefined variable: Mitigation_To_Edit in /var/www/html/view/php/edit.php on line 49
