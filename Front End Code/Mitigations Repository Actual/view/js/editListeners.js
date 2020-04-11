@@ -52,7 +52,9 @@ function processEdit(editData) {
 //firstName lastName title os version desciption category sec_type
 function populateMitigation(initialPop) {
     console.log(initialPop);
+
     $('#title').val(initialPop[0].title);
     $('#os').val(initialPop[0].OS_name);
     $('#description').val(initialPop[0].descripton);
+
 }
