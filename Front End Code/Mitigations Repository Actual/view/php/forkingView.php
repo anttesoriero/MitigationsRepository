@@ -48,10 +48,10 @@ if (isset($_GET['s'])) {
             <input type="hidden" name = 'mitigationToFork' value='<?php echo $Mitigation_To_Fork ?>'/>
 			
             <h3 style="margin-left: 550px;"> Author First Name </h3>
-            <input type="text" spellcheck="false" placeholder="First Name" name="firstName" required='required'>
+            <input type="text" id="firstName" spellcheck="true" name="firstName" required='required'>
 			
             <h3 style="margin-left: 550px;"> Author Last Name </h3>
-            <input type="text" spellcheck="false" placeholder="Last Name" name="lastName" required='required'>
+            <input type="text" id="lastName" spellcheck="true" name="lastName" required='required'>
 			
             <h3 style="margin-left: 550px;"> Enter Mitigation Title </h3>
 			<input type="text" id="title" spellcheck="true" name="title" required='required'>
