@@ -67,26 +67,27 @@ if (isset($_GET['s'])) {
                 <textarea id="description" rows="5" cols="25" spellcheck="true"
                           name="description" required='required'></textarea>
             </div>
+<center>
 
-            </div>
-
-            <h3 style="margin-left: 600px;"> Category: </h3>
-            <p>
+                <!-- <h3 style="margin-left: 600px;"> Category: </h3> -->
+                <label for="category" style="margin-left: 600px;"> Category: </label>
 
                 <?php
-                $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
+            $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
 
-                $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
-                ?>
-                <select name="category" required='required'>
+            $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
+            ?>
+                <select id="category" name="category" required='required'>
                     <option selected disabled>Choose Category</option>
                     <?php
-                    while ($rows = $result->fetch_assoc()) {
-                        $category = $rows['Control Type'];
-                        echo "<option value = '$category'>$category</option>";
-                    }
-                    ?>
-                </select><br>
+                while ($rows = $result->fetch_assoc()) {
+                    $category = $rows['Control Type'];
+                    echo "<option value = '$category'>$category</option>";
+                }
+                ?>
+            </select>
+				
+				<br>
 			
             <!-- <h3 style="margin-left: 600px;"> Type: </h3> -->
             <label for="sec_type" style="margin-left: 600px;"> Type: </label>
