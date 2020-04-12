@@ -2,6 +2,19 @@
 
 console.log('forkListeners.js loaded.');
 
+/*autopopulation call*/
+var mit_id = location.search.substring(location.search.indexOf('=') + 1);
+console.log(mit_id);
+
+try {
+    ajaxURL = '../../controller/php/getMitigation.php?m=' + mit_id;
+
+    mitigation = ajaxFetch(ajaxURL, populateMitigation)
+
+} catch (e) {
+    console.log("Error in getMitigation.php")
+}
+
 addListeners();
 
 /*****************************************************
