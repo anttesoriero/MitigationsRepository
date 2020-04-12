@@ -105,6 +105,8 @@ if (isset($_GET['s'])) {
                 }
                 ?>
             </select>
+
+            <br>
             <input type="button" class="button" id="fork" value="Fork Mitigation"/>
         </form>
     </div>
