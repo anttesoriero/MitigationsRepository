@@ -67,7 +67,7 @@ if (isset($_GET['s'])) {
                 <textarea id="description" rows="5" cols="25" spellcheck="true"
                           name="description" required='required'></textarea>
             </div>
-<center>
+			<center>
 
                 <!-- <h3 style="margin-left: 600px;"> Category: </h3> -->
                 <label for="category" style="margin-left: 600px;"> Category: </label>

@@ -54,45 +54,52 @@ if (!isset($_SESSION['logged_in'])) {
             <h3 style="margin-left: 550px;"> Enter Operating System Version </h3>
             <input type="text" spellcheck="true" placeholder="Version" name="version" required='required'>
 
-            <h3 style="margin-left: 550px;"> Enter Mitigation Description </h3>
-            <div class="descriptionSearch">
-
-                <input type="text" spellcheck="true" placeholder="Mitigation Description" name="description"
-                       required='required'>
+			<h3 style="margin-left: 550px;"> Enter Mitigation Description </h3>
+            <div class="descriptionSearchTA">
+                <textarea rows="5" cols="25" spellcheck="true" placeholder="Mitigation Description"
+                          name="description" required='required'></textarea>
             </div>
 
-            <h3 style="margin-left: 600px;"> Category: </h3>
-            <p>
+           <center>
+
+                <!-- <h3 style="margin-left: 600px;"> Category: </h3> -->
+                <label for="category" style="margin-left: 600px;"> Category: </label>
 
                 <?php
-                $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
+            $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
 
-                $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
-                ?>
-                <select name="category" required='required'>
+            $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
+            ?>
+                <select id="category" name="category" required='required'>
                     <option selected disabled>Choose Category</option>
                     <?php
-                    while ($rows = $result->fetch_assoc()) {
-                        $category = $rows['Control Type'];
-                        echo "<option value = '$category'>$category</option>";
-                    }
-                    ?>
-                </select>
-            <h3 style="margin-left: 600px;"> Type: </h3>
+                while ($rows = $result->fetch_assoc()) {
+                    $category = $rows['Control Type'];
+                    echo "<option value = '$category'>$category</option>";
+                }
+                ?>
+            </select>
+				
+				<br>
+			
+            <!-- <h3 style="margin-left: 600px;"> Type: </h3> -->
+            <label for="sec_type" style="margin-left: 600px;"> Type: </label>
             <?php
             $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
 
             $result = $mysqli->query("CALL Mitigation_Repository.GetType()");
             ?>
-            <select name="sec_type" required='required'>
-                <option selected disabled>Choose Type</option>
-                <?php
+                <select id="sec_type" name="sec_type" required='required'>
+                    <option selected disabled>Choose Type</option>
+                    <?php
                 while ($rows = $result->fetch_assoc()) {
                     $sec_type = $rows['Control Function'];
                     echo "<option value = '$sec_type'>$sec_type</option>";
                 }
                 ?>
             </select>
+
+            <br>
             <input type = "button" class="button" id="create" value="Create Mitigation"/>
         </form>
     </div>
