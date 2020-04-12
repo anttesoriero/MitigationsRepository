@@ -87,15 +87,17 @@ if (isset($_GET['s'])) {
                     }
                     ?>
                 </select><br>
-            <h3 style="margin-left: 600px;"> Type: </h3>
+			
+            <!-- <h3 style="margin-left: 600px;"> Type: </h3> -->
+            <label for="sec_type" style="margin-left: 600px;"> Type: </label>
             <?php
             $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
 
             $result = $mysqli->query("CALL Mitigation_Repository.GetType()");
             ?>
-            <select name="sec_type" required='required'>
-                <option selected disabled>Choose Type</option>
-                <?php
+                <select id="sec_type" name="sec_type" required='required'>
+                    <option selected disabled>Choose Type</option>
+                    <?php
                 while ($rows = $result->fetch_assoc()) {
                     $sec_type = $rows['Control Function'];
                     echo "<option value = '$sec_type'>$sec_type</option>";
