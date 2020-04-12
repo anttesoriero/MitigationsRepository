@@ -64,9 +64,10 @@ if (isset($_GET['s'])) {
 			
             <h3 style="margin-left: 550px;"> Enter Mitigation Description </h3>
             <div class="descriptionSearch">
+                <textarea id="description" rows="5" cols="25" spellcheck="true"
+                          name="description" required='required'></textarea>
+            </div>
 
-                <input type="text" spellcheck="true" placeholder="Mitigation Description" name="description"
-                       required='required'>
             </div>
 
             <h3 style="margin-left: 600px;"> Category: </h3>
