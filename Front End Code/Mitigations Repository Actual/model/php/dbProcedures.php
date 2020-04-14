@@ -131,7 +131,7 @@ function addCompleteMitigation($dbh, $title, $description, $os, $version, $categ
 function forkNewAuthor($dbh, $Mitigation_To_Fork, $description, $firstName, $lastName)
 {
     try {
-        $sql = "CALL Mitigation_Repository.Fork_New_Author(?,?,?,?);";
+        $sql = "CALL Mitigation_Repository.Forking(?,?,?,?);";
         $stmt = $dbh->prepare($sql);
         $stmt->bindValue(1, $Mitigation_To_Fork, PDO::PARAM_INT);
         $stmt->bindValue(2, $description, PDO::PARAM_STR);
