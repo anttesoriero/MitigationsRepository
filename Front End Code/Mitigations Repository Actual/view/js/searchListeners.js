@@ -161,7 +161,7 @@ function processChildren(jsonResults) {
     var linkString = "Children: ";
 
     for (var i = 0; i < children; i++) {
-        linkString += "<a href='../php/fullMitigation.php?m=" + jsonData[i].mitigation_id + "'> " + jsonData.mitigation_id + "</a>";
+        linkString += "<a href='../php/fullMitigation.php?m=" + jsonData[i].mitigation_id + "'> " + jsonData[i].mitigation_id + "</a>";
     }
 
     $('#forks').html(linkString);

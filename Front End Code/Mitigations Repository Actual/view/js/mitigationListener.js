@@ -6,7 +6,6 @@ console.log('mitigationListener.js loaded.');
 var mit_id = location.search.substring(location.search.indexOf('=') + 1);
 
 
-
 try {
     ajaxURL = '../../controller/php/getMitigation.php?m=' + mit_id;
     console.log(ajaxURL);
@@ -14,6 +13,14 @@ try {
 } catch (e) {
     console.log("Error in " + mit_id + " getMitigation.php " + e);
 
+}
+
+try {
+    ajaxURL = '../../controller/php/getChildren.php?m=' + mit_id;
+
+    children = ajaxFetch(ajaxURL, processChildren)
+} catch (e) {
+    console.log("Error in getchildren.php");
 }
 addListeners();
 
@@ -61,7 +68,8 @@ function processMitigationData(jsonResults) {
     var htmlString = "<div class='entireResult' id='" + mit_id + "'><div class='resultRight'><span class='cat'>" + jsonData[0].category +
         "</span><br><span class='type'>" + jsonData[0].sec_type + "</span></div><span class='title'>" + jsonData[0].title + "</span><br>" +
         "<div class='resultLeft'><span class='mitid'>Mitigation ID: " + mit_id + "</span><br><br><span class='link'>Link to this mitigation: " +
-        "<a href='../php/fullMitigation.php?m=" + jsonData[0].mitigation_id + "'> " + jsonData[0].mitigation_id + "</a></span><br><br>";
+        "<a href='../php/fullMitigation.php?m=" + jsonData[0].mitigation_id + "'> " + jsonData[0].mitigation_id + "</a></span><br><br><span class='forks' id='forks'></span>";
+    ";
 
 
     htmlString += "<input type = 'button' class='btn' id='edit' name='" + mit_id + "' value='Edit Mitigation'/>";
@@ -74,3 +82,20 @@ function processMitigationData(jsonResults) {
     $('#completeMitigation').html(htmlString);
 }
 
+
+function processChildren(jsonResults) {
+    var jsonData = JSON.parse(jsonResults);
+    console.log(jsonData);
+
+    var children = jsonData.length;
+
+    var linkString = "Children: ";
+
+    for (var i = 0; i < children; i++) {
+        linkString += "<a href='../php/fullMitigation.php?m=" + jsonData[i].mitigation_id + "'> " + jsonData[i].mitigation_id + "</a>";
+    }
+
+    $('#forks').html(linkString);
+
+
+}
