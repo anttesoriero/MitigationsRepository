@@ -41,6 +41,7 @@ function addListeners() {
  *                  Callbacks                       *
  ****************************************************/
 function processEdit(editData) {
+    console.log(editData)
     if (editData.toLowerCase().indexOf("error") != -1) {
         $('#errorMessage').html(editData);
     } else if (editData.toLowerCase().indexOf("success") != -1) {

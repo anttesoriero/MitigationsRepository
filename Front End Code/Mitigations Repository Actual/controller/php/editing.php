@@ -56,11 +56,11 @@ $dbname   = 'Mitigation_Repository';
 //credentials from logging in
 
 try {
-    $dbh = new PDO("mysql:host=$hostname;dbname=$dbname","admin", "Sweng#2020");
-	
+    $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", "admin", "Sweng#2020");
 
-	editRisk($dbh, $title, $description, $os, $version, $category, $secType, $riskID);
-	    echo "Success";
+
+    editRisk($dbh, $title, $description, $os, $version, $category, $secType, $riskID);
+    echo "Success";
 }
 catch(PDOException $e) {
     echo ('PDO error in "ConnectDB()": ' . $e->getMessage() );
