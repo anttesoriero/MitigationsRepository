@@ -8,7 +8,7 @@ var mit_id = location.search.substring(location.search.indexOf('=') + 1);
 
 
 try {
-    ajaxURL = '../../controller/php/getMitigation.php?s=' + mit_id;
+    ajaxURL = '../../controller/php/getMitigation.php?m=' + mit_id;
     console.log(ajaxURL);
     mitigations = ajaxFetch(ajaxURL, processMitigationData);
 } catch (e) {
@@ -55,6 +55,7 @@ function goToFork(mit_id) {
 }
 
 function processMitigationData(jsonResults) {
+    console.log(jsonResults);
     var jsonData = JSON.parse(jsonResults);
     console.log(jsonData);
     var htmlString = "<div class='entireResult' id='" + mit_id + "'><div class='resultRight'><span class='cat'>" + jsonData[0].category +

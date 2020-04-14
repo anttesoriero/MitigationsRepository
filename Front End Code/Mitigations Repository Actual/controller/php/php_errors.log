@@ -21,3 +21,5 @@
 [09-Apr-2020 06:31:15 UTC] PHP Notice:  Undefined index: refurl in /var/www/html/controller/php/login.php on line 25
 [09-Apr-2020 16:37:24 UTC] PHP Notice:  Undefined index: category in /var/www/html/controller/php/forking.php on line 16
 [09-Apr-2020 16:37:24 UTC] PHP Notice:  Undefined index: sec_type in /var/www/html/controller/php/forking.php on line 17
+[14-Apr-2020 16:51:47 UTC] PHP Notice:  Undefined variable: mit in /var/www/html/controller/php/getMitigation.php on line 24
+[14-Apr-2020 16:54:42 UTC] PHP Notice:  Undefined variable: mit in /var/www/html/controller/php/getMitigation.php on line 24
