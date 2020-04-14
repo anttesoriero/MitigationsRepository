@@ -69,7 +69,6 @@ function processMitigationData(jsonResults) {
         "</span><br><span class='type'>" + jsonData[0].sec_type + "</span></div><span class='title'>" + jsonData[0].title + "</span><br>" +
         "<div class='resultLeft'><span class='mitid'>Mitigation ID: " + mit_id + "</span><br><br><span class='link'>Link to this mitigation: " +
         "<a href='../php/fullMitigation.php?m=" + jsonData[0].mitigation_id + "'> " + jsonData[0].mitigation_id + "</a></span><br><br><span class='forks' id='forks'></span>";
-    ";
 
 
     htmlString += "<input type = 'button' class='btn' id='edit' name='" + mit_id + "' value='Edit Mitigation'/>";
