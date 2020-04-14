@@ -153,5 +153,6 @@ function processMitigationData(jsonResults) {
 
 function processChildren(jsonResults) {
     var jsonData = JSON.parse(jsonResults);
+    console.log(jsonData);
 
 }
