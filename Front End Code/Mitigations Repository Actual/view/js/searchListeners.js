@@ -136,9 +136,10 @@ function processMitigationData(jsonResults) {
     var htmlString = "<div class='entireResult' id='" + jsonData[0].mitigation_id + "'><div class='resultRight'><span class='cat'>" + jsonData[0].category +
         "</span><br><span class='type'>" + jsonData[0].sec_type + "</span></div><span class='title'>" + jsonData[0].title + "</span><br>" +
         "<div class='resultLeft'><span class='mitid'>Mitigation ID: " + jsonData[0].mitigation_id + "</span><br><span class='link'>Link to this mitigation: " +
-        "<a href='../php/fullMitigation.php?m=" + jsonData[0].mitigation_id + "'> " + jsonData[0].mitigation_id + "</a></span><br><span class='forks'>";
+        "<a href='../php/fullMitigation.php?m=" + jsonData[0].mitigation_id + "'> " + jsonData[0].mitigation_id + "</a></span><br><span class='forks' id='forks'></span>";
 
     //FORKS WILL GO HERE
+
 
     htmlString += "<input type = 'button' class='btn'  class = 'edit' id='edit' name='" + jsonData[0].mitigation_id + "' value='Edit Mitigation'/>";
     htmlString += "<input type = 'button' class='btn'  class = 'edit' id='fork' name='" + jsonData[0].mitigation_id + "' value='Fork Mitigation'/>";
@@ -154,5 +155,16 @@ function processMitigationData(jsonResults) {
 function processChildren(jsonResults) {
     var jsonData = JSON.parse(jsonResults);
     console.log(jsonData);
+
+    var children = jsonData.length;
+
+    var linkString = "Children: ";
+
+    for (var i = 0; i < children; i++) {
+        linkString += "<a href='../php/fullMitigation.php?m=" + jsonData[i].mitigation_id + "'> " + jsonData.mitigation_id + "</a>";
+    }
+
+    $('#forks').html(linkString);
+
 
 }
