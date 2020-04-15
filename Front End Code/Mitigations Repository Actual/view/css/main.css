@@ -1,5 +1,5 @@
 /* ----- main.css ----- */
-
+/*overall page style */
 *
 {
 	box-sizing: border-box;
@@ -11,7 +11,7 @@ body
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, sans-serif;
 }
 
-/* Add a grey bg to top nav */
+/* Add a grey bg to top nav - overall top nav element */
 .topnav
 {
 	overflow: hidden;
@@ -39,23 +39,72 @@ body
 	color: black;
 }
 
-/*style the "active" element to highlight the ucrrent page */
-.topnav a:active
-{
-	background-color: #aaa;
-	color: white;
+/* Left side of Window - large container to hold smaller ones */
+.left {
+	position: absolute;
+	right: 55%;
+	left: 5%;
+	background-color: #fff;
+	text-align: center;
 }
 
-/*style the search box*/
-.topnav .search-container
-{
-	float: right;
-
+/*Left side of search results page.  Note the overflow option. */
+.leftSearch {
+	position: absolute;
+	right: 55%;
+	left: 5%;
+	background-color: #fff;
+	text-align: left;
+	overflow: auto;
+	max-height: 70vh;
 }
-.topnav input[type=text]
-{
+
+/* Right side of window - large container to hold smaller ones */
+
+.right {
+	position: absolute;
+	left: 55%;
+	right: 5%;
+	background-color: #fff;
+	text-align: center;
+}
+
+/*Right side of search results page - note the overflow.*/
+
+.rightSearch {
+	position: absolute;
+	left: 55%;
+	right: 5%;
+	background-color: #fff;
+	text-align: left;
+	overflow: auto;
+	max-height: 70vh;
+}
+
+/*Index page middle bar*/
+.v1 {
+	border-left: 2px solid black;
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	margin-left: -1px;
+	top: 20%;
+}
+
+/*search page middle bar*/
+.v2 {
+	border-left: 2px solid black;
+	height: 400px;
+	position: absolute;
+	left: 55%;
+	margin-left: -1px;
+	top: 20%;
+}
+
+/* Input box formatting for the bodySearch class.  Might need to adjust this name */
+.bodySearch input[type=text] {
 	padding: 6px;
-	margin-top: 8px;
+	margin-top: 4px;
 	font-size: 20px;
 	border: 1px;
 	border-style: solid;
@@ -64,53 +113,21 @@ body
 	background-color: white;
 }
 
-.topnav .search-container button
-{
-	float: right;
+/* TextArea Style - For Create, Edit, and Forking pages */
+.descriptionSearchTA textarea {
 	padding: 6px;
-	margin-top: 8px;
-	margin-right: 16px;
+	margin-left: 550px;
+	margin-top: 1px;
 	font-size: 20px;
 	border: 1px;
 	border-style: solid;
 	border-color: #333333;
-	cursor: pointer;
-	border-radius: 0px 20px 20px 0px;
+	border-radius: 20px 20px 20px 20px;
+	background-color: white;
 }
 
-.topnav .search-container button:hover
-{
-	background: #ccc;
-}
 
-.h1 {
-  color: navy;
-  margin-left: 20px;
-}
-
-.i {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-}
-.left
-{
-	position: absolute;
-	right: 55%;
-	left: 5%;
-	background-color: #fff;
-	text-align: center;
-}
-.right
-{
-	position: absolute;
-	left: 55%;
-	right: 5%;
-	background-color: #fff;
-	text-align: center;
-}
-
+/*button styling */
 .button {
 	background-color: #FFFFFF;
 	border: groove;
@@ -123,76 +140,140 @@ body
 	font-size: 16px;
 	margin: 4px 2px;
 }
+
 .button:hover {
 	background-color: white;
 }
 
-/* Button used to open the contact form - fixed at the bottom of the page (Will move this but want to see how it works first */
-.open-button {
-	background-color: #555;
-	color: white;
-	padding: 16px 20px;
-	border: none;
-	cursor: pointer;
-	opacity: 0.8;
-	position: fixed;
-	bottom: 23px;
-	right: 28px;
-	width: 280px;
+/*General results list formatting  - This controls how it builds the little boxes initially */
+
+/*Results List Stuff*/
+#myUL {
+	list-style-type: none;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
 }
 
-/* The popup form - hidden by default */
-.form-popup {
-	display: none;
-	position: fixed;
-	bottom: 0;
-	right: 15px;
-	border: 3px solid #f1f1f1;
-	z-index: 9;
+#myUL li a {
+	border: 1px solid #ddd;
+	margin-top: -1px;
+	background-color: #FFF;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	color: black;
+	display: block;
+
 }
 
-/* Add styles to the form container */
-.form-container {
-	max-width: 300px;
-	padding: 10px;
-	background-color: white;
+#myUL li a:hover:not(.header) {
+	background-color: #eee;
 }
 
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
-	width: 100%;
-	padding: 15px;
-	margin: 5px 0 22px 0;
-	border: none;
-	background: #f1f1f1;
+/*Draws box around whole result in list */
+
+.wholeResult {
+	border: 2px solid black;
+	overflow: hidden;
+	max-height: 140px;
+	text-decoration: none;
 }
 
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-	background-color: #ddd;
-	outline: none;
+
+/*SPECIFIC RESULT FORMATTING */
+
+/*Title*/
+.title {
+	align-self: self-start;
+	text-align: left;
 }
 
-/* Set a style for the submit/login button */
-.form-container .btn {
-	background-color: #4CAF50;
-	color: white;
-	padding: 16px 20px;
-	border: none;
-	cursor: pointer;
-	width: 100%;
-	margin-bottom:10px;
-	opacity: 0.8;
+/*This currently styles the created at time... and OS... Bad, I know.*/
+.desc {
+	font-size: 16px;
+	width: 60%;
+	text-align: left;
+	margin-left: 5px;
+
 }
 
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-	background-color: red;
+/*Styles modified at time... and Version... I was recycling*/
+.desc2 {
+	font-size: 16px;
+	width: 60%;
+	text-align: left;
+	margin-left: 5px;
+
 }
 
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-	opacity: 1;
+/*Long description of mitigation*/
+.further {
+	font-size: 14px;
+	width: 60%;
+	text-align: left;
+	margin-left: 5px;
+}
+
+/*mitigation category */
+.cat {
+	box-sizing: border-box;
+	font-size: 16px;
+	/*border: 1px;
+    border-color: black;
+    background-color: #ddd;
+    border-style: solid;*/
+	min-width: 160px;
+	margin-bottom: 5px;
+}
+
+/*mitigation type*/
+.type {
+	box-sizing: border-box;
+	font-size: 16px;
+	/*border: 1px;
+    border-color: black;
+    background-color: #ddd;
+    border-style: solid;*/
+	min-width: 160px;
+	margin-top: 5px;
+}
+
+/*Left side of a formatted mitigation - this holds the title, times, links, etc*/
+.resultLeft {
+	/*float: left; */
+	max-width: 70%;
+}
+
+/*Right side of a formatted mitigation - holds Category and Type*/
+.resultRight {
+	float: right;
+	position: relative;
+	text-decoration: none;
+	width: 25%;
+	top: 25px;
+	right: 10px;
+}
+
+
+/*When less than 600 px, stack links and search field */
+@media only screen and (max-width: 600px) {
+	.topnav .search-container {
+		float: none;
+	}
+
+	.topnav a, .topnav input[type=text], .topnav .search-container button {
+		float: none;
+		display: block;
+		text-align: left;
+		width: 100%;
+		margin: 0;
+		padding: 14px;
+	}
+
+	.topnav input[type=text] {
+		border: 1px solid #ccc;
+	}
 }
 
 /* ----- End ----- */

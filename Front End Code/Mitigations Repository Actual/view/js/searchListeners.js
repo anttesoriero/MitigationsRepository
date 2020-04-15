@@ -62,13 +62,6 @@ function addListeners() {
         goToEdit(mit_id);
 
     });
-    //$('.edit').on('click', function (evt) {
-    //    evt.stopPropagation();
-    //    console.log('CLICK');
-
-    //    var mit_id = $(this).attr('name');
-    //    goToEdit(mit_id);
-    //});
 
     $(document).on('click', "#fork", function (evt) {
         var mit_id = $(this).attr('name');
@@ -76,13 +69,6 @@ function addListeners() {
         goToFork(mit_id);
 
     });
-    //$('.fork').on('click', function (evt) {
-    //    evt.stopPropagation();
-    //   console.log('CLICK');
-
-    //   var mit_id = $(this).attr('name');
-    //   goToFork(mit_id);
-    // });
 }
 
 /****************************************************
