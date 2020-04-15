@@ -76,6 +76,7 @@ body
 	left: 75%;
 	right: 5%;
 	background-color: #fff;
+	margin-left: 5px;
 	text-align: left;
 	overflow: auto;
 	max-height: 70vh;
@@ -94,10 +95,10 @@ body
 /*search page middle bar*/
 .v2 {
 	border-left: 2px solid black;
-	height: 400px;
+	height: 500px;
 	position: absolute;
-	left: 55%;
-	margin-left: -1px;
+	left: 50%;
+	margin-left: 1px;
 	top: 20%;
 }
 
