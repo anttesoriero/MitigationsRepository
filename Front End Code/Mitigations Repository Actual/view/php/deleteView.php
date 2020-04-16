@@ -19,6 +19,10 @@ if (!isset($_SESSION['logged_in'])) {
     header("Location: /view/php/loginPage.php");
 }
 
+if (isset($_GET['s'])) {
+    $Mitigation_To_Delete = $_GET['s'];
+}
+
 ?>
 
 <div class="topnav"><a class="active" href="../../index.php"> Mitigation Repository <i class="fa fa-database"></i></a>
