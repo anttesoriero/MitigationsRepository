@@ -61,7 +61,15 @@ body
 
 /* Right side of window - large container to hold smaller ones */
 
-.right {
+.center {
+	position: absolute;
+	background-color: #fff;
+	text-align: center;
+}
+
+/* Center side of window - large container to hold smaller ones */
+
+.center {
 	position: absolute;
 	left: 55%;
 	right: 5%;

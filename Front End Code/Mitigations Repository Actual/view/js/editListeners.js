@@ -1,4 +1,4 @@
-/*forking page listeners  */
+/*edit page listeners  */
 
 console.log('editListeners.js loaded.');
 
