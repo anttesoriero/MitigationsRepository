@@ -40,8 +40,10 @@ if (!isset($_SESSION['logged_in'])) {
     <h2> Delete	Mitigation </h2>
 	
 	<p> Are you sure you would like to delete this mitigation? </p>
-	<p> It will now display the mitigation :) </p>
+	<p> (Displays Mitigation)  </p>
 	
+	<button type="button" name="delete" value="deleteMitigation"> Yes </button>
+	<button type="button" name="delete" value="deleteMitigation"> No </button>
 	
 	<div class="completeMitigation" id="completeMitigation" name="completeMitigation"></div>
 
