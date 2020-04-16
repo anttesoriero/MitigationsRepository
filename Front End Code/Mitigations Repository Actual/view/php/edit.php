@@ -70,7 +70,7 @@ if (isset($_GET['s'])) {
             </div> -->
 
             <div class="descriptionSearchTA">
-                <textarea id="description" rows="5" cols="25" spellcheck="true"
+                <textarea id="description" rows="5" cols="25" spellcheck="true" placeholder="Mitigation Description"
                           name="description" required='required'></textarea>
             </div>
 
