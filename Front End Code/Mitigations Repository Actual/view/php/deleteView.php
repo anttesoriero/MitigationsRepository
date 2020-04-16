@@ -36,7 +36,7 @@ if (!isset($_SESSION['logged_in'])) {
         ?>
     </div>
 </div>
-<div class="left" id="left">
+<div class="center" id="center">
     <h2> Delete	Mitigation </h2>
 	
 	<p> Are you sure you would like to delete this mitigation? </p>
