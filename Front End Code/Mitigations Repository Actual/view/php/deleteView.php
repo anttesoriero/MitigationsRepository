@@ -36,14 +36,25 @@ if (!isset($_SESSION['logged_in'])) {
         ?>
     </div>
 </div>
-<div class="leftSearch" id="leftSide">
+<div class="left" id="left">
     <h2> Delete	Mitigation </h2>
 	
 	<p> Are you sure you would like to delete this mitigation? </p>
-	<p> (Displays Mitigation)  </p>
 	
 	<button type="button" name="delete" value="deleteMitigation"> Yes </button>
 	<button type="button" name="delete" value="deleteMitigation"> No </button>
 	
 	<div class="completeMitigation" id="completeMitigation" name="completeMitigation"></div>
+
+<!-- Load all the javascript in -->
+
+<!-- load jquery -->
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<!-- load ajax helper -->
+<script type="text/javascript" src="../js/AjaxFunctions.js"></script>
+<!-- load listeners for this page -->
+<script type="text/javascript" src="../js/mitigationListener.js"></script>
+
+
+</body>
 
