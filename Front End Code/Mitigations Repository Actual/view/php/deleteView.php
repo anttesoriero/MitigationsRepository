@@ -45,7 +45,7 @@ if (!isset($_SESSION['logged_in'])) {
 	 <input type="button" class="button" id="delete" value="Yes"/>
 	
 	<div class="completeMitigation" id="completeMitigation" name="completeMitigation"></div>
-
+</div>
 
 	<!-- Load all the javascript in -->
 
