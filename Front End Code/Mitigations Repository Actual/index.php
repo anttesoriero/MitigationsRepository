@@ -58,7 +58,7 @@ if (!isset($_SESSION['logged_in'])) {
             <input type="text" id="searchField" name="searchField" placeholder="Search Mitigation"/>
         </form>
         <br><br><br>
-        <!-- Temp 9 -->
+        <!-- Temp 10 -->
         <br><br><br>
         <?php include 'view/php/selectCT.php'; ?>
             <br><br><br>
