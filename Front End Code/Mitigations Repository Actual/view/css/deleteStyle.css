@@ -1,0 +1,15 @@
+.button {
+  background-color: #FFFFFF;
+  border-style: groove;
+  color: black;
+  padding: 20px;
+  margin-left: 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+.button:hover {
+  background-color: white;
+}

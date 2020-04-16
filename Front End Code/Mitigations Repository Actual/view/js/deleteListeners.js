@@ -18,7 +18,7 @@ function addListeners() {
         ajaxURL = '../../controller/php/deleting.php';
 
         // Serialize the form so Ajax can post it asynchronously, then post it.
-        $.post(ajaxURL, $('#editMitigationForm').serialize(), processDelete);
+        $.post(ajaxURL, $('#deleteMitigationForm').serialize(), processDelete);
         console.log('AJAX call submitted.');
         processDelete();
     });
@@ -28,6 +28,15 @@ function addListeners() {
 /****************************************************
  *                  Callbacks                       *
  ****************************************************/
+ 
+ 
+ function processData(echoedData) {
+    // Very simple callback that can be used for movies and actors
+    // Note that the HTML tagging is done by the PHP
+    $('#left').html(echoedData);
+}
+
+
 function processDelete(deleteData) {
     console.log(deleteData)
     if (deleteData.toLowerCase().indexOf("error") != -1) {
@@ -38,3 +47,5 @@ function processDelete(deleteData) {
         window.location.href = '../../index.php';
     }
 }
+
+
