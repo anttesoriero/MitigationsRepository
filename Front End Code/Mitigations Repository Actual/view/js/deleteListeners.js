@@ -17,6 +17,10 @@ function addListeners() {
         // Make URL for Ajax call
         ajaxURL = '../../controller/php/deleting.php';
 
+	    // Serialize the form so Ajax can post it asynchronously, then post it.
+        $.post(ajaxURL, $('#deleteMitigationForm').serialize(), processDelete);
+        console.log('AJAX call submitted.');
+        processEdit();
     });
 
 }

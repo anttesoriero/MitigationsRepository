@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Fork Mitigation - Mitigation Repository </title>
+    <title> Delete Mitigation - Mitigation Repository </title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link id="forkingCSS" rel="stylesheet" type="text/css" href="../css/deleteStyle.css">
     <link id="mainCSS" rel="stylesheet" type="text/css" href="../css/main.css"/>
@@ -41,6 +41,9 @@ if (isset($_GET['s'])) {
     </div>
 </div>
 <div class="center" id="center">
+
+<form id="deleteMitigationForm">
+     <input type="hidden" name = 'mitigationToDelete' value='<?php echo $Mitigation_To_Delete ?>'/>
     <h2> Delete	Mitigation </h2>
 	
 	<p> Are you sure you would like to delete this mitigation? </p>
@@ -50,6 +53,7 @@ if (isset($_GET['s'])) {
 	
 	<div class="completeMitigation" id="completeMitigation" name="completeMitigation"></div>
 </div>
+</form>
 
 	<!-- Load all the javascript in -->
 

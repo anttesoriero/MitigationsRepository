@@ -10,6 +10,7 @@ $hostname = '127.0.0.1';   // local host.  web server is db server
 //Currently just uses the regular admin credentials, but will use the
 //credentials from logging in
 
+//Get procedures to get the mit_id 
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", "admin", "Sweng#2020");
 	deleteMit($dbh, $mit_id);
