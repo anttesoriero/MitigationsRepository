@@ -55,13 +55,13 @@ if (isset($_GET['s'])) {
             <input type="text" spellcheck="false" spellcheck="true" placeholder="Last Name" name="lastName"
                    required='required'>
             <h3> Enter Mitigation Title </h3>
-            <input type="text" id="title" spellcheck="true" name="title" required='required'>
+            <input type="text" id="title" spellcheck="true" name="title" required='required' placeholder="Title">
             <h3> Enter Operating System </h3>
 
-            <input type="text" id="os" spellcheck="true" name="os" required='required'>
+            <input type="text" id="os" spellcheck="true" name="os" required='required' placeholder="Operating System">
 
             <h3> Enter Operating System Version </h3>
-            <input type="text" id="version" spellcheck="true" name="version" required='required'>
+            <input type="text" id="version" spellcheck="true" name="version" required='required' placeholder="Version">
 
             <h3> Enter Mitigation Description </h3>
             <!-- <div class="descriptionSearch">
