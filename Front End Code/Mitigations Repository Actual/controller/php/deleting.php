@@ -24,11 +24,7 @@ $dbname   = 'Mitigation_Repository';
 
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", "admin", "Sweng#2020");
-
-	deleteAuthor($dbh, $author_id);
 	deleteMit($dbh, $mit_id);
-	deleteSecCon($dbh, $secCon_id);
-	deleteSystem($dbh, $system_id);
     echo "Success";
 }
 catch(PDOException $e) {
