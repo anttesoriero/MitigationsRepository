@@ -40,21 +40,21 @@ if (!isset($_SESSION['logged_in'])) {
 
     <div class="bodySearch">
         <form id="createMitigationForm">
-            <h3 style="margin-left: 550px;"> Author First Name </h3>
+            <h3> Author First Name </h3>
             <input type="text" spellcheck="false" placeholder="First Name" name="firstName" required='required'>
-            <h3 style="margin-left: 550px;"> Author Last Name </h3>
+            <h3> Author Last Name </h3>
 
             <input type="text" spellcheck="false" placeholder="Last Name" name="lastName" required='required'>
-            <h3 style="margin-left: 550px;"> Enter Mitigation Title </h3>
+            <h3> Enter Mitigation Title </h3>
             <input type="text" spellcheck="true" placeholder="Title" name="title" required='required'>
-            <h3 style="margin-left: 550px;"> Enter Operating System </h3>
+            <h3> Enter Operating System </h3>
 
             <input type="text" spellcheck="true" placeholder="Operating System" name="os" required='required'>
 
-            <h3 style="margin-left: 550px;"> Enter Operating System Version </h3>
+            <h3> Enter Operating System Version </h3>
             <input type="text" spellcheck="true" placeholder="Version" name="version" required='required'>
 
-			<h3 style="margin-left: 550px;"> Enter Mitigation Description </h3>
+			<h3> Enter Mitigation Description </h3>
             <div class="descriptionSearchTA">
                 <textarea rows="5" cols="25" spellcheck="true" placeholder="Mitigation Description"
                           name="description" required='required'></textarea>
@@ -63,7 +63,7 @@ if (!isset($_SESSION['logged_in'])) {
            <center>
 
                 <!-- <h3 style="margin-left: 600px;"> Category: </h3> -->
-                <label for="category" style="margin-left: 600px;"> Category: </label>
+                <label for="category" style="word-wrap:break-word"> Category: </label>
 
                 <?php
             $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
@@ -83,7 +83,7 @@ if (!isset($_SESSION['logged_in'])) {
 				<br>
 			
             <!-- <h3 style="margin-left: 600px;"> Type: </h3> -->
-            <label for="sec_type" style="margin-left: 600px;"> Type: </label>
+            <label for="sec_type" style="word-wrap:break-word"> Type: </label>
             <?php
             $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
 
