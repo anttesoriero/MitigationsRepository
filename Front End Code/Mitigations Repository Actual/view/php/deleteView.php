@@ -39,7 +39,8 @@ if (!isset($_SESSION['logged_in'])) {
 <div class="leftSearch" id="leftSide">
     <h2> Delete	Mitigation </h2>
 	
-	<h3> Are you sure you would like to delete this mitigation? </h3>
+	<p> Are you sure you would like to delete this mitigation? </p>
+	<p> It will now display the mitigation :) </p>
 	
 	
 	<div class="completeMitigation" id="completeMitigation" name="completeMitigation"></div>
