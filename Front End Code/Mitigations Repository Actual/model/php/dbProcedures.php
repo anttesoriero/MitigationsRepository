@@ -209,47 +209,12 @@ function searchByID($dbh, $mit_id)
     }
 }
 
-function deleteAuthor($dbh, $author_id)
-{
-	try {
-        $sql = "CALL Mitigation_Repository.Delete_Author(?);";
-        $stmt = $dbh->prepare($sql);
-        $stmt->bindValue(1, $author_id, PDO::PARAM_INT);
-		$stmt->execute();
-    } catch (PDOException $e) {
-        die ('unable to fork mitigation: ' . $e->getMessage());
-    }
-}
-
 function deleteMit($dbh, $mit_id)
 {
 	try {
         $sql = "CALL Mitigation_Repository.Delete_Mit(?);";
         $stmt = $dbh->prepare($sql);
         $stmt->bindValue(1, $mit_id, PDO::PARAM_INT);
-		$stmt->execute();
-    } catch (PDOException $e) {
-        die ('unable to fork mitigation: ' . $e->getMessage());
-    }
-}
-function deleteSecCon($dbh, $secCon_id)
-{
-	try {
-        $sql = "CALL Mitigation_Repository.Delete_SecCon(?);";
-        $stmt = $dbh->prepare($sql);
-        $stmt->bindValue(1, $secCon_id, PDO::PARAM_INT);
-		$stmt->execute();
-    } catch (PDOException $e) {
-        die ('unable to fork mitigation: ' . $e->getMessage());
-    }
-}
-
-function deleteSystem($dbh, $system_id)
-{
-	try {
-        $sql = "CALL Mitigation_Repository.Delete_System(?);";
-        $stmt = $dbh->prepare($sql);
-        $stmt->bindValue(1, $system_id, PDO::PARAM_INT);
 		$stmt->execute();
     } catch (PDOException $e) {
         die ('unable to fork mitigation: ' . $e->getMessage());
