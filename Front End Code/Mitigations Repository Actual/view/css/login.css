@@ -3,7 +3,7 @@
 .bodySearch input[type=text]
 {
 	padding: 6px;
-	margin-left: 550px;
+	/* margin-left: 550px; */
 	margin-top: 1px;
 	font-size: 20px;
 	border: 1px;
@@ -16,7 +16,7 @@
 .bodySearch input[type=password]
 {
     padding: 6px;
-    margin-left: 550px;
+    /* margin-left: 550px; */
     margin-top: 1px;
     font-size: 20px;
     border: 1px;
@@ -31,7 +31,7 @@
   border: solid;
   color: black;
   padding: 13px;
-  margin-left: 550px;
+  /* margin-left: 550px; */
   text-align: center;
   text-decoration: none;
   display: inline-block;
