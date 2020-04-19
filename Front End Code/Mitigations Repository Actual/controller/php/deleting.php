@@ -5,10 +5,6 @@ if (!include('../../model/php/dbProcedures.php')) {
 }
 
 $hostname = '127.0.0.1';   // local host.  web server is db server
-//Trims from what is posted by the create page to get the various variables and save them locally temporarily
-
-//Currently just uses the regular admin credentials, but will use the
-//credentials from logging in
 
 //Get procedures to get the mit_id 
 try {

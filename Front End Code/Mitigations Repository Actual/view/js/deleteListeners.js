@@ -20,7 +20,7 @@ function addListeners() {
 	    // Serialize the form so Ajax can post it asynchronously, then post it.
         $.post(ajaxURL, $('#deleteMitigationForm').serialize(), processDelete);
         console.log('AJAX call submitted.');
-        processEdit();
+        processDelete();
     });
 
 }

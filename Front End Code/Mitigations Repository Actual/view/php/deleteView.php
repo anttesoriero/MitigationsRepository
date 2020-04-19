@@ -50,10 +50,11 @@ if (isset($_GET['s'])) {
 	
 
 	 <input type="button" class="button" id="delete" value="Yes"/>
-	
+	 <input type="button" class="button" id="dontDelete" value="No"/>
+	</form>
 	<div class="completeMitigation" id="completeMitigation" name="completeMitigation"></div>
 </div>
-</form>
+
 
 	<!-- Load all the javascript in -->
 
