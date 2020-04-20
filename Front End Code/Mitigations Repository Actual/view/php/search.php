@@ -29,12 +29,12 @@
     ?>
 </div>
 </div>
-<h2 style = "float: left"> Search Results </h2>
+<h2 style="float: left"> Search Results </h2>
 <br>
 <br>
 <br>
-<div class = "bodySearch">
-    <input type="text" id="myInput" onkeyup="results()" placeholder="Refine Search">
+<div class="bodySearch">
+    <input type="text" id="myInput" placeholder="Refine Search">
     <?php
     $mysqli = NEW MySQLi('localhost','admin','Sweng#2020','Mitigation_Repository');
 
