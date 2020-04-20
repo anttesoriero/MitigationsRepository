@@ -5,7 +5,7 @@
 <head>
     <title> Delete Mitigation - Mitigation Repository </title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link id="forkingCSS" rel="stylesheet" type="text/css" href="../css/deleteStyle.css">
+    <link id="deletingCSS" rel="stylesheet" type="text/css" href="../css/deleteStyle.css">
     <link id="mainCSS" rel="stylesheet" type="text/css" href="../css/main.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -49,7 +49,6 @@ if (isset($_GET['s'])) {
 	
 	<p> Are you sure you would like to delete this mitigation? </p>
 	
-
 	 <input type="button" class="button" id="delete" value="Yes"/>
 	 <input type="button" class="button" id="dontDelete" value="No"/>
 	</form>
