@@ -10,7 +10,7 @@
 
         $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
         ?>
-        <select name="category">
+        <select name="category" id="category">
             <option selected disabled hidden>Choose Category</option>
             <?php
             while ($rows = $result->fetch_assoc()) {
@@ -29,7 +29,7 @@
 
         $result = $mysqli->query("CALL Mitigation_Repository.GetType()");
         ?>
-        <select name="sec_type">
+        <select name="sec_type" id="sec_type">
             <option selected disabled hidden>Choose Type</option>
             <?php
             while ($rows = $result->fetch_assoc()) {

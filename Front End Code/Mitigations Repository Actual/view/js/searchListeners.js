@@ -69,13 +69,21 @@ function addListeners() {
         goToFork(mit_id);
 
     });
-	
-	$(document).on('click', "#delete", function (evt) {
+
+    $(document).on('click', "#delete", function (evt) {
         var mit_id = $(this).attr('name');
         console.log('CLICK');
         goToDelete(mit_id);
 
     });
+
+    $('#category').change(function () {
+        alert($(this).val());
+    })
+
+    $('#sec_type').change(function () {
+        alert($(this).val());
+    })
 }
 
 /****************************************************

@@ -1,20 +1,5 @@
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function dropDown() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function dropDown2() {
-    document.getElementById("myDropdown2").classList.toggle("show");
-}
-
-function dropDown3() {
-    document.getElementById("myDropdown3").classList.toggle("show");
-}
-
-function dropDown4() {
-    document.getElementById("myDropdown4").classList.toggle("show");
-}
 
 function results()
 {
@@ -38,18 +23,6 @@ function results()
             li[i].style.display = "none";
         }
     }
-}
-
-function fillDiv(trigger)
-{
-    var textVal = "";
-    var sub=document.getElementById('rightResultDisplay');
-    if (trigger != null)
-    {
-        txtVal = "YOU CLICKED A THIIIIIIIING";
-        txtVal = document.getElementById(trigger).innerHTML;
-    }
-    sub.innerHTML = txtVal;
 }
 
 // Close the dropdown menu if the user clicks outside of it
