@@ -50,7 +50,7 @@ if (isset($_GET['s'])) {
 	<p> Are you sure you would like to delete this mitigation? </p>
 	
 	 <input type="button" class="button" id="delete" value="Yes"/>
-	 <input type="button" class="button" id="dontDelete" value="No"/>
+	 <input type="button" class="button" onclick="window.location.href = '../../index.php';" value="No" />
 	</form>
 	<div class="completeMitigation" id="completeMitigation" name="completeMitigation"></div>
 </div>
