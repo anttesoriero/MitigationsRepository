@@ -11,7 +11,7 @@
 
 
 </head>
-
+<body>
 <?php
 if (!isset($_SESSION['logged_in'])) {
     $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
@@ -24,6 +24,8 @@ if (isset($_GET['s'])) {
 }
 
 ?>
+
+
 
 <div class="topnav"><a class="active" href="../../index.php"> Mitigation Repository <i class="fa fa-database"></i></a>
     <div class="login"><a href="loginPage.php">Login</a></div>
@@ -41,10 +43,9 @@ if (isset($_GET['s'])) {
     </div>
 </div>
 <div class="center" id="center">
-
+ <h2> Delete Mitigation </h2>
 <form id="deleteMitigationForm">
      <input type="hidden" name = 'mitigationToDelete' value='<?php echo $Mitigation_To_Delete ?>'/>
-    <h2> Delete	Mitigation </h2>
 	
 	<p> Are you sure you would like to delete this mitigation? </p>
 	
