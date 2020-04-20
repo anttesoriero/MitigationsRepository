@@ -25,7 +25,8 @@ try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        getTitleSearchMitigation($dbh, $num, $searchType);
+    //getTitleSearchMitigation($dbh, $num, $searchType);
+    getFuzzySearchMitigation($dbh, $num, $searchType);
 
 } catch (PDOException $e) {
     echo('PDO error for user ' . $username . ' in "ConnectDB()": ' . $e->getMessage());
