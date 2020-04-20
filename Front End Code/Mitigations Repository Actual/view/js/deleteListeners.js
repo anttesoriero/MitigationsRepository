@@ -47,6 +47,5 @@ function processDelete(deleteData) {
     }
 }
 
-}
 
 
