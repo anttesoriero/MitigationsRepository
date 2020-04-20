@@ -64,7 +64,9 @@ if (isset($_GET['s'])) {
 	<!-- load ajax helper -->
 	<script type="text/javascript" src="../js/AjaxFunctions.js"></script>
 	<!-- load listeners for this page -->
-	<script type="text/javascript" src="../js/mitigationListener.js"></script>
+	<script type="text/javascript" src="../js/mitigationListener.js"></script>	
+	<!-- load listeners for this page -->
+	<script type="text/javascript" src="../js/deleteListeners.js"></script>
 
 
 </body>
