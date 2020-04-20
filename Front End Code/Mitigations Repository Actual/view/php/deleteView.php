@@ -20,7 +20,7 @@ if (!isset($_SESSION['logged_in'])) {
 }
 
 if (isset($_GET['s'])) {
-    $Mitigation_To_Delete = $_GET['s'];
+    $mit_id = $_GET['s'];
 }
 
 ?>
@@ -45,7 +45,7 @@ if (isset($_GET['s'])) {
 <div class="center" id="center">
  <h2> Delete Mitigation </h2>
 <form id="deleteMitigationForm">
-     <input type="hidden" name = 'mitigationToDelete' value='<?php echo $Mitigation_To_Delete ?>'/>
+     <input type="hidden" name = 'mitigationToDelete' value='<?php echo $mit_id ?>'/>
 	
 	<p> Are you sure you would like to delete this mitigation? </p>
 	
