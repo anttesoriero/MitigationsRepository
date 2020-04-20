@@ -43,7 +43,6 @@ function processDelete(deleteData) {
         $('#errorMessage').html(deleteData);
     } else if (deleteData.toLowerCase().indexOf("success") != -1) {
         $('#successMessage').html(deleteData);  // visible for split second
-
         window.location.href = '../../index.php';
     }
 }
