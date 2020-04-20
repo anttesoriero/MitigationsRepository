@@ -42,7 +42,7 @@ function processDelete(deleteData) {
     if (deleteData.toLowerCase().indexOf("error") != -1) {
         $('#errorMessage').html(deleteData);
     } else if (deleteData.toLowerCase().indexOf("success") != -1) {
-        $('#successMessage').html(editData);  // visible for split second
+        $('#successMessage').html(deleteData);  // visible for split second
 
         window.location.href = '../../index.php';
     }
