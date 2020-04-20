@@ -45,7 +45,7 @@ if (isset($_GET['s'])) {
 <div class="center" id="center">
  <h2> Delete Mitigation </h2>
 <form id="deleteMitigationForm">
-     <input type="hidden" name = 'mid_id' value='<?php echo $mit_id ?>'/>
+     <input type="hidden" name = 'mit_id' value='<?php echo $mit_id ?>'/>
 	
 	<p> Are you sure you would like to delete this mitigation? </p>
 	

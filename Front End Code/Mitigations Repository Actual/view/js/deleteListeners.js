@@ -40,7 +40,7 @@ function addListeners() {
 function processDelete(deleteData) {
     console.log(deleteData)
     if (deleteData.toLowerCase().indexOf("error") != -1) {
-        $('#errorMessage').html(editData);
+        $('#errorMessage').html(deleteData);
     } else if (deleteData.toLowerCase().indexOf("success") != -1) {
         $('#successMessage').html(editData);  // visible for split second
 
