@@ -17,7 +17,7 @@ $dbname   = 'Mitigation_Repository';
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", "admin", "Sweng#2020");
     deleteMit($dbh, $mit_id);
-    //echo "Success";
+    echo "Success";
 }
 catch(PDOException $e) {
     echo ('PDO error in "ConnectDB()": ' . $e->getMessage() );
