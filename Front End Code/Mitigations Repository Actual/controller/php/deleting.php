@@ -12,6 +12,7 @@ $hostname = '127.0.0.1';   // local host.  web server is db server
 //credentials from logging in
 
 $mit_id = trim($_POST['mit_id']);
+$dbname   = 'Mitigation_Repository';
 
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", "admin", "Sweng#2020");
