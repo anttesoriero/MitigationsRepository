@@ -31,7 +31,7 @@ if (!isset($_SESSION['logged_in'])) {
             }
             else
             {
-                echo 'Guest Access';
+                echo 'Guest Access - ALSO VERIFYING THIS CHANGES';
             }
             ?>
         </div>
