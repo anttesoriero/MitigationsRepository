@@ -88,7 +88,14 @@ function addListeners() {
         alert($(this).val());
     });
 
-    $('#myInput').on('keyup', results());
+    console.log('filtering maybe?')
+    $('#myInput').on('keyup', function (event) {
+        if (event.isComposing || event.keyCode === 229) {
+            return;
+        } else {
+            results();
+        }
+    });
 }
 
 /****************************************************
@@ -143,7 +150,7 @@ function goToDelete(mit_id) {
 function processMitigationData(jsonResults) {
     var jsonData = JSON.parse(jsonResults);
     console.log(jsonData);
-    var htmlString = "<div class='entireResult' id='" + jsonData[0].mitigation_id + "'><a href = '#'><div class='resultRight'><span class='cat'>" + jsonData[0].category +
+    var htmlString = "<div class='entireResult' id='" + jsonData[0].mitigation_id + "'><div class='resultRight'><span class='cat'>" + jsonData[0].category +
         "</span><br><span class='type'>" + jsonData[0].sec_type + "</span></div><span class='title'>" + jsonData[0].title + "</span><br>" +
         "<div class='resultLeft'><span class='mitid'>Mitigation ID: " + jsonData[0].mitigation_id + "</span><br><span class='link'>Link to this mitigation: " +
         "<a href='../php/fullMitigation.php?m=" + jsonData[0].mitigation_id + "'> " + jsonData[0].mitigation_id + "</a></span><br><span class='forks' id='forks'></span><br>";
@@ -158,7 +165,7 @@ function processMitigationData(jsonResults) {
     htmlString += "<br><span class='author'>Author: " + jsonData[0].Author + "</span><br><span class='desc'>Created on:"
         + jsonData[0].created_at + "</span><br><span class='desc2'>Modified on: " + jsonData[0].modified_at + "</span><br><span class='desc'>Operating System: " +
         jsonData[0].OS_name + "</span><span class='desc2'>Version: " + jsonData[0].version + "</span><br>" +
-        "<span class='further'>" + jsonData[0].description + "</span></a></div>"
+        "<span class='further'>" + jsonData[0].description + "</span></div>"
 
     $('#rightResultDisplay').html(htmlString);
 }
@@ -178,4 +185,25 @@ function processChildren(jsonResults) {
     $('#forks').html(linkString);
 
 
+}
+
+function results() {
+    var input, filter, ul, li, a, i, txtValue;
+    console.log('keyup');
+
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByClassName("wholeResult")[0];
+        console.log(a);
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
 }
