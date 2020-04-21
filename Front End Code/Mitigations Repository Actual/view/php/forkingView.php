@@ -39,13 +39,13 @@ if (isset($_GET['s'])) {
         ?>
     </div>
 </div>
-<div class="leftSearch" id="leftSide">
+<div class="left" id="leftSide">
     <h2> Fork Mitigation </h2>
 
 
     <div class="bodySearch">
         <form id="forkMitigationForm">
-            <input type="hidden" name = 'mitigationToFork' value='<?php echo $Mitigation_To_Fork ?>'/>
+            <input type="hidden" name='mitigationToFork' value='<?php echo $Mitigation_To_Fork ?>'/>
 			
             <h3 style="margin-left: 550px;"> Author First Name </h3>
             <input type="text" id="firstName" spellcheck="true" name="firstName" required='required'>

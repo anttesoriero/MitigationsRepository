@@ -40,13 +40,13 @@ if (isset($_GET['s'])) {
     </div>
 </div>
 
-<div class="leftSearch" id="leftSide">
+<div class="left" id="leftSide">
     <h2> Edit Mitigation </h2>
 
 
     <div class="bodySearch">
         <form id="editMitigationForm">
-            <input type="hidden" name = 'mitigationToEdit' value='<?php echo $Mitigation_To_Edit ?>'/>
+            <input type="hidden" name='mitigationToEdit' value='<?php echo $Mitigation_To_Edit ?>'/>
             <!-- <h3 style="margin-left: 550px;"> Author First Name </h3> -->
             <h3> Author First Name </h3>
             <input type="text" spellcheck="false" placeholder="First Name" name="firstName" required='required'>
