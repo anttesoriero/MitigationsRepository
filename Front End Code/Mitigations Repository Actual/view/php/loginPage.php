@@ -37,10 +37,11 @@
         <label for="password">Password: </label>
         <input type="password" id="password" name="password" required="required" placeholder="Password"/><br/>
 
-        <!-- <input type="button" id="submitLogin" value="Submit"/><br/>
-        <input type="button" id="logout" value="Logout" /> -->
-        <input type="submit" id="submitLogin" value="Submit"/><br/>
-        <input type="submit" id="logout" value="Logout" />
+        <!--Making these type submit breaks this in firefox.  It doesn't like type submit. -->
+        <input type="button" id="submitLogin" value="Submit"/><br/>
+        <input type="button" id="logout" value="Logout"/>
+        <!--<input type="submit" id="submitLogin" value="Submit"/><br/>
+        <input type="submit" id="logout" value="Logout" />-->
 
         <p><span id="successMessage" class="message"></span></p>
         <p><span id="errorMessage" class="error"></span></p>
