@@ -80,12 +80,12 @@ function addListeners() {
     console.log('Dropdown Listeners?');
     $('#category').on('change', function () {
         console.log('Changed');
-        alert($(this).val());
+        catFilter($(this).val());
     });
 
     $('#sec_type').on('change', function () {
         console.log('Changed');
-        alert($(this).val());
+        typeFilter($(this).val());
     });
 
     console.log('filtering maybe?')
@@ -208,11 +208,10 @@ function results() {
     }
 }
 
-function catFilter() {
-    var input, filter, ul, li, a, i, txtValue;
+function catFilter(catcat) {
+    var filter, ul, li, a, i, txtValue;
 
-    input = document.getElementById('myInput');
-    filter = input.value.toUpperCase();
+    filter = catcat;
     ul = document.getElementById("myUL");
     li = ul.getElementsByTagName('li');
 
@@ -220,7 +219,7 @@ function catFilter() {
         a = li[i].getElementsByClassName("wholeResult")[0];
         console.log(a);
         txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        if (txtValue.indexOf(filter) > -1) {
             li[i].style.display = "";
         } else {
             li[i].style.display = "none";
@@ -228,11 +227,10 @@ function catFilter() {
     }
 }
 
-function typeFilter() {
-    var input, filter, ul, li, a, i, txtValue;
+function typeFilter(typetype) {
+    var filter, ul, li, a, i, txtValue;
 
-    input = document.getElementById('myInput');
-    filter = input.value.toUpperCase();
+    filter = typetype;
     ul = document.getElementById("myUL");
     li = ul.getElementsByTagName('li');
 
@@ -240,7 +238,7 @@ function typeFilter() {
         a = li[i].getElementsByClassName("wholeResult")[0];
         console.log(a);
         txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        if (txtValue.indexOf(filter) > -1) {
             li[i].style.display = "";
         } else {
             li[i].style.display = "none";
