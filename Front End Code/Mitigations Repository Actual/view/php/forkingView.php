@@ -106,8 +106,8 @@ if (isset($_GET['s'])) {
                 ?>
             </select>
 
-            <br>
-            <input type="button" class="button" id="fork" value="Fork Mitigation"/>
+                <br>
+                <input type="button" class="button" id="fork" value="Fork Mitigation"/>
         </form>
     </div>
 </div>
@@ -115,7 +115,7 @@ if (isset($_GET['s'])) {
 <div class="v2">
 
 </div>
-<div class="rightSearch" id="rightResultDisplay">
+<div class="right" id="rightResultDisplay">
     <p><span id='successMessage' class='message'></span></p>
     <p><span id='errorMessage' class='error'></span></p>
 
