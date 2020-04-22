@@ -594,3 +594,9 @@
 [18-Apr-2020 21:58:11 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /var/www/html/view/php/create.php on line 69
 [18-Apr-2020 21:58:11 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /var/www/html/view/php/create.php on line 71
 [18-Apr-2020 21:58:11 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on null in /var/www/html/view/php/create.php on line 76
+[22-Apr-2020 20:38:27 UTC] PHP Notice:  Undefined variable: mit_id in /var/www/html/view/php/deleteView.php on line 48
+[22-Apr-2020 20:38:28 UTC] PHP Notice:  Undefined variable: mit_id in /var/www/html/view/php/deleteView.php on line 48
+[22-Apr-2020 20:39:02 UTC] PHP Notice:  Undefined variable: mit_id in /var/www/html/view/php/deleteView.php on line 48
+[22-Apr-2020 20:39:23 UTC] PHP Notice:  Undefined variable: mit_id in /var/www/html/view/php/deleteView.php on line 48
+[22-Apr-2020 20:40:37 UTC] PHP Notice:  Undefined variable: mit_id in /var/www/html/view/php/deleteView.php on line 49
+[22-Apr-2020 20:40:39 UTC] PHP Notice:  Undefined variable: mit_id in /var/www/html/view/php/deleteView.php on line 49

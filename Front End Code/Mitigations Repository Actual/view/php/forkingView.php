@@ -23,6 +23,7 @@ if (!isset($_SESSION['logged_in'])) {
 
 if (isset($_GET['s'])) {
     $Mitigation_To_Fork = $_GET['s'];
+    echo $Mitigation_To_Fork;
 }
 ?>
 <div class="topnav"><a class="active" href="../../index.php"> Mitigation Repository <i class="fa fa-database"></i></a>
@@ -46,7 +47,7 @@ if (isset($_GET['s'])) {
 
     <div class="bodySearch">
         <form id="forkMitigationForm">
-            <input type="hidden" name='mitigationToEdit' value='<?php echo $Mitigation_To_Fork ?>'/>
+            <input type="hidden" name='mitigationToFork' value='<?php echo $Mitigation_To_Fork ?>'/>
             <!-- <h3 style="margin-left: 550px;"> Author First Name </h3> -->
             <h3> Author First Name </h3>
             <input type="text" spellcheck="false" placeholder="First Name" name="firstName" required='required'>
