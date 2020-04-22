@@ -51,12 +51,8 @@ $password = $_SESSION["password"];
 
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
-
-//    addAuthor($dbh, $firstName,$lastName);
-//    addSystem($dbh, $os, $version);
-//    addSecurityControl($dbh, $category, $secType);
-//    addMitigation($dbh, $title, $description);
     addCompleteMitigation($dbh, $title, $description, $os, $version, $category, $secType, $firstName, $lastName);
+    echo "Success";
 } catch (PDOException $e) {
     echo ('PDO error for user ' . $username . ' in "ConnectDB()": ' . $e->getMessage() );
 }

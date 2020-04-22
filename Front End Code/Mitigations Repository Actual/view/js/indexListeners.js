@@ -28,15 +28,15 @@ function addListeners() {
         processSearch(searchTerm);
     });
 
-    // $('#catType').on('submit', function (evt) {
-    //     evt.preventDefault();
-    //     evt.stopPropagation();
-    //     var cat = $('#category').val();
-    //     var type = $('#sec_type').val();
+    $('#catType').on('submit', function (evt) {
+        evt.preventDefault();
+        evt.stopPropagation();
+        var cat = $('#category').val();
+        var type = $('#sec_type').val();
 
-    //console.log('category and type');
-    //processCatAndType(cat, type);
-    //})
+        console.log('category and type');
+        processCatAndType(cat, type);
+    })
 
     $('#newMitigation').on('click', function (evt) {
         evt.stopPropagation();

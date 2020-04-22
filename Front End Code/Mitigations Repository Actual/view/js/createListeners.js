@@ -27,8 +27,13 @@ function addListeners() {
  *                  Callbacks                       *
  ****************************************************/
 function processAddition(additionData) {
+    console.log(additionData)
+    if (additionData.toLowerCase().indexOf("error") != -1) {
+        $('#errorMessage').html(additionData);
+    } else if (additionData.toLowerCase().indexOf("success") != -1) {
+        $('#successMessage').html(additionData);  // visible for split second
 
-    $('#rightResultDisplay').html(additionData);
-	window.location.href = '../../index.php';
+        window.location.href = '../../index.php';
+    }
 }
 

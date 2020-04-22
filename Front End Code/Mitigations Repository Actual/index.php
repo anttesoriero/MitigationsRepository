@@ -66,7 +66,7 @@ if (!isset($_SESSION['logged_in'])) {
             <br><br><br>
             <!-- End Temp -->
 
-            <!--<input type="submit" id="searchButton" name="searchButton" value="Search By Category and Type"/>-->
+            <input type="submit" id="searchButton" name="searchButton" value="Search By Category and Type"/>
         </form>
 
         <button class="button" id="mostRecent">25 Most Recent Mitigations</button>
