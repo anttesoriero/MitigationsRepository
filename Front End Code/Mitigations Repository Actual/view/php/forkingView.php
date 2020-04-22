@@ -23,7 +23,6 @@ if (!isset($_SESSION['logged_in'])) {
 
 if (isset($_GET['s'])) {
     $Mitigation_To_Fork = $_GET['s'];
-    echo $Mitigation_To_Fork;
 }
 ?>
 <div class="topnav"><a class="active" href="../../index.php"> Mitigation Repository <i class="fa fa-database"></i></a>

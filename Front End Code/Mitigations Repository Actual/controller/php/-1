@@ -1,0 +1,1 @@
+[22-Apr-2020 21:52:12 UTC] PHP Notice:  Undefined index: mitigationToFork in /var/www/html/controller/php/forking.php on line 44
