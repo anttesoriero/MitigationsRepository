@@ -33,6 +33,7 @@
 <br>
 <br>
 <br>
+<!-- Test 1 -->
 <div class="bodySearch">
     <input type="text" id="myInput" placeholder="Refine Search">
     <?php
