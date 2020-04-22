@@ -42,6 +42,7 @@ if (isset($_GET['s'])) {
         ?>
     </div>
 </div>
+<center>
 <div class="center" id="center">
  <h2> Delete Mitigation </h2>
 <form id="deleteMitigationForm">
@@ -54,7 +55,7 @@ if (isset($_GET['s'])) {
 	</form>
 	<div class="completeMitigation" id="completeMitigation" name="completeMitigation"></div>
 </div>
-
+</center>
 
 	<!-- Load all the javascript in -->
 
