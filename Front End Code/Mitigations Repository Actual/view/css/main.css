@@ -75,8 +75,17 @@ body
 
 .center {
 	position: absolute;
-	left: 55%;
-	right: 5%;
+	left: 5%;
+	right: 55%;
+	background-color: #fff;
+	text-align: center;
+}
+
+/* Left side of Window - large container to hold smaller ones */
+.left {
+	position: absolute;
+	right: 55%;
+	left: 5%;
 	background-color: #fff;
 	text-align: center;
 }

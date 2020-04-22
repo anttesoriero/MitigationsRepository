@@ -38,22 +38,16 @@ if (!isset($_SESSION['logged_in'])) {
 <div class="left" id="leftSide">
     <h2> Create a Mitigation </h2>
 
-    <div class="bodySearch">
+    <div class="bodySearchLeft">
         <form id="createMitigationForm">
             <h3> Author First Name </h3>
             <input type="text" spellcheck="false" placeholder="First Name" name="firstName" required='required'>
             <h3> Author Last Name </h3>
-            <input type="text" spellcheck="false" placeholder="Last Name" name="lastName" required='required'>
-			
-			<div class="left" id="leftSide">
-			
+            <input type="text" spellcheck="false" placeholder="Last Name" name="lastName" required='required'>	
             <h3> Enter Mitigation Title </h3>
             <input type="text" spellcheck="true" placeholder="Title" name="title" required='required'>
             <h3> Enter Operating System </h3>
-            <input type="text" spellcheck="true" placeholder="Operating System" name="os" required='required'>
-			
-			</div>
-			
+            <input type="text" spellcheck="true" placeholder="Operating System" name="os" required='required'>			
             <h3> Enter Operating System Version </h3>
             <input type="text" spellcheck="true" placeholder="Version" name="version" required='required'>
 			<h3> Enter Mitigation Description </h3>
@@ -108,7 +102,6 @@ if (!isset($_SESSION['logged_in'])) {
             <input type = "button" class="button" id="create" value="Create Mitigation"/>
         </form>
     </div>
-</div>
 
 </div>
 <div class="right" id="rightResultDisplay">

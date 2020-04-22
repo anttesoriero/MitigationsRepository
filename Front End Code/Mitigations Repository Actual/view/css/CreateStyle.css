@@ -1,6 +1,19 @@
 /* ----- CreateStyle.css ----- */
 
-.bodySearch input[type=text]
+.bodySearchLeft input[type=text]
+{
+	padding: 6px;
+	/* margin-left: 550px; */
+	margin-top: 1px;
+	font-size: 20px;
+	border: 1px;
+	border-style: solid;
+	border-color: #333333;
+	border-radius: 20px 20px 20px 20px;
+	background-color: white;
+}
+
+.bodySearchRight input[type=text]
 {
 	padding: 6px;
 	/* margin-left: 550px; */
