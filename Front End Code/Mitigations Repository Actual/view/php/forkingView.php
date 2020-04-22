@@ -70,7 +70,7 @@ if (isset($_GET['s'])) {
 			<center>
 
                 <!-- <h3 style="margin-left: 600px;"> Category: </h3> -->
-                <label for="category" style="margin-left: 600px;"> Category: </label>
+                <label for="category" style="word-wrap:break-word"> Category: </label>
 
                 <?php
             $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
@@ -88,9 +88,9 @@ if (isset($_GET['s'])) {
             </select>
 				
 				<br>
-			
+
             <!-- <h3 style="margin-left: 600px;"> Type: </h3> -->
-            <label for="sec_type" style="margin-left: 600px;"> Type: </label>
+            <label for="sec_type" style="word-wrap:break-word"> Type: </label>
             <?php
             $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
 
