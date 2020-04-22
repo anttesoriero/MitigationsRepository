@@ -38,7 +38,7 @@ if (!isset($_SESSION['logged_in'])) {
 <div class="left" id="leftSide">
     <h2> Create a Mitigation </h2>
 
-    <div class="bodySearchLeft">
+    <div class="bodySearch">
         <form id="createMitigationForm">
             <h3> Author First Name </h3>
             <input type="text" spellcheck="false" placeholder="First Name" name="firstName" required='required'>
