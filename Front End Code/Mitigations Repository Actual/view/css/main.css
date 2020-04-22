@@ -126,7 +126,7 @@ body
 	background-color: white;
 }
 
-/* TextArea Style - For Create, Edit, and Forking pages */
+/* TextArea Style - For Create, Edit, and Forking pages
 .descriptionSearchTA textarea {
 	padding: 6px;
 	margin-left: 550px;
@@ -137,7 +137,7 @@ body
 	border-color: #333333;
 	border-radius: 20px 20px 20px 20px;
 	background-color: white;
-}
+} */
 
 
 /*button styling */
