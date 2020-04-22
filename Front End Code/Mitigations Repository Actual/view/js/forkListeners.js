@@ -53,8 +53,9 @@ function processFork(forkData) {
         $('#errorMessage').html(forkData);
     } else if (forkData.toLowerCase().indexOf("success") != -1) {
         $('#successMessage').html(forkData);  // visible for split second
+        window.location.href = '../../index.php';
     }
-		window.location.href = '../../index.php';
+
 }
 
 //Autopop Return
