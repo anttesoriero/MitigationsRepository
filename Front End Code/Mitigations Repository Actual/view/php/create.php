@@ -4,8 +4,9 @@
 <html>
 <head>
     <title> Create Mitigation - Mitigation Repository </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link id="createCSS" rel="stylesheet" type="text/css" href="../css/CreateStyle.css">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"/> -->
+    <!-- <link id="createCSS" rel="stylesheet" type="text/css" href="../css/CreateStyle.css"> -->
+    <link id="cefCSS" rel="stylesheet" type="text/css" href="../css/cefStyle.css">
     <link id="mainCSS" rel="stylesheet" type="text/css" href="../css/main.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
