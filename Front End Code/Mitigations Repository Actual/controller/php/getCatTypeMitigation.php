@@ -15,15 +15,15 @@ $dbname = 'Mitigation_Repository';
 
 //try to connect to database
 
-    try {
-        $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
-        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+try {
+    $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
+    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            catTypeSearch($dbh, $cat, $type);
+    getRandMitigation($dbh, $num);
 
-    } catch (PDOException $e) {
-        echo('PDO error for user ' . $username . ' in "ConnectDB()": ' . $e->getMessage());
-    }
+} catch (PDOException $e) {
+    echo('PDO error for user ' . $username . ' in "ConnectDB()": ' . $e->getMessage());
+}
 
 
 ?>

@@ -23,7 +23,6 @@ try {
     console.log("Hopefully connected?");
 } catch (e) {
     console.log("Error in " + searchType + "get_____Mitigation.php " + e);
-
 }
 
 addListeners();
@@ -217,7 +216,6 @@ function catFilter(catcat) {
 
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByClassName("wholeResult")[0];
-        console.log(a);
         txtValue = a.textContent || a.innerText;
         if (txtValue.indexOf(filter) > -1) {
             li[i].style.display = "";
@@ -236,7 +234,6 @@ function typeFilter(typetype) {
 
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByClassName("wholeResult")[0];
-        console.log(a);
         txtValue = a.textContent || a.innerText;
         if (txtValue.indexOf(filter) > -1) {
             li[i].style.display = "";

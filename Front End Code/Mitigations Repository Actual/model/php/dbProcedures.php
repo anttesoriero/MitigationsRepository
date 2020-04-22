@@ -209,14 +209,31 @@ function searchByID($dbh, $mit_id)
     }
 }
 
+//procedure Delete_Mit(IN mit_ID int)
 function deleteMit($dbh, $mit_id)
 {
-	try {
+    try {
         $sql = "CALL Mitigation_Repository.Delete_Mit(?);";
         $stmt = $dbh->prepare($sql);
         $stmt->bindValue(1, $mit_id, PDO::PARAM_INT);
-		$stmt->execute();
+        $stmt->execute();
     } catch (PDOException $e) {
         die ('unable to fork mitigation: ' . $e->getMessage());
+    }
+}
+
+//Mitigation_Search(IN Category varchar(45), IN Sec_Type varchar(45))
+function catTypeSearch($dbh, $category, $type)
+{
+    try {
+        $sql = "CALL Mitigation_Repository.Mitigation_Search(?,?);";
+        $stmt = $dbh->prepare($sql);
+        $stmt->bindValue(1, $category, PDO::PARAM_STR);
+        $stmt->bindValue(2, $type, PDO::PARAM_STR);
+        $stmt->execute();
+        $results = $stmt->fetchAll(PDO::FETCH_OBJ);
+        echo json_encode($results);
+    } catch (PDOException $e) {
+        die('unable to fetch mitigation by ID : ' . $e->getMessage());
     }
 }

@@ -31,7 +31,7 @@ if (!isset($_SESSION['logged_in'])) {
             }
             else
             {
-                echo 'Guest Access - ALSO VERIFYING THIS CHANGES';
+                echo 'Guest Access';
             }
             ?>
         </div>
@@ -55,30 +55,35 @@ if (!isset($_SESSION['logged_in'])) {
 
         <h2> Search Mitigation </h2>
         <form id='searchForm'>
-            <input type="text" id="searchField" name="searchField" placeholder="Search Mitigation By Title"/>
+            <input type="text" id="searchField" name="searchField" placeholder="Search Mitigation By Title"/><br>
+            <input type="button" id="searchButton" name="searchButton" value="Search By Title"/>
         </form>
         <br><br><br>
         <!-- Temp 10 -->
         <br><br><br>
-        <?php include 'view/php/selectCT.php'; ?>
+        <form id='catType'>
+            <?php include 'view/php/selectCT.php'; ?>
             <br><br><br>
             <!-- End Temp -->
 
-            <button class="button" id="mostRecent">25 Most Recent Mitigations</button>
-            <br><br><br>
-            <!-- <button class="button" id="random"> 25 Random Mitigations</button>-->
-        </div>
-    </div>
-    <div class="v1"></div>
-    <div class="right">
-        <h2> Create new Mitigation </h2>
-        <button class="button" id="newMitigation">Create new Mitigation</button>
-    </div>
+            <input type="button" id="searchButton" name="searchButton" value="Search By Category and Type"/>
+        </form>
 
-    <!-- loading javascript -->
+        <button class="button" id="mostRecent">25 Most Recent Mitigations</button>
+        <br><br><br>
+        <!-- <button class="button" id="random"> 25 Random Mitigations</button>-->
+    </div>
+</div>
+<div class="v1"></div>
+<div class="right">
+    <h2> Create new Mitigation </h2>
+    <button class="button" id="newMitigation">Create new Mitigation</button>
+</div>
 
-    <!-- First jquery -->
-    <script type='text/javascript' src='view/js/jquery-3.4.1.min.js'><</script>
+<!-- loading javascript -->
+
+<!-- First jquery -->
+<script type='text/javascript' src='view/js/jquery-3.4.1.min.js'><</script>
     <!-- Then ajax helper file -->
     <script type='text/javascript' src='view/js/AjaxFunctions.js'></script>
 
