@@ -12,15 +12,16 @@ $hostname = '127.0.0.1';   // local host.  web server is db server
 //credentials from logging in
 
 $mit_id = trim($_POST['mit_id']);
-$dbname   = 'Mitigation_Repository';
+$dbname = 'Mitigation_Repository';
+$username = $_SESSION["username"];
+$password = $_SESSION["password"];
 
 try {
-    $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", "admin", "Sweng#2020");
+    $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
     deleteMit($dbh, $mit_id);
     echo "Success";
-}
-catch(PDOException $e) {
-    echo ('PDO error in "ConnectDB()": ' . $e->getMessage() );
+} catch (PDOException $e) {
+    echo('PDO error in "ConnectDB()": ' . $e->getMessage());
 }
 
 

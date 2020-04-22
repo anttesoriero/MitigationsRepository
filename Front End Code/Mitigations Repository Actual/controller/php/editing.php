@@ -49,14 +49,17 @@ $description = trim($_POST['description']);
 $category = trim($_POST['category']);
 $secType = trim($_POST['sec_type']);
 $riskID = trim($_POST['mitigationToEdit']);
-$dbname   = 'Mitigation_Repository';
+$dbname = 'Mitigation_Repository';
+
+$username = $_SESSION["username"];
+$password = $_SESSION["password"];
 
 
 //Currently just uses the regular admin credentials, but will use the
 //credentials from logging in
 
 try {
-    $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", "admin", "Sweng#2020");
+    $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
 
 
     editRisk($dbh, $title, $description, $os, $version, $category, $secType, $riskID);

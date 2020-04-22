@@ -42,17 +42,19 @@ $description = trim($_POST['description']);
 $category = trim($_POST['category']);
 $secType = trim($_POST['sec_type']);
 $Mitigation_To_Fork = trim($_POST['mitigationToFork']);
-$dbname   = 'Mitigation_Repository';
+$dbname = 'Mitigation_Repository';
+
+$username = $_SESSION["username"];
+$password = $_SESSION["password"];
 
 
 try {
-    $dbh = new PDO("mysql:host=$hostname;dbname=$dbname","admin", "Sweng#2020");
-	forkNewAuthor($dbh, $Mitigation_To_Fork, $description, $firstName, $lastName);
-	//forkWithoutAuthor($dbh, $Mitigation_To_Fork, $description);
+    $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
+    forkNewAuthor($dbh, $Mitigation_To_Fork, $description, $firstName, $lastName);
+    //forkWithoutAuthor($dbh, $Mitigation_To_Fork, $description);
     //echo "Success";
-}
-catch(PDOException $e) {
-    echo ('PDO error for user ' . $username . ' in "ConnectDB()": ' . $e->getMessage() );
+} catch (PDOException $e) {
+    echo('PDO error for user ' . $username . ' in "ConnectDB()": ' . $e->getMessage());
 }
 
 

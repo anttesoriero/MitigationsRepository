@@ -17,7 +17,7 @@
 <?php
 if (!isset($_SESSION['logged_in'])) {
     $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
-    echo $_SESSION['refurl'];
+
 }
 ?>
     <div class="topnav"><a class="active" href="#home">Mitigation Repository <i class="fa fa-database"></i></a>
@@ -58,7 +58,7 @@ if (!isset($_SESSION['logged_in'])) {
             <input type="text" id="searchField" name="searchField" placeholder="Search Mitigation By Title"/><br>
             <input type="submit" id="searchButton" name="searchButton" value="Search By Title"/>
         </form>
-        <br><br><br>
+        <br>
         <!-- Temp 10 -->
         <br><br><br>
         <form id='catType'>
@@ -66,7 +66,7 @@ if (!isset($_SESSION['logged_in'])) {
             <br><br><br>
             <!-- End Temp -->
 
-            <input type="button" id="searchButton" name="searchButton" value="Search By Category and Type"/>
+            <!--<input type="submit" id="searchButton" name="searchButton" value="Search By Category and Type"/>-->
         </form>
 
         <button class="button" id="mostRecent">25 Most Recent Mitigations</button>
