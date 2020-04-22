@@ -45,32 +45,33 @@ if (isset($_GET['s'])) {
 
     <div class="bodySearch">
         <form id="forkMitigationForm">
-            <input type="hidden" name='mitigationToFork' value='<?php echo $Mitigation_To_Fork ?>'/>
-			
-            <h3 style="margin-left: 550px;"> Author First Name </h3>
-            <input type="text" id="firstName" spellcheck="true" name="firstName" required='required'>
-			
-            <h3 style="margin-left: 550px;"> Author Last Name </h3>
-            <input type="text" id="lastName" spellcheck="true" name="lastName" required='required'>
-			
-            <h3 style="margin-left: 550px;"> Enter Mitigation Title </h3>
-			<input type="text" id="title" spellcheck="true" name="title" required='required'>
-			
-            <h3 style="margin-left: 550px;"> Enter Operating System </h3>
-			<input type="text" id="os" spellcheck="true" name="os" required='required'>
-			
-            <h3 style="margin-left: 550px;"> Enter Operating System Version </h3>
-            <input type="text" id="version" spellcheck="true" name="version" required='required'>
-			
-            <h3 style="margin-left: 550px;"> Enter Mitigation Description </h3>
+            <input type="hidden" name='mitigationToEdit' value='<?php echo $Mitigation_To_Fork ?>'/>
+            <!-- <h3 style="margin-left: 550px;"> Author First Name </h3> -->
+            <h3> Author First Name </h3>
+            <input type="text" spellcheck="false" placeholder="First Name" name="firstName" required='required'>
+            <h3> Author Last Name </h3>
+
+            <input type="text" spellcheck="false" spellcheck="true" placeholder="Last Name" name="lastName"
+                   required='required'>
+            <h3> Enter Mitigation Title </h3>
+            <input type="text" id="title" spellcheck="true" name="title" required='required' placeholder="Title">
+            <h3> Enter Operating System </h3>
+
+            <input type="text" id="os" spellcheck="true" name="os" required='required' placeholder="Operating System">
+
+            <h3> Enter Operating System Version </h3>
+            <input type="text" id="version" spellcheck="true" name="version" required='required' placeholder="Version">
+
+            <h3> Enter Mitigation Description </h3>
+
             <div class="descriptionSearchTA">
-                <textarea id="description" rows="5" cols="25" spellcheck="true"
+                <textarea id="description" rows="5" cols="25" spellcheck="true" placeholder="Mitigation Description"
                           name="description" required='required'></textarea>
             </div>
 			<center>
 
                 <!-- <h3 style="margin-left: 600px;"> Category: </h3> -->
-                <label for="category" style="margin-left: 600px;"> Category: </label>
+                <label for="category" style="word-wrap:break-word"> Category: </label>
 
                 <?php
             $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
@@ -88,9 +89,9 @@ if (isset($_GET['s'])) {
             </select>
 				
 				<br>
-			
+
             <!-- <h3 style="margin-left: 600px;"> Type: </h3> -->
-            <label for="sec_type" style="margin-left: 600px;"> Type: </label>
+            <label for="sec_type" style="word-wrap:break-word"> Type: </label>
             <?php
             $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
 
