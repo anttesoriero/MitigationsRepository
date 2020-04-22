@@ -94,12 +94,12 @@ if (!isset($_SESSION['logged_in'])) {
                     echo "<option value = '$sec_type'>$sec_type</option>";
                 }
                 ?>
-            </select>
-			<!-- End of Type Dropdown -->
-			
-            <br>
-			<!-- Create Mitigation Button -->
-            <input type = "button" class="button" id="create" value="Create Mitigation"/>
+                </select>
+               <!-- End of Type Dropdown -->
+
+               <br>
+               <!-- Create Mitigation Button -->
+               <input type="button" class="button" id="create" value="Create Mitigation"/>
         </form>
     </div>
 
