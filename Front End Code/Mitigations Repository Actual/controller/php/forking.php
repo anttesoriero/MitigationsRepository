@@ -52,7 +52,7 @@ try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
     forkNewAuthor($dbh, $Mitigation_To_Fork, $description, $firstName, $lastName);
     //forkWithoutAuthor($dbh, $Mitigation_To_Fork, $description);
-    //echo "Success";
+    echo "Success";
 } catch (PDOException $e) {
     echo('PDO error for user ' . $username . ' in "ConnectDB()": ' . $e->getMessage());
 }

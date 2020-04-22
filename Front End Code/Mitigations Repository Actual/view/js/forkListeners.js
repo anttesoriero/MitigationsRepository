@@ -48,7 +48,7 @@ function processData(echoedData) {
 }
 
 function processFork(forkData) {
-	console.log('Test');
+    console.log(forkData);
     if (forkData.toLowerCase().indexOf("error") != -1) {
         $('#errorMessage').html(forkData);
     } else if (forkData.toLowerCase().indexOf("success") != -1) {
