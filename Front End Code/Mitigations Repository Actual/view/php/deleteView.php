@@ -42,16 +42,15 @@ if (isset($_GET['s'])) {
         ?>
     </div>
 </div>
+
 <center>
 <!-- <div class="center" id="center"> -->
 <h2> Delete Mitigation </h2>
 <form id="deleteMitigationForm">
-     <input type="hidden" name = 'mit_id' value='<?php echo $mit_id ?>'/>
-	
-	<p> Are you sure you would like to delete this mitigation? </p>
-	
-	 <input type="button" class="button" id="delete" value="Yes"/>
-	 <input type="button" class="button" onclick="window.location.href = '../../index.php';" value="No" />
+    <input type="hidden" name = 'mit_id' value='<?php echo $mit_id ?>'/>
+    <p> Are you sure you would like to delete this mitigation? </p>
+    <input type="button" class="button" id="delete" value="Yes"/>
+    <input type="button" class="button" onclick="window.location.href = '../../index.php';" value="No" />
 </form>
 
 <div class="completeMitigation" id="completeMitigation" name="completeMitigation"></div>
