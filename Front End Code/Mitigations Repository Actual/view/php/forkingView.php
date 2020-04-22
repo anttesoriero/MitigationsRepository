@@ -47,22 +47,22 @@ if (isset($_GET['s'])) {
         <form id="forkMitigationForm">
             <input type="hidden" name='mitigationToFork' value='<?php echo $Mitigation_To_Fork ?>'/>
 			
-            <h3 style="margin-left: 550px;"> Author First Name </h3>
+            <h3> Author First Name </h3>
             <input type="text" id="firstName" spellcheck="true" name="firstName" required='required'>
 			
-            <h3 style="margin-left: 550px;"> Author Last Name </h3>
+            <h3> Author Last Name </h3>
             <input type="text" id="lastName" spellcheck="true" name="lastName" required='required'>
 			
-            <h3 style="margin-left: 550px;"> Enter Mitigation Title </h3>
+            <h3> Enter Mitigation Title </h3>
 			<input type="text" id="title" spellcheck="true" name="title" required='required'>
 			
-            <h3 style="margin-left: 550px;"> Enter Operating System </h3>
+            <h3> Enter Operating System </h3>
 			<input type="text" id="os" spellcheck="true" name="os" required='required'>
 			
-            <h3 style="margin-left: 550px;"> Enter Operating System Version </h3>
+            <h3> Enter Operating System Version </h3>
             <input type="text" id="version" spellcheck="true" name="version" required='required'>
 			
-            <h3 style="margin-left: 550px;"> Enter Mitigation Description </h3>
+            <h3> Enter Mitigation Description </h3>
             <div class="descriptionSearchTA">
                 <textarea id="description" rows="5" cols="25" spellcheck="true"
                           name="description" required='required'></textarea>
