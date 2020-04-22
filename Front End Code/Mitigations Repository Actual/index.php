@@ -58,7 +58,7 @@ if (!isset($_SESSION['logged_in'])) {
             <input type="text" id="searchField" name="searchField" placeholder="Search Mitigation By Title"/><br>
             <input type="submit" id="searchButton" name="searchButton" value="Search By Title"/>
         </form>
-        <br><br><br>
+        <br>
         <!-- Temp 10 -->
         <br><br><br>
         <form id='catType'>
