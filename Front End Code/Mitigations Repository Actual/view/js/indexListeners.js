@@ -25,15 +25,18 @@ function addListeners() {
         var rawTerm = document.getElementById('searchField').value;
         var searchTerm = rawTerm.replace(regex, '');
         console.log('search');
-
-        // Make URL for Ajax call
-        // ajaxURL = 'controller/php/getRandMitigation.php';
-
-        // Serialize the form so Ajax can post it asynchronously, then post it.
-        // $.post(ajaxURL, $('#searchForm').serialize(),processSearch);
-        //  console.log('AJAX call submitted.');
         processSearch(searchTerm);
     });
+
+    $('#catType').on('submit', function (evt) {
+        evt.preventDefault();
+        evt.stopPropagation();
+        var cat = $('#category').val();
+        var type = $('#sec_type').val();
+
+        console.log('category and type');
+        processCatAndType(cat, type);
+    })
 
     $('#newMitigation').on('click', function (evt) {
         evt.stopPropagation();
@@ -90,6 +93,11 @@ function goToCreate() {
 function processSearch(searchTerm) {
 
     window.location.href = 'view/php/search.php?q=' + searchTerm;
+}
+
+function processCatAndType(cat, type) {
+
+    window.location.href = 'view/php/search.php?c=' + cat + '?t=' + type;
 }
 
 function gotoMostRecent() {
