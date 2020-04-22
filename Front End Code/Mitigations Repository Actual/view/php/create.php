@@ -4,7 +4,7 @@
 <html>
 <head>
     <title> Create Mitigation - Mitigation Repository </title>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"/> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- <link id="createCSS" rel="stylesheet" type="text/css" href="../css/CreateStyle.css"> -->
     <link id="cefCSS" rel="stylesheet" type="text/css" href="../css/cefStyle.css">
     <link id="mainCSS" rel="stylesheet" type="text/css" href="../css/main.css"/>
