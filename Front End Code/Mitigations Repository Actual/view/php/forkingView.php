@@ -45,26 +45,27 @@ if (isset($_GET['s'])) {
 
     <div class="bodySearch">
         <form id="forkMitigationForm">
-            <input type="hidden" name='mitigationToFork' value='<?php echo $Mitigation_To_Fork ?>'/>
-			
+            <input type="hidden" name='mitigationToEdit' value='<?php echo $Mitigation_To_Fork ?>'/>
+            <!-- <h3 style="margin-left: 550px;"> Author First Name </h3> -->
             <h3> Author First Name </h3>
-            <input type="text" id="firstName" spellcheck="true" name="firstName" required='required'>
-			
+            <input type="text" spellcheck="false" placeholder="First Name" name="firstName" required='required'>
             <h3> Author Last Name </h3>
-            <input type="text" id="lastName" spellcheck="true" name="lastName" required='required'>
-			
+
+            <input type="text" spellcheck="false" spellcheck="true" placeholder="Last Name" name="lastName"
+                   required='required'>
             <h3> Enter Mitigation Title </h3>
-			<input type="text" id="title" spellcheck="true" name="title" required='required'>
-			
+            <input type="text" id="title" spellcheck="true" name="title" required='required' placeholder="Title">
             <h3> Enter Operating System </h3>
-			<input type="text" id="os" spellcheck="true" name="os" required='required'>
-			
+
+            <input type="text" id="os" spellcheck="true" name="os" required='required' placeholder="Operating System">
+
             <h3> Enter Operating System Version </h3>
-            <input type="text" id="version" spellcheck="true" name="version" required='required'>
-			
+            <input type="text" id="version" spellcheck="true" name="version" required='required' placeholder="Version">
+
             <h3> Enter Mitigation Description </h3>
+
             <div class="descriptionSearchTA">
-                <textarea id="description" rows="5" cols="25" spellcheck="true"
+                <textarea id="description" rows="5" cols="25" spellcheck="true" placeholder="Mitigation Description"
                           name="description" required='required'></textarea>
             </div>
 			<center>
