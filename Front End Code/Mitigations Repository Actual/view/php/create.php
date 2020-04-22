@@ -43,17 +43,19 @@ if (!isset($_SESSION['logged_in'])) {
             <h3> Author First Name </h3>
             <input type="text" spellcheck="false" placeholder="First Name" name="firstName" required='required'>
             <h3> Author Last Name </h3>
-
             <input type="text" spellcheck="false" placeholder="Last Name" name="lastName" required='required'>
+			
+			<div class="left" id="leftSide">
+			
             <h3> Enter Mitigation Title </h3>
             <input type="text" spellcheck="true" placeholder="Title" name="title" required='required'>
             <h3> Enter Operating System </h3>
-
             <input type="text" spellcheck="true" placeholder="Operating System" name="os" required='required'>
-
+			
+			</div>
+			
             <h3> Enter Operating System Version </h3>
             <input type="text" spellcheck="true" placeholder="Version" name="version" required='required'>
-
 			<h3> Enter Mitigation Description </h3>
             <div class="descriptionSearchTA">
                 <textarea rows="5" cols="25" spellcheck="true" placeholder="Mitigation Description"
@@ -61,7 +63,7 @@ if (!isset($_SESSION['logged_in'])) {
             </div>
 
            <center>
-
+				<!-- Category Dropdown -->
                 <!-- <h3 style="margin-left: 600px;"> Category: </h3> -->
                 <label for="category" style="word-wrap:break-word"> Category: </label>
 
@@ -79,9 +81,10 @@ if (!isset($_SESSION['logged_in'])) {
                 }
                 ?>
             </select>
+			<!-- End of Category Dropdown -->
 				
 				<br>
-			
+			<!-- Type Dropdown -->
             <!-- <h3 style="margin-left: 600px;"> Type: </h3> -->
             <label for="sec_type" style="word-wrap:break-word"> Type: </label>
             <?php
@@ -98,14 +101,14 @@ if (!isset($_SESSION['logged_in'])) {
                 }
                 ?>
             </select>
-
+			<!-- End of Type Dropdown -->
+			
             <br>
+			<!-- Create Mitigation Button -->
             <input type = "button" class="button" id="create" value="Create Mitigation"/>
         </form>
     </div>
 </div>
-
-<div class="v2">
 
 </div>
 <div class="right" id="rightResultDisplay">
