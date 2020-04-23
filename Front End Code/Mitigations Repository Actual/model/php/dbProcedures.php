@@ -226,7 +226,7 @@ function deleteMit($dbh, $mit_id)
 function catTypeSearch($dbh, $category, $type)
 {
     try {
-        $sql = "CALL Mitigation_Repository.Mitigation_Search(?,?);";
+        $sql = "CALL Mitigation_Repository.Mitigation_Detailed_Search(?,?);";
         $stmt = $dbh->prepare($sql);
         $stmt->bindValue(1, $category, PDO::PARAM_STR);
         $stmt->bindValue(2, $type, PDO::PARAM_STR);
