@@ -27,11 +27,9 @@
     <?php
     if (isset($_GET['t'])) {
         $type = $_GET['t'];
-        echo $type;
     }
     if (isset($_GET['c'])) {
         $cat = $_GET['c'];
-        echo $cat;
     }
     ?>
 </div>

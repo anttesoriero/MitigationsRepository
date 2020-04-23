@@ -12,7 +12,12 @@ $hostname = 'localhost';  //local host - our web server will be our db server.
 $username = 'admin';
 $password = 'Sweng#2020';
 $dbname = 'Mitigation_Repository';
-
+if (isset($_GET['t'])) {
+    $type = $_GET['t'];
+}
+if (isset($_GET['c'])) {
+    $cat = $_GET['c'];
+}
 
 //try to connect to database
 

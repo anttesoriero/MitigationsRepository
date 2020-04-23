@@ -97,7 +97,7 @@ function processSearch(searchTerm) {
 
 function processCatAndType(cat, type) {
 
-    window.location.href = 'view/php/search.php?q=catType?c=' + cat + '?t=' + type;
+    window.location.href = 'view/php/search.php?q=catType&c=' + cat + '&t=' + type;
 }
 
 function gotoMostRecent() {
