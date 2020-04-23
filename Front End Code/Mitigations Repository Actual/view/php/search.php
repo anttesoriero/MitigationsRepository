@@ -18,13 +18,20 @@
     <div class="login"><a href="loginPage.php">Login</a></div>
 <div class="user">
     <?php
-    if (isset($_SESSION['username']))
-    {
+    if (isset($_SESSION['username'])) {
         echo ' Logged in as ' . $_SESSION['username'];
-    }
-    else
-    {
+    } else {
         echo 'Guest Access';
+    }
+    ?>
+    <?php
+    if (isset($_GET['t'])) {
+        $type = $_GET['t'];
+        echo $type;
+    }
+    if (isset($_GET['c'])) {
+        $cat = $_GET['c'];
+        echo $cat;
     }
     ?>
 </div>

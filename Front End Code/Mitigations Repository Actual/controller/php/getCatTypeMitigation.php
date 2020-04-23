@@ -13,13 +13,14 @@ $username = 'admin';
 $password = 'Sweng#2020';
 $dbname = 'Mitigation_Repository';
 
+
 //try to connect to database
 
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    getRandMitigation($dbh, $num);
+    catTypeSearch($dbh, $cat, $type);
 
 } catch (PDOException $e) {
     echo('PDO error for user ' . $username . ' in "ConnectDB()": ' . $e->getMessage());

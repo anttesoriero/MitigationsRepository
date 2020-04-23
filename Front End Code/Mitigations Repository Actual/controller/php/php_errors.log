@@ -72,3 +72,4 @@
 [22-Apr-2020 21:38:03 UTC] PHP Notice:  Undefined index: mitigationToFork in /var/www/html/controller/php/forking.php on line 44
 [22-Apr-2020 22:21:18 UTC] PHP Notice:  Undefined index: mitigationToFork in /var/www/html/controller/php/forking.php on line 44
 [22-Apr-2020 22:25:29 UTC] PHP Notice:  Undefined index: mitigationToFork in /var/www/html/controller/php/forking.php on line 44
+[22-Apr-2020 22:34:20 UTC] PHP Notice:  Undefined index: refurl in /var/www/html/controller/php/login.php on line 25

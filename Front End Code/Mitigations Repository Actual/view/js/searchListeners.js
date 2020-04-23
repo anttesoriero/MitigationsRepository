@@ -14,6 +14,8 @@ try {
         ajaxURL = '../../controller/php/getRandMitigation.php';
     } else if (searchType === 'mostrecent') {
         ajaxURL = '../../controller/php/getRecentMitigation.php';
+    } else if (searchType.includes('catType')) {
+        ajaxURL = '../../controller/php/getCatTypeMitigation.php?q=' + searchType;
     } else {
         ajaxURL = '../../controller/php/getTitleSearchMitigation.php?s=' + searchType;
     }
