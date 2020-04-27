@@ -65,14 +65,29 @@
     <select name="sec_type" id="sec_type">
         <option selected disabled>Choose Type</option>
         <?php
-        while($rows = $result->fetch_assoc())
-        {
+        while ($rows = $result->fetch_assoc()) {
             $sec_type = $rows['Control Function'];
             echo "<option value = '$sec_type'>$sec_type</option>";
         }
         ?>
     </select>
-</div><br><br>
+
+    <?php
+    $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
+
+    $result = $mysqli->query("CALL Mitigation_Repository.Get_OS_Name()");
+    ?>
+    <select name="osMenu" id="osMenu">
+        <option selected disabled>Choose Operating System</option>
+        <?php
+        while ($rows = $result->fetch_assoc()) {
+            $osMenu = $rows['OS Name'];
+            echo "<option value = '$osMenu'>$osMenu</option>";
+        }
+        ?>
+    </select>
+</div>
+<br><br>
 <div class="leftSearch">
     <div class="results" id="allResults">
         No Results

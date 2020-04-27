@@ -89,6 +89,11 @@ function addListeners() {
         typeFilter($(this).val());
     });
 
+    $('#osMenu').on('change', function () {
+        console.log('Changed');
+        osFilter($(this).val());
+    });
+
     console.log('filtering maybe?')
     $('#myInput').on('keyup', function (event) {
         if (event.isComposing || event.keyCode === 229) {
@@ -229,6 +234,24 @@ function typeFilter(typetype) {
     var filter, ul, li, a, i, txtValue;
 
     filter = typetype;
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByClassName("wholeResult")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+function osFilter(osos) {
+    var filter, ul, li, a, i, txtValue;
+
+    filter = osos;
     ul = document.getElementById("myUL");
     li = ul.getElementsByTagName('li');
 

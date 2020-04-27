@@ -150,20 +150,6 @@ function fork($dbh, $Mitigation_To_Fork, $title, $category, $type, $description,
     }
 }
 
-//Fork_without_author(IN Mitigation_To_Fork int, IN forkDescription varchar(45))
-function forkWithoutAuthor($dbh, $Mitigation_To_Fork, $description)
-{
-    try {
-        $sql = "CALL Mitigation_Repository.Fork_without_author(?,?);";
-        $stmt = $dbh->prepare($sql);
-        $stmt->bindValue(1, $Mitigation_To_Fork, PDO::PARAM_INT);
-        $stmt->bindValue(2, $description, PDO::PARAM_STR);
-        $stmt->execute();
-    } catch (PDOException $e) {
-        die ('unable to fork mitigation: ' . $e->getMessage());
-    }
-}
-
 //Edit_Risk(IN newTitle varchar(45), IN newDescription varchar(255),
 //                                                  IN newOS varchar(45), IN newVer varchar(45), IN newCat varchar(45),
 //                                                  IN newType varchar(45), IN mitID int)
