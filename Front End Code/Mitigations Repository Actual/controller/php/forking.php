@@ -50,8 +50,7 @@ $password = $_SESSION["password"];
 
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
-    forkNewAuthor($dbh, $Mitigation_To_Fork, $description, $firstName, $lastName);
-    //forkWithoutAuthor($dbh, $Mitigation_To_Fork, $description);
+    fork($dbh, $Mitigation_To_Fork, $title, $category, $secType, $description, $os, $version, $firstName, $lastName);
     echo "Success";
 } catch (PDOException $e) {
     echo('PDO error for user ' . $username . ' in "ConnectDB()": ' . $e->getMessage());

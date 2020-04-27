@@ -184,8 +184,6 @@ function processChildren(jsonResults) {
     }
 
     $('#forks').html(linkString);
-
-
 }
 
 function results() {

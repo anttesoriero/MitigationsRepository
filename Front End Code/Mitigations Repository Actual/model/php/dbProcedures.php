@@ -126,17 +126,24 @@ function addCompleteMitigation($dbh, $title, $description, $os, $version, $categ
     }
 }
 
-//Fork_New_Author(IN Mitigation_To_Fork int, IN forkDescription varchar(255),
-//                                                        IN firstName varchar(45), IN lastName varchar(45))
-function forkNewAuthor($dbh, $Mitigation_To_Fork, $description, $firstName, $lastName)
+//procedure Forking(IN Mitigation_To_Fork int, IN forkTitle varchar(45),
+//                                              IN forkCat varchar(45), IN forkType varchar(45),
+//                                               IN forkDescription varchar(255), IN osName varchar(45),
+//                                               IN ver varchar(45), IN firstName varchar(45), IN lastName varchar(45))
+function fork($dbh, $Mitigation_To_Fork, $title, $category, $type, $description, $os, $version, $firstName, $lastName)
 {
     try {
-        $sql = "CALL Mitigation_Repository.Forking(?,?,?,?);";
+        $sql = "CALL Mitigation_Repository.Forking(?,?,?,?,?,?,?,?,?);";
         $stmt = $dbh->prepare($sql);
         $stmt->bindValue(1, $Mitigation_To_Fork, PDO::PARAM_INT);
-        $stmt->bindValue(2, $description, PDO::PARAM_STR);
-        $stmt->bindValue(3, $firstName, PDO::PARAM_STR);
-        $stmt->bindValue(4, $lastName, PDO::PARAM_STR);
+        $stmt->bindValue(2, $title, PDO::PARAM_STR);
+        $stmt->bindValue(3, $category, PDO::PARAM_STR);
+        $stmt->bindValue(4, $type, PDO::PARAM_STR);
+        $stmt->bindValue(5, $description, PDO::PARAM_STR);
+        $stmt->bindValue(6, $os, PDO::PARAM_STR);
+        $stmt->bindValue(7, $version, PDO::PARAM_STR);
+        $stmt->bindValue(8, $firstName, PDO::PARAM_STR);
+        $stmt->bindValue(9, $lastName, PDO::PARAM_STR);
         $stmt->execute();
     } catch (PDOException $e) {
         die ('unable to fork mitigation: ' . $e->getMessage());
