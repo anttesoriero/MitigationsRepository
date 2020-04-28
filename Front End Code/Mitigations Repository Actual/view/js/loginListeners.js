@@ -33,6 +33,18 @@ function addListeners() {
 
     });
 
+    // Listener for create new account button
+    $('#submitNewAccount').on('click', function (evt) {
+        evt.stopPropagation(); // prevent event bubbling from any parent elements
+
+        // Make URL for Ajax call
+        ajaxURL = '../../controller/php/createUser.php';
+
+        // Serialize the form so Ajax can post it asynchronously, then post it.
+        $.post(ajaxURL, $('#newUserForm').serialize(), processLogin);
+        console.log('AJAX call submitted.');
+    });
+
 }
 
 /************************************

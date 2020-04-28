@@ -28,6 +28,7 @@ if (!isset($_SESSION['logged_in'])) {
             if (isset($_SESSION['username']))
             {
                 echo ' Logged in as ' . $_SESSION['username'];
+                echo $_SESSION['role'];
             }
             else
             {
@@ -36,19 +37,6 @@ if (!isset($_SESSION['logged_in'])) {
             ?>
         </div>
     </div>
-    <!--<h2 id="loginInstructions">
-        <?php
-        //echo session_id();
-        //if ($_GET['sessionExpired'] == 'yes') {
-        //    echo 'Session expired or not established';
-        //}
-        //else {
-        //    echo 'Please login';
-       // }
-        ?>
-
-
-    </h2>-->
 
 <div class="left">
     <div class="bodySearch">

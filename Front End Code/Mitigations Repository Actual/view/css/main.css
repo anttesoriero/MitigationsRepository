@@ -90,6 +90,14 @@ body
 	text-align: center;
 }
 
+.right {
+	position: absolute;
+	left: 55%;
+	right: 5%;
+	background-color: #fff;
+	text-align: center;
+}
+
 /*Right side of search results page - note the overflow.*/
 
 .rightSearch {

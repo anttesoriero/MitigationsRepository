@@ -29,23 +29,46 @@
         ?>
     </div>
 </div>
-<div class="bodySearch">
-    <form id='loginForm'>
-        <label for="username">Username: </label>
-        <input type="text" id="username" name="username" required="required" placeholder="Username"/><br/>
+<div class="left">
+    <div class='bodySearch'>
+        <h2>Login</h2>
+        <form id='loginForm'>
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" required="required" placeholder="Username"/><br/>
 
-        <label for="password">Password: </label>
-        <input type="password" id="password" name="password" required="required" placeholder="Password"/><br/>
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" required="required" placeholder="Password"/><br/>
 
-        <!--Making these type submit breaks this in firefox.  It doesn't like type submit. -->
-        <input type="button" id="submitLogin" value="Submit"/><br/>
-        <input type="button" id="logout" value="Logout"/>
-        <!--<input type="submit" id="submitLogin" value="Submit"/><br/>
-        <input type="submit" id="logout" value="Logout" />-->
+            <!--Making these type submit breaks this in firefox.  It doesn't like type submit. -->
+            <input type="button" id="submitLogin" value="Submit"/><br/>
+            <input type="button" id="logout" value="Logout"/>
+            <!--<input type="submit" id="submitLogin" value="Submit"/><br/>
+            <input type="submit" id="logout" value="Logout" />-->
 
-        <p><span id="successMessage" class="message"></span></p>
-        <p><span id="errorMessage" class="error"></span></p>
-    </form>
+            <p><span id="successMessage" class="message"></span></p>
+            <p><span id="errorMessage" class="error"></span></p>
+        </form>
+    </div>
+</div>
+<div class="v1"></div>
+
+<div class="right">
+    <div class="bodySearch">
+        <h2>Create new User</h2>
+        <form id='newUserForm'>
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" required="required" placeholder="Username"/><br/>
+
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" required="required" placeholder="Password"/><br/>
+
+            <!--Making these type submit breaks this in firefox.  It doesn't like type submit. -->
+            <input type="button" id="submitNewAccount" value="Submit"/><br/>
+
+            <p><span id="successMessage" class="message"></span></p>
+            <p><span id="errorMessage" class="error"></span></p>
+        </form>
+    </div>
 </div>
 
 <!-- loading javascript -->

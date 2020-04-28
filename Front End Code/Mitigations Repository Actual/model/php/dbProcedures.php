@@ -230,3 +230,32 @@ function catTypeSearch($dbh, $category, $type)
         die('unable to fetch mitigation by ID : ' . $e->getMessage());
     }
 }
+
+//get_Role(IN username varchar(45))
+function getRole($dbh, $username)
+{
+    try {
+        $sql = "CALL Mitigation_Repository.get_Role(?);";
+        $stmt = $dbh->prepare($sql);
+        $stmt->bindValue(1, $username, PDO::PARAM_STR);
+        $stmt->execute();
+        $results = $stmt->fetch(PDO::FETCH_ASSOC);
+        echo json_encode($results);
+    } catch (PDOException $e) {
+        die('unable to fetch mitigation by ID : ' . $e->getMessage());
+    }
+}
+
+function createUser($dbh, $username, $password, $role)
+{
+    try {
+        $sql = "CALL Mitigation_Repository.Add_User(?,?,?);";
+        $stmt = $dbh->prepare($sql);
+        $stmt->bindValue(1, $username, PDO::PARAM_STR);
+        $stmt->bindValue(2, $password, PDO::PARAM_STR);
+        $stmt->bindValue(3, $role, PDO::PARAM_STR);
+        $stmt->execute();
+    } catch (PDOException $e) {
+        die ('unable to add mitigation: ' . $e->getMessage());
+    }
+}
