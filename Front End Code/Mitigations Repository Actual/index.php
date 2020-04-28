@@ -28,7 +28,7 @@ if (!isset($_SESSION['logged_in'])) {
             if (isset($_SESSION['username']))
             {
                 echo ' Logged in as ' . $_SESSION['username'];
-                echo $_SESSION['role'];
+                //echo $_SESSION['role'];
             }
             else
             {

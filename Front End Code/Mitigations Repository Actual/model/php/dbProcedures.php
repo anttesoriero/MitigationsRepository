@@ -239,7 +239,7 @@ function getRole($dbh, $username)
         $stmt = $dbh->prepare($sql);
         $stmt->bindValue(1, $username, PDO::PARAM_STR);
         $stmt->execute();
-        $results = $stmt->fetch(PDO::FETCH_ASSOC);
+        $results = $stmt->fetchAll(PDO::FETCH_OBJ);
         echo json_encode($results);
     } catch (PDOException $e) {
         die('unable to fetch mitigation by ID : ' . $e->getMessage());

@@ -28,14 +28,6 @@ function addListeners() {
 /****************************************************
  *                  Callbacks                       *
  ****************************************************/
- 
- 
- function processData(echoedData) {
-    // Very simple callback that can be used for movies and actors
-    // Note that the HTML tagging is done by the PHP
-    $('#left').html(echoedData);
-}
-
 
 function processDelete(deleteData) {
     console.log(deleteData)

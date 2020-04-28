@@ -21,11 +21,8 @@ try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
     $_SESSION["username"] = $username;
     $_SESSION["password"] = $password;
-    //$_SESSION['role'] = getRole($dbh, $_SESSION['username']);
     $_SESSION["logged_in"] = TRUE;
     echo $_SESSION['refurl'];
-   //header('Location: ' .$_SESSION['refurl']);
-    //echo "Success";
 } catch (PDOException $e) {
     echo('PDO error in "ConnectDB()": ' . $e->getMessage());
 }
