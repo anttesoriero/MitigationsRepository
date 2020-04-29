@@ -28,7 +28,18 @@ if (!isset($_SESSION['logged_in'])) {
             if (isset($_SESSION['username']))
             {
                 echo ' Logged in as ' . $_SESSION['username'];
-                //echo $_SESSION['role'];
+                if (!isset($_SESSION['role'])) {
+                    $loggedinas = $_SESSION['username'];
+                    $mysqli = new MySQLi('localhost', $_SESSION['username'], $_SESSION['password'], 'Mitigation_Repository');
+                    $sqlstring = "CALL Mitigation_Repository.get_Role('$loggedinas')";
+                    $result = $mysqli->query($sqlstring) or die($mysqli->error);
+                    while ($rows = $result->fetch_assoc()) {
+                        $role = $rows["ROLE"];
+                        $_SESSION['role'] = $role;
+                    }
+                }
+                echo $_SESSION['role'];
+
             }
             else
             {

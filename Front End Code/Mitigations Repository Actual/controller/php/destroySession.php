@@ -13,7 +13,7 @@
        );
    }
    session_destroy();
-   unset($_SESSION);
-   session_regenerate_id(true);
+session_unset();
+session_regenerate_id(true);
    header('location: ../index.php');
 ?>

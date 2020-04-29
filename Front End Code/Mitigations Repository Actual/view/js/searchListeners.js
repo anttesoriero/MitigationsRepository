@@ -6,8 +6,10 @@ console.log('searchListeners.js loaded.');
 
 $('#left').load('../shtml/searchResults.shtml');
 
+
 /* Initial population of results  */
 var searchType = location.search.substring(location.search.indexOf('=') + 1);
+var role = "<?php echo $_SESSION['role']; ?>";
 
 try {
     if (searchType === 'random') {
@@ -165,8 +167,11 @@ function processMitigationData(jsonResults) {
     //FORKS WILL GO HERE
 
     htmlString += "<input type = 'button' class='btn'  class = 'fork' id='fork' name='" + jsonData[0].mitigation_id + "' value='Fork Mitigation'/>";
-    htmlString += "<input type = 'button' class='btn'  class = 'edit' id='edit' name='" + jsonData[0].mitigation_id + "' value='Edit Mitigation'/>";
-    htmlString += "<input type = 'button' class='btn'  class = 'delete' id='delete' name='" + jsonData[0].mitigation_id + "' value='Delete Mitigation'/>";
+
+    if (role === 'admin_user') {
+        htmlString += "<input type = 'button' class='btn'  class = 'edit' id='edit' name='" + jsonData[0].mitigation_id + "' value='Edit Mitigation'/>";
+        htmlString += "<input type = 'button' class='btn'  class = 'delete' id='delete' name='" + jsonData[0].mitigation_id + "' value='Delete Mitigation'/>";
+    }
 
     htmlString += "<br><span class='author'>Author: " + jsonData[0].Author + "</span><br><span class='desc'>Created on:"
         + jsonData[0].created_at + "</span><br><span class='desc2'>Modified on: " + jsonData[0].modified_at + "</span><br><span class='desc'>Operating System: " +
