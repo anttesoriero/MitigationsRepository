@@ -13,3 +13,7 @@
 .button:hover {
   background-color: white;
 }
+
+input[type=button]:active {
+  background-color: #cccccc
+}
