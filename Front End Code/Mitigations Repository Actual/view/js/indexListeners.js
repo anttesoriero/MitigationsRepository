@@ -1,6 +1,24 @@
 /* Index page listeners */
 
 console.log('indexListeners.js loaded.');
+/*user Role*/
+var role = 'role';
+
+/*Getting user's role*/
+try {
+    ajaxURL = '../../controller/php/getRole.php';
+    roleTemp = ajaxFetch(ajaxURL, processRole);
+} catch (e) {
+    console.log("Error in getRole.php" + e);
+}
+
+function processRole(jsonResults) {
+
+    var jsonData = JSON.parse(jsonResults);
+    role = jsonData[0].ROLE;
+    console.log(role);
+}
+
 var regex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g;
 
 function openForm() {

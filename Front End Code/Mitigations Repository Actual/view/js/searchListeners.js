@@ -9,6 +9,16 @@ $('#left').load('../shtml/searchResults.shtml');
 
 /* Initial population of results  */
 var searchType = location.search.substring(location.search.indexOf('=') + 1);
+var role = 'role';
+
+/*Getting user's role*/
+try {
+    ajaxURL = '../../controller/php/getRole.php';
+    roleTemp = ajaxFetch(ajaxURL, processRole);
+} catch (e) {
+    console.log("Error in getRole.php" + e);
+}
+
 
 try {
     if (searchType === 'random') {
@@ -268,4 +278,11 @@ function osFilter(osos) {
             li[i].style.display = "none";
         }
     }
+}
+
+function processRole(jsonResults) {
+
+    var jsonData = JSON.parse(jsonResults);
+    role = jsonData[0].ROLE;
+    console.log(role);
 }

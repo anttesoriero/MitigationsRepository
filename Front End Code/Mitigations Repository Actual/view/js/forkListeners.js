@@ -2,6 +2,24 @@
 
 console.log('forkListeners.js loaded.');
 
+/*user Role*/
+var role = 'role';
+
+/*Getting user's role*/
+try {
+    ajaxURL = '../../controller/php/getRole.php';
+    roleTemp = ajaxFetch(ajaxURL, processRole);
+} catch (e) {
+    console.log("Error in getRole.php" + e);
+}
+
+function processRole(jsonResults) {
+
+    var jsonData = JSON.parse(jsonResults);
+    role = jsonData[0].ROLE;
+    console.log(role);
+}
+
 /*autopopulation call*/
 var mit_id = location.search.substring(location.search.indexOf('=') + 1);
 console.log(mit_id);

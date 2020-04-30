@@ -4,6 +4,23 @@ console.log('deleteListeners.js loaded.');
 
 /*******************************/
 addListeners();
+/*user Role*/
+var role = 'role';
+
+/*Getting user's role*/
+try {
+    ajaxURL = '../../controller/php/getRole.php';
+    roleTemp = ajaxFetch(ajaxURL, processRole);
+} catch (e) {
+    console.log("Error in getRole.php" + e);
+}
+
+function processRole(jsonResults) {
+
+    var jsonData = JSON.parse(jsonResults);
+    role = jsonData[0].ROLE;
+    console.log(role);
+}
 
 /*****************************************************
  *                        Listeners                  *
@@ -12,7 +29,7 @@ addListeners();
 function addListeners() {
     $('#delete').on('click', function (evt) {
         evt.stopPropagation();
-       // evt.preventDefault();
+        // evt.preventDefault();
         console.log('CLICK');
         // Make URL for Ajax call
         ajaxURL = '../../controller/php/deleting.php';
