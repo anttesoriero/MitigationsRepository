@@ -9,7 +9,6 @@ $('#left').load('../shtml/searchResults.shtml');
 
 /* Initial population of results  */
 var searchType = location.search.substring(location.search.indexOf('=') + 1);
-var role = "<?php echo $_SESSION['role']; ?>";
 
 try {
     if (searchType === 'random') {

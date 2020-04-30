@@ -108,6 +108,7 @@
 <!-- load listeners for this page -->
 <script type="text/javascript" src="../js/searchListeners.js"></script>
 <!-- load other functionality -->
+<script type="text/javascript" src="../js/role.js"></script>
 <!--<script type="text/javascript" src="../js/searchFunctions.js"></script>-->
 </body>
 </html>
