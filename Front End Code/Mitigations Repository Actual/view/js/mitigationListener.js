@@ -1,6 +1,7 @@
 /*full mitigation page listeners  */
 
 console.log('mitigationListener.js loaded.');
+var place = window.location.href;
 
 /*user Role*/
 var role = 'role';
@@ -88,12 +89,14 @@ function processMitigationData(jsonResults) {
         "<div class='resultLeft'><span class='mitid'>Mitigation ID: " + mit_id + "</span><br><br><span class='link'>Link to this mitigation: " +
         "<a href='../php/fullMitigation.php?m=" + jsonData[0].mitigation_id + "'> " + jsonData[0].mitigation_id + "</a></span><br><br><span class='forks' id='forks'></span><br>";
 
+    if (place.indexOf('delete') < 0) {
 
-    htmlString += "<input type = 'button' class='btn'  class = 'fork' id='fork' name='" + mit_id + "' value='Fork Mitigation'/>";
+        htmlString += "<input type = 'button' class='btn'  class = 'fork' id='fork' name='" + mit_id + "' value='Fork Mitigation'/>";
 
-    if (role === 'admin_user') {
-        htmlString += "<input type = 'button' class='btn'  class = 'edit' id='edit' name='" + mit_id + "' value='Edit Mitigation'/>";
-        htmlString += "<input type = 'button' class='btn'  class = 'delete' id='delete' name='" + mit_id + "' value='Delete Mitigation'/>";
+        if (role === 'admin_user') {
+            htmlString += "<input type = 'button' class='btn'  class = 'edit' id='edit' name='" + mit_id + "' value='Edit Mitigation'/>";
+            htmlString += "<input type = 'button' class='btn'  class = 'delete' id='delete' name='" + mit_id + "' value='Delete Mitigation'/>";
+        }
     }
     htmlString += "<br><span class='author'>Author: " + jsonData[0].Author + "</span><br><span class='desc'>Created on:"
         + jsonData[0].created_at + "</span><br><span class='desc2'>Modified on: " + jsonData[0].modified_at + "</span><br>" +
