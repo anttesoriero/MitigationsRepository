@@ -81,13 +81,13 @@ function processFork(forkData) {
 function populateMitigation(jsonResults) {
     var initialPop = JSON.parse(jsonResults)
     console.log(initialPop);
-	
-	$('#firstName').val(initialPop[0].firstName);
-	$('#lastName').val(initialPop[0].lastName);
-    $('#title').val(initialPop[0].title);
-    $('#os').val(initialPop[0].OS_name);
-    $('#version').val(initialPop[0].version)
-    $('#description').val(initialPop[0].description);
+
+    $('firstName').val(initialPop[0].firstName);
+    $('lastName').val(initialPop[0].lastName);
+    $('title').val(initialPop[0].title);
+    $('os').val(initialPop[0].OS_name);
+    $('version').val(initialPop[0].version)
+    $('description').val(initialPop[0].description);
 
 
 }

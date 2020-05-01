@@ -76,10 +76,10 @@ function populateMitigation(jsonResults) {
     var initialPop = JSON.parse(jsonResults)
     console.log(initialPop);
 
-    $('#title').val(initialPop[0].title);
-    $('#os').val(initialPop[0].OS_name);
-    $('#version').val(initialPop[0].version)
-    $('#description').val(initialPop[0].description);
+    $('title').val(initialPop[0].title);
+    $('os').val(initialPop[0].OS_name);
+    $('version').val(initialPop[0].version)
+    $('description').val(initialPop[0].description);
 
 
 }
