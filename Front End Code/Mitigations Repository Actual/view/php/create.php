@@ -37,7 +37,7 @@ if (!isset($_SESSION['logged_in'])) {
 </div>
 
 <!-- <div class="left" id="leftSide"> -->
-    <h2> Create a Mitigation </h2>
+    <h2 style="text-align:center"> Create a Mitigation </h2>
 
     <div class="bodySearch">
         <form id="createMitigationForm">

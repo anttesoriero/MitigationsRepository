@@ -42,7 +42,7 @@ if (isset($_GET['s'])) {
 </div>
 
 <!-- <div class="left" id="leftSide"> -->
-    <h2> Edit Mitigation </h2>
+    <h2 style="text-align:center"> Edit Mitigation </h2>
 
 
     <div class="bodySearch">
@@ -139,9 +139,9 @@ if (isset($_GET['s'])) {
     </div>
 <!-- </div> -->
 
-<div class="v2">
+<!-- <div class="v2">
 
-</div>
+</div> -->
 <!-- <div class="right" id="rightResultDisplay">
     <p><span id='successMessage' class='message'></span></p>
     <p><span id='errorMessage' class='error'></span></p>
