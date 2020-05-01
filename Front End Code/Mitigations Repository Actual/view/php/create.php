@@ -86,14 +86,13 @@ if (!isset($_SESSION['logged_in'])) {
 
             <div id="block_container">
 				<!-- Category Dropdown -->
-                <!-- <h3 style="margin-left: 600px;"> Category: </h3> -->
                 <label for="category" style="word-wrap:break-word"> Category: </label>
 
                 <?php
-            $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
+                $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
 
-            $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
-            ?>
+                $result = $mysqli->query("CALL Mitigation_Repository.GetCategory()");
+                ?>
                 <select id="category" name="category" required='required'>
                     <option selected disabled>Choose Category</option>
                     <?php
@@ -102,28 +101,27 @@ if (!isset($_SESSION['logged_in'])) {
                     echo "<option value = '$category'>$category</option>";
                 }
                 ?>
-            </select>
-			<!-- End of Category Dropdown -->
-				
-				<br>
-			<!-- Type Dropdown -->
-            <!-- <h3 style="margin-left: 600px;"> Type: </h3> -->
-            <label for="sec_type" style="word-wrap:break-word"> Type: </label>
-            <?php
-            $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
+                </select>
+			    <!-- End of Category Dropdown -->
 
-            $result = $mysqli->query("CALL Mitigation_Repository.GetType()");
-            ?>
+                </br>
+			    <!-- Type Dropdown -->
+                <label for="sec_type" style="word-wrap:break-word"> Type: </label>
+                <?php
+                $mysqli = new MySQLi('localhost', 'admin', 'Sweng#2020', 'Mitigation_Repository');
+
+                $result = $mysqli->query("CALL Mitigation_Repository.GetType()");
+                ?>
                 <select id="sec_type" name="sec_type" required='required'>
                     <option selected disabled>Choose Type</option>
                     <?php
-                while ($rows = $result->fetch_assoc()) {
+                    while ($rows = $result->fetch_assoc()) {
                     $sec_type = $rows['Control Function'];
                     echo "<option value = '$sec_type'>$sec_type</option>";
-                }
-                ?>
+                    }
+                    ?>
                 </select>
-               <!-- End of Type Dropdown -->
+                <!-- End of Type Dropdown -->
 
                <br>
                <br>
