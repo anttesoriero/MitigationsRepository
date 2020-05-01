@@ -99,6 +99,7 @@ if (!isset($_SESSION['logged_in'])) {
                <!-- End of Type Dropdown -->
 
                <br>
+               <br>
                <!-- Create Mitigation Button -->
                <input type="button" class="button" id="create" value="Create Mitigation"/>
         </form>

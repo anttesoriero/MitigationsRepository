@@ -115,6 +115,7 @@ if (isset($_GET['s'])) {
             </select>
 
             <br>
+            <br>
             <input type="button" class="button" id="edit" value="Edit Mitigation"/>
 
             </center>
