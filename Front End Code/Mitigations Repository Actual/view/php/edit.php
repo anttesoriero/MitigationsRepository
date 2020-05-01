@@ -75,7 +75,7 @@ if (isset($_GET['s'])) {
                 </div>
                 <div id="bloc2">
                     <h3> Operating System Version </h3>
-                    <input if="version" type="text" spellcheck="true" placeholder="Version" name="version" required='required'>
+                    <input id="version" type="text" spellcheck="true" placeholder="Version" name="version" required='required'>
                 </div>
             </div>
             </br>
@@ -84,7 +84,7 @@ if (isset($_GET['s'])) {
             <div id="block_container">
                 <h3> Enter Mitigation Description </h3>
                 <div class="descriptionSearchTA">
-                    <textarea if="description" rows="5" cols="25" spellcheck="true" placeholder="Mitigation Description"
+                    <textarea id="description" rows="5" cols="25" spellcheck="true" placeholder="Mitigation Description"
                               name="description" required='required'></textarea>
                 </div>
             </div>
