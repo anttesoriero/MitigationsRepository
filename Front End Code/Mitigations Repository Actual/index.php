@@ -54,7 +54,9 @@ if (!isset($_SESSION['logged_in'])) {
 
         <h2> Search Mitigation </h2>
         <form id='searchForm'>
-            <input type="text" id="searchField" name="searchField" placeholder="Search Mitigation By Title"/><br>
+            <div class="frmSearch">
+                <input type="text" id="searchField" name="searchField" placeholder="Search Mitigation By Title"/><br>
+            </div>
             <input type="submit" id="searchButton" name="searchButton" value="Search By Title"/>
         </form>
         <br>
