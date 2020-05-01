@@ -62,7 +62,7 @@ if (isset($_GET['s'])) {
             <!-- Mit Title Block -->
             <div id="block_container">
                 <h3> Mitigation Title </h3>
-                <input type="text" spellcheck="true" placeholder="Mitigation Title" name="title" required='required'>
+                <input id="title" type="text" spellcheck="true" placeholder="Mitigation Title" name="title" required='required'>
             </div>
             </br>
 
@@ -70,11 +70,11 @@ if (isset($_GET['s'])) {
             <div id="block_container">
                 <div id="bloc1">
                     <h3> Operating System </h3>
-                    <input type="text" spellcheck="true" placeholder="Operating System" name="os" required='required'>
+                    <input id="os" type="text" spellcheck="true" placeholder="Operating System" name="os" required='required'>
                 </div>
                 <div id="bloc2">
                     <h3> Operating System Version </h3>
-                    <input type="text" spellcheck="true" placeholder="Version" name="version" required='required'>
+                    <input id="version" type="text" spellcheck="true" placeholder="Version" name="version" required='required'>
                 </div>
             </div>
             </br>
@@ -83,7 +83,7 @@ if (isset($_GET['s'])) {
             <div id="block_container">
                 <h3> Enter Mitigation Description </h3>
                 <div class="descriptionSearchTA">
-                    <textarea rows="5" cols="25" spellcheck="true" placeholder="Mitigation Description"
+                    <textarea id="description" rows="5" cols="25" spellcheck="true" placeholder="Mitigation Description"
                               name="description" required='required'></textarea>
                 </div>
             </div>
