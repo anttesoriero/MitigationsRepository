@@ -36,7 +36,7 @@ if (!isset($_SESSION['logged_in'])) {
     </div>
 </div>
 
-<div class="left" id="leftSide">
+<!-- <div class="left" id="leftSide"> -->
     <h2> Create a Mitigation </h2>
 
     <div class="bodySearch">
@@ -133,12 +133,12 @@ if (!isset($_SESSION['logged_in'])) {
         </form>
     </div>
 
-</div>
-<div class="right" id="rightResultDisplay">
+<!-- </div> -->
+<!-- <div class="right" id="rightResultDisplay">
     <p><span id='successMessage' class='message'></span></p>
     <p><span id='errorMessage' class='error'></span></p>
 
-</div>
+</div> -->
 
 
 <!-- Load all the javascript in -->

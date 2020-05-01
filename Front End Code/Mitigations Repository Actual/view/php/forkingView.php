@@ -40,7 +40,7 @@ if (isset($_GET['s'])) {
         ?>
     </div>
 </div>
-<div class="left" id="leftSide">
+<!-- <div class="left" id="leftSide"> -->
     <h2> Fork Mitigation </h2>
 
 
@@ -133,16 +133,16 @@ if (isset($_GET['s'])) {
             </div>
         </form>
     </div>
-</div>
+<!-- </div> -->
 
 <div class="v2">
 
 </div>
-<div class="right" id="rightResultDisplay">
+<!-- <div class="right" id="rightResultDisplay">
     <p><span id='successMessage' class='message'></span></p>
     <p><span id='errorMessage' class='error'></span></p>
 
-</div>
+</div> -->
 
 
 <!-- Load all the javascript in -->
