@@ -41,23 +41,50 @@ if (!isset($_SESSION['logged_in'])) {
 
     <div class="bodySearch">
         <form id="createMitigationForm">
-            <h3> Author First Name </h3>
-            <input type="text" spellcheck="false" placeholder="First Name" name="firstName" required='required'>
-            <h3> Author Last Name </h3>
-            <input type="text" spellcheck="false" placeholder="Last Name" name="lastName" required='required'>	
-            <h3> Enter Mitigation Title </h3>
-            <input type="text" spellcheck="true" placeholder="Title" name="title" required='required'>
-            <h3> Enter Operating System </h3>
-            <input type="text" spellcheck="true" placeholder="Operating System" name="os" required='required'>			
-            <h3> Enter Operating System Version </h3>
-            <input type="text" spellcheck="true" placeholder="Version" name="version" required='required'>
-			<h3> Enter Mitigation Description </h3>
-            <div class="descriptionSearchTA">
-                <textarea rows="5" cols="25" spellcheck="true" placeholder="Mitigation Description"
-                          name="description" required='required'></textarea>
+            <!-- Author Name Block -->
+            <div id="block_container">
+                <div id="bloc1">
+                    <h3> Author First Name </h3>
+                    <input type="text" spellcheck="false" placeholder="First Name" name="firstName" required='required'>
+                </div>
+                <div id="bloc2">
+                    <h3> Author Last Name </h3>
+                    <input type="text" spellcheck="false" placeholder="Last Name" name="lastName" required='required'>
+                </div>
             </div>
+            </br>
 
-           <center>
+            <!-- Mit Title Block -->
+            <div id="block_container">
+                <h3> Mitigation Title </h3>
+                <input type="text" spellcheck="true" placeholder="Mitigation Title" name="title" required='required'>
+            </div>
+            </br>
+
+            <!-- OS Block -->
+            <div id="block_container">
+                <div id="bloc1">
+                    <h3> Operating System </h3>
+                    <input type="text" spellcheck="true" placeholder="Operating System" name="os" required='required'>
+                </div>
+                <div id="bloc2">
+                    <h3> Operating System Version </h3>
+                    <input type="text" spellcheck="true" placeholder="Version" name="version" required='required'>
+                </div>
+            </div>
+            </br>
+
+            <!-- Mit Desc Block -->
+            <div id="block_container">
+                <h3> Enter Mitigation Description </h3>
+                <div class="descriptionSearchTA">
+                    <textarea rows="5" cols="25" spellcheck="true" placeholder="Mitigation Description"
+                              name="description" required='required'></textarea>
+                </div>
+            </div>
+            </br>
+
+            <div id="block_container">
 				<!-- Category Dropdown -->
                 <!-- <h3 style="margin-left: 600px;"> Category: </h3> -->
                 <label for="category" style="word-wrap:break-word"> Category: </label>
@@ -102,6 +129,7 @@ if (!isset($_SESSION['logged_in'])) {
                <br>
                <!-- Create Mitigation Button -->
                <input type="button" class="button" id="create" value="Create Mitigation"/>
+            </div>
         </form>
     </div>
 
