@@ -259,3 +259,17 @@ function createUser($dbh, $username, $password, $role)
         die ('unable to add mitigation: ' . $e->getMessage());
     }
 }
+
+function getAuthor($dbh, $mitid)
+{
+    try {
+        $sql = "CALL Mitigation_Repository.get_Author(?);";
+        $stmt = $dbh->prepare($sql);
+        $stmt->bindValue(1, $mitid, PDO::PARAM_INT);
+        $stmt->execute();
+        $results = $stmt->fetchAll(PDO::FETCH_OBJ);
+        echo json_encode($results);
+    } catch (PDOException $e) {
+        die('unable to fetch mitigation by ID : ' . $e->getMessage());
+    }
+}
