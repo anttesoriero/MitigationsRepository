@@ -92,11 +92,23 @@ function addListeners() {
         gotoRandom();
     });
 
-    $('#cancel').on('click', function (evt) {
-        evt.stopPropagation();
-        console.log('Closed login');
-        closeForm();
-    })
+    $(document).ready(function () {
+        $("#searchField").keyup(function () {
+            $.ajax({
+                type: "POST",
+                url: "../../controller/php/getTitleSearchMitigation.php",
+                data: 's=' + $(this).val(),
+                beforeSend: function () {
+                    $("#searchField").css("background");
+                },
+                success: function (data) {
+                    $("#suggestion-box").show();
+                    $("#suggestion-box").html(data);
+                    $("#searchField").css("background", "#FFF");
+                }
+            });
+        });
+    });
 
 
 }
@@ -125,4 +137,11 @@ function gotoMostRecent() {
 
 function gotoRandom() {
     window.location.href = 'view/php/search.php?q=random'
+}
+
+
+//To select country name
+function selectMitigation(val) {
+    $("#search-box").val(val);
+    $("#suggestion-box").hide();
 }
