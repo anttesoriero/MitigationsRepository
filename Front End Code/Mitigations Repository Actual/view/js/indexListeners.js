@@ -96,7 +96,7 @@ function addListeners() {
         $("#searchField").keyup(function () {
             $.ajax({
                 type: "POST",
-                url: "../../controller/php/getTitleSearchMitigation.php",
+                url: "../../controller/php/getTitleSearchMitigation.php?s=" + $(this).val(),
                 data: 's=' + $(this).val(),
                 beforeSend: function () {
                     $("#searchField").css("background");
@@ -107,6 +107,7 @@ function addListeners() {
                     $("#searchField").css("background", "#FFF");
                 }
             });
+            console.log("callout");
         });
     });
 
@@ -140,7 +141,7 @@ function gotoRandom() {
 }
 
 
-//To select country name
+//To select mitigation name
 function selectMitigation(val) {
     $("#search-box").val(val);
     $("#suggestion-box").hide();
