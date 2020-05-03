@@ -12,27 +12,35 @@ A software tool could offer a means to organize mitigation options and procedure
 
 ### Sprint 0:
 ###### 3 February 2020
--	We meet with sponsors to discuss future sprints and prepare the Spring 1 product backlog
+-	We meet with Mr. Resch and Mr. Munilla to discuss future sprints and prepare the Spring 1 product backlog
+
 ### Sprint 1:
 ###### 17 February 2020
--	Creating the basic framework for the website that will host the database.
--	Implement GUIs for the users to search and adding to the database
+-	Creating the basic framework for the website that will host the database
+-	Create the ER diagram or the database
+
 ### Sprint 2:
 ###### 2 March 2020
--	Finishing up the website by having separate pages for adding to a new or existing database
--	Staring working on the basic infrastructure for the database
+-	Create the database and have procedures for searching, adding, and potentally forking done
+- Connected the database to the web-interface
+- Have searching completed on the web-interface
+
 ### Sprint 3:
 ###### 23 March 2020
--	Testing the database to make sure commands work and that it can handle multiple task at once
--	Going over the website to change anything that our sponsor want and that needs to be refined
+- Finish procedures that have to deal with editing and deleting, along with anything that our sponsors wanted 
+- Going over the website to change anything that our sponsor want and that needs to be refined
+- Show that adding and forking work on the web-interface
+
 ### Sprint 4:
 ###### 6 April 2020
--	Set up the connection between the web site and the database
--	Test simple command
+- Finishing most if not all web-interface and database code
+- Show any new feature that sponsor have asked
+- Show any touch up to pre existing features
+
 ### Sprint 5:
 ###### 20 April 2020
--	Testing all feature to make sure that everything is functional
--	Talk about implementation of the product
+- Show finished product, going over everything and getting feedback on the finished product
+- Talk about implementation of the product
 
 ## Acknowledgements
 We would like to thank Professor Jack Myers for being a great guide and helping us with any issues throughout the semester.
