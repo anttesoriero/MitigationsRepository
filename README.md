@@ -35,12 +35,12 @@ A software tool could offer a means to organize mitigation options and procedure
 ## Team Members
 **Anthony Tesoriero** - Product Owner - [Personal Site/Resume](http://anttes.com)
 
-**Alyssa Indriso** - Scrum Master
+**Alyssa Indriso** - Scrum Master - [Email](mailto:indrisoa5@students.rowan.edu)
 
-**Michael Burke** - Dev Team
+**Michael Burke** - Dev Team - [Email](mailto:burkem35@students.rowan.edu)
 
-**Kristen Stansfield** - Dev Team
+**Kristen Stansfield** - Dev Team - [Email](mailto:stansfiek0@students.rowan.edu)
 
-**Theresa Morris** - Dev Team
+**Theresa Morris** - Dev Team - [Email](mailto:morris85@students.rowan.edu)
 
-**David Glennan** - Dev Team
+**David Glennan** - Dev Team - [Email](mailto:glenna29@students.rowan.edu)
