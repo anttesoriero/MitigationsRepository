@@ -1,5 +1,5 @@
 # Mitigation's Repository
-#### Team River Otters - Project O.P.R.A.H.
+#### Team River Otters - Project O.P.R.A.H. - Operational Program for Risk Assessment and Handling
 Software Engineering Project at Rowan University with Professor [Jack Myers](http://jackmyers.info), Spring 2020.
 
 ## Description
