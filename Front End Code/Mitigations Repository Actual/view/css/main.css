@@ -287,7 +287,8 @@ body
 
 /*Dropdown Styling... hopefully.*/
 #suggestion-box {
-	margin: auto;
+	margin: 0 auto;
+	width: 200px;
 }
 
 #mitList {

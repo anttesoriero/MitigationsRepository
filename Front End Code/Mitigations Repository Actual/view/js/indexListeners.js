@@ -140,6 +140,7 @@ function processAutoComplete(dropList) {
         titleList += "<li onclick='selectMitigation(&quot;" + rawTitleList[i].title + "&quot;)'>" + rawTitleList[i].title + "</li>";
     }
 
+    titleList += "<li><a href='view/php/create.php'>Create New Mitigation</a></li>";
     titleList += "</ul>";
 
     console.log(titleList);

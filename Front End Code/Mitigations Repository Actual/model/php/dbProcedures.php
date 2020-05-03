@@ -16,11 +16,11 @@ function getRecentMitigation($dbh, $num)
     }
 }
 
-//Mitigation_Search_Title(IN Title varchar(255))
-function getTitleSearchMitigation($dbh, $num, $term)
+//Search_Title(IN Title varchar(255))
+function getTitleSearchMitigation($dbh, $term)
 {
     try {
-        $sql = "CALL Mitigation_Repository.Mitigation_Search_Title(?);";
+        $sql = "CALL Mitigation_Repository.Search_By_Title(?);";
         $stmt = $dbh->prepare($sql);
         $stmt->bindValue(1, $term, PDO::PARAM_STR);
         $stmt->execute();
