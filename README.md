@@ -2,6 +2,12 @@
 #### Team River Otters - Project O.P.R.A.H. - Operational Program for Risk Assessment and Handling
 Software Engineering Project at Rowan University with Professor [Jack Myers](http://jackmyers.info), Spring 2020.
 
+## Table of Contents
+1. [Project Decription](#description)
+2. [Sprint Plans](#sprint-plans)
+3. [Ackowledgements](#acknowledgements)
+4. [Team Members](#team-members)
+
 ## Description
 Once identified, a cybersecurity risk requires an appropriate response. The implementation of a countermeasure or security control to reduce the risk to an acceptable level is known as risk mitigation, one of the four responses to risk. Security controls fall into five types: directive, preventative, detective, corrective, and recovery. Additionally, controls organize into three categories: administrative, physical, or technical. Implementation of specific controls may result in the reduction of multiple risks. Mitigation may also require the repeated application or slight modification to particular machines in a system.
 
