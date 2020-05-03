@@ -8,6 +8,8 @@ Once identified, a cybersecurity risk requires an appropriate response. The impl
 A software tool could offer a means to organize mitigation options and procedures while also tracking derivations. First, there needs to be a taxonomy for security controls aligned to existing frameworks for classifying threats (e.g., NSA’s Threat Framework). The software tool should allow for the input of security controls with data such as procedures, applicable system or software, and vulnerabilities addressed. The software tool should then allow for the querying of the database for known mitigation options and creating derivations (a.k.a forks). The software tool is akin to a GitHub for mitigations.
 
 ## Sprint Plans
+##### Note: These plans are very much <ins>subject to change</ins> since this project is done in agile, and not completely planned from the start. These plans were also decided on in the [PID](Written%20Documents) before the project started.
+
 ### Sprint 0:
 ###### 3 February 2020
 -	We meet with sponsors to discuss future sprints and prepare the Spring 1 product backlog
