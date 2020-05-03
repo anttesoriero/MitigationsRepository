@@ -1,22 +1,4 @@
 <?php
-require_once("dbProcedures.php");
-$db_handle = new DBController();
-if (!empty($_POST["keyword"])) {
-    $query = "SELECT * FROM country WHERE country_name like '" . $_POST["keyword"] . "%' ORDER BY country_name LIMIT 0,6";
-    $result = $db_handle->runQuery($query);
-    if (!empty($result)) {
-        ?>
-        <ul id="mitigation-list">
-            <?php
-            foreach ($result as $country) {
-                ?>
-                <li onClick="selectCountry('<?php echo $country["country_name"]; ?>');"><?php echo $country["country_name"]; ?></li>
-            <?php } ?>
-        </ul>
-    <?php }
-} ?>
-
-<?php
 session_start();
 
 if (!include('../../model/php/dbProcedures.php')) {
@@ -24,7 +6,7 @@ if (!include('../../model/php/dbProcedures.php')) {
 }
 
 if (!isset($_GET['num'])) {
-    $num = 1000;  // defalut 10 films
+    $num = 25;  // defalut 10 films
 }
 
 $hostname = 'localhost';  //local host - our web server will be our db server.
@@ -33,8 +15,8 @@ $password = 'Sweng#2020';
 $dbname = 'Mitigation_Repository';
 
 //try to connect to database
-if (isset($_POST['keyword'])) {
-    $rawType = $_POST['keyword'];
+if (isset($_GET['s'])) {
+    $rawType = $_GET['s'];
 }
 
 $searchType = str_ireplace("%20", " ", $rawType);
@@ -49,6 +31,5 @@ try {
 } catch (PDOException $e) {
     echo('PDO error for user ' . $username . ' in "ConnectDB()": ' . $e->getMessage());
 }
-
 
 

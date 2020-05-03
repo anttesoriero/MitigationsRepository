@@ -93,25 +93,17 @@ function addListeners() {
     });
 
     $(document).ready(function () {
-        $("#searchField").keyup(function () {
-            $.ajax({
-                type: "POST",
-                url: "../../controller/php/getTitleSearchMitigation.php?s=" + $(this).val(),
-                data: 's=' + $(this).val(),
-                beforeSend: function () {
-                    $("#searchField").css("background");
-                },
-                success: function (data) {
-                    $("#suggestion-box").show();
-                    $("#suggestion-box").html(data);
-                    $("#searchField").css("background", "#FFF");
-                }
-            });
-            console.log("callout");
+        $("#searchField").keyup(function (event) {
+
+            if (event.isComposing || event.keyCode === 229) {
+                return;
+            } else {
+                ajaxURL = "../../controller/php/autoCompleteMitigation.php?s=" + $(this).val();
+
+                $.post(ajaxURL, $('#searchField').serialize(), processAutoComplete);
+            }
         });
     });
-
-
 }
 
 /*******************************************************
@@ -140,9 +132,26 @@ function gotoRandom() {
     window.location.href = 'view/php/search.php?q=random'
 }
 
+function processAutoComplete(dropList) {
+    rawTitleList = JSON.parse(dropList);
+
+    titleList = "<ul id = 'mitList'>";
+    for (i = 0; i < rawTitleList.length; i++) {
+        titleList += "<li onclick='selectMitigation(&quot;" + rawTitleList[i].title + "&quot;)'>" + rawTitleList[i].title + "</li>";
+    }
+
+    titleList += "</ul>";
+
+    console.log(titleList);
+    $("#suggestion-box").show();
+    $("#suggestion-box").html(titleList);
+    $("#searchField").css("background", "#FFF");
+}
+
 
 //To select mitigation name
 function selectMitigation(val) {
-    $("#search-box").val(val);
+    console.log("clickamit");
+    $("#searchField").val(val);
     $("#suggestion-box").hide();
 }

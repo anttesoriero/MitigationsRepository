@@ -285,6 +285,30 @@ body
 	right: 10px;
 }
 
+/*Dropdown Styling... hopefully.*/
+#suggestion-box {
+	margin: auto;
+}
+
+#mitList {
+	list-style: none;
+	margin-top: -3px;
+	padding: 0;
+	width: 190px;
+	position: absolute;
+}
+
+#mitList li {
+	padding: 10px;
+	background: #f0f0f0;
+	border-bottom: #bbb9b9 1px solid;
+}
+
+#mitList li:hover {
+	background: #ece3d2;
+	cursor: pointer;
+}
+
 
 /*When less than 600 px, stack links and search field */
 @media only screen and (max-width: 600px) {
@@ -305,5 +329,6 @@ body
 		border: 1px solid #ccc;
 	}
 }
+
 
 /* ----- End ----- */
