@@ -35,7 +35,7 @@ A software tool could offer a means to organize mitigation options and procedure
 ## Acknowledgements
 We would like to thank Professor Jack Myers for being a great guide and helping us with any issues throughout the semester.
 
-We would also like to thank Andrew Resch and Jonathan Munilla for sponsoring this project. We appreciate you guys giving us your time every week, and giving us feedback on everything we were doing throughout the project.
+We would also like to thank Andrew Resch and Jonathan Munilla for sponsoring this project. We appreciate you guys giving us your time every week, and giving us feedback on everything we were doing throughout the project. We hope you enjoy the final result!
 
 ## Team Members
 **Anthony Tesoriero** - Product Owner - [Personal Site/Resume](http://anttes.com)
