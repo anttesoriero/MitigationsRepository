@@ -85,6 +85,10 @@
     <button class="button" id="newMitigation">Create new Mitigation</button>
 </div>
 
+<div id="love">
+    Created with &#10084;&#65039; by Team River Otters
+</div>
+
 <!-- loading javascript -->
 
 <!-- First jquery -->
