@@ -66,6 +66,15 @@ function addListeners() {
         goToFork(mit_id);
     });
 
+    $('#delete').on('click', function (evt) {
+        evt.stopPropagation();
+        console.log('CLICK');
+
+        var mit_id = $(this).attr('name');
+
+        goToDelete(mit_id);
+    });
+
 
 }
 
@@ -78,6 +87,10 @@ function goToEdit(mit_id) {
 
 function goToFork(mit_id) {
     window.location.href = 'forkingView.php?s=' + mit_id;
+}
+
+function goToDelete(mit_id) {
+    window.location.href = 'deleteView.php?s=' + mit_id;
 }
 
 function processMitigationData(jsonResults) {
