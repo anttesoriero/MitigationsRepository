@@ -85,8 +85,8 @@ function processMitigationData(jsonResults) {
     var jsonData = JSON.parse(jsonResults);
     console.log(jsonData);
     var htmlString = "<div class='entireResult' id='" + mit_id + "'><div class='resultRight'>" +
-        "<span class='cat'>" + jsonData[0].category + "</span><br>" +
-        "<span class='type'>" + jsonData[0].sec_type + "</span></div>" +
+        "<div class='cat'>" + jsonData[0].category + "</div>" +
+        "<div class='type'>" + jsonData[0].sec_type + "</div></div>" +
         "<span class='title'>" + jsonData[0].title + "</span><br>" +
         "<div class='resultLeft'>" +
         "<span class='mitid'>Mitigation ID: " + mit_id + "</span><br>" +
