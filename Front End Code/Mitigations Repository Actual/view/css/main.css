@@ -92,17 +92,17 @@ body
 
 /* Left side of Window - large container to hold smaller ones */
 .left {
-	position: relative;
-	/*right: 55%;*/
-	/*left: 5%;*/
+	position: absolute;
+	right: 55%;
+	left: 5%;
 	background-color: #fff;
 	text-align: center;
 }
 
 .right {
-	position: relative;
-	/*left: 55%;*/
-	/*right: 5%;*/
+	position: absolute;
+	left: 55%;
+	right: 5%;
 	background-color: #fff;
 	text-align: center;
 }
