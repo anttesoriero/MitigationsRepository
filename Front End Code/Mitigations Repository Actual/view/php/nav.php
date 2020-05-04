@@ -21,7 +21,7 @@
 <?php
 //if (!isset($_SESSION['logged_in'])) {
 $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
-echo $_SESSION['refurl'];
+//echo $_SESSION['refurl'];
 //}
 ?>
 <div class="topnav">
