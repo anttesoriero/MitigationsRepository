@@ -4,7 +4,15 @@
     <title> Mitigation Repository </title>
     <meta charset='utf-8'/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link id='mainCSS' rel="stylesheet" type="text/css" href="view/css/main.css"/>
+    <?php
+    $url = $_SERVER['REQUEST_URI'];
+    if (strpos($url, "index") !== false) {
+        echo "<link id='mainCSS' rel='stylesheet' type='text/css' href='view/css/main.css'/>";
+    } else {
+        echo "<link id='mainCSS' rel='stylesheet' type='text/css' href='../../view/css/main.css'/>";
+    }
+    ?>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -16,9 +24,21 @@ $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
 echo $_SESSION['refurl'];
 //}
 ?>
-<div class="topnav"><a class="active" href="#home">Mitigation Repository <i class="fa fa-database"></i></a>
+<div class="topnav">
 
-    <div class="login"><a href="view/php/loginPage.php?q=index">Login</a></div>
+    <?php
+
+    $url = $_SERVER['REQUEST_URI'];
+    if (strpos($url, "index") !== false) {
+        echo "<a class='active' href='index.php'>Mitigation Repository <i class='fa fa-database'></i></a>
+<div class='login'><a href='view/php/loginPage.php?q=index'>Login</a></div>";
+    } else {
+        echo "<a class='active' href='../../index.php'>Mitigation Repository <i class='fa fa-database'></i></a>
+<div class='login'><a href='../../view/php/loginPage.php?q=index'>Login</a></div>";
+    }
+    ?>
+
+    <!--<div class="login"><a href="view/php/loginPage.php?q=index">Login</a></div>-->
     <div class="user">
         <?php
         if (isset($_SESSION['username'])) {
@@ -35,9 +55,7 @@ echo $_SESSION['refurl'];
             }
             echo $_SESSION['role'];
 
-        }
-        else
-        {
+        } else {
             echo 'Guest Access';
         }
         ?>
