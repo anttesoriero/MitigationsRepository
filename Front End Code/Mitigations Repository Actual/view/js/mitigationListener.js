@@ -89,11 +89,11 @@ function processMitigationData(jsonResults) {
         "<span class='type'>" + jsonData[0].sec_type + "</span></div>" +
         "<span class='title'>" + jsonData[0].title + "</span><br>" +
         "<div class='resultLeft'>" +
-        "<span class='mitid'>Mitigation ID: " + mit_id + "</span><br><br>" +
+        "<span class='mitid'>Mitigation ID: " + mit_id + "</span><br>" +
         "<span class='link'>Link to this mitigation: " +
         "<a href='../php/fullMitigation.php?m=" + jsonData[0].mitigation_id + "'> "
         + jsonData[0].mitigation_id + "</a></span>" +
-        "<br><br><span class='forks' id='forks'></span><br>";
+        "<br><span class='forks' id='forks'></span><br>";
 
     if (place.indexOf('delete') < 0) {
 
@@ -104,12 +104,12 @@ function processMitigationData(jsonResults) {
             htmlString += "<input type = 'button' class='btn'  class = 'delete' id='delete' name='" + mit_id + "' value='Delete Mitigation'/>";
         }
     }
-    htmlString += "<br><span class='author'>Author: " + jsonData[0].Author + "</span>" +
-        "<br><span class='created'>Created on:" + jsonData[0].created_at + "</span><br>" +
-        "<span class='modified'>Modified on: " + jsonData[0].modified_at + "</span><br>" +
+    htmlString += "<br><span class='author'>Author: " + jsonData[0].Author + "</span><br>" +
         "<span class='os1'>Operating System: " + jsonData[0].OS_name + "</span>" +
-        "<span class = 'os2'> Version: " + jsonData[0].version +
-        "</span><br><span class='further'>" + jsonData[0].description + "</span></div>"
+        "<span class = 'os2'> Version: " + jsonData[0].version + "</span><br>" +
+        "<span class='created'>Created on:" + jsonData[0].created_at + "</span><br>" +
+        "<span class='modified'>Modified on: " + jsonData[0].modified_at + "</span><br>" +
+        "<span class='further'>" + jsonData[0].description + "</span></div>"
 
     $('#completeMitigation').html(htmlString);
 }

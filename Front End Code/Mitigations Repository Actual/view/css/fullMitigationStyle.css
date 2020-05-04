@@ -13,38 +13,42 @@
 
 .mitid {
     font-size: 18px;
+    margin: 0px;
+    vertical-align: middle;
 }
 
 .link {
     font-size: 18px;
+    margin: 0px;
+    vertical-align: middle;
 }
 
 .created {
-    font-size: 16px;
+    font-size: 14px;
     width: 60%;
     text-align: left;
-    margin-left: 5px;
+    margin-left: 0px;
 }
 
 .modified {
-    font-size: 16px;
+    font-size: 14px;
     width: 60%;
     text-align: left;
-    margin-left: 5px;
+    margin-left: 0px;
 }
 
 .os1 {
     font-size: 16px;
     width: 60%;
     text-align: left;
-    margin-left: 5px;
+    margin-left: 0px;
 }
 
 .os2 {
     font-size: 16px;
     width: 60%;
     text-align: left;
-    margin-left: 5px;
+    margin-left: 0px;
 }
 
 .further {
@@ -57,23 +61,25 @@
 .cat {
     box-sizing: border-box;
     font-size: 16px;
-    border: 1px;
+    text-align: center;
+    border: 2px;
     border-color: black;
     background-color: #ddd;
     border-style: solid;
-    min-width: 160px;
-    margin-bottom: 5px;
+    width: 400px;
+    margin-bottom: 20px;
 }
 
 .type {
     box-sizing: border-box;
     font-size: 16px;
-    border: 1px;
+    text-align: center;
+    border: 2px;
     border-color: black;
     background-color: #ddd;
     border-style: solid;
-    min-width: 160px;
-    margin-top: 5px;
+    width: 400px;
+    margin-top: 20px;
 }
 
 .resultLeft {
