@@ -1,9 +1,6 @@
 /* ----- main.css ----- */
 /*overall page style */
-<<<<<<< HEAD
-=======
 html
->>>>>>> 32ab0b7d7d4a3dea43a1894af7d791599c0331f3
 {
 	box-sizing: border-box;
 }
@@ -95,17 +92,17 @@ body
 
 /* Left side of Window - large container to hold smaller ones */
 .left {
-	position: absolute;
-	right: 55%;
-	left: 5%;
+	position: relative;
+	/*right: 55%;*/
+	/*left: 5%;*/
 	background-color: #fff;
 	text-align: center;
 }
 
 .right {
-	position: absolute;
-	left: 55%;
-	right: 5%;
+	position: relative;
+	/*left: 55%;*/
+	/*right: 5%;*/
 	background-color: #fff;
 	text-align: center;
 }
