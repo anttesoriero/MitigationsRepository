@@ -1,6 +1,8 @@
 <?php session_start(); ?>
+<head>
+    <title> Search Mitigation - Mitigation Repository </title>
+</head>
 <?php include 'nav.php' ?>
-
 <body>
 <?php
 if (isset($_GET['t'])) {

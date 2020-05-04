@@ -2,7 +2,7 @@
 <?php include 'nav.php' ?>;
 <!DOCTYPE html>
 <head>
-    <title> Mitigation Repository </title>
+    <title> Fork a Mitigation - Mitigation Repository </title>
     <meta charset='utf-8'/>
     <link id="cefCSS" rel="stylesheet" type="text/css" href="../css/cefStyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -18,7 +18,6 @@ if (isset($_GET['s'])) {
     $Mitigation_To_Fork = $_GET['s'];
 }
 ?>
-<link id="cefCSS" rel="stylesheet" type="text/css" href="../css/cefStyle.css">
 <!-- <div class="left" id="leftSide"> -->
 <h2 style="text-align:center"> Fork Mitigation </h2>
 
