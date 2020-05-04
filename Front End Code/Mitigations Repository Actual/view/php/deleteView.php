@@ -2,6 +2,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Delete a Mitigation - Mitigation Repository </title>
+    <!-- <link id="deleteCSS" rel="stylesheet" type="text/css" href="../css/deleteStyle.css"> -->
+    <link id="mitigationCSS" rel="stylesheet" type="text/css" href="../css/fullMitigationStyle.css">
 </head>
 <?php include 'nav.php' ?>
 
@@ -17,8 +19,6 @@ if (isset($_GET['s'])) {
 }
 
 ?>
-<link id="deletingCSS" rel="stylesheet" type="text/css" href="../css/deleteStyle.css">
-<link id="mitigationCSS" rel="stylesheet" type="text/css" href="../css/fullMitigationStyle.css">
 <center>
     <!-- <div class="center" id="center"> -->
     <h2> Delete Mitigation </h2>
