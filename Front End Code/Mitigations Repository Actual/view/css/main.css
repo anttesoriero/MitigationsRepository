@@ -1,7 +1,6 @@
 /* ----- main.css ----- */
 /*overall page style */
-*
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+html
 {
 	box-sizing: border-box;
 }
@@ -248,6 +247,10 @@ body
 
 /*When less than 600 px, stack links and search field */
 @media only screen and (max-width: 600px) {
+	body {
+		background-color: lightblue;
+	}
+
 	.topnav .search-container {
 		float: none;
 	}
