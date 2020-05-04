@@ -17,7 +17,7 @@ if (isset($_GET['c'])) {
 <br>
 <br>
 <br>
-<!-- Test 1 -->
+<!-- Searching -->
 <div class="bodySearch">
     <input type="text" id="myInput" placeholder="Refine Search">
     <?php

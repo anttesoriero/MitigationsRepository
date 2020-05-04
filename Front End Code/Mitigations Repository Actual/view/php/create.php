@@ -13,7 +13,6 @@ if (!isset($_SESSION['logged_in'])) {
     header("Location: /view/php/loginPage.php");
 }
 ?>
-<!-- <div class="left" id="leftSide"> -->
 
 <h2 style="text-align:center"> Create a Mitigation </h2>
 <div class="bodySearch">
@@ -107,13 +106,6 @@ if (!isset($_SESSION['logged_in'])) {
             </div>
         </form>
     </div>
-
-<!-- </div> -->
-<!-- <div class="right" id="rightResultDisplay">
-    <p><span id='successMessage' class='message'></span></p>
-    <p><span id='errorMessage' class='error'></span></p>
-
-</div> -->
 
 
 <!-- Load all the javascript in -->

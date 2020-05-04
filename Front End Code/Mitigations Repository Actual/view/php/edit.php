@@ -19,7 +19,6 @@ if (isset($_GET['s'])) {
     $Mitigation_To_Edit = $_GET['s'];
 }
 ?>
-<!-- <div class="left" id="leftSide"> -->
     <h2 style="text-align:center"> Edit Mitigation </h2>
 
 
@@ -115,16 +114,7 @@ if (isset($_GET['s'])) {
 
         </form>
     </div>
-<!-- </div> -->
 
-<!-- <div class="v2">
-
-</div> -->
-<!-- <div class="right" id="rightResultDisplay">
-    <p><span id='successMessage' class='message'></span></p>
-    <p><span id='errorMessage' class='error'></span></p>
-
-</div> -->
 
 
 <!-- Load all the javascript in -->
