@@ -165,7 +165,6 @@ body
 	background-color: white;
 } */
 
-
 /*button styling */
 .button {
 	background-color: #FFFFFF;
@@ -182,6 +181,14 @@ body
 
 .button:hover {
 	background-color: white;
+}
+
+input[type=button]:hover {
+	background-color: #cccccc
+}
+
+input[type=button]:active {
+	background-color: #aaaaaa
 }
 
 /*General results list formatting  - This controls how it builds the little boxes initially */
