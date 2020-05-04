@@ -41,7 +41,7 @@ $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
     <!--<div class="login"><a href="view/php/loginPage.php?q=index">Login</a></div>-->
     <div class="user">
         <?php
-        if (isset($_SESSION['username'])) {
+        if (isset($_SESSION['logged_in'])) {
             echo ' Logged in as ' . $_SESSION['username'];
             if (!isset($_SESSION['role'])) {
                 $loggedinas = $_SESSION['username'];
@@ -53,7 +53,7 @@ $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
                     $_SESSION['role'] = $role;
                 }
             }
-            echo $_SESSION['role'];
+            // echo $_SESSION['role'];
 
         } else {
             echo 'Guest Access';

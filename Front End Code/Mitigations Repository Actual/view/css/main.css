@@ -33,10 +33,19 @@ body
 }
 
 /* Change the color of links on hover*/
-.topnav a:hover
-{
+.topnav a:hover {
 	background-color: #ccc;
 	color: black;
+}
+
+.user {
+	text-align: right;
+	vertical-align: middle;
+	font-size: 20px;
+	padding-top: 14px;
+	padding-left: 18px;
+	padding-right: 18px;
+
 }
 
 /* Left side of Window - large container to hold smaller ones */
