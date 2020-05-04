@@ -8,14 +8,15 @@
 </head>
 <?php include 'nav.php' ?>
 <body>
+<link id="cefCSS" rel="stylesheet" type="text/css" href="../css/cefStyle.css">
 <?php
 if (!isset($_SESSION['logged_in'])) {
     header("Location: /view/php/loginPage.php");
 }
 ?>
 <!-- <div class="left" id="leftSide"> -->
-<h2 style="text-align:center"> Create a Mitigation </h2>
 
+<h2 style="text-align:center"> Create a Mitigation </h2>
 <div class="bodySearch">
         <form id="createMitigationForm">
             <!-- Author Name Block -->
