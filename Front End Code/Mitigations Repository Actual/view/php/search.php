@@ -10,7 +10,7 @@ if (isset($_GET['c'])) {
     $cat = $_GET['c'];
 }
 ?>
-<link id="searchStyle" rel="stylesheet" type="text/css" href="../css/mitigationStyle.css"/>
+<link id="searchStyle" rel="stylesheet" type="text/css" href="../css/searchStyle.css"/>
 <h2 style="float: left"> Search Results </h2>
 <br>
 <br>
