@@ -1,22 +1,9 @@
 <?php session_start(); ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title> Fork Mitigation - Mitigation Repository </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!-- <link id="forkingCSS" rel="stylesheet" type="text/css" href="../css/ForkingStyle.css"> -->
-    <link id="cefCSS" rel="stylesheet" type="text/css" href="../css/cefStyle.css">
-    <link id="mainCSS" rel="stylesheet" type="text/css" href="../css/main.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-</head>
+<?php include 'nav.php' ?>;
 <body>
 <?php
 if (!isset($_SESSION['logged_in'])) {
-    $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
-    echo $_SESSION['refurl'];
     header("Location: /view/php/loginPage.php");
 }
 
@@ -25,31 +12,17 @@ if (isset($_GET['s'])) {
     $Mitigation_To_Fork = $_GET['s'];
 }
 ?>
-<div class="topnav"><a class="active" href="../../index.php"> Mitigation Repository <i class="fa fa-database"></i></a>
-    <div class="login"><a href="loginPage.php">Login</a></div>
-    <div class="user">
-        <?php
-        if (isset($_SESSION['username']))
-        {
-            echo ' Logged in as ' . $_SESSION['username'];
-        }
-        else
-        {
-            echo 'Guest Access';
-        }
-        ?>
-    </div>
-</div>
+<link id="cefCSS" rel="stylesheet" type="text/css" href="../css/cefStyle.css">
 <!-- <div class="left" id="leftSide"> -->
-    <h2 style="text-align:center"> Fork Mitigation </h2>
+<h2 style="text-align:center"> Fork Mitigation </h2>
 
 
-    <div class="bodySearch">
-        <form id="forkMitigationForm">
-            <!-- Author Name Block -->
-            <div id="block_container">
-                <div id="bloc1">
-                    <h3> Author First Name </h3>
+<div class="bodySearch">
+    <form id="forkMitigationForm">
+        <!-- Author Name Block -->
+        <div id="block_container">
+            <div id="bloc1">
+                <h3> Author First Name </h3>
                     <input type="text" spellcheck="false" placeholder="First Name" name="firstName" required='required'>
                 </div>
                 <div id="bloc2">

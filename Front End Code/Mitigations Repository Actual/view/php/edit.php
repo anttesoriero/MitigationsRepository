@@ -1,22 +1,11 @@
 <?php session_start(); ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title> Edit Mitigation - Mitigation Repository </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!-- <link id="editCSS" rel="stylesheet" type="text/css" href="../css/EditStyle.css"> -->
-    <link id="cefCSS" rel="stylesheet" type="text/css" href="../css/cefStyle.css">
-    <link id="mainCSS" rel="stylesheet" type="text/css" href="../css/main.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<?php include 'nav.php' ?>;
 
-
-</head>
 <body>
+<link id="cefCSS" rel="stylesheet" type="text/css" href="../css/cefStyle.css">
 <?php
 if (!isset($_SESSION['logged_in'])) {
-    $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
-    echo $_SESSION['refurl'];
     header("Location: /view/php/loginPage.php");
 }
 
@@ -25,22 +14,6 @@ if (isset($_GET['s'])) {
     $Mitigation_To_Edit = $_GET['s'];
 }
 ?>
-<div class="topnav"><a class="active" href="../../index.php"> Mitigation Repository <i class="fa fa-database"></i></a>
-    <div class="login"><a href="loginPage.php">Login</a></div>
-    <div class="user">
-        <?php
-        if (isset($_SESSION['username']))
-        {
-            echo ' Logged in as ' . $_SESSION['username'];
-        }
-        else
-        {
-            echo 'Guest Access';
-        }
-        ?>
-    </div>
-</div>
-
 <!-- <div class="left" id="leftSide"> -->
     <h2 style="text-align:center"> Edit Mitigation </h2>
 

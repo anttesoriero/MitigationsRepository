@@ -1,45 +1,15 @@
 <?php session_start(); ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title> Create Mitigation - Mitigation Repository </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!-- <link id="createCSS" rel="stylesheet" type="text/css" href="../css/CreateStyle.css"> -->
-    <link id="cefCSS" rel="stylesheet" type="text/css" href="../css/cefStyle.css">
-    <link id="mainCSS" rel="stylesheet" type="text/css" href="../css/main.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-</head>
+<?php include 'nav.php' ?>
 <body>
 <?php
 if (!isset($_SESSION['logged_in'])) {
-  $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
- echo $_SESSION['refurl'];
- header("Location: /view/php/loginPage.php");
+    header("Location: /view/php/loginPage.php");
 }
 ?>
-<div class="topnav"><a class="active" href="../../index.php"> Mitigation Repository <i class="fa fa-database"></i></a>
-    <div class="login"><a href="loginPage.php">Login</a></div>
-    <div class="user">
-        <?php
-        if (isset($_SESSION['username']))
-        {
-            echo ' Logged in as ' . $_SESSION['username'];
-        }
-        else
-        {
-            echo 'Guest Access';
-        }
-        ?>
-    </div>
-</div>
-
 <!-- <div class="left" id="leftSide"> -->
-    <h2 style="text-align:center"> Create a Mitigation </h2>
+<h2 style="text-align:center"> Create a Mitigation </h2>
 
-    <div class="bodySearch">
+<div class="bodySearch">
         <form id="createMitigationForm">
             <!-- Author Name Block -->
             <div id="block_container">

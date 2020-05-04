@@ -1,18 +1,15 @@
 <?php session_start();
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title> Login - Mitigation Repository </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link id='mainCSS' rel="stylesheet" type="text/css" href="../css/main.css"/>
-    <link id="searchStyle" rel="stylesheet" type="text/css" href="../css/mitigationStyle.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-</head>
+<?php
+$url = $_SERVER['REQUEST_URI'];
+if (strpos($url, 'delete') == false) {
+    include 'nav.php';
+}
+?>
 
 <body>
-
+<link id="searchStyle" rel="stylesheet" type="text/css" href="../css/mitigationStyle.css"/>
 <div class="completeMitigation" id="completeMitigation" name="completeMitigation"></div>
 
 <!-- Load all the javascript in -->
