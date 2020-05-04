@@ -38,9 +38,11 @@
     <button class="button" id="newMitigation">Create new Mitigation</button>
 </div>
 
+<!-- Not displaying properly, so commented out
 <div id="love">
     Created with &#10084;&#65039; by Team River Otters
 </div>
+-->
 
 <!-- loading javascript -->
 
