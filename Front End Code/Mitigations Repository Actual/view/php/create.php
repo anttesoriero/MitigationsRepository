@@ -1,14 +1,13 @@
 <?php session_start(); ?>
 
 <head>
-    <title> Mitigation Repository </title>
+    <title> Create a Mitigation - Mitigation Repository </title>
     <meta charset='utf-8'/>
     <link id="cefCSS" rel="stylesheet" type="text/css" href="../css/cefStyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <?php include 'nav.php' ?>
 <body>
-<link id="cefCSS" rel="stylesheet" type="text/css" href="../css/cefStyle.css">
 <?php
 if (!isset($_SESSION['logged_in'])) {
     header("Location: /view/php/loginPage.php");

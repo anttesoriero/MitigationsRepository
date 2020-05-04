@@ -3,13 +3,12 @@
 <?php include 'nav.php' ?>;
 <!DOCTYPE html>
 <head>
-    <title> Mitigation Repository </title>
+    <title> Edit a Mitigation - Mitigation Repository </title>
     <meta charset='utf-8'/>
     <link id="cefCSS" rel="stylesheet" type="text/css" href="../css/cefStyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-<link id="cefCSS" rel="stylesheet" type="text/css" href="../css/cefStyle.css">
 <?php
 if (!isset($_SESSION['logged_in'])) {
     header("Location: /view/php/loginPage.php");

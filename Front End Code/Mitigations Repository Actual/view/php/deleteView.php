@@ -1,5 +1,8 @@
 <?php session_start(); ?>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Delete a Mitigation - Mitigation Repository </title>
+</head>
 <?php include 'nav.php' ?>
 
 
