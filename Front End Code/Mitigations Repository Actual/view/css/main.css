@@ -269,6 +269,7 @@ body
 	}
 
 	.left {
+		position: relative;
 		float: none;
 		display: block;
 		text-align: left;
@@ -278,12 +279,23 @@ body
 	}
 
 	.right {
+		position: relative;
 		float: none;
 		display: block;
 		text-align: left;
 		width: 100%;
 		margin: 0;
 		padding: 14px;
+	}
+
+	/*Index page middle bar*/
+	.v1 {
+		border-left: 0px solid black;
+		height: 0px;
+		position: absolute;
+		left: 50%;
+		margin-left: -1px;
+		top: 20%;
 	}
 }
 
