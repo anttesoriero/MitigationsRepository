@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 
 <?php include 'nav.php' ?>;
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
 <link id="cefCSS" rel="stylesheet" type="text/css" href="../css/cefStyle.css">
 <?php
