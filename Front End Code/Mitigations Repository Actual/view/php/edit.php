@@ -1,7 +1,13 @@
 <?php session_start(); ?>
 
 <?php include 'nav.php' ?>;
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<head>
+    <title> Mitigation Repository </title>
+    <meta charset='utf-8'/>
+    <link id="cefCSS" rel="stylesheet" type="text/css" href="../css/cefStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
 <body>
 <link id="cefCSS" rel="stylesheet" type="text/css" href="../css/cefStyle.css">
 <?php
