@@ -1,5 +1,9 @@
 /* ----- main.css ----- */
 /*overall page style */
+<<<<<<< HEAD
+=======
+html
+>>>>>>> 32ab0b7d7d4a3dea43a1894af7d791599c0331f3
 {
 	box-sizing: border-box;
 }
@@ -246,6 +250,10 @@ body
 
 /*When less than 600 px, stack links and search field */
 @media only screen and (max-width: 600px) {
+	body {
+		background-color: lightblue;
+	}
+
 	.topnav .search-container {
 		float: none;
 	}
