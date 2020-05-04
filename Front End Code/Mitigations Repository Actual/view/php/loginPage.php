@@ -14,7 +14,7 @@
 <!-- <div class="topnav"><a class="active" href="../../index.php">Mitigation Repository <i class="fa fa-database"></i></a>
     <div class="login"><a href="loginPage.php">Login</a></div>
     <div class="user">
-        <?php
+        < ?php
        // echo session_id();
         if (isset($_SESSION['username']))
         {
