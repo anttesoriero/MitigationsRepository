@@ -1,6 +1,3 @@
-<?php session_start();
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,18 +11,17 @@
 
 <body>
 <?php
-if (!isset($_SESSION['logged_in'])) {
-    $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
-
-}
+//if (!isset($_SESSION['logged_in'])) {
+$_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
+echo $_SESSION['refurl'];
+//}
 ?>
 <div class="topnav"><a class="active" href="#home">Mitigation Repository <i class="fa fa-database"></i></a>
 
     <div class="login"><a href="view/php/loginPage.php?q=index">Login</a></div>
     <div class="user">
         <?php
-        if (isset($_SESSION['username']))
-        {
+        if (isset($_SESSION['username'])) {
             echo ' Logged in as ' . $_SESSION['username'];
             if (!isset($_SESSION['role'])) {
                 $loggedinas = $_SESSION['username'];
