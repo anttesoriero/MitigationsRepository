@@ -34,14 +34,14 @@ if (strpos($url, "login") == false) {
     <?php
 
     $url = $_SERVER['REQUEST_URI'];
-    if (strpos($url, "index") !== false) {
-        echo "<a class='active' href='../../index.php'>Mitigation Repository <i class='fa fa-database'></i></a>
-<div class='login'><a href='view/php/loginPage.php?q=index'>Login</a></div>";
+    echo "<a class='active' href='../../index.php'>Mitigation Repository <i class='fa fa-database'></i></a>";
+    if (strpos($url, "login") !== false) {
+
     } else {
-        echo "<a class='active' href='../../index.php'>Mitigation Repository <i class='fa fa-database'></i></a>
-<div class='login'><a href='../../view/php/loginPage.php?q=index'>Login</a></div>";
+        echo "<div class='login'><a href='../../view/php/loginPage.php?q=index'>Login</a></div>";
     }
     ?>
+
 
     <!--<div class="login"><a href="view/php/loginPage.php?q=index">Login</a></div>-->
     <div class="user">
