@@ -44,6 +44,8 @@
             <input type="button" id="logout" value="Logout"/>
             <!--<input type="submit" id="submitLogin" value="Submit"/><br/>
             <input type="submit" id="logout" value="Logout" />-->
+            <H2>THIS IS A TEST</H2>
+            <?php echo $_SESSION['refurl'] ?>
 
             <p><span id="successMessage" class="message"></span></p>
             <p><span id="errorMessage" class="error"></span></p>
