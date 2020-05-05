@@ -201,10 +201,10 @@ function processMitigationData(jsonResults) {
     }
 
     htmlString += "<br><span class='author'>Author: " + jsonData[0].Author + "</span>" +
-        "<br><span class='desc'>Created on:" + jsonData[0].created_at + "</span><br>" +
+        "<br><span class='desc'>Created on: " + jsonData[0].created_at + "</span><br>" +
         "<span class='desc2'>Modified on: " + jsonData[0].modified_at + "</span><br>" +
         "<span class='desc'>Operating System: " + jsonData[0].OS_name + "</span>" +
-        "<span class='desc2'>Version: " + jsonData[0].version + "</span><br>" +
+        "<span class='desc2'> Version: " + jsonData[0].version + "</span><br>" +
         "<span class='further'>" + jsonData[0].description + "</span></div>"
 
     $('#rightResultDisplay').html(htmlString);
