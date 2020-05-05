@@ -11,6 +11,7 @@
 <body>
 <?php
 if (!isset($_SESSION['logged_in'])) {
+    $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
     header("Location: /view/php/loginPage.php");
 }
 

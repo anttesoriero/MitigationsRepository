@@ -22,7 +22,7 @@
 //if (!isset($_SESSION['logged_in'])) {
 //check to make sure we're not ON the login page so redirects work properly.
 $url = $_SERVER['REQUEST_URI'];
-if (strpos($url, "login") !== false) {
+if (strpos($url, "login") == false) {
     $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
 
 }
