@@ -105,6 +105,11 @@ function addListeners() {
         osFilter($(this).val());
     });
 
+    $('#sortType').on('change', function () {
+        console.log('Filter Type Changed');
+        sortFilter($(this).val());
+    });
+
     console.log('filtering maybe?')
     $('#myInput').on('keyup', function (event) {
         if (event.isComposing || event.keyCode === 229) {
