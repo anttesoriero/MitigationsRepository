@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <?php
     $url = $_SERVER['REQUEST_URI'];
-    if (strpos($url, "index") !== false) {
+    if (strpos($url, "index.php") !== false) {
         echo "<link id='mainCSS' rel='stylesheet' type='text/css' href='view/css/main.css'/>";
     } else {
         echo "<link id='mainCSS' rel='stylesheet' type='text/css' href='../../view/css/main.css'/>";
