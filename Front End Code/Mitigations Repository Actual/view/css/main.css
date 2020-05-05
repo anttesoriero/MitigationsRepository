@@ -183,12 +183,16 @@ body
 	background-color: white;
 }
 
+input[type=button] {
+	background-color: #ffffff;
+}
+
 input[type=button]:hover {
-	background-color: #cccccc
+	background-color: #cccccc;
 }
 
 input[type=button]:active {
-	background-color: #aaaaaa
+	background-color: #aaaaaa;
 }
 
 /*General results list formatting  - This controls how it builds the little boxes initially */
