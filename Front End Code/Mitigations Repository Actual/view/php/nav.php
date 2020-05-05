@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <?php
     $url = $_SERVER['REQUEST_URI'];
-    if (strpos($url, "index.php") !== false) {
+    if (strpos($url, "index") !== false) {
         echo "<link id='mainCSS' rel='stylesheet' type='text/css' href='view/css/main.css'/>";
     } else {
         echo "<link id='mainCSS' rel='stylesheet' type='text/css' href='../../view/css/main.css'/>";
@@ -35,7 +35,7 @@ if (strpos($url, "login") == false) {
 
     $url = $_SERVER['REQUEST_URI'];
     if (strpos($url, "index") !== false) {
-        echo "<a class='active' href='index.php'>Mitigation Repository <i class='fa fa-database'></i></a>
+        echo "<a class='active' href='../../index.php'>Mitigation Repository <i class='fa fa-database'></i></a>
 <div class='login'><a href='view/php/loginPage.php?q=index'>Login</a></div>";
     } else {
         echo "<a class='active' href='../../index.php'>Mitigation Repository <i class='fa fa-database'></i></a>
