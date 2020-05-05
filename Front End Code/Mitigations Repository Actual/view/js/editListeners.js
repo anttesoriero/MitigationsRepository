@@ -30,6 +30,10 @@ try {
 
     mitigation = ajaxFetch(ajaxURL, populateMitigation)
 
+    ajaxURL = '../../controller/php/getAuthor.php?m=' + mit_id;
+
+    mitigation = ajaxFetch(ajaxURL, populateAuthor)
+
 } catch (e) {
     console.log("Error in getMitigation.php")
 }
@@ -82,4 +86,12 @@ function populateMitigation(jsonResults) {
     $('#description').val(initialPop[0].description);
 
 
+}
+
+function populateAuthor(jsonResults) {
+    var initialPop = JSON.parse(jsonResults)
+    console.log(initialPop);
+
+    $('#firstName').val(initialPop[0].first_name);
+    $('#lastName').val(initialPop[0].last_name);
 }

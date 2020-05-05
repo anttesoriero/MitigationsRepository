@@ -20,30 +20,33 @@ if (isset($_GET['s'])) {
     $Mitigation_To_Edit = $_GET['s'];
 }
 ?>
-    <h2 style="text-align:center"> Edit Mitigation </h2>
+<h2 style="text-align:center"> Edit Mitigation </h2>
 
 
-    <div class="bodySearch">
-        <form id="editMitigationForm">
-            <!-- Author Name Block -->
-            <div id="block_container">
-                <div id="bloc1">
-                    <h3> Author First Name </h3>
-                    <input type="text" spellcheck="false" placeholder="First Name" name="firstName" required='required'>
-                </div>
-                <div id="bloc2">
-                    <h3> Author Last Name </h3>
-                    <input type="text" spellcheck="false" placeholder="Last Name" name="lastName" required='required'>
-                </div>
+<div class="bodySearch">
+    <form id="editMitigationForm">
+        <!-- Author Name Block -->
+        <div id="block_container">
+            <div id="bloc1">
+                <h3> Author First Name </h3>
+                <input id="firstName" type="text" spellcheck="false" placeholder="First Name" name="firstName"
+                       required='required'>
             </div>
-            </br>
-
-            <!-- Mit Title Block -->
-            <div id="block_container">
-                <h3> Mitigation Title </h3>
-                <input id="title" type="text" spellcheck="true" placeholder="Mitigation Title" name="title" required='required'>
+            <div id="bloc2">
+                <h3> Author Last Name </h3>
+                <input id="lastName" type="text" spellcheck="false" placeholder="Last Name" name="lastName"
+                       required='required'>
             </div>
-            </br>
+        </div>
+        </br>
+
+        <!-- Mit Title Block -->
+        <div id="block_container">
+            <h3> Mitigation Title </h3>
+            <input id="title" type="text" spellcheck="true" placeholder="Mitigation Title" name="title"
+                   required='required'>
+        </div>
+        </br>
 
             <!-- OS Block -->
             <div id="block_container">
