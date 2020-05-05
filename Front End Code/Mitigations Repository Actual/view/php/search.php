@@ -71,7 +71,7 @@ if (isset($_GET['c'])) {
         <option selected disabled>Choose a Sort Type</option>
         <option value="dateDesc">Date Descending</option>
         <option value="dateAsc">Date Ascending</option>
-        <option value="score">Relevence</option>
+        <option value="score">Relevance</option>
     </select>
 </div>
 <br><br>
