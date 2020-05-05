@@ -10,6 +10,7 @@ $('#left').load('../shtml/searchResults.shtml');
 /* Initial population of results  */
 var searchType = location.search.substring(location.search.indexOf('=') + 1);
 var role = 'role';
+var deferred = 'deferred';
 
 
 /*Getting user's role*/
@@ -108,7 +109,13 @@ function addListeners() {
 
     $('#sortType').on('change', function () {
         console.log('Filter Type Changed');
-        sortFilter($(this).val(), 'resultsList', 'li', 'desc');
+        if ($(this).val() === 'dateDesc') {
+            deferred = sortFilter('date', 'resultsList', 'li', 'desc');
+        } else if ($(this).val() === 'dateAsc') {
+            deferred = sortFilter('date', 'resultsList', 'li', 'asc');
+        } else {
+            deferred = sortFilter('initial', 'resultsList', 'li', 'asc');
+        }
     });
 
     console.log('filtering maybe?')
@@ -139,12 +146,12 @@ function processResults(jsonResults) {
     var htmlString = "<ul id='myUL' class='resultsList'>";
     var id;
     console.log("now parsing list...");
-    for (var i = 0; i < numRecords; i++) {
+    for (i = 0; i < numRecords; i++) {
         //This will make each row a unique div with a unique ID!
-        id = 'result'.i;
-        htmlString += "<li><div class='wholeResult' id='" + id + "' name='" + jsonData[i].mitigation_id + "'>" +
+        id = 'result' + i;
+        htmlString += "<li date = '" + jsonData[i].created_at + "' initial = '" + id + "'><div class='wholeResult' id='" + id + "' name='" + jsonData[i].mitigation_id + "'>" +
             "<div class='resultRight'><span class='cat'>" + jsonData[i].category + "</span><br><span class='type'>"
-            + jsonData[i].sec_type + "</span></div><span class='title'>" + jsonData[i].title +
+            + jsonData[i].sec_type + "</span></div><span class='lefttitle'>" + jsonData[i].title +
             "</span><br><div class='resultLeft'><span class = 'mitid'>Mitigation ID:" + jsonData[i].mitigation_id +
             "</span><br><span class='os1'>Operating System: " +
             jsonData[i].OS_name + "</span><span class='os2'>Version: " + jsonData[i].version + "</span><br>";
@@ -293,6 +300,7 @@ function osFilter(osos) {
 }
 
 function sortFilter(arg, sel, elem, order) {
+    console.log(arg);
     var $selector = $(sel),
         $element = $selector.children(elem);
     $element.sort(function (a, b) {

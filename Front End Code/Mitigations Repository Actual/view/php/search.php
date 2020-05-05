@@ -69,9 +69,9 @@ if (isset($_GET['c'])) {
     <h2>Sort by:</h2>
     <select name="sortType" id="sortType">
         <option selected disabled>Choose a Sort Type</option>
-        <option value='dateDesc'>Date Descending</option>
-        <option value='dateAsc'>Date Ascending</option>
-        <option value='score'>Relevence</option>
+        <option value="dateDesc">Date Descending</option>
+        <option value="dateAsc">Date Ascending</option>
+        <option value="score">Relevence</option>
     </select>
 </div>
 <br><br>

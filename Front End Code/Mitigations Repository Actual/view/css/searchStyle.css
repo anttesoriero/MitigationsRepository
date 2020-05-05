@@ -100,10 +100,10 @@
 	text-align: left;
 }
 
-.title {
+.lefttitle {
 	align-self: self-start;
 	text-align: left;
-	font-size: 30px;
+	font-size: 18px;
 }
 
 .mitid {
