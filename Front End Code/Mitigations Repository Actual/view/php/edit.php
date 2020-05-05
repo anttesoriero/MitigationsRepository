@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 
-<?php include 'nav.php' ?>;
+<?php include 'nav.php' ?>
 <!DOCTYPE html>
 <head>
     <title> Edit a Mitigation - Mitigation Repository </title>
