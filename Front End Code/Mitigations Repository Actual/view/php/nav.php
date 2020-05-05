@@ -20,7 +20,11 @@
 <body>
 <?php
 //if (!isset($_SESSION['logged_in'])) {
-$_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
+//check to make sure we're not ON the login page so redirects work properly.
+$url = $_SERVER['REQUEST_URI'];
+if (strpos($url, "login") == false) {
+    $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
+}
 //echo $_SESSION['refurl'];
 //}
 ?>
@@ -29,6 +33,7 @@ $_SESSION['refurl'] = $_SERVER['REQUEST_URI'];
     <?php
 
     $url = $_SERVER['REQUEST_URI'];
+    echo $url;
     if (strpos($url, "index") !== false) {
         echo "<a class='active' href='index.php'>Mitigation Repository <i class='fa fa-database'></i></a>
 <div class='login'><a href='view/php/loginPage.php?q=index'>Login</a></div>";

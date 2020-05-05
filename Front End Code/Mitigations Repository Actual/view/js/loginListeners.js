@@ -64,7 +64,7 @@ function processLogin(loginData) {
         //     $('#successMessage').html(loginData);  // visible for split second
         // }
 
-        if (loginData === '/index.php' || loginData === 'success') {
+        if (loginData.indexOf("index") != -1 || loginData === 'success') {
             window.location.href = '../../index.php';
         } else {
             window.location.href = loginData;
