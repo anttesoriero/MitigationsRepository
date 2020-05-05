@@ -11,6 +11,7 @@ $('#left').load('../shtml/searchResults.shtml');
 var searchType = location.search.substring(location.search.indexOf('=') + 1);
 var role = 'role';
 var deferred = 'deferred';
+var regex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g
 
 
 /*Getting user's role*/
@@ -110,11 +111,11 @@ function addListeners() {
     $('#sortType').on('change', function () {
         console.log('Filter Type Changed');
         if ($(this).val() === 'dateDesc') {
-            deferred = sortFilter('date', 'resultsList', 'li', 'desc');
+            deferred = sortFilter('date', '#myUL', 'li', 'desc');
         } else if ($(this).val() === 'dateAsc') {
-            deferred = sortFilter('date', 'resultsList', 'li', 'asc');
+            deferred = sortFilter('date', '#myUL', 'li', 'asc');
         } else {
-            deferred = sortFilter('initial', 'resultsList', 'li', 'asc');
+            deferred = sortFilter('initial', '#myUL', 'li', 'asc');
         }
     });
 
@@ -143,13 +144,13 @@ function processResults(jsonResults) {
     var numRecords = jsonData.length;
     console.log(jsonData);
 
-    var htmlString = "<ul id='myUL' class='resultsList'>";
+    var htmlString = "<ul id='myUL' class=\"resultsList\">";
     var id;
     console.log("now parsing list...");
     for (i = 0; i < numRecords; i++) {
         //This will make each row a unique div with a unique ID!
         id = 'result' + i;
-        htmlString += "<li date = '" + jsonData[i].created_at + "' initial = '" + id + "'><div class='wholeResult' id='" + id + "' name='" + jsonData[i].mitigation_id + "'>" +
+        htmlString += "<li date = '" + jsonData[i].created_at.replace(regex, "") + "' initial = '" + i + "'><div class='wholeResult' id='" + id + "' name='" + jsonData[i].mitigation_id + "'>" +
             "<div class='resultRight'><span class='cat'>" + jsonData[i].category + "</span><br><span class='type'>"
             + jsonData[i].sec_type + "</span></div><span class='lefttitle'>" + jsonData[i].title +
             "</span><br><div class='resultLeft'><span class = 'mitid'>Mitigation ID:" + jsonData[i].mitigation_id +
