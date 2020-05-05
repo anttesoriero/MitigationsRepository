@@ -28,8 +28,6 @@
         </form>
 
         <button class="button" id="mostRecent">25 Most Recent Mitigations</button>
-        <br><br><br>
-        <!-- <button class="button" id="random"> 25 Random Mitigations</button>-->
     </div>
 </div>
 <div class="v1"></div>

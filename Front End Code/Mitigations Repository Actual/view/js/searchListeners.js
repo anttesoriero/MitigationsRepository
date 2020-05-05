@@ -10,6 +10,9 @@ $('#left').load('../shtml/searchResults.shtml');
 /* Initial population of results  */
 var searchType = location.search.substring(location.search.indexOf('=') + 1);
 var role = 'role';
+var deferred = 'deferred';
+var regex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g
+
 
 /*Getting user's role*/
 try {
@@ -105,6 +108,17 @@ function addListeners() {
         osFilter($(this).val());
     });
 
+    $('#sortType').on('change', function () {
+        console.log('Filter Type Changed');
+        if ($(this).val() === 'dateDesc') {
+            deferred = sortFilter('date', '#myUL', 'li', 'desc');
+        } else if ($(this).val() === 'dateAsc') {
+            deferred = sortFilter('date', '#myUL', 'li', 'asc');
+        } else {
+            deferred = sortFilter('initial', '#myUL', 'li', 'asc');
+        }
+    });
+
     console.log('filtering maybe?')
     $('#myInput').on('keyup', function (event) {
         if (event.isComposing || event.keyCode === 229) {
@@ -130,22 +144,22 @@ function processResults(jsonResults) {
     var numRecords = jsonData.length;
     console.log(jsonData);
 
-    var htmlString = "<ul id='myUL'>";
+    var htmlString = "<ul id='myUL' class=\"resultsList\">";
     var id;
     console.log("now parsing list...");
-    for (var i = 0; i < numRecords; i++) {
+    for (i = 0; i < numRecords; i++) {
         //This will make each row a unique div with a unique ID!
-        id = 'result'.i;
-        htmlString += "<li><div class='wholeResult' id='" + id + "' name='" + jsonData[i].mitigation_id + "'>" +
+        id = 'result' + i;
+        htmlString += "<li date = '" + jsonData[i].created_at.replace(regex, "") + "' initial = '" + i + "'><div class='wholeResult' id='" + id + "' name='" + jsonData[i].mitigation_id + "'>" +
             "<div class='resultRight'><span class='cat'>" + jsonData[i].category + "</span><br><span class='type'>"
-            + jsonData[i].sec_type + "</span></div><span class='title'>" + jsonData[i].title +
+            + jsonData[i].sec_type + "</span></div><span class='lefttitle'>" + jsonData[i].title +
             "</span><br><div class='resultLeft'><span class = 'mitid'>Mitigation ID:" + jsonData[i].mitigation_id +
-            "</span><br><span class='desc'>Operating System: " +
-            jsonData[i].OS_name + "</span><span class='desc2'>Version: " + jsonData[i].version + "</span><br>";
+            "</span><br><span class='os1'>Operating System: " +
+            jsonData[i].OS_name + "</span><span class='os2'>Version: " + jsonData[i].version + "</span><br>";
 
         htmlString += "<br><span class='author'>Author: " + jsonData[i].Author + "</span><br>" +
-            "<span class='desc'>Created on:" + jsonData[i].created_at + "</span><br>" +
-            "<span class='desc2'>Modified on:" + jsonData[i].modified_at + "</span><br>" +
+            "<span class='created'>Created on:" + jsonData[i].created_at + "</span><br>" +
+            "<span class='modified'>Modified on:" + jsonData[i].modified_at + "</span><br>" +
             "<span class='further'>" + jsonData[i].description + "</span></div></div></li>";
     }
 
@@ -284,6 +298,29 @@ function osFilter(osos) {
             li[i].style.display = "none";
         }
     }
+}
+
+function sortFilter(arg, sel, elem, order) {
+    console.log(arg);
+    var $selector = $(sel),
+        $element = $selector.children(elem);
+    $element.sort(function (a, b) {
+        var an = parseInt(a.getAttribute(arg)),
+            bn = parseInt(b.getAttribute(arg));
+        if (order == "asc") {
+            if (an > bn)
+                return 1;
+            if (an < bn)
+                return -1;
+        } else if (order == "desc") {
+            if (an < bn)
+                return 1;
+            if (an > bn)
+                return -1;
+        }
+        return 0;
+    });
+    $element.detach().appendTo($selector);
 }
 
 function processRole(jsonResults) {
