@@ -91,33 +91,59 @@
 
 }
 
-#myUL li a:hover:not(.header)
-{
-    background-color: #eee;
+#myUL li a:hover:not(.header) {
+	background-color: #eee;
 }
 
-.title
-{
-    align-self: self-start;
-    text-align: left;
+.title {
+	align-self: self-start;
+	text-align: left;
 }
 
-.desc
-{
-    font-size: 16px;
-    width: 60%;
-    text-align: left;
-    margin-left: 5px;
-
+.title {
+	align-self: self-start;
+	text-align: left;
+	font-size: 30px;
 }
 
-.desc2
-{
+.mitid {
+	font-size: 18px;
+	margin: 0px;
+	vertical-align: middle;
+}
+
+.link {
+	font-size: 18px;
+	margin: 0px;
+	vertical-align: middle;
+}
+
+.created {
+	font-size: 14px;
+	width: 60%;
+	text-align: left;
+	margin-left: 0px;
+}
+
+.modified {
+	font-size: 14px;
+	width: 60%;
+	text-align: left;
+	margin-left: 0px;
+}
+
+.os1 {
 	font-size: 16px;
 	width: 60%;
 	text-align: left;
-	margin-left: 5px;
+	margin-left: 0px;
+}
 
+.os2 {
+	font-size: 16px;
+	width: 60%;
+	text-align: left;
+	margin-left: 0px;
 }
 
 .further

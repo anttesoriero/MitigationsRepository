@@ -11,6 +11,7 @@ $('#left').load('../shtml/searchResults.shtml');
 var searchType = location.search.substring(location.search.indexOf('=') + 1);
 var role = 'role';
 
+
 /*Getting user's role*/
 try {
     ajaxURL = '../../controller/php/getRole.php';
@@ -107,7 +108,7 @@ function addListeners() {
 
     $('#sortType').on('change', function () {
         console.log('Filter Type Changed');
-        sortFilter($(this).val());
+        sortFilter($(this).val(), 'resultsList', 'li', 'desc');
     });
 
     console.log('filtering maybe?')
@@ -135,7 +136,7 @@ function processResults(jsonResults) {
     var numRecords = jsonData.length;
     console.log(jsonData);
 
-    var htmlString = "<ul id='myUL'>";
+    var htmlString = "<ul id='myUL' class='resultsList'>";
     var id;
     console.log("now parsing list...");
     for (var i = 0; i < numRecords; i++) {
@@ -145,12 +146,12 @@ function processResults(jsonResults) {
             "<div class='resultRight'><span class='cat'>" + jsonData[i].category + "</span><br><span class='type'>"
             + jsonData[i].sec_type + "</span></div><span class='title'>" + jsonData[i].title +
             "</span><br><div class='resultLeft'><span class = 'mitid'>Mitigation ID:" + jsonData[i].mitigation_id +
-            "</span><br><span class='desc'>Operating System: " +
-            jsonData[i].OS_name + "</span><span class='desc2'>Version: " + jsonData[i].version + "</span><br>";
+            "</span><br><span class='os1'>Operating System: " +
+            jsonData[i].OS_name + "</span><span class='os2'>Version: " + jsonData[i].version + "</span><br>";
 
         htmlString += "<br><span class='author'>Author: " + jsonData[i].Author + "</span><br>" +
-            "<span class='desc'>Created on:" + jsonData[i].created_at + "</span><br>" +
-            "<span class='desc2'>Modified on:" + jsonData[i].modified_at + "</span><br>" +
+            "<span class='created'>Created on:" + jsonData[i].created_at + "</span><br>" +
+            "<span class='modified'>Modified on:" + jsonData[i].modified_at + "</span><br>" +
             "<span class='further'>" + jsonData[i].description + "</span></div></div></li>";
     }
 
@@ -289,6 +290,28 @@ function osFilter(osos) {
             li[i].style.display = "none";
         }
     }
+}
+
+function sortFilter(arg, sel, elem, order) {
+    var $selector = $(sel),
+        $element = $selector.children(elem);
+    $element.sort(function (a, b) {
+        var an = parseInt(a.getAttribute(arg)),
+            bn = parseInt(b.getAttribute(arg));
+        if (order == "asc") {
+            if (an > bn)
+                return 1;
+            if (an < bn)
+                return -1;
+        } else if (order == "desc") {
+            if (an < bn)
+                return 1;
+            if (an > bn)
+                return -1;
+        }
+        return 0;
+    });
+    $element.detach().appendTo($selector);
 }
 
 function processRole(jsonResults) {
