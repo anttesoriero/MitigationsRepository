@@ -36,9 +36,16 @@ if (strpos($url, "login") == false) {
     $url = $_SERVER['REQUEST_URI'];
     echo "<a class='active' href='../../index.php'>Mitigation Repository <i class='fa fa-database'></i></a>";
     if (strpos($url, "login") !== false) {
-
     } else {
-        echo "<div class='login'><a href='../../view/php/loginPage.php?q=index'>Login</a></div>";
+        if (isset($_SESSION['logged_in']))
+            if ($_SESSION['logged_in']) {
+                echo "<div class='logout'><a href='../../view/php/loginPage.php?q=index'>Logout</a></div>";
+            } else {
+                echo "<div class='login'><a href='../../view/php/loginPage.php?q=index'>Login</a></div>";
+            }
+        else {
+            echo "<div class='login'><a href='../../view/php/loginPage.php?q=index'>Login</a></div>";
+        }
     }
     ?>
 

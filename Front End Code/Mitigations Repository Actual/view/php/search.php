@@ -63,15 +63,17 @@ if (isset($_GET['c'])) {
         }
         ?>
     </select>
-    <h2>Sort by:</h2>
-    <select name="sortType" id="sortType">
-        <option selected disabled>Choose a Sort Type</option>
-        <option value="dateDesc">Date Descending</option>
-        <option value="dateAsc">Date Ascending</option>
-        <option value="score">Relevance</option>
-    </select>
+    <div id="sortOrder">
+        <h3>Sort Order:</h3>
+        <select name="sortType" id="sortType">
+            <option selected disabled>Choose a Sort Type</option>
+            <option value="dateDesc">Date Descending</option>
+            <option value="dateAsc">Date Ascending</option>
+            <option value="score">Relevance</option>
+        </select>
+    </div>
 </div>
-<br><br>
+<br>
 <div class="leftSearch">
     <div class="results" id="allResults">
         No Results
