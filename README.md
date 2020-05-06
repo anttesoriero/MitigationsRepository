@@ -5,6 +5,7 @@ Software Engineering Project at Rowan University with Professor [Jack Myers](htt
 
 ## Table of Contents
 1. [Project Decription](#description)
+2. [Link to our Code](#code)
 2. [Sprint Plans and Updates](#sprint-plans)
 3. [Written Documents](#written-documents)
 4. [Ackowledgements](#acknowledgements)
@@ -14,6 +15,8 @@ Software Engineering Project at Rowan University with Professor [Jack Myers](htt
 Once identified, a cybersecurity risk requires an appropriate response. The implementation of a countermeasure or security control to reduce the risk to an acceptable level is known as risk mitigation, one of the four responses to risk. Security controls fall into five types: directive, preventative, detective, corrective, and recovery. Additionally, controls organize into three categories: administrative, physical, or technical. Implementation of specific controls may result in the reduction of multiple risks. Mitigation may also require the repeated application or slight modification to particular machines in a system.
 
 A software tool could offer a means to organize mitigation options and procedures while also tracking derivations. First, there needs to be a taxonomy for security controls aligned to existing frameworks for classifying threats (e.g., NSA’s Threat Framework). The software tool should allow for the input of security controls with data such as procedures, applicable system or software, and vulnerabilities addressed. The software tool should then allow for the querying of the database for known mitigation options and creating derivations (a.k.a forks). The software tool is akin to a GitHub for mitigations.
+## Code
+Here is a link to the code in this repository. It might be easier for people to find it through the README - [Code](Front%20End%20Code/Mitigations%20Repository%20Actual)
 
 ## Sprint Plans
 After each sprint, this document will be updated with the sprints corresponding documentation file, as well as its burnup chart. These documents can also be found in either the [Documentation](Documentation) or [Burnup Spreadsheets](Burnup%20Spreadsheets) directory.
