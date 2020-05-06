@@ -1,0 +1,558 @@
+id,createdAt,closed,dateLastActivity,idList,name,points,desc,idMembers,membersFullName,labels,due,shortUrl,url,pos,idBoard,idShort,shortLink,subscribed,badges,idLabels,stickers,descData,idAttachementCover,attachments
+"5e5703d4da6ad85d1c20e7b5","Wed Feb 26 2020 18:48:36 GMT-0500 (Eastern Standard Time)","false","2020-03-05T19:05:33.099Z","Sprint 1 Done","Web Interface - Icon in top left brings you back to index page.","","After Julia enters a few mitigation into the database, she wants to return to the initial web page. To do this, she should be able to click on the top left corner, where it says 'Mitigation's Repository' in order to get her there. 
+Acceptance Criteria:
+-When the user wishes to return to the index page, they should be able to move their mouse to the top left corner and they should be redirected.
+-The button should successfully redirect users to the index page, not any other page. ","TM","Theresa Morris","Difficulty: 1,Value: Medium","","https://trello.com/c/qjaBDefg","https://trello.com/c/qjaBDefg/83-web-interface-icon-in-top-left-brings-you-back-to-index-page","93184","5e31d8cddb572e685106c6b2","83","qjaBDefg","false","","5e31ddd72f2cc5719eda9476,5e31dd80d4da4e1ea78d8f41","","[object Object]","",""
+"5e6014b20abe7713b93232ce","Wed Mar 04 2020 15:50:58 GMT-0500 (Eastern Standard Time)","false","2020-03-05T19:05:30.659Z","Sprint 1 Done","Web Interface - When result is clicked, full mitigation page loads on the right hand side of the screen","","When Mallory clicks on a mitigation from the search results listed on the left hand side of the screen, it opens up the full mitigation on the right hand side of the screen
+
+Acceptance Criteria-
+Mitigations on the left hand side of the screen darken when moused over
+When mitigation result is clicked, it opens on the right side of the screen","TM, KS","Theresa Morris, stansfiek0","Value: High,Difficulty: 8","","https://trello.com/c/klMdTGO8","https://trello.com/c/klMdTGO8/86-web-interface-when-result-is-clicked-full-mitigation-page-loads-on-the-right-hand-side-of-the-screen","186368","5e31d8cddb572e685106c6b2","86","klMdTGO8","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b20","","[object Object]","",""
+"5e41c40da01b5f8fd33a254b","Mon Feb 10 2020 15:58:53 GMT-0500 (Eastern Standard Time)","false","2020-03-05T19:05:28.095Z","Sprint 1 Done","Search Bar - One multipurpose search bar in middle of web main page","","When entering the main web page, Joseph wants to search for a mitigation. He will click on the search bar and begin typing out the specific mitigation that he is looking for.  When he enters the search he will then be redirected to another page with more information.
+
+Acceptance Criteria:
+- The user should be able to successfully type into the search bar in the middle of the web main page.
+- The user should be able to see the text as they are typing
+- The user should be able to use all characters","KS, TM","stansfiek0, Theresa Morris","Value: High,Difficulty: 2","","https://trello.com/c/outJxJTf","https://trello.com/c/outJxJTf/20-search-bar-one-multipurpose-search-bar-in-middle-of-web-main-page","372736","5e31d8cddb572e685106c6b2","20","outJxJTf","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b26","","[object Object]","",""
+"5e41ca2e61d15d4e08940c3c","Mon Feb 10 2020 16:25:02 GMT-0500 (Eastern Standard Time)","false","2020-03-05T19:05:26.313Z","Sprint 1 Done","Web Interface - Index Page","","When Alyse first navigates to the mitigation repository, she is presented with a simple search bar.  She then enters what she is searching for into the bar and clicks to search, leading her to the results page.  As this is existance of the very page, this should exist 100% of the time.
+
+Acceptance Criteria:
+Home page exists with search bar in center
+Search bar has greyed out text displaying 'search for mitigation'
+Brief Descriptive text about what this database is","KS, TM","stansfiek0, Theresa Morris","Value: High,Difficulty: 1","","https://trello.com/c/N3UDYdbW","https://trello.com/c/N3UDYdbW/44-web-interface-index-page","745472","5e31d8cddb572e685106c6b2","44","N3UDYdbW","false","","5e31d8cdaf988c41f2e83b25,5e31ddd72f2cc5719eda9476","","[object Object]","",""
+"5e41bf3103de0a425ea7b2e3","Mon Feb 10 2020 15:38:09 GMT-0500 (Eastern Standard Time)","false","2020-03-05T19:05:24.623Z","Sprint 1 Done","Search Bar - User Input","","Developer Sean wants to search for a mitigation, and to do this he can click on the search bar and type in his own user input. The search bar will allow Sean to type in any character on his keyboard without fail. 
+
+Acceptance Criteria:
+- The user should be able to type any character into the box with ease
+- The user should be able to see what they are typing","KS","stansfiek0","Value: High,Difficulty: 1","","https://trello.com/c/ngAMTJJu","https://trello.com/c/ngAMTJJu/2-search-bar-user-input","1490944","5e31d8cddb572e685106c6b2","2","ngAMTJJu","false","","5e31d8cdaf988c41f2e83b25,5e31ddd72f2cc5719eda9476","","[object Object]","",""
+"5e56a1763784346b61988032","Wed Feb 26 2020 11:48:54 GMT-0500 (Eastern Standard Time)","false","2020-03-05T19:18:50.027Z","Sprint 1 Done","ER Diagram","","As a data analyst, Dave wants to ensure that the different entities of the database are broken down to view the relationship between all of the items in the database.  This diagram will allow him to have a better understanding of how to create the database.
+
+Acceptance criteria:
+-Needs to show the relationship between two entities (one to one, one to many,  or many to many)
+-Determine the different entity types","MB, G","Michael Burke, glenna29","Value: High,Difficulty: 8","","https://trello.com/c/C3q11v3S","https://trello.com/c/C3q11v3S/81-er-diagram","1606656","5e31d8cddb572e685106c6b2","81","C3q11v3S","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b20","","[object Object]","",""
+"5e41c8a476bc0e5627ebe94f","Mon Feb 10 2020 16:18:28 GMT-0500 (Eastern Standard Time)","false","2020-03-05T19:18:47.911Z","Sprint 1 Done","Database - Security Control","","As a Developer, Billy wants a way to reduce cybersecurity risks. To accomplish this, Billy first needs to use a countermeasure also called a security control consisting of one specific type and one specific category to reduce the risk to an acceptable level.
+
+Acceptance Criteria:
+-Security Control table that can be used to implement future security controls.
+- Clearly defined type and category for each mitigation.
+- Each security control leads to one form with x number of systems","G, MB","glenna29, Michael Burke","Value: High,Difficulty: 2","","https://trello.com/c/F9QNrpY0","https://trello.com/c/F9QNrpY0/40-database-security-control","1722368","5e31d8cddb572e685106c6b2","40","F9QNrpY0","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b26","","[object Object]","",""
+"5e41c8b3c695b1158de87d82","Mon Feb 10 2020 16:18:43 GMT-0500 (Eastern Standard Time)","false","2020-03-05T19:18:58.011Z","Sprint 1 Done","Database - Mitigation","","As a Developer, Billy wants a way to define a mitigation. There should be one general Mitigation table that defines all common mitigation attributes so that future mitigation's can be implemented from.
+
+Acceptance Criteria:
+-Mitigation table that can be used to implement new mitigation's.
+- Detailed description, title that defines mitigation. Timestamp that 
+  shows time created at, and if applicable a parent mitigation.","G","glenna29","Value: High,Difficulty: 2","","https://trello.com/c/9W0hbi9l","https://trello.com/c/9W0hbi9l/41-database-mitigation","1838080","5e31d8cddb572e685106c6b2","41","9W0hbi9l","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b26","","[object Object]","",""
+"5e43458f18bd5a323f208cf3","Tue Feb 11 2020 19:23:43 GMT-0500 (Eastern Standard Time)","false","2020-03-05T19:19:06.424Z","Sprint 1 Done","Database - Author","","As a Developer, Billy has already defined a general case for a mitigation and wants to document the author of a single mitigation. There  should be a table to record the author's first name and last name that wrote the mitigation, so future users have a record  of who made the database changes.
+
+
+Acceptance Criteria:
+-Table to record authors of specific mitigation's.
+- An author must have a first and last name","G","glenna29","Value: High,Difficulty: 2","","https://trello.com/c/meMSdL54","https://trello.com/c/meMSdL54/74-database-author","1895936","5e31d8cddb572e685106c6b2","74","meMSdL54","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b26","","[object Object]","",""
+"5e41c25b061ccc6d0ce08af9","Mon Feb 10 2020 15:51:39 GMT-0500 (Eastern Standard Time)","false","2020-03-05T19:14:45.309Z","Sprint 1 Done","Framework - Identifying Administrative Category","","As a security specialist, Alfyn is eager to research and determine at least 10 different controls that deal with human security controls. Humans make mistakes in security and Alfyn would like to lower the risks and help others get a better understanding of these kinds of risks.
+
+Acceptance Criteria:
+-generate an outline for users to follow when adding new administrative controls
+-provide a better understanding of administrative controls","","","Difficulty: 8,Value: High","","https://trello.com/c/zK7g0KfK","https://trello.com/c/zK7g0KfK/7-framework-identifying-administrative-category","1953792","5e31d8cddb572e685106c6b2","7","zK7g0KfK","false","","5e31d8cdaf988c41f2e83b20,5e31d8cdaf988c41f2e83b25","","[object Object]","",""
+"5e41c6233e1af518a79d915e","Mon Feb 10 2020 16:07:47 GMT-0500 (Eastern Standard Time)","false","2020-03-05T19:14:49.672Z","Sprint 1 Done","Framework - Identifying Technical Category","","Olivia needs to determine at least 10 different controls that deal with technical controls. She understands that this can be done with different types of software in order to lower the risk of attack and to help others get a better understanding of what a technical control is. 
+Acceptance Criteria:
+-Provide a better understanding of technical controls. 
+-Generate an outline for users to follow when adding a technical control. ","","","Value: High,Difficulty: 8","","https://trello.com/c/bRWIHSPC","https://trello.com/c/bRWIHSPC/32-framework-identifying-technical-category","1963008","5e31d8cddb572e685106c6b2","32","bRWIHSPC","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b20","","[object Object]","",""
+"5e41c4ac205e316002fa2185","Mon Feb 10 2020 16:01:32 GMT-0500 (Eastern Standard Time)","false","2020-03-05T19:14:47.545Z","Sprint 1 Done","Framework - Identifying Physical Category","","As a security specialist, Anna is eager to research and determine at least 10 different controls that deal with hardware security controls.. Hardware can make mistakes and Anna would like to lower the risks and help others get a better understanding of these kinds of risks.
+
+Acceptance Criteria:
+-generate an outline for users to follow when adding new physical controls
+-provide a better understanding of physical controls","","","Difficulty: 8,Value: High","","https://trello.com/c/T3TKTAJm","https://trello.com/c/T3TKTAJm/23-framework-identifying-physical-category","1972224","5e31d8cddb572e685106c6b2","23","T3TKTAJm","false","","5e31d8cdaf988c41f2e83b20,5e31d8cdaf988c41f2e83b25","","[object Object]","",""
+"5e431d1e0f340686f09653bf","Tue Feb 11 2020 16:31:10 GMT-0500 (Eastern Standard Time)","false","2020-03-05T19:14:35.101Z","Sprint 1 Done","Framework - Identifying Preventative Type","","As a security professional, Elissa needs a way to figure out what a preventative control type consists of and to classify at least 10 different types of preventative mitigations.
+
+Acceptance Criteria:
+-Provide a better understanding of preventative security types. 
+-Generate an outline for users to follow when adding a preventative type. ","","","Value: High,Difficulty: 8","","https://trello.com/c/vmEpXi2g","https://trello.com/c/vmEpXi2g/66-framework-identifying-preventative-type","1990656","5e31d8cddb572e685106c6b2","66","vmEpXi2g","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b20","","[object Object]","",""
+"5e449a980a2528237815f518","Wed Feb 12 2020 19:38:48 GMT-0500 (Eastern Standard Time)","false","2020-03-05T19:11:13.280Z","Sprint 1 Done","Framework - Identifying Corrective Type","","As a security professional, Dan needs a way to figure out what a corrective control type consists of and to classify at least 10 different types of detective mitigations.
+
+Acceptance Criteria:
+-Provide a better understanding of corrective security types. 
+-Generate an outline for users to follow when adding a corrective type. ","","","Difficulty: 8,Value: High","","https://trello.com/c/fZIXKqJW","https://trello.com/c/fZIXKqJW/77-framework-identifying-corrective-type","1998848","5e31d8cddb572e685106c6b2","77","fZIXKqJW","false","","5e31d8cdaf988c41f2e83b20,5e31d8cdaf988c41f2e83b25","","[object Object]","",""
+"5e431d38458ced03ab5bc533","Tue Feb 11 2020 16:31:36 GMT-0500 (Eastern Standard Time)","false","2020-03-05T19:11:02.776Z","Sprint 1 Done","Framework - Identifying Detective Type","","As a security professional, Dana needs a way to figure out what a detective control type consists of and to classify at least 10 different types of detective mitigations.
+
+Acceptance Criteria:
+-Provide a better understanding of detective security types. 
+-Generate an outline for users to follow when adding a detective type. ","","","Value: High,Difficulty: 8","","https://trello.com/c/eApmOyOu","https://trello.com/c/eApmOyOu/67-framework-identifying-detective-type","2015232","5e31d8cddb572e685106c6b2","67","eApmOyOu","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b20","","[object Object]","",""
+"5e4d9d073ae4ae314654e791","Wed Feb 19 2020 15:39:35 GMT-0500 (Eastern Standard Time)","false","2020-03-05T19:24:48.206Z","Sprint 1 Done","Spike- Research of Three Control Categories","","Commence research on each of the three categories and have examples of each.  The three categories are Administrative, Physical, and Technical.","MB, KS, TM, G","Michael Burke, stansfiek0, Theresa Morris, glenna29","","","https://trello.com/c/Xx4y3aNN","https://trello.com/c/Xx4y3aNN/78-spike-research-of-three-control-categories","2019328","5e31d8cddb572e685106c6b2","78","Xx4y3aNN","false","","","","[object Object]","",""
+"5e4d9dcc1e07930c2fcfa089","Wed Feb 19 2020 15:42:52 GMT-0500 (Eastern Standard Time)","false","2020-03-05T19:19:19.365Z","Sprint 1 Done","Spike- Research of Control Types","","Commence research on the different security controls (could be 5 or could even be more).  Base this information off of previous frameworks (links have already been provided). The NSA Framework would be a good place to start.","MB, TM, G, KS","Michael Burke, Theresa Morris, glenna29, stansfiek0","","","https://trello.com/c/RuuENBf1","https://trello.com/c/RuuENBf1/79-spike-research-of-control-types","2023424","5e31d8cddb572e685106c6b2","79","RuuENBf1","false","","","","[object Object]","",""
+"5e4da581a3bd31889c606cb7","Wed Feb 19 2020 16:15:45 GMT-0500 (Eastern Standard Time)","false","2020-03-05T19:14:37.933Z","Sprint 1 Done","Spike- Brief MySQL refresher","","Commence research on MySQL to prepare the database.  This is necessary to create a proper database.","MB, G","Michael Burke, glenna29","","","https://trello.com/c/Qfzu5ec1","https://trello.com/c/Qfzu5ec1/80-spike-brief-mysql-refresher","2031616","5e31d8cddb572e685106c6b2","80","Qfzu5ec1","false","","","","[object Object]","",""
+"5e56a3646e76b72cffbf1031","Wed Feb 26 2020 11:57:08 GMT-0500 (Eastern Standard Time)","false","2020-03-05T19:19:28.786Z","Sprint 1 Done","Spike- Research AJAX","","To truly fulfill our sponsors desires, research on asynchronous java is required.","KS, TM","stansfiek0, Theresa Morris","","","https://trello.com/c/cuvUyNna","https://trello.com/c/cuvUyNna/82-spike-research-ajax","2048000","5e31d8cddb572e685106c6b2","82","cuvUyNna","false","","","","[object Object]","",""
+"5e6014f0fc10dc42df76debb","Wed Mar 04 2020 15:52:00 GMT-0500 (Eastern Standard Time)","false","2020-03-27T21:39:15.570Z","Sprint 2 Done","DB - Get: Type","","When Greg wants to look up a mitigation there must be a procedure to get type of security control. After selecting the type, a procedure will return all of the security control types in alphabetically ordered set.
+
+Acceptance Criteria: 
+- Return set of security control types.
+- Return the set alphabetically sorted.","G, MB","glenna29, Michael Burke","Difficulty: 1,Value: Medium","","https://trello.com/c/uIt5rPC2","https://trello.com/c/uIt5rPC2/87-db-get-type","32767.5","5e31d8cddb572e685106c6b2","87","uIt5rPC2","false","","5e31ddd72f2cc5719eda9476,5e31dd80d4da4e1ea78d8f41","","[object Object]","",""
+"5e6014a824e65c5bb32d64ae","Wed Mar 04 2020 15:50:48 GMT-0500 (Eastern Standard Time)","false","2020-03-27T21:39:07.060Z","Sprint 2 Done","DB - Get: Category","","When Greg is searching for a mitigation, there must be a procedure to search for category's in the security control. After selecting a category a procedure in place returns all of the security control categories in an alphabetically ordered set.
+
+Acceptance Criteria: 
+- Return set of security control categories.
+- Return the set alphabetically sorted.","G, MB","glenna29, Michael Burke","Difficulty: 1,Value: Medium","","https://trello.com/c/8qC5DOrq","https://trello.com/c/8qC5DOrq/85-db-get-category","65535","5e31d8cddb572e685106c6b2","85","8qC5DOrq","false","","5e31ddd72f2cc5719eda9476,5e31dd80d4da4e1ea78d8f41","","[object Object]","",""
+"5e433acd938a42652ca89634","Tue Feb 11 2020 18:37:49 GMT-0500 (Eastern Standard Time)","false","2020-03-26T05:12:20.564Z","Sprint 2 Done","Web Interface - Connect Database to web page","","As Kaira works on the security database web interface, she knows that she needs the data from the database to be displayed and used in various ways across the entire web page.  Naturally, she needs to connect the database to the web interface such that calls from the web page go out to the database, and return the necessary data.  This link should be present at all times, and if not, it should state an error noting there is no database connection.  the error should display if there is no connection to the database at least 90% of the time.
+
+Acceptance Criteria -
+Web Interface can access database
+database can return data to web interface
+Display error if there is no connection","TM","Theresa Morris","Value: High,Difficulty: 2","","https://trello.com/c/Rtb4UeQU","https://trello.com/c/Rtb4UeQU/69-web-interface-connect-database-to-web-page","81919","5e31d8cddb572e685106c6b2","69","Rtb4UeQU","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b26","","[object Object]","",""
+"5e41c26f64b85f8bf168993a","Mon Feb 10 2020 15:51:59 GMT-0500 (Eastern Standard Time)","false","2020-03-26T16:38:40.771Z","Sprint 2 Done","Search Bar - Database risk lookup","","Julie wants to find all the mitigations associated with a specific risk. She types into the web interfaces search bar the risk name, or a matching keyword. What she types in will then be looked up in the database, and mitigation's with that risk will be returned to her in a dropdown menu. If there are no mitigations associated with that risk, the dropdown will show no match.
+
+Acceptance Criteria:
+- The user should be able to search for risks using the risks name, or a keyword from the description
+- The user should be able to search ignoring case
+- The user should be able to search ignoring punctuation (ie. its = it's)
+- The search bar should quickly search through all mitigations for a quick and accurate result","TM","Theresa Morris","Difficulty: 8,Value: Medium","","https://trello.com/c/YZYNUQex","https://trello.com/c/YZYNUQex/9-search-bar-database-risk-lookup","82943","5e31d8cddb572e685106c6b2","9","YZYNUQex","false","","5e31d8cdaf988c41f2e83b20,5e31dd80d4da4e1ea78d8f41","","[object Object]","",""
+"5e41c938a7eb691d67f252c8","Mon Feb 10 2020 16:20:56 GMT-0500 (Eastern Standard Time)","false","2020-03-26T16:50:46.392Z","Sprint 2 Done","Web Interface - Display when last updated","","When Aniera looks into a mitigation page, she wants to know how recent the information is.  On the mitigation page, there is a field that clearly details with both date and time hte most recent update to the page, as well as the day it was entered in the database in the first place.  This should occur 98% of the time
+
+Acceptance Criteria:
+Date updated properly populates in the database
+Date updated is displayed on every mitigation page","","","Value: Low,Difficulty: 5","","https://trello.com/c/AX7ikAbd","https://trello.com/c/AX7ikAbd/42-web-interface-display-when-last-updated","83455","5e31d8cddb572e685106c6b2","42","AX7ikAbd","false","","5e31dda454c6f545022349e5,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e41c25c036e64270e239fc5","Mon Feb 10 2020 15:51:40 GMT-0500 (Eastern Standard Time)","false","2020-03-26T05:56:30.349Z","Sprint 2 Done","Search Bar - Database Mitigation lookup","","When Xavier on the security team wants to find an existing mitigation, he types into the web interfaces search bar the mitigations name or a keyword. What he types in will then be looked up in the mitigation's database, and then be returned to the him if there is a hit in the search bars dropdown menu every time. If not, the dropdown will show no match, and he will know the mitigation does not exist yet.
+
+Acceptance Criteria:
+- The user should be able to search for mitigations using the mitigations name, or a keyword from the description
+- The user should be able to search ignoring case
+- The user should be able to search ignoring punctuation (ie. its = it's)
+- The search bar should quickly search through all mitigations for a quick and accurate result","TM","Theresa Morris","Value: High,Difficulty: 5","","https://trello.com/c/C45fUeFt","https://trello.com/c/C45fUeFt/8-search-bar-database-mitigation-lookup","83967","5e31d8cddb572e685106c6b2","8","C45fUeFt","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e41c1a5c088250ed832e81d","Mon Feb 10 2020 15:48:37 GMT-0500 (Eastern Standard Time)","false","2020-03-26T06:36:09.005Z","Sprint 2 Done","Web Interface - Dropdown menu","","When Esmeralda is searching for a mitigation, as she types, a dropdown menu begins to populate with things that may fit her search criteria, regardless of capitalization and punctuation.  This menu is located at the top of the screen, and remains persistent across screens on the interface.  7/8 times, when she searches, the menu should drop down  and autopopulate based on her current search.
+
+Acceptance Criteria-
+Search bar on top is created
+Dropdown pops up as letters are entered, corresponding to a search in the database for that term
+Memory in dropdown is persistent across pages.","KS","stansfiek0","Value: Medium,Difficulty: 2","","https://trello.com/c/SY4j1mU9","https://trello.com/c/SY4j1mU9/4-web-interface-dropdown-menu","84991","5e31d8cddb572e685106c6b2","4","SY4j1mU9","false","","5e31dd80d4da4e1ea78d8f41,5e31d8cdaf988c41f2e83b26","","[object Object]","",""
+"5e41c1a0243c485022c1b0c9","Mon Feb 10 2020 15:48:32 GMT-0500 (Eastern Standard Time)","false","2020-03-26T04:43:58.817Z","Sprint 2 Done","Web Interface - Results Display","","When Eva searches for a particular mitigation using the search bar, Upon hitting enter, the web page brings up a list of all mitigations that match the keyword she has searched for, or none if there are no results.
+
+Acceptance Criteria - 
+Results actually display on the page
+'No results' shows if there are no results for the current searched mitigation
+
+","TM","Theresa Morris","Value: High,Difficulty: 2","","https://trello.com/c/3Oo6ddT3","https://trello.com/c/3Oo6ddT3/3-web-interface-results-display","86015","5e31d8cddb572e685106c6b2","3","3Oo6ddT3","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b26","","[object Object]","",""
+"5e41c55111059a5663254955","Mon Feb 10 2020 16:04:17 GMT-0500 (Eastern Standard Time)","false","2020-03-26T04:16:50.829Z","Sprint 2 Done","Search Bar - User hit enter to go to new page in web interface with results display","","When user Ryan types his desired text into the search bar, he will press the 'enter' button on his keyboard in order to redirect him to a new page with mitigation results every time.
+
+Acceptance Criteria:
+- When the 'enter' button is pressed, the user will be redirected to the page with the corresponding search results. The user can then make their selection here.","TM","Theresa Morris","Difficulty: 1,Value: High","","https://trello.com/c/jSPUxHxt","https://trello.com/c/jSPUxHxt/28-search-bar-user-hit-enter-to-go-to-new-page-in-web-interface-with-results-display","90111","5e31d8cddb572e685106c6b2","28","jSPUxHxt","false","","5e31ddd72f2cc5719eda9476,5e31d8cdaf988c41f2e83b25","","[object Object]","",""
+"5e6adeb147898c60a9efdcaa","Thu Mar 12 2020 21:15:29 GMT-0400 (Eastern Daylight Time)","false","2020-03-27T21:38:48.460Z","Sprint 2 Done","DB - Get: OS Name","","When Felix wants to search for a mitigation in the database, he would like to search for his operation system associated with the mitigation. There is a procedure that gets all the operating systems in alphabetical order.
+
+Acceptance Criteria:
+- Getting all Operating Systems in alphabetical order
+- Returns the data as a set","G, MB","glenna29, Michael Burke","Difficulty: 1,Value: Medium","","https://trello.com/c/OvPc0YbX","https://trello.com/c/OvPc0YbX/94-db-get-os-name","98303","5e31d8cddb572e685106c6b2","94","OvPc0YbX","false","","5e31ddd72f2cc5719eda9476,5e31dd80d4da4e1ea78d8f41","","[object Object]","",""
+"5e6adecf403b6932ce90ff64","Thu Mar 12 2020 21:15:59 GMT-0400 (Eastern Daylight Time)","false","2020-03-27T21:38:35.331Z","Sprint 2 Done","DB - Get: OS Version","","When Felix wants to search for a mitigation in the database, he would like to search for his operation system and the version number associated with it. There is a procedure that gets all the version in ascending order and if multiple systems are searched its alphabetical and ascending order.
+
+Acceptance Criteria:
+- Returns version numbers of the Operating Systems in ascending order
+- Returns a set of version numbers","G, MB","glenna29, Michael Burke","Difficulty: 1,Value: Medium","","https://trello.com/c/zSwL6df0","https://trello.com/c/zSwL6df0/95-db-get-os-version","114687","5e31d8cddb572e685106c6b2","95","zSwL6df0","false","","5e31ddd72f2cc5719eda9476,5e31dd80d4da4e1ea78d8f41","","[object Object]","",""
+"5e41c6c4c1a5d7688d261746","Mon Feb 10 2020 16:10:28 GMT-0500 (Eastern Standard Time)","false","2020-03-26T02:26:26.423Z","Sprint 2 Done","Web Interface - Recent Mitigations","","When Alyse goes to the main index page, she decides to check if there were any new mitigations entered into the system.  She clicks a button that reads 'Recent Mitigations' to browse the most recent 50 mitigation submissions.
+
+Acceptance Criteria - 
+Page polls database and displays 50 most recent mitigations
+Displayed in date order.","TM","Theresa Morris","Value: Low,Difficulty: 5","","https://trello.com/c/5Porr3NW","https://trello.com/c/5Porr3NW/36-web-interface-recent-mitigations","122879","5e31d8cddb572e685106c6b2","36","5Porr3NW","false","","5e31dda454c6f545022349e5,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e6adea2a07ae84f9a3f3feb","Thu Mar 12 2020 21:15:14 GMT-0400 (Eastern Daylight Time)","false","2020-03-27T21:38:20.858Z","Sprint 2 Done","DB - Get: Systems","","Dave wants to find a mitigation with his specific operating system and version number. A procedure will get the name and version of all the system's(OS) in the database. It orders name's alphabetically and sorts version in ascending order, i.e. lower number versions of the same system name come before higher number versions.
+
+Acceptance Criteria:
+- Procedure returns set of all the systems names and versions.
+- All system names are ordered alphabetically.
+- All system versions are sorted in ascending order.","G","glenna29","Difficulty: 2,Value: Medium","","https://trello.com/c/XOXGqEUN","https://trello.com/c/XOXGqEUN/93-db-get-systems","131071","5e31d8cddb572e685106c6b2","93","XOXGqEUN","false","","5e31d8cdaf988c41f2e83b26,5e31dd80d4da4e1ea78d8f41","","[object Object]","",""
+"5e6ae251ed55d180363a2d36","Thu Mar 12 2020 21:30:57 GMT-0400 (Eastern Daylight Time)","false","2020-03-27T21:38:08.019Z","Sprint 2 Done","DB - Adding: Security Control","","Procedure to add a security control to the database. A security control consists of one category also know as a security type and one type known as a security function.
+
+Acceptance Criteria:
+- Adds a security control consisting of one type and category.
+- Does not overwrite existing security control.","G","glenna29","Difficulty: 2,Value: Medium","","https://trello.com/c/OPnKs41h","https://trello.com/c/OPnKs41h/101-db-adding-security-control","655359","5e31d8cddb572e685106c6b2","101","OPnKs41h","false","","5e31d8cdaf988c41f2e83b26,5e31dd80d4da4e1ea78d8f41","","[object Object]","",""
+"5e41c3cdf5353760dec91c9a","Mon Feb 10 2020 15:57:49 GMT-0500 (Eastern Standard Time)","false","2020-03-26T16:00:40.145Z","Sprint 2 Done","Web Interface - Add New Mitigation","","Davayla, a security contractor, has been dealing with an as yet undocumented security breech.  Upon developing the mitigation for this breech, she needs to add it to the database, clicking on the displayed 'Add new mitigation' button on the web interface.  This brings her to a web page where she can enter in all of the information she needs to add a new mitigation.  This should occur 9/10 times.
+
+Acceptance Criteria -
+Upon clicking the 'add new mitigation' button, A new page loads containing all necessary fields for entering a new mitigation.
+","TM, KS","Theresa Morris, stansfiek0","Value: High,Difficulty: 3","","https://trello.com/c/Xsmc4occ","https://trello.com/c/Xsmc4occ/19-web-interface-add-new-mitigation","688127","5e31d8cddb572e685106c6b2","19","Xsmc4occ","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b1d","","[object Object]","",""
+"5e6ae2275ab3dd0dcc679363","Thu Mar 12 2020 21:30:15 GMT-0400 (Eastern Daylight Time)","false","2020-03-27T21:35:41.750Z","Sprint 2 Done","DB - Adding: System","","As Dave is adding a new mitigation to the database, he also adds the system the mitigation is for (i.e. Windows 10 v 1.0) . A Procedure adds a new system to the database when given both the system name and the version of the system.
+
+Acceptance Criteria:
+- Procedure adds a new system to the database.
+- Check to ensure does not overwrite old data.","G","glenna29","Difficulty: 2,Value: Medium","","https://trello.com/c/cnUFUczo","https://trello.com/c/cnUFUczo/99-db-adding-system","720895","5e31d8cddb572e685106c6b2","99","cnUFUczo","false","","5e31d8cdaf988c41f2e83b26,5e31dd80d4da4e1ea78d8f41","","[object Object]","",""
+"5e41c686d8b48a03ead30997","Mon Feb 10 2020 16:09:26 GMT-0500 (Eastern Standard Time)","false","2020-03-26T16:00:57.896Z","Sprint 2 Done","Search Bar - Should lookup without punctuation","","When Sally types a mitigation in any of the search bars, the search should not care about punctuation. It should not matter whether she types 'administrative..' or 'administrative'. Nine out of ten times, the same information about about the administrative control should appear no matter what was typed in the search bar.
+
+Acceptance Criteria:
+-When the user searches for a Physical Category, they should be able to get the same results whether they type; 'physical', 'physical....', and '.physical.'.","TM","Theresa Morris","Value: Low,Difficulty: 2","","https://trello.com/c/3woITo0d","https://trello.com/c/3woITo0d/35-search-bar-should-lookup-without-punctuation","737279","5e31d8cddb572e685106c6b2","35","3woITo0d","false","","5e31dda454c6f545022349e5,5e31d8cdaf988c41f2e83b26","","[object Object]","",""
+"5e7506b1e20abd2d4c45e0b7","Fri Mar 20 2020 14:08:49 GMT-0400 (Eastern Daylight Time)","false","2020-03-26T05:56:02.048Z","Sprint 2 Done","Web Interface - Add Listeners to Search Page","","On the search results page, when Anwyn clicks on a mitigation that is displayed, a listener needs to exist to populate the right side of the screen with the full mitigation.
+One also needs to be created so that when the page loads, it populates the left side of the screen with the data from the search entered on the index page.
+
+","TM","Theresa Morris","Value: High,Difficulty: 5","","https://trello.com/c/Kzp346eg","https://trello.com/c/Kzp346eg/107-web-interface-add-listeners-to-search-page","741375","5e31d8cddb572e685106c6b2","107","Kzp346eg","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e41cccd8420d11663c780fb","Mon Feb 10 2020 16:36:13 GMT-0500 (Eastern Standard Time)","false","2020-03-26T06:33:50.189Z","Sprint 2 Done","Web Interface - General Multicategory Search Page","","Upon completing a general search, Katina is left with potentially hundreds of results to parse through to find the result she desires.  However, she can click to refine her search, thus allowing her to select from a series of dropdown menus of category, Operating System, and Type of Mitigation to narrow her search down to all the closest results.  The search should properly update and filter 95% of the time
+
+REf: Section Tally
+
+Acceptance Criteria-
+There is a field for every category we may need to search by
+Adding paremeters narrows down the search results
+Page notifies if a parameter results in no results","","","Value: Medium,Difficulty: 3","","https://trello.com/c/AREbYht4","https://trello.com/c/AREbYht4/47-web-interface-general-multicategory-search-page","743423","5e31d8cddb572e685106c6b2","47","AREbYht4","false","","5e31dd80d4da4e1ea78d8f41,5e31d8cdaf988c41f2e83b1d","","[object Object]","",""
+"5e7506bebc7c12886deae161","Fri Mar 20 2020 14:09:02 GMT-0400 (Eastern Daylight Time)","false","2020-03-26T05:56:04.281Z","Sprint 2 Done","Web Interface - Add Listeners to Create Page","","When Melody is on the create mitigation page, various information needs to be collected and stored, to be sent to the database.  As she fills in fields, listeners must exist to collect that data and put it in the database as needed.  This should always work properly.
+
+Acceptance Criteria -
+These Listeners exist
+Create new Mitigation button actually does something when clicked.","TM","Theresa Morris","Value: High,Difficulty: 5","","https://trello.com/c/Op95KGQD","https://trello.com/c/Op95KGQD/108-web-interface-add-listeners-to-create-page","745471","5e31d8cddb572e685106c6b2","108","Op95KGQD","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e41c65eeb10615237f90f63","Mon Feb 10 2020 16:08:46 GMT-0500 (Eastern Standard Time)","false","2020-03-26T04:18:49.116Z","Sprint 2 Done","Search Bar - Should lookup without case sensitivity","","When Alicia types a mitigation in any of the search bars, it should not matter whether she types 'Administrative' or 'administrative'. Nine out of ten times, the same information about the administrative control should appear no matter what was typed in the search bar. 
+
+Acceptance Criteria:  
+-When the user searches for a Physical Category, they should be able to get the same results whether they type; 'physical', 'Physical', and 'PHySical'.","TM","Theresa Morris","Value: Medium,Difficulty: 1","","https://trello.com/c/wTGxMfdu","https://trello.com/c/wTGxMfdu/34-search-bar-should-lookup-without-case-sensitivity","753663","5e31d8cddb572e685106c6b2","34","wTGxMfdu","false","","5e31dd80d4da4e1ea78d8f41,5e31ddd72f2cc5719eda9476","","[object Object]","",""
+"5e6ae26a98ac651f76df7383","Thu Mar 12 2020 21:31:22 GMT-0400 (Eastern Daylight Time)","false","2020-03-27T21:37:41.494Z","Sprint 2 Done","DB - Adding: Author","","Once Dave has finished writing his mitigation he adds his name to the author section and it adds it to the database. The Procedure adds an author to the database consisting of first name and last name of the author.
+
+Acceptance Criteria:
+- Procedure to add author to the database.
+- Checks to ensure old data is not overwritten.","G","glenna29","Difficulty: 2,Value: Medium","","https://trello.com/c/irTZK8v0","https://trello.com/c/irTZK8v0/102-db-adding-author","786431","5e31d8cddb572e685106c6b2","102","irTZK8v0","false","","5e31d8cdaf988c41f2e83b26,5e31dd80d4da4e1ea78d8f41","","[object Object]","",""
+"5e7506d26d7c7e48b701f328","Fri Mar 20 2020 14:09:22 GMT-0400 (Eastern Daylight Time)","false","2020-03-26T05:12:12.208Z","Sprint 2 Done","Web Interface - Add Listeners to index page","","On the index page, there are two possibilities - A field on the left to search in the mitigation database, and a button on the right to create a new mitigation.  When Anwyn either enters something in the field and hits enter (or otherwise submits the data), it needs to redirect to the search results page.  If she clicks on the 'Create new Mitigation' button, it needs to take her to the create new mitigation page.  In order to do this, there need to be listeners for both of these events, so as to actually capture the action and handle it properly.
+
+Acceptance Criteria - 
+LIstener set up to take user from index to search results
+listener set up to take user from index to create new","TM","Theresa Morris","Value: High,Difficulty: 5","","https://trello.com/c/gY6h92Kt","https://trello.com/c/gY6h92Kt/109-web-interface-add-listeners-to-index-page","819199","5e31d8cddb572e685106c6b2","109","gY6h92Kt","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e6adee50b1b1460c1049fd6","Thu Mar 12 2020 21:16:21 GMT-0400 (Eastern Daylight Time)","false","2020-03-27T21:36:13.912Z","Sprint 2 Done","DB - Forking: New Author","","Darren want to expand upon a mitigation in the repository. A procedure allows Darren to use the mitigation as a parent of the new mitigation that is being added to the database. Then Darren can add the new mitigation as an extension of the previous mitigation.
+
+Acceptance Criteria:
+- Creates a new mitigation from a preexisting mitigation
+- Uses the parent id as the fork id","G, MB","glenna29, Michael Burke","Difficulty: 8,Value: Medium","","https://trello.com/c/7crcuKPG","https://trello.com/c/7crcuKPG/96-db-forking-new-author","851967","5e31d8cddb572e685106c6b2","96","7crcuKPG","false","","5e31d8cdaf988c41f2e83b20,5e31dd80d4da4e1ea78d8f41","","[object Object]","",""
+"5e72792ee9d7b1538ba6fc79","Wed Mar 18 2020 15:40:30 GMT-0400 (Eastern Daylight Time)","false","2020-03-27T21:37:19.845Z","Sprint 2 Done","DB - Searching: by Security Controls, Detailed","","When Lisa want to find a mitigation, she detailed all aspects of the mitigation. A Procedure will search for a mitigation that returns a detailed view of mitigation.
+It returns the mitigation title, description, created & modified date/times. Also it returns the system name and version as well as the security control type and category and the author.
+Acceptance Criteria:
+- must return all of the details of the mitigation","G","glenna29","Difficulty: 5,Value: Medium","","https://trello.com/c/ZC4oSolB","https://trello.com/c/ZC4oSolB/106-db-searching-by-security-controls-detailed","983039","5e31d8cddb572e685106c6b2","106","ZC4oSolB","false","","5e31d8cdaf988c41f2e83b1e,5e31dd80d4da4e1ea78d8f41","","[object Object]","",""
+"5e72791b292ece1b0a41b919","Wed Mar 18 2020 15:40:11 GMT-0400 (Eastern Daylight Time)","false","2020-03-27T21:37:29.192Z","Sprint 2 Done","DB - Searching: by Detailed","","When Megan is search a mitigation she only puts the tile or just a type and/or category the mitigation falls under. The Procedure will search for a mitigation and it will return the mitigation title, description, and security control 
+Acceptance Criteria:
+- returns just the title, description and security controls
+- will be in alphabetical order","G","glenna29","Difficulty: 5,Value: Medium","","https://trello.com/c/zcP3mcTT","https://trello.com/c/zcP3mcTT/105-db-searching-by-detailed","1048575","5e31d8cddb572e685106c6b2","105","zcP3mcTT","false","","5e31d8cdaf988c41f2e83b1e,5e31dd80d4da4e1ea78d8f41","","[object Object]","",""
+"5e6f9dc81b4c2987f0b9816d","Mon Mar 16 2020 11:39:52 GMT-0400 (Eastern Daylight Time)","false","2020-03-27T21:36:34.945Z","Sprint 2 Done","DB -Searching: by Title","","When Doug wants to search for mitigation he types in the title of a mitigation that he is looking for.  A procedure will take the title and find other mitigations with similar title and matching titles. It will return all mitigations that match the requirements.
+
+Acceptance criteria:
+-  Find title that match the search
+-  Finds similar titles to the one that was search
+-  Orders the titles in alphabetical order","G","glenna29","Difficulty: 5,Value: Medium","","https://trello.com/c/gheQIQzP","https://trello.com/c/gheQIQzP/104-db-searching-by-title","1114111","5e31d8cddb572e685106c6b2","104","gheQIQzP","false","","5e31d8cdaf988c41f2e83b1e,5e31dd80d4da4e1ea78d8f41","","[object Object]","",""
+"5e8e18505090d46d734c4455","Wed Apr 08 2020 14:30:40 GMT-0400 (Eastern Daylight Time)","false","2020-04-08T20:36:23.423Z","Sprint 3 Done","DB - Procedure Search By Mitigation ID","","As a developer, Jeff needs a way to search mitigation's by their id number in order to let the user select a mitigation to manage, and fork. Also this is used to construct the right hand of screen. The procedure takes a mitigation id as an input parameter and selects only the mitigation with a matching id number. It then returns the mitigation information and the associated system, controls, and author of the table.
+
+Acceptance Criteria:
+- Allows the searching of mitigations by their id numbers
+- Returns only matching result.
+- Returns associated data to mitigation searched.","G, MB","glenna29, Michael Burke","Difficulty: 3,Value: High","","https://trello.com/c/H56sb07E","https://trello.com/c/H56sb07E/119-db-procedure-search-by-mitigation-id","145600","5e31d8cddb572e685106c6b2","119","H56sb07E","false","","5e31d8cdaf988c41f2e83b1d,5e31d8cdaf988c41f2e83b25","","[object Object]","",""
+"5e41c3a2a678b225f2be18da","Mon Feb 10 2020 15:57:06 GMT-0500 (Eastern Standard Time)","false","2020-04-09T16:55:16.474Z","Sprint 3 Done","Adding - The user then clicks the add button to send it to the list with branching paths (i.e. database)","","Once Mike has finish writing his mitigation, he should be able to click on a button titled 'Add to Database'. This button should successfully add all of the information about his mitigation to a database of existing mitigations.
+Acceptance Criteria: 
+- Once added it displays a confirmation message to tell the user that it has been added
+- The site should return the user to the main page after the confirmation message has been displayed.
+- Database is updated with new information.","KS, TM","stansfiek0, Theresa Morris","Value: High,Difficulty: 8","","https://trello.com/c/ZZqFE5vA","https://trello.com/c/ZZqFE5vA/18-adding-the-user-then-clicks-the-add-button-to-send-it-to-the-list-with-branching-paths-ie-database","291200","5e31d8cddb572e685106c6b2","18","ZZqFE5vA","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b20","","[object Object]","",""
+"5e41c375d3234a62f562ebfb","Mon Feb 10 2020 15:56:21 GMT-0500 (Eastern Standard Time)","false","2020-04-08T19:38:01.080Z","Sprint 3 Done","Web Interface - Ability to fork","","Kirome, a security professional, is entering a mitigation for a known vulnerability.  However, her mitigation and conditions are slightly different than the ones entered in the system - this necessitates making a copy of the existing record to edit as required for the needs of the system she is using.  This would function by bringing the user to the create new mitigation page, but with the fields pre-populated with the information from the mitigation that is being forked from.  She can then edit the fields before submitting it to the mitigation database.  
+
+Acceptance Criteria
+Ability to fork off a new mitigation
+new mitigation is properly linked to the originating one in the database
+When user is directed to the create new mitigation page, the fields are pre-populated with the information from the originating mitigation.
+","KS","stansfiek0","Value: Medium,Difficulty: 8","","https://trello.com/c/NuNi9DT4","https://trello.com/c/NuNi9DT4/17-web-interface-ability-to-fork","582400","5e31d8cddb572e685106c6b2","17","NuNi9DT4","false","","5e31dd80d4da4e1ea78d8f41,5e31d8cdaf988c41f2e83b20","","[object Object]","",""
+"5e42d9881d77f91402bf348f","Tue Feb 11 2020 11:42:48 GMT-0500 (Eastern Standard Time)","false","2020-04-08T18:17:40.920Z","Sprint 3 Done","Adding - Description of Mitigation","","As a Junior Developer, Anakin then needs to add a thorough description of the steps needed to for the mitigation solution. There should be a section to add a description defining the steps and actions the user needs to take, that can handle descriptions of all lengths under 500 characters in length. This allows for future developers to easily read the steps for that particular mitigation.
+
+Acceptance Criteria:
+- Section to add description to the mitigation
+-  Adds the description/steps for the mitigation.","KS, TM","stansfiek0, Theresa Morris","Difficulty: 3,Value: Medium","","https://trello.com/c/V5a2wVsX","https://trello.com/c/V5a2wVsX/60-adding-description-of-mitigation","1164800","5e31d8cddb572e685106c6b2","60","V5a2wVsX","false","","5e31d8cdaf988c41f2e83b1d,5e31dd80d4da4e1ea78d8f41","","[object Object]","",""
+"5e42d95dce7ab75eb13246bb","Tue Feb 11 2020 11:42:05 GMT-0500 (Eastern Standard Time)","false","2020-04-08T19:37:58.413Z","Sprint 3 Done","Adding - What Operating System","","As a Developer, Kassandra needs to define which OS the mitigation occurred on if applicable. This should be done after adding category, type, and then the title of the mitigation and correspond to that data. The OS should be added without failing, unless the OS entered is over the maximum 75 allowed characters for the OS.
+
+Acceptance Criteria:
+- Section to add new OS.
+- Adds the OS, of the previously entered data.
+- OS entered doesn't exceed length reqs.","KS, TM","stansfiek0, Theresa Morris","Value: Low,Difficulty: 3","","https://trello.com/c/lSLONa6C","https://trello.com/c/lSLONa6C/59-adding-what-operating-system","1223040","5e31d8cddb572e685106c6b2","59","lSLONa6C","false","","5e31dda454c6f545022349e5,5e31d8cdaf988c41f2e83b1d","","[object Object]","",""
+"5e41c9f628334b07ce14cd8e","Mon Feb 10 2020 16:24:06 GMT-0500 (Eastern Standard Time)","false","2020-04-08T19:54:09.527Z","Sprint 3 Done","Adding -  the users logs the what operation system the mitigation is for","","Once user Mike enters the title mitigation, he is then prompted to answer which operating system he is using.  Mike should be able to use a text box to put which operating system he found the risk on and is trying to write a mitigation for. 
+Acceptance Criteria:
+- The Operating System is displayed clearly, so the users can easily find his/hers OS for the mitigation.","KS","stansfiek0","Value: Medium,Difficulty: 2","","https://trello.com/c/ygZ3caAJ","https://trello.com/c/ygZ3caAJ/43-adding-the-users-logs-the-what-operation-system-the-mitigation-is-for","1310400","5e31d8cddb572e685106c6b2","43","ygZ3caAJ","false","","5e31dd80d4da4e1ea78d8f41,5e31d8cdaf988c41f2e83b26","","[object Object]","",""
+"5e42d923bc287a8715e09955","Tue Feb 11 2020 11:41:07 GMT-0500 (Eastern Standard Time)","false","2020-04-08T18:17:36.563Z","Sprint 3 Done","Adding - Title/name of Mitigation","","Developer Kenobi then adds the mitigation title/name that corresponds to the category and type he previously entered into the section corresponding to adding the new type and category. The title/name should be entered without failing, unless the title exceeds the maximum 75 characters allowed for a title/name.
+
+Acceptance Criteria:
+- Section to add Mitigation title corresponding to entered type/cat.
+- Adds Title to DB.
+- Title doesn't exceed maximum character length reqs.","KS, TM","stansfiek0, Theresa Morris","Value: Low,Difficulty: 3","","https://trello.com/c/L5b20fCQ","https://trello.com/c/L5b20fCQ/58-adding-title-name-of-mitigation","1397760","5e31d8cddb572e685106c6b2","58","L5b20fCQ","false","","5e31dda454c6f545022349e5,5e31d8cdaf988c41f2e83b1d","","[object Object]","",""
+"5e41c5b463caf003f12acf15","Mon Feb 10 2020 16:05:56 GMT-0500 (Eastern Standard Time)","false","2020-04-02T18:12:43.687Z","Sprint 3 Done","Adding - the user press the 'add to a database' button","","As an experienced programmer, Mike wants to add a new cyber security mitigation to a list of another pre-existing mitigations. To do this he should be able to press an 'add to database' button that will correctly add the information to a database.
+Acceptance Criteria:
+- The user should be able to successfully press a button that sends the user to add new mitigation page.","TM","Theresa Morris","Value: High,Difficulty: 5","","https://trello.com/c/LF6TM7R2","https://trello.com/c/LF6TM7R2/30-adding-the-user-press-the-add-to-a-database-button","1863680","5e31d8cddb572e685106c6b2","30","LF6TM7R2","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e41c6d9a28a1a897edf896f","Mon Feb 10 2020 16:10:49 GMT-0500 (Eastern Standard Time)","false","2020-04-08T19:56:15.251Z","Sprint 3 Done","Adding - The user then adds a detail description of the mitigation they would like to add the list of mitigations","","When user Eric logs in mitigation, he should then add a description of his mitigation to a text box so the future users can have more details as to what Eric is inputting. Every time the user comes to this page, 9 out of 10 times the large text box will be there for them. 
+Acceptance Criteria: 
+-The description is displayed in a way so users can easily read and understand the details of the mitigation. ","KS","stansfiek0","Value: High,Difficulty: 2","","https://trello.com/c/vCSyxw9n","https://trello.com/c/vCSyxw9n/37-adding-the-user-then-adds-a-detail-description-of-the-mitigation-they-would-like-to-add-the-list-of-mitigations","2093056","5e31d8cddb572e685106c6b2","37","vCSyxw9n","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b26","","[object Object]","",""
+"5e41c500c3b44603401586ba","Mon Feb 10 2020 16:02:56 GMT-0500 (Eastern Standard Time)","false","2020-04-08T19:56:47.650Z","Sprint 3 Done","Adding - The user, after selecting the type and category, adds the title to their specific mitigation","","After user Mike selects the category that his mitigation is in, times he should be able to add a title to his mitigation that gives other users a clear and concise description on what his mitigation is trying to achieve. 
+Acceptance Criteria:
+- The title is clear and understandable to all users","KS","stansfiek0","Value: High,Difficulty: 2","","https://trello.com/c/ihkxUFpR","https://trello.com/c/ihkxUFpR/25-adding-the-user-after-selecting-the-type-and-category-adds-the-title-to-their-specific-mitigation","2207744","5e31d8cddb572e685106c6b2","25","ihkxUFpR","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b26","","[object Object]","",""
+"5e42da0d2ac200387caa7726","Tue Feb 11 2020 11:45:01 GMT-0500 (Eastern Standard Time)","false","2020-04-02T18:12:53.282Z","Sprint 3 Done","Adding - New Mitigation Add Button","","As a Developer, Zeus as added the type, category, title, OS, and description in the appropriate sections then should have a button to add all this information to the database. This button should add all the previously entered data to the database 9/10 times.
+
+Acceptance Criteria:
+- Button when pressed adds all data to the DB.
+- The data integrity is kept.","TM","Theresa Morris","Value: Medium,Difficulty: 8","","https://trello.com/c/D6Y2ayNw","https://trello.com/c/D6Y2ayNw/62-adding-new-mitigation-add-button","2322432","5e31d8cddb572e685106c6b2","62","D6Y2ayNw","false","","5e31dd80d4da4e1ea78d8f41,5e31d8cdaf988c41f2e83b20","","[object Object]","",""
+"5e695424cda02214461c9445","Wed Mar 11 2020 17:12:04 GMT-0400 (Eastern Daylight Time)","false","2020-04-08T14:46:47.518Z","Sprint 3 Done","Web Interface - Login link at top of screen","","When user David wants to log into the web page in order to create a mitigation, he should be able to click on a link on the top of the screen which allows him to log in. The link should be on the top right hand side of the screen and should take David to the log in screen. 
+Acceptance Criteria: 
+-Link on the top right on the screen that says 'Log in'
+-The link successfully brings the user to the log in page. ","TM","Theresa Morris","Value: High,Difficulty: 1","","https://trello.com/c/UvdYPHxz","https://trello.com/c/UvdYPHxz/92-web-interface-login-link-at-top-of-screen","2551808","5e31d8cddb572e685106c6b2","92","UvdYPHxz","false","","5e31d8cdaf988c41f2e83b25,5e31ddd72f2cc5719eda9476","","[object Object]","",""
+"5e69532c50204c2f5c4a8359","Wed Mar 11 2020 17:07:56 GMT-0400 (Eastern Daylight Time)","false","2020-04-08T14:46:53.250Z","Sprint 3 Done","Web Interface - Login before create Mitigation","","User Sam wants to create a mitigation. However, each mitigation is linked to a user, so before creating the mitigation he must log in to his account. To log in, he must go to the login page and enter his credentials in order to successfully create the mitigation that he wished to. 
+Acceptance Criteria: 
+-A login page that allows the users to enter their credentials
+-That login page successfully authenticating whether or not the user is in the system, thus allowing them to either create the mitigation or try to log in again. ","TM","Theresa Morris","Value: Medium,Difficulty: 3","","https://trello.com/c/LGwc96sM","https://trello.com/c/LGwc96sM/90-web-interface-login-before-create-mitigation","2609152","5e31d8cddb572e685106c6b2","90","LGwc96sM","false","","5e31dd80d4da4e1ea78d8f41,5e31d8cdaf988c41f2e83b1d","","[object Object]","",""
+"5e69541a6eda232d970f2a46","Wed Mar 11 2020 17:11:54 GMT-0400 (Eastern Daylight Time)","false","2020-04-08T14:46:59.196Z","Sprint 3 Done","Web Interface - If click create mitigation while not logged in, bring to login page","","User Eric wants to create a mitigation in the database, however he cannot do so unless logging in first. If Eric attempts to create a mitigation and he is not logged into the page as a user, he will immediately be directed to a page that allows him to log in. This is because when a user  creates a mitigation, the user that they are logged in as is tied to that mitigation, so the user must first log in. 
+Acceptance Criteria:
+-Users can not create a mitigation unless they are logged into an account.
+-If they attempt to create a mitigation they will be sent to the login page. ","TM","Theresa Morris","Value: Medium,Difficulty: 1","","https://trello.com/c/1HRngnDF","https://trello.com/c/1HRngnDF/91-web-interface-if-click-create-mitigation-while-not-logged-in-bring-to-login-page","2637824","5e31d8cddb572e685106c6b2","91","1HRngnDF","false","","5e31dd80d4da4e1ea78d8f41,5e31ddd72f2cc5719eda9476","","[object Object]","",""
+"5e7517d88f797125a6a61607","Fri Mar 20 2020 15:22:00 GMT-0400 (Eastern Daylight Time)","false","2020-04-08T20:44:34.206Z","Sprint 3 Done","Web Interface - Login before editing","","User Andrew wants to edit a mitigation. However, each mitigation is linked to a user, so before edit the mitigation he must log in to his account to make sure the mitigation is actually his. To log in, he must go to the login page and enter his credentials in order to successfully edit the mitigation that he wished to. 
+Acceptance Criteria: 
+-A login page that allows the users to enter their credentials
+-That login page successfully authenticating whether or not the user is in the system, thus allowing them to either edit the mitigation or try to log in again. ","TM","Theresa Morris","Difficulty: 3,Value: High","","https://trello.com/c/tQA359aP","https://trello.com/c/tQA359aP/110-web-interface-login-before-editing","2666496","5e31d8cddb572e685106c6b2","110","tQA359aP","false","","5e31d8cdaf988c41f2e83b1d,5e31d8cdaf988c41f2e83b25","","[object Object]","",""
+"5e41c2a3ca8f656ca26db25b","Mon Feb 10 2020 15:52:51 GMT-0500 (Eastern Standard Time)","false","2020-04-02T18:13:03.284Z","Sprint 3 Done","Adding - Selecting one mitigation type","","When user Molly is directed to the 'add a new mitigation page', she has the option to select the type of mitigation she wants to add. The list should display all of the types that are in the system with details on what exactly the type is. 
+Acceptance Criteria:
+- The list of types are chosen from a drop down search box
+- each type is detailed on exactly what they are","TM","Theresa Morris","Value: High,Difficulty: 3","","https://trello.com/c/nx7LvL5I","https://trello.com/c/nx7LvL5I/11-adding-selecting-one-mitigation-type","2781184","5e31d8cddb572e685106c6b2","11","nx7LvL5I","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b1d","","[object Object]","",""
+"5e41c2dd0e066349d03d9acd","Mon Feb 10 2020 15:53:49 GMT-0500 (Eastern Standard Time)","false","2020-04-02T18:13:09.692Z","Sprint 3 Done","Adding - after selecting one type of mitigation, the user then selects one categories","","After user Alexis selects the type of mitigation she wants to add, a drop down menu will appear of the different categories of mitigation. 9 out of 10 times, Alexis should be able to move her mouse over the list of categories and be able to select which category she wants to add to her mitigation.  
+Acceptance Criteria:
+- The categories are selected from a drop down search box.
+- Each category must be detailed .
+-The user should be able to successfully click on the category. ","TM","Theresa Morris","Value: High,Difficulty: 3","","https://trello.com/c/9Mabvtq8","https://trello.com/c/9Mabvtq8/15-adding-after-selecting-one-type-of-mitigation-the-user-then-selects-one-categories","2846720","5e31d8cddb572e685106c6b2","15","9Mabvtq8","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b1d","","[object Object]","",""
+"5e6ae29c210e454109ad4d50","Thu Mar 12 2020 21:32:12 GMT-0400 (Eastern Daylight Time)","false","2020-04-09T16:56:08.016Z","Sprint 3 Done","DB - Adding: Risk table","","Christopher's mitigation had its title, description, security controls, and systems have be successfully added to the database. Now the data has to be connect so when someone wants to find Christopher's mitigation it gets all the correct information. A procedure must add the id numbers of the newly added data to the risk table.
+
+Acceptance Criteria:
+ - The data was added to there respected tables successfully
+ - The ids for the newly added data placed in the risk table ","G, MB","glenna29, Michael Burke","Difficulty: 1,Value: High","","https://trello.com/c/KnsQOo3z","https://trello.com/c/KnsQOo3z/103-db-adding-risk-table","2945024","5e31d8cddb572e685106c6b2","103","KnsQOo3z","false","","5e31ddd72f2cc5719eda9476,5e31d8cdaf988c41f2e83b25","","[object Object]","",""
+"5e42d6a1f5493c8ae182aeab","Tue Feb 11 2020 11:30:25 GMT-0500 (Eastern Standard Time)","false","2020-04-09T16:56:12.952Z","Sprint 3 Done","Adding - New Category","","As a Developer, Tony needs to add a description to the new category defining the new category, when adding a new mitigation category. This allows that all future developers have a clear grasp of the new category added to the DB. This entered category should be put into the database 100% of the time, unless there is already the same category in the DB.
+
+Acceptance Criteria:
+- Section to add detailed description for future users.
+- Clear description of a new Category.
+- Does not allow the same category to be overwritten.","MB","Michael Burke","Value: Medium,Difficulty: 5","","https://trello.com/c/wy1HTXvP","https://trello.com/c/wy1HTXvP/56-adding-new-category","2957312","5e31d8cddb572e685106c6b2","56","wy1HTXvP","false","","5e31dd80d4da4e1ea78d8f41,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e7e714cb113f215b91516e8","Fri Mar 27 2020 17:34:04 GMT-0400 (Eastern Daylight Time)","false","2020-04-09T16:56:17.598Z","Sprint 3 Done","DB - Editing a Mitigation: Author","","Andrew just added a new mitigation to the data base and notice that he either typed too quickly or one of the keys didn't work and his last name was misspelled. A procedure need to take a person first and/or last name and update the database.
+
+Acceptance Criteria:
+- Updates the person first and last name if need","MB, G","Michael Burke, glenna29","Value: High,Difficulty: 2","","https://trello.com/c/4lXoWISb","https://trello.com/c/4lXoWISb/114-db-editing-a-mitigation-author","2958848","5e31d8cddb572e685106c6b2","114","4lXoWISb","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b26","","[object Object]","",""
+"5e7fa41376079d4e002e7d39","Sat Mar 28 2020 15:22:59 GMT-0400 (Eastern Daylight Time)","false","2020-04-09T16:56:23.610Z","Sprint 3 Done","DB - Editing: Risk","","Glanville wants to most or all parts of a mitigation. She noticed that there were a few errors with wording, incorrect data, grammar/spelling, etc. A procedure would take all the data that needs to be changed and update accordingly. The date will show when Glanville updated the data.
+
+Acceptance Criteria:
+- Update most or all the data for the mitigation
+- Editing a mitigation does not change the author but can change if need
+- Shows a modified at date for the mitigation ","MB, G","Michael Burke, glenna29","Value: High,Difficulty: 5","","https://trello.com/c/vTq5It9x","https://trello.com/c/vTq5It9x/117-db-editing-risk","2959232","5e31d8cddb572e685106c6b2","117","vTq5It9x","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e7e5edf5579d17fc98064c7","Fri Mar 27 2020 16:15:27 GMT-0400 (Eastern Daylight Time)","false","2020-04-09T16:55:58.889Z","Sprint 3 Done","DB - Editing a Mitigation: Title and Description","","Elaine noticed that a mitigations title and description needs to be fixed. This could be either due to it not properly representing the risk that it is trying to mitigate, spelling/ grammar mistakes form the original author, or the mitigation being outdated. A procedure needs to be in place where Elaine can write a new title, a new description, or both.  Also should show when Elaine modified the mitigation.
+
+Acceptance Criteria:
+- Updates a title, description, or both
+- Updates to show a modified at date","MB, G","Michael Burke, glenna29","Value: High,Difficulty: 2","","https://trello.com/c/woO9lCCm","https://trello.com/c/woO9lCCm/111-db-editing-a-mitigation-title-and-description","2959616","5e31d8cddb572e685106c6b2","111","woO9lCCm","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b26","","[object Object]","",""
+"5e7e70fa6eddd25544454100","Fri Mar 27 2020 17:32:42 GMT-0400 (Eastern Daylight Time)","false","2020-04-09T16:56:29.356Z","Sprint 3 Done","DB - Editing a Mitigation: System","","Sam sees that mitigation has wrong operating system and version number. Sam can either change the operating system, version number, or both depends on the situation. A procedure get the mitigation that needs to be edited, then updates what needs to changed. Shows a new modified date for the mitigation.
+
+Acceptance Criteria:
+- Updates OS, version, or both
+- Updates the date it was modified","MB, G","Michael Burke, glenna29","Value: High,Difficulty: 2","","https://trello.com/c/vQhNZDpu","https://trello.com/c/vQhNZDpu/112-db-editing-a-mitigation-system","2960384","5e31d8cddb572e685106c6b2","112","vQhNZDpu","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b26","","[object Object]","",""
+"5e7e7117413fea137c260af4","Fri Mar 27 2020 17:33:11 GMT-0400 (Eastern Daylight Time)","false","2020-04-09T16:56:35.609Z","Sprint 3 Done","DB - Editing a Mitigation: Security Controls","","When Tommy is looking up mitigations he notices that a set of security controls are set incorrectly. Tommy wants to fix them because either the mitigation is label incorrectly or there are spelling/grammar mistakes. A procedure should data just one or both of the security controls and show a new modified at date.
+
+Acceptance Criteria:
+- Checks to see if either type or category needs to be updated
+- Updates the type, category, or both
+- Updates the modified at to the current date and time","MB, G","Michael Burke, glenna29","Difficulty: 2,Value: High","","https://trello.com/c/L9uojVJo","https://trello.com/c/L9uojVJo/113-db-editing-a-mitigation-security-controls","2963456","5e31d8cddb572e685106c6b2","113","L9uojVJo","false","","5e31d8cdaf988c41f2e83b26,5e31d8cdaf988c41f2e83b25","","[object Object]","",""
+"5e42d708d7e58e4573701f58","Tue Feb 11 2020 11:32:08 GMT-0500 (Eastern Standard Time)","false","2020-04-09T16:56:41.534Z","Sprint 3 Done","Adding - New Type","","As a Developer, Duke needs to add a description to the newly added type to the database, when entering a new mitigation not on the DB, This allows that all future developers to have a clear grasp of what the new type. This type should be entered into the Database 100% of time, unless the same type already exist in the DB.
+
+Acceptance Criteria:
+- Section to add a detailed description to define the type.
+- Clear description of the new type.
+- Does not allow the type to be overwritten.","MB","Michael Burke","Value: Medium,Difficulty: 5","","https://trello.com/c/sc1FvCot","https://trello.com/c/sc1FvCot/57-adding-new-type","2969600","5e31d8cddb572e685106c6b2","57","sc1FvCot","false","","5e31dd80d4da4e1ea78d8f41,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e7e72b8c026c80f5e2d6ce2","Fri Mar 27 2020 17:40:08 GMT-0400 (Eastern Daylight Time)","false","2020-04-08T18:39:38.682Z","Sprint 3 Done","DB - Adding: Mitigation Author Table","","The risk table has added all connecting to other tables successfully. The author, Stephen, first and last name is added to the correct table and is connected to the table that relates the a mitigation to its Author, Stephen.
+A Procedure gets the mitigation and the author and connects them together.
+
+Acceptance Criteria:
+- Gets the mitigation that the author has newly written
+- Adds the authors information to its correct table
+- Connects the Mitigation and Author tables together ","G, MB","glenna29, Michael Burke","Value: High,Difficulty: 1","","https://trello.com/c/3XGCkzxM","https://trello.com/c/3XGCkzxM/116-db-adding-mitigation-author-table","2994176","5e31d8cddb572e685106c6b2","116","3XGCkzxM","false","","5e31d8cdaf988c41f2e83b25,5e31ddd72f2cc5719eda9476","","[object Object]","",""
+"5e41dd68758ee4753089f342","Mon Feb 10 2020 17:47:04 GMT-0500 (Eastern Standard Time)","false","2020-04-08T18:17:53.538Z","Sprint 3 Done","Date - date for query","","As a developer, Tommy recently added a mitigation that contains a mistake and would like a way to search for recently added mitigation's to quickly edit his mistakes. 9 out of 10 times he should be able to successfully sort through all of the queries from the most recent date to the oldest date. 
+Acceptance Criteria:
+-The system should successfully list the dates that the queries were made. 
+- Should be able to search DB for recently changed entries.","TM, KS","Theresa Morris, stansfiek0","Value: Medium,Difficulty: 5","","https://trello.com/c/fjxH65Pz","https://trello.com/c/fjxH65Pz/50-date-date-for-query","3080192","5e31d8cddb572e685106c6b2","50","fjxH65Pz","false","","5e31dd80d4da4e1ea78d8f41,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e41c59e189f1a2b81be4767","Mon Feb 10 2020 16:05:34 GMT-0500 (Eastern Standard Time)","false","2020-04-01T19:16:14.481Z","Sprint 3 Done","Search Bar - User able to click Dropdown entries to go to corresponding webpage","","After typing into the search bar, Timothy sees the selection (either a matching risk or mitigation) in the search bars dropdown menu. He then left clicks on the selection he wants, and it opens up to the selections corresponding page every time on the web interface.
+
+Acceptance Criteria:
+- The user will be able to select any of the dropdown options by clicking, taking them to the corresponding page of that selection
+- The selection should change color when hovered over, to make it easy to see what will be selected","KS","stansfiek0","Value: High,Difficulty: 2","","https://trello.com/c/mgnTCB62","https://trello.com/c/mgnTCB62/29-search-bar-user-able-to-click-dropdown-entries-to-go-to-corresponding-webpage","3084288","5e31d8cddb572e685106c6b2","29","mgnTCB62","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b26","","[object Object]","",""
+"5e7e72a0c0861a2b21e8f262","Fri Mar 27 2020 17:39:44 GMT-0400 (Eastern Daylight Time)","false","2020-04-02T18:13:20.304Z","Sprint 3 Done","DB - Search: Most Recent","","Reasoner just started working at a cyber security job and wants to see what new mitigations where just added. A procedure needs to get the 25 most recent mitigations with there titles and descriptions. Order from most to least recent.
+
+Acceptance Criteria:
+- Gets the 25 most recent mitigations
+- Orders the mitigations from most to least resent","TM","Theresa Morris","Value: High,Difficulty: 1","","https://trello.com/c/6LZ8BMvf","https://trello.com/c/6LZ8BMvf/115-db-search-most-recent","3092480","5e31d8cddb572e685106c6b2","115","6LZ8BMvf","false","","5e31d8cdaf988c41f2e83b25,5e31ddd72f2cc5719eda9476","","[object Object]","",""
+"5e6ae182f60925119618bfe8","Thu Mar 12 2020 21:27:30 GMT-0400 (Eastern Daylight Time)","false","2020-04-08T18:50:14.533Z","Sprint 3 Done","DB - Procedure Adding Mitigation with new data","","When adding to the database The Nameless King puts in the title, description, security controls, system, and author. Then several procedures will add the security controls, system, and author. Then two more procedures will take the keys and add them into the risk table. 
+
+Acceptance Criteria
+- Procedures that add the system, sec controls, and author.
+- Procedure then takes ids of system, security controls and author, and adds them to the risk table as foreign keys","G, MB","glenna29, Michael Burke","Value: Medium,Difficulty: 8","","https://trello.com/c/FNhgShv1","https://trello.com/c/FNhgShv1/98-db-procedure-adding-mitigation-with-new-data","3436544","5e31d8cddb572e685106c6b2","98","FNhgShv1","false","","5e31dd80d4da4e1ea78d8f41,5e31d8cdaf988c41f2e83b20","","[object Object]","",""
+"5e8e196da97c1743195c3732","Wed Apr 08 2020 14:35:25 GMT-0400 (Eastern Daylight Time)","false","2020-04-08T19:03:00.600Z","Sprint 3 Done","DB - Procedure Adding Mitigation with existing data","","When adding to the database The Nameless King puts in the title, description, security controls, system, and author. Then several procedures will select the security controls, system, and author. Then two more procedures will take the keys and add them into the risk table. 
+
+Acceptance Criteria
+- Procedures that selects the system, sec controls, and author.
+- Procedure then takes ids of system, security controls and author, and adds them to the risk table as foreign keys","G","glenna29","Difficulty: 8,Value: High","","https://trello.com/c/6GnT25RD","https://trello.com/c/6GnT25RD/122-db-procedure-adding-mitigation-with-existing-data","3469312","5e31d8cddb572e685106c6b2","122","6GnT25RD","false","","5e31d8cdaf988c41f2e83b20,5e31d8cdaf988c41f2e83b25","","[object Object]","",""
+"5e8e18b432507e7c0c1d1aee","Wed Apr 08 2020 14:32:20 GMT-0400 (Eastern Daylight Time)","false","2020-04-08T19:02:44.517Z","Sprint 3 Done","DB - Procedure Display Children","","When viewing a mitigation user want to see the child mitigation's of the parent mitigation. So as a dev Johnny adds a procedure to display the parent mitigation first and then display all the child mitigations. The procedure will take in the parent mitigtions Id number as a parameter. The procedure will then display the parent mitigation, and all child mitigations of the parent. Also the procedure will show all associated info including system, security controls, and author of every mitigation.
+
+Acceptance Criteria:
+- Allows user to enter mitigation ID 
+- Returns the parent and child mitigations, in ordered list.
+- Shows associated data.
+ ","G, MB","glenna29, Michael Burke","Difficulty: 8,Value: High","","https://trello.com/c/PF0x1yTa","https://trello.com/c/PF0x1yTa/120-db-procedure-display-children","3567616","5e31d8cddb572e685106c6b2","120","PF0x1yTa","false","","5e31d8cdaf988c41f2e83b20,5e31d8cdaf988c41f2e83b25","","[object Object]","",""
+"5e8e18e38b6ba57b461c0c9c","Wed Apr 08 2020 14:33:07 GMT-0400 (Eastern Daylight Time)","false","2020-04-08T19:08:48.703Z","Sprint 3 Done","DB - Foreign Key Delete Cascading","","When managing the mitigation repository a admin may delete an out of date mitigation from the database. When this happens the associated linking tables should also be updated as to not leave bad data. So a developer, Dom sets the foreign keys to on delete cascading. This however should never delete items from the system, author, and security control tables.
+
+Acceptance Criteria:
+- Both foreign keys need are set to cascade on delete.
+- Tables system,security controls, author should not be affected.
+","G, MB","glenna29, Michael Burke","Difficulty: 1,Value: Medium","","https://trello.com/c/pnBUdB93","https://trello.com/c/pnBUdB93/121-db-foreign-key-delete-cascading","3633152","5e31d8cddb572e685106c6b2","121","pnBUdB93","false","","5e31ddd72f2cc5719eda9476,5e31dd80d4da4e1ea78d8f41","","[object Object]","",""
+"5e9f59ebd1d8952b5d90234f","Tue Apr 21 2020 16:39:07 GMT-0400 (Eastern Daylight Time)","false","2020-04-22T13:58:15.683Z","Sprint 4 Done","DB - Upgrade mySQL","","In order to add roles to the database, the database needed to be running on mysql 8.0. Previous versions of mysql do not have roles and as such roles and the procedure to add new users would not work.
+
+Acceptance Criteria:
+-Update to mysql 8.0","TM, MB, G, KS","Theresa Morris, Michael Burke, glenna29, stansfiek0","Difficulty: 8,Value: High","","https://trello.com/c/yOJJqqJ2","https://trello.com/c/yOJJqqJ2/131-db-upgrade-mysql","24575.875","5e31d8cddb572e685106c6b2","131","yOJJqqJ2","false","","5e31d8cdaf988c41f2e83b20,5e31d8cdaf988c41f2e83b25","","[object Object]","",""
+"5e431d044b866231934d0309","Tue Feb 11 2020 16:30:44 GMT-0500 (Eastern Standard Time)","false","2020-04-23T16:19:29.408Z","Sprint 4 Done","Framework - Identifying Directive Type","","As a security professional, Kristen needs a way to figure out what a directive control type consists of and to classify at least 10 different types of directive mitigations.
+
+Acceptance Criteria:
+-Provide a better understanding of directive security types.
+-Generate an outline for users to follow when adding a security type. ","MB","Michael Burke","Value: High,Difficulty: 8","","https://trello.com/c/Jy58FLLK","https://trello.com/c/Jy58FLLK/65-framework-identifying-directive-type","27647.859375","5e31d8cddb572e685106c6b2","65","Jy58FLLK","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b20","","[object Object]","",""
+"5e43448aa92f444970bf25a2","Tue Feb 11 2020 19:19:22 GMT-0500 (Eastern Standard Time)","false","2020-04-23T16:21:18.707Z","Sprint 4 Done","Time - Time for query","","As a Developer, Peter wants to see the time a mitigation was entered/revised in the Mitigation Repository. There should be a way to search for a query by the time that it was made. The system should successfully list the time that the query was made 9 out of 10 of the times. 
+
+Acceptance Criteria:
+-The system should successfully list the time that the query was made. ","MB","Michael Burke","Value: Low,Difficulty: 5","","https://trello.com/c/TwMC8mwL","https://trello.com/c/TwMC8mwL/70-time-time-for-query","29183.8515625","5e31d8cddb572e685106c6b2","70","TwMC8mwL","false","","5e31dda454c6f545022349e5,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e431d7cca3e2a0265b12a98","Tue Feb 11 2020 16:32:44 GMT-0500 (Eastern Standard Time)","false","2020-04-23T16:19:20.353Z","Sprint 4 Done","Framework - Identifying Recovery Type","","As a security professional, Andrew needs a way to figure out what a recovery control type consists of and to classify at least 10 different types of recovery mitigations.
+
+Acceptance Criteria:
+-Provide a better understanding of recovery security types. 
+-Generate an outline for users to follow when adding a recovery type. ","MB","Michael Burke","Value: High,Difficulty: 8","","https://trello.com/c/B1OPiVn5","https://trello.com/c/B1OPiVn5/68-framework-identifying-recovery-type","30719.84375","5e31d8cddb572e685106c6b2","68","B1OPiVn5","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b20","","[object Object]","",""
+"5e6adf225425c215ab2f21f5","Thu Mar 12 2020 21:17:22 GMT-0400 (Eastern Daylight Time)","false","2020-04-23T16:18:52.584Z","Sprint 4 Done","DB - Searching: Fuzzy Data","","Miranda wants to search for a mitigation but she isn't quite sure what the exact title is. Once she enters the title and sends it to be searched, key words are checked with list of words that are similar in spelling and meaning. If one or many key word matches one of the words in the list then it finds similar mitigations that have most or some of the key words in the title
+
+Acceptance Criteria
+ - Finds key words in the title
+ - Finds mitigations that has one or many key words in its title
+ - Displays mitigations from most to least accurate ","G, MB","glenna29, Michael Burke","Value: Medium,Difficulty: 5","","https://trello.com/c/8ebOobjx","https://trello.com/c/8ebOobjx/97-db-searching-fuzzy-data","36863.8125","5e31d8cddb572e685106c6b2","97","8ebOobjx","false","","5e31dd80d4da4e1ea78d8f41,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e9f55ac6a5b02441e1f8c19","Tue Apr 21 2020 16:21:00 GMT-0400 (Eastern Daylight Time)","false","2020-04-23T16:19:12.505Z","Sprint 4 Done","DB - Procedure Add New Users","","As a developer, Dave wants to add new users to the database using a procedure call. The procedure should create a new user, and then assign the user a role according to what role they are. Then the procedure needs to set the users default role to the role that was assigned, or they will not be granted any permissions. The inputs would be the user name, password, and role of the user. If the user does not have permissions to run the procedure, it will not run. Similarly if the user already exist the procedure will fail.
+
+
+Acceptance Criteria:
+- Create New User, if doesn't exist.
+- Assign Role to new user.
+- Set new users's default role.","G, MB","glenna29, Michael Burke","Difficulty: 13,Value: High","","https://trello.com/c/jWwJgHl9","https://trello.com/c/jWwJgHl9/130-db-procedure-add-new-users","39935.796875","5e31d8cddb572e685106c6b2","130","jWwJgHl9","false","","5e31d8cdaf988c41f2e83b1f,5e31d8cdaf988c41f2e83b25","","[object Object]","",""
+"5e9f55966db9e27499e73ea6","Tue Apr 21 2020 16:20:38 GMT-0400 (Eastern Daylight Time)","false","2020-04-23T16:19:03.078Z","Sprint 4 Done","DB - Roles","","As a developer, Mike wants to add a new users in predefined roles representing their privilege levels in the database. The roles would be granted privileges with principle of least privilege. The three roles that could be given to users are, starting from gen_user which has only select and insert privileges. The admin user would have select, insert, update, and delete privileges. The dev_user would have full perms on the database schema, note no perms in any other database.
+
+Acceptance Criteria: 
+-Roles are granted privileges according to the Principle of Least Privilege.
+- Roles allow new users to performs tasks according to their permissions.","G, MB","glenna29, Michael Burke","Difficulty: 3,Value: High","","https://trello.com/c/2fif6RHB","https://trello.com/c/2fif6RHB/129-db-roles","43007.78125","5e31d8cddb572e685106c6b2","129","2fif6RHB","false","","5e31d8cdaf988c41f2e83b1d,5e31d8cdaf988c41f2e83b25","","[object Object]","",""
+"5e95e65b469fca8ba6a6c0b6","Tue Apr 14 2020 12:35:39 GMT-0400 (Eastern Daylight Time)","false","2020-04-20T20:44:46.761Z","Sprint 4 Done","Web Interface - Delete Mitigation","","When admin Madison is viewing a mitigation's' individual page, she finds that there is a mitigation that does not belong on the page.  On that page, there is a button she clicks to delete the mitigation, whereupon she is brought to a page that confirms that she wants to successfully delete the mitigation.  This page will have the information about the mitigation and will have the options of whehter or not she would like to delete it or not. When she confirms the deletion, the mitigation information is the successfully deleted from the database. 
+
+
+Acceptance Criteria:
+Delete mitigation button brings admin to page that they must confirm their decision. 
+Successfully deletes the mitigation from the database. 
+","KS","stansfiek0","Value: High,Difficulty: 8","","https://trello.com/c/EmXWqiGg","https://trello.com/c/EmXWqiGg/127-web-interface-delete-mitigation","49151.75","5e31d8cddb572e685106c6b2","127","EmXWqiGg","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b20","","[object Object]","",""
+"5e95e8728b690d8a939eb5c1","Tue Apr 14 2020 12:44:34 GMT-0400 (Eastern Daylight Time)","false","2020-04-16T19:40:31.909Z","Sprint 4 Done","Web Interface - Login before delete mitigation","","Admin Sam wants to delete a mitigation. However, only admins have the ability to delete mitigations, so before deleting the mitigation he must log in to his admin account. To log in, he must go to the login page and enter his credentials in order to successfully delete the mitigation that he wished to. 
+Acceptance Criteria: 
+-If the user is not logged in when they create 'delete mitigation', they are directed to the log in page. 
+-A login page that allows the users to enter their credentials
+-That login page successfully authenticating whether or not the user is in the system, thus allowing them to either create the mitigation or try to log in again. ","KS, TM","stansfiek0, Theresa Morris","Value: High,Difficulty: 3","","https://trello.com/c/wBNih2HY","https://trello.com/c/wBNih2HY/128-web-interface-login-before-delete-mitigation","98303.5","5e31d8cddb572e685106c6b2","128","wBNih2HY","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b1d","","[object Object]","",""
+"5e4318f8381e3b10369d0882","Tue Feb 11 2020 16:13:28 GMT-0500 (Eastern Standard Time)","false","2020-04-23T15:58:08.746Z","Sprint 4 Done","Web Interface - Display mitigations by Category","","Asher, a security consultant, is searching for all mitigations by a certain categorization, such as technical, physical, or administrative.  She clicks on a button on the main mitigation listing which filters the listing by categorization type
+
+Acceptance Criteria -
+When link is clicked from main mitigation listing, runs a search for all mitigations of the relevant type and displays them.","TM","Theresa Morris","Value: Medium,Difficulty: 2","","https://trello.com/c/BMmmXeaP","https://trello.com/c/BMmmXeaP/64-web-interface-display-mitigations-by-category","147455.25","5e31d8cddb572e685106c6b2","64","BMmmXeaP","false","","5e31dd80d4da4e1ea78d8f41,5e31d8cdaf988c41f2e83b26","","[object Object]","",""
+"5e91ed123458932cd681980c","Sat Apr 11 2020 12:15:14 GMT-0400 (Eastern Daylight Time)","false","2020-04-12T03:08:29.320Z","Sprint 4 Done","Forking - Importing information from the database to populate text boxes.","","Drake, a user on the system, would like to fork an already existing mitigation. To do this, he will need to go to the 'fork a mitigation' page. When he is redirected to the page, the information in the text boxes will already be populated with information from the database, with the exact name in the name field, title in the title field, and so on.  
+Acceptance Criteria: 
+-All information in the text boxes will be pre-populated with information from the database.
+-The information will correctly correspond to the exact mitigation that the user would like to fork. ","KS, TM","stansfiek0, Theresa Morris","Value: High,Difficulty: 5","","https://trello.com/c/Goblpplw","https://trello.com/c/Goblpplw/125-forking-importing-information-from-the-database-to-populate-text-boxes","196607","5e31d8cddb572e685106c6b2","125","Goblpplw","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e42f8cd00dd491c544bba1c","Tue Feb 11 2020 13:56:13 GMT-0500 (Eastern Standard Time)","false","2020-04-14T17:30:56.360Z","Sprint 4 Done","Web Interface - Mitigation Page Display","","When Arina goes to a mitigation from a successful search, she is presented with a display that contains the Category of the mitigation, the steps to mitigate the breech, the operating system these steps pertain to, a link to all known forks of this mitigation, and buttons for editing the information.  Furthermore, this all can be viewed within the search results page, for the ease of checking multiple mitigations
+
+Acceptance Criteria -
+When a link is clicked to view a mitigation in more detail, it opens the page on the right hand side of the screen.
+Fork button is there and works
+Edit button is there and works","KS, TM","stansfiek0, Theresa Morris","Value: High,Difficulty: 3","","https://trello.com/c/io4CLvZB","https://trello.com/c/io4CLvZB/63-web-interface-mitigation-page-display","2666496","5e31d8cddb572e685106c6b2","63","io4CLvZB","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b1d","","[object Object]","",""
+"5e42d3d6603e5b7ab34e150e","Tue Feb 11 2020 11:18:30 GMT-0500 (Eastern Standard Time)","false","2020-04-11T16:18:40.186Z","Sprint 4 Done","Adding -  when logging the mitigation a spell checker and grammar program is making sure for any possible errors","","As a Junior Developer, Xinu frequently makes spelling and grammar mistakes when writing the description of the mitigation. Thus there should be a grammar/spellcheck for the description that is 90% correct in detecting errors.
+
+Acceptance Criteria: 
+- Grammar/Spellcheck for description","TM","Theresa Morris","Value: Low,Difficulty: 1","","https://trello.com/c/80dBa7IL","https://trello.com/c/80dBa7IL/52-adding-when-logging-the-mitigation-a-spell-checker-and-grammar-program-is-making-sure-for-any-possible-errors","2764800","5e31d8cddb572e685106c6b2","52","80dBa7IL","false","","5e31dda454c6f545022349e5,5e31ddd72f2cc5719eda9476","","[object Object]","",""
+"5e434de455de7c01dbaf4a9b","Tue Feb 11 2020 19:59:16 GMT-0500 (Eastern Standard Time)","false","2020-04-15T21:04:59.948Z","Sprint 4 Done","Risk- Display all risks for mitigation","","Bruce wants to be able to see all of the risks for his desired mitigation. When he chooses his mitigation, and it is processed, his mitigations web page will be updated to show all of the risks that are forked off of the mitigation.
+
+Acceptance Criteria:
+- Specific web page for mitigation
+- Updated page for each fork","KS","stansfiek0","Value: High,Difficulty: 5","","https://trello.com/c/8MEHbnZy","https://trello.com/c/8MEHbnZy/75-risk-display-all-risks-for-mitigation","2793472","5e31d8cddb572e685106c6b2","75","8MEHbnZy","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e41c8294b41197468344a4b","Mon Feb 10 2020 16:16:25 GMT-0500 (Eastern Standard Time)","false","2020-04-14T16:41:44.928Z","Sprint 4 Done","Security - SQL Injection prevention","","As a security specialist, Larken is concerned about malicious actors using an SQL injection technique - thus compromising hte security and reliablity of the system.  However due to techniques to prevent such an injection that she has programmed into the system, it can be used without fear of security issue.
+
+Acceptance Criteria - 
+SQL injection at least in common forms does not work
+
+","TM","Theresa Morris","Difficulty: 8,Value: High","","https://trello.com/c/TIkexGln","https://trello.com/c/TIkexGln/38-security-sql-injection-prevention","2822144","5e31d8cddb572e685106c6b2","38","TIkexGln","false","","5e31d8cdaf988c41f2e83b20,5e31d8cdaf988c41f2e83b25","","[object Object]","",""
+"5e41c4258fadd38d09b8762c","Mon Feb 10 2020 15:59:17 GMT-0500 (Eastern Standard Time)","false","2020-04-14T15:30:21.925Z","Sprint 4 Done","Web Interface - Edit Mitigation","","When Aneira is viewing a mitigation's' individual page, she finds that some of the information is inaccurate, or poorly spelled, or more detail is required.  On that page, there is a button she clicks to edit the mitigation information, whereupon she is brought to a page very like the 'add new mitigation' page, with all the fields populated with the information currently in the mitigation.  When she saves the edits, the mitigation information is updated, with the date and time of the last edit.
+
+
+Acceptance Criteria:
+Edit mitigation button brings user to page like add new mitigation page, that is autopopulated with the information in the current mitigation
+Stores date and time of the last edit to the mitigation.
+","KS, TM","stansfiek0, Theresa Morris","Value: Medium,Difficulty: 5","","https://trello.com/c/5HjQtbAA","https://trello.com/c/5HjQtbAA/21-web-interface-edit-mitigation","2879488","5e31d8cddb572e685106c6b2","21","5HjQtbAA","false","","5e31dd80d4da4e1ea78d8f41,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e41c65b3f414a4b8d0f7be2","Mon Feb 10 2020 16:08:43 GMT-0500 (Eastern Standard Time)","false","2020-04-14T18:15:22.712Z","Sprint 4 Done","Web Interface - Mitigation page lists all forks","","Adrianna, a security professional, has just looked up a security breach.  When she clicks to view a particular mitigation, she finds she needs to see if there are any other mitigations related to the one she is currently viewing, that were forked off of it.  To do this, she clicks on a button near the top of the mitigation to display all known forks. 
+
+Acceptance Criteria-
+'Forks' button leads to a list of all known forks of a mitigation
+Forks are dynamically linked to their originating mitigation","TM","Theresa Morris","Value: High,Difficulty: 5","","https://trello.com/c/cuQE4rcS","https://trello.com/c/cuQE4rcS/33-web-interface-mitigation-page-lists-all-forks","2936832","5e31d8cddb572e685106c6b2","33","cuQE4rcS","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e91ed072a8ca778a860d417","Sat Apr 11 2020 12:15:03 GMT-0400 (Eastern Daylight Time)","false","2020-04-16T19:08:26.716Z","Sprint 4 Done","Editing - Importing information from the database to populate text boxes.","","Jordan, an admin on the system, would like to edit an already existing mitigation. To do this, he will need to go to the 'edit a mitigation' page. When he is redirected to the page, the information in the text boxes will already be populated with information from the database, with the exact name in the name field, title in the title field, and so on.  
+Acceptance Criteria: 
+-All information in the text boxes will be pre-populated with information from the database.
+-The information will correctly correspond to the exact mitigation that the user would like to edit. ","KS, TM","stansfiek0, Theresa Morris","Value: High,Difficulty: 5","","https://trello.com/c/9uMJFgTS","https://trello.com/c/9uMJFgTS/124-editing-importing-information-from-the-database-to-populate-text-boxes","2965504","5e31d8cddb572e685106c6b2","124","9uMJFgTS","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e42d9e597e12285e58ce2bc","Tue Feb 11 2020 11:44:21 GMT-0500 (Eastern Standard Time)","false","2020-04-11T16:18:42.313Z","Sprint 4 Done","Adding - When writing the mitigation spell check and grammar help the user fix any mistakes they make.","","As a Junior Developer, Oprah frequently make typos and spelling mistakes when writing his description. Due to this the description should have a grammar/spellchecker with 90% correctness to help aid Oprah when writing the description.
+
+Acceptance Criteria:
+- Grammar/Spellchecker for the description of the steps in the mitigation.
+- Should have 90% correctness for finding mistakes.","TM","Theresa Morris","Value: Low,Difficulty: 1","","https://trello.com/c/zDPXmy3a","https://trello.com/c/zDPXmy3a/61-adding-when-writing-the-mitigation-spell-check-and-grammar-help-the-user-fix-any-mistakes-they-make","2994176","5e31d8cddb572e685106c6b2","61","zDPXmy3a","false","","5e31dda454c6f545022349e5,5e31ddd72f2cc5719eda9476","","[object Object]","",""
+"5e41c8628a97100faa5706bb","Mon Feb 10 2020 16:17:22 GMT-0500 (Eastern Standard Time)","false","2020-04-14T17:26:54.446Z","Sprint 4 Done","Web Interface - Discrete Link for each mitigation page","","When a new mitigation is created, Olberic is brought to a new page, containing all of the information related to this mitigation, held at a unique link, for ease of sharing with security coworkers.  This link should be automatically generated every time.
+
+Acceptance Critera:
+Each mitigation has an incremented identifying counter, used for discrete links that do not duplicate each other.","TM","Theresa Morris","Value: Medium,Difficulty: 5","","https://trello.com/c/mzn6JTIr","https://trello.com/c/mzn6JTIr/39-web-interface-discrete-link-for-each-mitigation-page","3026944","5e31d8cddb572e685106c6b2","39","mzn6JTIr","false","","5e31dd80d4da4e1ea78d8f41,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e41ca5dd6b3d24b69e427cb","Mon Feb 10 2020 16:25:49 GMT-0500 (Eastern Standard Time)","false","2020-05-06T16:01:17.727Z","Sprint 5 Done","Web Interface - Browser Compatability","","No matter what browser Ilana uses, be it Safari on a mac, Edge, Opera, Firefox, or Chrome, she notes that the interface responds with no more than one to two errors due to browser incompatibilities, as anything that is incompatible between browsers has been worked around.
+
+Acceptance Criteria - 
+Page does not become unreadable due to browser incompatibilities
+Page maintains essentially all functionality across all common browsers","TM, KS, AT","Theresa Morris, stansfiek0, Anthony Tesoriero","Value: Low,Difficulty: 3","","https://trello.com/c/4hTeMmCN","https://trello.com/c/4hTeMmCN/45-web-interface-browser-compatability","1742848","5e31d8cddb572e685106c6b2","45","4hTeMmCN","true","","5e31dda454c6f545022349e5,5e31d8cdaf988c41f2e83b1d","","[object Object]","",""
+"5ea73b7824fb1b7ce3d93bf2","Mon Apr 27 2020 16:07:20 GMT-0400 (Eastern Daylight Time)","false","2020-05-04T20:24:56.182Z","Sprint 5 Done","Web Interface - Page Layout","","When admin Adam is editing, forking, or editing a mitigation, he does not want to scroll down the page in order to complete his task. Instead, the contents on all three of those pages should be moved in a way where the users do not need to scroll. To do this, half of the information on the page should be moved onto the right hand side of the page in a neat manner. 
+Acceptance Criteria: 
+-The information should be displayed in a way where users do not need to scroll to create/edit/fork a mitigation. 
+-First name, last name, and title text boxes should be on the left side.
+-Operating system information, description, and type/category should be displayed on the right side. ","KS, AT","stansfiek0, Anthony Tesoriero","Value: High,Difficulty: 3","","https://trello.com/c/K7wnJYvc","https://trello.com/c/K7wnJYvc/142-web-interface-page-layout","3485696","5e31d8cddb572e685106c6b2","142","K7wnJYvc","true","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b1d","","[object Object]","",""
+"5ea1f738ec01972aff7647a9","Thu Apr 23 2020 16:14:48 GMT-0400 (Eastern Daylight Time)","false","2020-04-27T20:45:10.139Z","Sprint 5 Done","Web interface - Filter By System","","When John looks at the search results page, and sees many mitigations, he realizes he's really only looking for ones for one particular operating system.  He clicks a dropdown menu at the top of the results screen that will filter the results to only the ones for that operating system.
+
+Acceptance Criteria - 
+A dropdown menu is created based on the already returned search results
+picking an entry on this menu filters the existing results to only show ones for that operating system.","TM","Theresa Morris","Value: High,Difficulty: 2","","https://trello.com/c/qUw66GNT","https://trello.com/c/qUw66GNT/137-web-interface-filter-by-system","3616768","5e31d8cddb572e685106c6b2","137","qUw66GNT","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b26","","[object Object]","",""
+"5e41c2b6931cda0482298b2a","Mon Feb 10 2020 15:53:10 GMT-0500 (Eastern Standard Time)","false","2020-05-06T15:58:00.238Z","Sprint 5 Done","Web Interface - Responsive Layout (mobile vs pc)","","Iggy has been working on the field with an ongoing security situation.  The mitigation he must use has several steps.  Although he looked it up on his desktop computer, he has need of being able to smoothly and easily look up the data on his secure mobile device, so it can be conveniently used in the field.  The web page maintains all of the information he needs, but optimized for a mobile display.
+
+Acceptance Criteria: 
+Page dynamically alters its layout based on the screen size of the target device
+","KS, TM","stansfiek0, Theresa Morris","Value: Low,Difficulty: 8","","https://trello.com/c/tAem7X2A","https://trello.com/c/tAem7X2A/12-web-interface-responsive-layout-mobile-vs-pc","3649536","5e31d8cddb572e685106c6b2","12","tAem7X2A","false","","5e31dda454c6f545022349e5,5e31d8cdaf988c41f2e83b20","","[object Object]","",""
+"5ea1f722df3a5f33e2759e1a","Thu Apr 23 2020 16:14:26 GMT-0400 (Eastern Daylight Time)","false","2020-05-04T20:05:45.445Z","Sprint 5 Done","Web Interface - Create User","","User Eric would like to make a mitigation, however he does not have an existing account. To make an account, he will be on the login page, and on the right hand side of the page they will have the option to create an account if they do not have one already. When Eric enters his criteria, he will then press a 'register' button which will successfully register his information into the database that he can then use for logging in in the future. 
+Acceptance Criteria: 
+-Allow for users to type in their login criteria in the text boxes of the register section
+-Users can press a register button to successfully create their account ","TM","Theresa Morris","Value: High,Difficulty: 3","","https://trello.com/c/pujS9yMo","https://trello.com/c/pujS9yMo/134-web-interface-create-user","3682304","5e31d8cddb572e685106c6b2","134","pujS9yMo","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b1d","","[object Object]","",""
+"5ea1f72f5ca8b56d972d6f11","Thu Apr 23 2020 16:14:39 GMT-0400 (Eastern Daylight Time)","false","2020-05-04T20:05:56.355Z","Sprint 5 Done","Web Interface - Hide buttons from non-relevant roles","","User Theodore would like to check on the 25 most recent mitigations on the web page. Since he is signed in as a user, when he goes to the search results page he should only have the options to fork a mitigation if he desires. Therefore, the 'Delete Mitigation' and 'Edit Mitigation' should not be present when he is on the web page. However, if Theodore was given admin privileges, then he would be able to see all three of the options of forking, editing, and deleting. 
+Acceptance Criteria: 
+-Ensure users cannot see the Edit Mitigation and Fork Mitigation Buttons.
+-When admins use the page, ensure that they can see the buttons.  ","TM","Theresa Morris","Value: Medium,Difficulty: 5","","https://trello.com/c/xlD01Eov","https://trello.com/c/xlD01Eov/135-web-interface-hide-buttons-from-non-relevant-roles","3747840","5e31d8cddb572e685106c6b2","135","xlD01Eov","false","","5e31dd80d4da4e1ea78d8f41,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5ea1f71aedfc3b4d89e57e85","Thu Apr 23 2020 16:14:18 GMT-0400 (Eastern Daylight Time)","false","2020-05-06T16:18:34.907Z","Sprint 5 Done","Fixed Fuzzy Search","","Frank wants to refine the way the mitigation are found in the database. Frank searches the database based on the title and descriptions and then does a research using similar words that where found in the first search and does a second search to find more titles. After find all the titles that match it scores them and list them from highest to lowest.
+
+Acceptance criteria:
+- Must do two search the first one using the input the second using words that appear more than once.","G, MB","glenna29, Michael Burke","Difficulty: 5,Value: High","","https://trello.com/c/tGQLQcPH","https://trello.com/c/tGQLQcPH/133-fixed-fuzzy-search","3780608","5e31d8cddb572e685106c6b2","133","tGQLQcPH","false","","5e31d8cdaf988c41f2e83b1e,5e31d8cdaf988c41f2e83b25","","[object Object]","",""
+"5e41c2ca2161d034cefc1817","Mon Feb 10 2020 15:53:30 GMT-0500 (Eastern Standard Time)","false","2020-05-03T20:13:14.668Z","Sprint 5 Done","Search Bar - Dropdown with database matches after lookup","","To easily know if there is a match after searching with the search bar, David uses a dropdown menu that drops down from the bottom of the search bar. This search bar automatically shows any matches from David's search, without him having to his enter/return. 
+
+Acceptance Criteria:
+- The user should be able to type in what they are looking for, and a dropdown menu will appear under the search bar with their selections
+- The selections should appear with the most relevant at the top (direct hits), but also any that may have their keyword in its name or description
+- The dropdown should be easily readable","TM","Theresa Morris","Value: Medium,Difficulty: 3","","https://trello.com/c/uDQaDbhl","https://trello.com/c/uDQaDbhl/13-search-bar-dropdown-with-database-matches-after-lookup","3813376","5e31d8cddb572e685106c6b2","13","uDQaDbhl","false","","5e31dd80d4da4e1ea78d8f41,5e31d8cdaf988c41f2e83b1d","","[object Object]","",""
+"5eaf27829645642ef86be9bb","Sun May 03 2020 16:20:18 GMT-0400 (Eastern Daylight Time)","false","2020-05-05T16:28:30.879Z","Sprint 5 Done","DB: Search By Title, for Autocomplete","","For the web page to have a autocomplete title search, such that when a user types in part of a title matching results appear. To implement this there needs to be a procedure to search for titles like the currently inputted title. A like title contains at at least the currently inputted letter/word plus any amount of characters after the input. Then each time a user inputs a character the procedure is called to get a more relevant search.
+
+Acceptance Criteria:
+- Procedure to search by 'Like' Titles.
+- The titles returned match the inputted characters, and any titles that contain atleast those characters and more if applicable.","G","glenna29","Value: Medium,Difficulty: 2","","https://trello.com/c/wShygdX0","https://trello.com/c/wShygdX0/143-db-search-by-title-for-autocomplete","3829760","5e31d8cddb572e685106c6b2","143","wShygdX0","false","","5e31dd80d4da4e1ea78d8f41,5e31d8cdaf988c41f2e83b26","","[object Object]","",""
+"5e41c5d44f2e87159104f7bb","Mon Feb 10 2020 16:06:28 GMT-0500 (Eastern Standard Time)","false","2020-05-03T20:34:01.326Z","Sprint 5 Done","Search Bar - At bottom of dropdown, “add mitigation” selection to go to add mitigation page","","If user Laura would like to add a new mitigation to the list, whether she has a new one in mind, or she doesn't find what she wants after searching, she has the option to press the 'add mitigation' button at the bottom of the search bars dropdown in order to add her input to the mitigation page. This will bring her to the 'add entry' page on the web interface 9 out of 10 times. 
+
+Acceptance Criteria:
+- The last selection in the dropdown should be an 'add mitigation' button
+- This button should bring them to the 'add mitigation' page, with the title of the new mitigation already edited to include their search","TM","Theresa Morris","Value: Medium,Difficulty: 2","","https://trello.com/c/UAk3dBkE","https://trello.com/c/UAk3dBkE/31-search-bar-at-bottom-of-dropdown-add-mitigation-selection-to-go-to-add-mitigation-page","3846144","5e31d8cddb572e685106c6b2","31","UAk3dBkE","false","","5e31dd80d4da4e1ea78d8f41,5e31d8cdaf988c41f2e83b26","","[object Object]","",""
+"5e63f4f6b72c808334d6c595","Sat Mar 07 2020 14:24:38 GMT-0500 (Eastern Standard Time)","false","2020-05-04T20:06:13.188Z","Sprint 5 Done","Web Interface - Fix Login Redirect","","Under certain circumstances, when logging in, the page rediercts to an error page.  This should happen 0% of the time
+
+Acceptance Criteria - 
+Login page redirects properly every time","TM","Theresa Morris","Value: High,Difficulty: 5","","https://trello.com/c/EOmvC9BI","https://trello.com/c/EOmvC9BI/88-web-interface-fix-login-redirect","3862528","5e31d8cddb572e685106c6b2","88","EOmvC9BI","false","","5e31d8cdaf988c41f2e83b25,5e31d8cdaf988c41f2e83b1e","","[object Object]","",""
+"5e41c2d33784533eed9361e4","Mon Feb 10 2020 15:53:39 GMT-0500 (Eastern Standard Time)","false","2020-05-03T20:18:47.319Z","Sprint 5 Done","Search Bar - Dropdown update with every user char input","","When Melanie begins searching for a mitigation, she uses an automatically updated dropdown menu that updates itself with every character she types. This way, Melanie can find what she is looking for before she even has to type out a whole word or phrase.
+
+Acceptance Criteria:
+- The dropdown menu will update according to the character the user types.
+- The dropdown menu will ignore case sensitivity, so whether or not the user types a 'p' or a 'P' it will not matter.
+- The menu will be correct, so if the user types a 'b', all results that begin with the letter b will appear in alphabetical order. ","TM","Theresa Morris","Value: Low,Difficulty: 8","","https://trello.com/c/lLE6QyGi","https://trello.com/c/lLE6QyGi/14-search-bar-dropdown-update-with-every-user-char-input","3878912","5e31d8cddb572e685106c6b2","14","lLE6QyGi","false","","5e31dda454c6f545022349e5,5e31d8cdaf988c41f2e83b20","","[object Object]","",""
+"5e41c522b7c4737a69bdbd98","Mon Feb 10 2020 16:03:30 GMT-0500 (Eastern Standard Time)","false","2020-05-05T04:12:24.525Z","Sprint 5 Done","Web Interface - Configurable display to results screen","","When Kiki has successfully pulled up her page of results, she wishes to sort it by varying categories, such as type of mitigation, or operating system, or even just alphabetically.  When she clicks the column headings on the results page, the entries sort in ascending or descending order (It reverses on each click.)  This should work 4/5 times","TM","Theresa Morris","Value: Low,Difficulty: 13","","https://trello.com/c/Vgk2TM6k","https://trello.com/c/Vgk2TM6k/26-web-interface-configurable-display-to-results-screen","3911680","5e31d8cddb572e685106c6b2","26","Vgk2TM6k","false","","5e31dda454c6f545022349e5,5e31d8cdaf988c41f2e83b1f","","[object Object]","",""
+"5ea1f7d05ea8476dc5839e1e","Thu Apr 23 2020 16:17:20 GMT-0400 (Eastern Daylight Time)","false","2020-05-04T20:06:25.219Z","Sprint 5 Done","Web Interface - Style the individual mitigation page","","When Mary is looking at an individual mitigation, the page is pleasant and easy to look at, displaying all relevant information in an intuitive manner.
+
+Acceptance Criteria:
+The styling is done","TM","Theresa Morris","Difficulty: 2,Value: Medium","","https://trello.com/c/ym22T52H","https://trello.com/c/ym22T52H/141-web-interface-style-the-individual-mitigation-page","3944448","5e31d8cddb572e685106c6b2","141","ym22T52H","false","","5e31d8cdaf988c41f2e83b26,5e31dd80d4da4e1ea78d8f41","","[object Object]","",""
+"5ea1f76c4534e0781ae20ad8","Thu Apr 23 2020 16:15:40 GMT-0400 (Eastern Daylight Time)","false","2020-05-04T20:18:03.050Z","Sprint 5 Done","DB: Get user's role","","When Freya is looking at the page, she requires to know the role of the user that is currently logged in.  This procedure should return the user's role in the system.
+
+Acceptance Criteria:
+When called, returns the user's role.","MB","Michael Burke","Difficulty: 1,Value: Medium","","https://trello.com/c/96siGszX","https://trello.com/c/96siGszX/138-db-get-users-role","4009984","5e31d8cddb572e685106c6b2","138","96siGszX","false","","5e31ddd72f2cc5719eda9476,5e31dd80d4da4e1ea78d8f41","","[object Object]","",""
