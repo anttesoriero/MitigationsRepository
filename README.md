@@ -67,6 +67,10 @@ After each sprint, this document will be updated with the sprints corresponding 
 - Show finished product, going over everything and getting feedback on the finished product
 - Talk about implementation of the product
 
+###### Updates
+- [Documentation](Documentation/Sprint%205%20Documentation.pdf)
+- [Burnup Spreadsheet](Burnup%20Spreadsheets/BurnupSprint5.png)
+
 ## Written Documents
 All documents are linked below, or can be found in the [Written Documents](Written%20Documents) directory.
 ##### In Order of Initial Completetion
