@@ -24,6 +24,7 @@ if (isset($_GET['s'])) {
 
 <div class="bodySearch">
     <form id="forkMitigationForm">
+        <input type="hidden" name='mitigationToFork' value='<?php echo $Mitigation_To_Fork ?>'/>
         <!-- Author Name Block -->
         <div id="block_container">
             <div id="bloc1">

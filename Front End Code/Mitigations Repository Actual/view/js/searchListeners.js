@@ -155,7 +155,7 @@ function processResults(jsonResults) {
             + jsonData[i].sec_type + "</span></div><span class='lefttitle'>" + jsonData[i].title +
             "</span><br><div class='resultLeft'><span class = 'mitid'>Mitigation ID:" + jsonData[i].mitigation_id +
             "</span><br><span class='os1'>Operating System: " +
-            jsonData[i].OS_name + "</span><span class='os2'>Version: " + jsonData[i].version + "</span><br>";
+            jsonData[i].OS_name + "</span><span class='os2'> Version: " + jsonData[i].version + "</span><br>";
 
         htmlString += "<br><span class='author'>Author: " + jsonData[i].Author + "</span><br>" +
             "<span class='created'>Created on:" + jsonData[i].created_at + "</span><br>" +

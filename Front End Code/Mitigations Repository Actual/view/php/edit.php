@@ -25,6 +25,7 @@ if (isset($_GET['s'])) {
 
 <div class="bodySearch">
     <form id="editMitigationForm">
+        <input type="hidden" name='mitigationToEdit' value='<?php echo $Mitigation_To_Edit ?>'/>
         <!-- Author Name Block -->
         <div id="block_container">
             <div id="bloc1">
