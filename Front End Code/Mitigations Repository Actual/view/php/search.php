@@ -13,10 +13,8 @@ if (isset($_GET['c'])) {
 }
 ?>
 <link id="searchStyle" rel="stylesheet" type="text/css" href="../css/searchStyle.css"/>
-<h2 style="float: left"> Search Results </h2>
-<br>
-<br>
-<br>
+<h2> Search Results </h2>
+
 <!-- Searching -->
 <div class="bodySearch">
     <input type="text" id="myInput" placeholder="Refine Search">
@@ -65,7 +63,6 @@ if (isset($_GET['c'])) {
         }
         ?>
     </select>
-    <br>
     <h2>Sort by:</h2>
     <select name="sortType" id="sortType">
         <option selected disabled>Choose a Sort Type</option>
