@@ -19,7 +19,8 @@ A software tool could offer a means to organize mitigation options and procedure
 Here is a link to the code in this repository. It might be easier for people to find it through the README - [Code](Front%20End%20Code/Mitigations%20Repository%20Actual)
 
 ## Sprint Plans
-After each sprint, this document will be updated with the sprints corresponding documentation file, as well as its burnup chart. These documents can also be found in either the [Documentation](Documentation) or [Burnup Spreadsheets](Burnup%20Spreadsheets) directory.
+After each sprint, this document will be updated with the sprints corresponding documentation file, as well as its burnup chart. These documents can also be found in either the [Documentation](Documentation) or [Burnup Spreadsheets](Burnup%20Spreadsheets) directory. Also, an export of our Trello board with PBI's for the burnup can be found here - [Trello Export](Burnup%20Spreadsheets/Mitigations%20Repository%20Trello%20-%20River%20Otters.csv)
+
 ##### Note: These plans are very much <ins>subject to change</ins> since this project is done in agile, and not completely planned from the start. These plans were also decided on in the [PID](Written%20Documents/Project%20Initiation%20Document%20-%20Michael%20Burke.pdf) before the project started.
 
 ### Sprint 0:
