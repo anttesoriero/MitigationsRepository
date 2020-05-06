@@ -63,7 +63,7 @@ if (isset($_GET['c'])) {
         }
         ?>
     </select>
-    <div id="sortOrder">
+    <div class="sortOrder">
         <h3>Sort Order:</h3>
         <select name="sortType" id="sortType">
             <option selected disabled>Choose a Sort Type</option>

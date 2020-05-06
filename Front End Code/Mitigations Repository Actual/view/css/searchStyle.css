@@ -232,6 +232,10 @@
 		width: 100%;
 	}
 
+	.sortOrder {
+		width: 30%;
+	}
+
 	.leftSearch {
 		position: relative;
 		right: 0%;
