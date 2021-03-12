@@ -104,6 +104,6 @@ We would also like to thank Andrew Resch and Jonathan Munilla for sponsoring thi
 **David Glennan** - Dev Team - [Email](mailto:glenna29@students.rowan.edu)
 
 ##
-##### Note: Here's a link to our first ever 15-minute scrum - [Team River Otters](http://anttes.com/otter/)
+##### Note: Here's a link to our first ever 15-minute scrum - [Team River Otters](http://old.anttes.com/otter/)
 
 Created with :heart: by Team River Otters
